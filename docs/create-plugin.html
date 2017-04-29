@@ -119,6 +119,10 @@
         .theme li:not(.selected):hover {
             border-top: 1px solid var(--action-color);
         }
+        #download-message {
+            margin-top: 12px;
+            display: none;
+        }
     </style>
     <script>
         const manifest = {
@@ -215,6 +219,7 @@
         }
 
         function downloadPlugin() {
+            document.querySelector('#download-message').style.display = 'none';
             for (const el of document.querySelectorAll('input:invalid')) {
                 if (el.offsetParent) {
                     alert('There are some invalid fields, please fix them first');
@@ -245,6 +250,7 @@
                     zip.generateAsync({type: 'blob'}).then(content => {
                         saveAs(content, manifest.name + '.zip');
                         button.innerHTML = 'Download your plugin';
+                        document.querySelector('#download-message').style.display = 'block';
                     });
                 }).catch(e => {
                     console.error(e);
@@ -392,6 +398,12 @@ module.exports.uninstall = function() {
 </div>
 
 <button id="btn-download">Download your plugin</button>
+<div id="download-message">
+    <h2>You're awesome!</h2>
+    <p>Now it's time to create your plugin. Here are some
+        <a href="https://github.com/keeweb/keeweb/wiki/Plugins" target="_blank">docs</a> for you to start.
+    </p>
+</div>
 
 <h2>Your plugin manifest</h2>
 <pre id="manifest"></pre>
