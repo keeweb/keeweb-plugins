@@ -195,7 +195,7 @@
         function buildManifest() {
             for (const el of document.querySelectorAll('.question input')) {
                 if (!el.dataset.field) {
-                    return;
+                    continue;
                 }
                 const field = el.dataset.field.split('.');
                 const visible = !!el.offsetParent;
