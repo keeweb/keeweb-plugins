@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeeWeb Plugin Creation Tool</title>
+    <style>
+        body {
+            font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;;
+            font-size: 14px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 12px;
+        }
+        li {
+            margin-left: 2px;
+        }
+        .question {
+            margin: 10px 0;
+        }
+        .question label {
+            display: inline-block;
+            width: 350px;
+        }
+        .question input {
+            width: 400px;
+            height: 20px;
+            padding: 4px 8px;
+        }
+        .question input[type=color] {
+            width: 40px;
+            padding: 0 2px;
+            height: 30px;
+        }
+        .question select {
+            width: 400px;
+            height: 20px;
+            outline: none;
+        }
+        .question input {
+            border: 1px solid #ccc;
+        }
+        .question input:focus {
+            outline: none;
+            border: 1px solid #528BFF;
+            box-shadow: 0 0 3px rgba(82, 139, 255, .7);
+        }
+        .question input:invalid {
+            border: 1px solid #9a0000;
+            box-shadow: 0 0 3px rgba(255, 0, 0, .2);
+        }
+        .question input:invalid:focus {
+            box-shadow: 0 0 3px rgba(255, 0, 0, .7);
+        }
+        .question[data-type] {
+            display: none;
+        }
+        #btn-download {
+            border: 1px solid #528BFF;
+            background: rgba(82, 139, 255, .03);
+            border-radius: 1px;
+            padding: 8px 20px;
+            outline: none;
+            color: #528BFF;
+            cursor: pointer;
+        }
+        #btn-download:hover {
+            background: rgba(82, 139, 255, .05);
+        }
+        #btn-download:active {
+            background: rgba(82, 139, 255, .2);
+        }
+        .theme {
+            margin-top: 12px;
+            padding: 12px;
+            background: var(--background-color);
+            color: var(--text-color);
+            font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+        }
+        .theme .error {
+            color: var(--error-color);
+        }
+        .theme button {
+            font-weight: 600;
+            line-height: 1;
+            padding: .75em 1.5em;
+            background: transparent;
+            margin-left: 12px;
+            border-radius: 1px;
+            transition: all 100ms linear;
+            cursor: pointer;
+            outline: none;
+        }
+        .theme button[type=reset] {
+            color: var(--text-color);
+            border: 1px solid var(--medium-color);
+        }
+        .theme button[type=submit] {
+            color: var(--text-color);
+            background: var(--action-color);
+            border: 1px solid var(--action-color);
+        }
+        .theme ul {
+            display: inline-block;
+            font-size: 0;
+        }
+        .theme li {
+            font-size: 14px;
+            padding: 10px;
+            cursor: pointer;
+            display: inline-block;
+            border-top: 1px solid transparent;
+            margin: 0;
+            height: 20px;
+        }
+        .theme li.selected {
+            border-top: 2px solid var(--action-color);
+        }
+        .theme li:not(.selected):hover {
+            border-top: 1px solid var(--action-color);
+        }
+    </style>
+    <script>
+        const manifest = {
+            version: '0.0.1',
+            manifestVersion: '0.1.0',
+            name: '',
+            description: '',
+            author: {
+                name: '',
+                email: '',
+                url: ''
+            },
+            resources: {},
+            licence: '',
+            url: '',
+            publicKey: ''
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const selType = document.querySelector('#sel-type');
+            selType.addEventListener('change', e => {
+                setPluginType(e.target.value);
+            });
+            setPluginType(selType.value);
+
+            for (const el of document.querySelectorAll('.question input')) {
+                el.addEventListener('input', buildManifest);
+            }
+            for (const el of document.querySelectorAll('input[type=color]')) {
+                el.addEventListener('change', e => applyColor(e.target));
+                applyColor(el);
+            }
+
+            document.querySelector('#btn-download').addEventListener('click', downloadPlugin);
+        });
+
+        function setPluginType(type) {
+            delete manifest.loc;
+            delete manifest.theme;
+            switch (type) {
+                case 'js':
+                    manifest.resources = { js: true };
+                    break;
+                case 'css':
+                    manifest.resources = { css: true };
+                    break;
+                case 'js+css':
+                    manifest.resources = { js: true, css: true };
+                    break;
+                case 'theme':
+                    manifest.resources = { css: true };
+                    break;
+                case 'loc':
+                    manifest.resources = { loc: true };
+                    break;
+            }
+            showResFields(type);
+            buildManifest();
+        }
+
+        function showResFields(type) {
+            for (const el of document.querySelectorAll('.question[data-type]')) {
+                const enabled = el.dataset.type.indexOf(type) >= 0;
+                el.style.display = enabled ? 'block' : 'none';
+            }
+        }
+
+        function applyColor(el) {
+            const name = '--' + el.id.replace('color-', '') + '-color';
+            const value = el.value;
+            document.querySelector('.theme').style.setProperty(name, value);
+        }
+
+        function buildManifest() {
+            for (const el of document.querySelectorAll('.question input')) {
+                if (!el.dataset.field) {
+                    return;
+                }
+                const field = el.dataset.field.split('.');
+                const visible = !!el.offsetParent;
+                if (visible) {
+                    if (field.length === 2) {
+                        const [section, item] = field;
+                        if (!manifest[section]) {
+                            manifest[section] = {};
+                        }
+                        manifest[section][item] = el.value;
+                    } else {
+                        manifest[field[0]] = el.value || el.placeholder;
+                    }
+                }
+            }
+            document.querySelector('#manifest').innerHTML = JSON.stringify(manifest, null, 2);
+        }
+
+        function downloadPlugin() {
+            for (const el of document.querySelectorAll('input:invalid')) {
+                if (el.offsetParent) {
+                    alert('There are some invalid fields, please fix them first');
+                    el.focus();
+                    return;
+                }
+            }
+            const button = document.querySelector('#btn-download');
+            button.innerHTML = 'Generating keys...';
+            setTimeout(() => {
+                generateKeyPair().then(keys => {
+                    button.innerHTML = 'Building your plugin...';
+                    manifest.publicKey = keys.publicKey;
+                    buildManifest();
+                    const zip = new JSZip();
+                    zip.file('manifest.json', JSON.stringify(manifest, null, 2));
+                    zip.file('.gitignore', ['.DS_Store', '*.log', '*.pem'].join('\n'));
+                    if (manifest.resources.js) {
+                        zip.file('plugin.js', getPluginJs());
+                    }
+                    if (manifest.resources.css) {
+                        zip.file('plugin.css', getPluginCss());
+                    }
+                    if (manifest.resources.loc) {
+                        zip.file(manifest.locale.name + '.json', '{\n}');
+                    }
+                    zip.file('private_key.pem', keys.privateKey);
+                    zip.generateAsync({type: 'blob'}).then(content => {
+                        saveAs(content, manifest.name + '.zip');
+                        button.innerHTML = 'Download your plugin';
+                    });
+                }).catch(e => {
+                    console.error(e);
+                    button.innerHTML = 'Download your plugin';
+                });
+            }, 0);
+        }
+
+        function getPluginJs() {
+            return `/**
+ * KeeWeb plugin: ${manifest.name}
+ * @author ${manifest.author.name}
+ * @license ${manifest.license}
+ */
+
+module.exports.uninstall = function() {
+};`;
+        }
+
+        function getPluginCss() {
+            if (!manifest.theme) {
+                return '';
+            }
+            let css = `.th-${manifest.theme.name} {\n`;
+            for (const el of document.querySelectorAll('input[type=color]')) {
+                css += el.id.replace('color-', '  --') + 'color: ' + el.value + '\n';
+            }
+            css += '}';
+            return css;
+        }
+
+        function generateKeyPair() {
+            return new Promise((resolve, reject) => {
+                crypto.subtle.generateKey(
+                    {
+                        name: 'RSASSA-PKCS1-v1_5',
+                        modulusLength: 2048,
+                        publicExponent: new Uint8Array([0x01, 0x00, 0x01]),
+                        hash: {name: 'SHA-256'},
+                    },
+                    true,
+                    ['sign', 'verify']
+                ).then(keys => {
+                    crypto.subtle.exportKey('pkcs8', keys.privateKey).then(privateKey => {
+                        privateKey = '-----BEGIN PRIVATE KEY-----\n' +
+                            btoa(String.fromCharCode(...new Uint8Array(privateKey))) +
+                            '\n-----END PRIVATE KEY-----';
+                        crypto.subtle.exportKey('spki', keys.publicKey).then(publicKey => {
+                            publicKey = btoa(String.fromCharCode(...new Uint8Array(publicKey)));
+                            resolve({ privateKey, publicKey });
+                        });
+                    }).catch(reject);
+                }).catch(reject);
+            });
+        }
+
+        function fillTestData() {
+            document.getElementById('txt-name').value = 'my-plugin';
+            document.getElementById('txt-desc').value = 'My plugin';
+            document.getElementById('txt-author-name').value = 'me';
+            document.getElementById('txt-author-email').value = 'me@example.com';
+            document.getElementById('txt-author-url').value = 'http://example.com';
+            document.getElementById('txt-plugin-url').value = 'http://example.com/plugin';
+            document.getElementById('txt-theme-name').value = 'my-theme';
+            document.getElementById('txt-theme-title').value = 'My theme';
+            buildManifest();
+        }
+    </script>
+    <script src="lib/jszip.min.js" async></script>
+    <script src="lib/FileSaver.min.js" async></script>
+</head>
+<body>
+<h1>KeeWeb Plugin Creation Tool</h1>
+
+<div class="question">
+    <label for="sel-type">Plugin type:</label>
+    <select id="sel-type" required>
+        <option value="js" selected>JS code</option>
+        <option value="js+css">JS code + CSS styles</option>
+        <option value="css">CSS styles (not themes)</option>
+        <option value="loc">Locale</option>
+        <option value="theme">CSS Theme</option>
+    </select>
+</div>
+<div class="question">
+    <label for="txt-name">Plugin name (lowercase letters and dashes):</label>
+    <input type="text" data-field="name" id="txt-name" autocomplete="none" pattern="\w[\w\-]+\w" required />
+</div>
+<div class="question">
+    <label for="txt-desc">Description (human-readable):</label>
+    <input type="text" data-field="description" id="txt-desc" autocomplete="none" required />
+</div>
+<div class="question">
+    <label for="txt-author-name">Author name:</label>
+    <input type="text" data-field="author.name" id="txt-author-name" autocomplete="none" required />
+</div>
+<div class="question">
+    <label for="txt-author-email">Author email:</label>
+    <input type="email" data-field="author.email" id="txt-author-email" required />
+</div>
+<div class="question">
+    <label for="txt-author-url">Author URL:</label>
+    <input type="text" data-field="author.url" id="txt-author-url" autocomplete="none" pattern="http(s?)://.+" required />
+</div>
+<div class="question">
+    <label for="txt-plugin-url">Plugin page URL:</label>
+    <input type="text" data-field="url" id="txt-plugin-url" autocomplete="none" pattern="http(s?)://.+" required />
+</div>
+<div class="question">
+    <label for="txt-license">License:</label>
+    <input type="text" data-field="license" id="txt-license" placeholder="MIT" autocomplete="none" />
+</div>
+<div class="question" data-type="loc">
+    <label for="txt-loc-code">Locale code (xx or xx-XX):</label>
+    <input type="text" data-field="locale.name" id="txt-loc-code" autocomplete="none" pattern="[a-z]{2}(-[A-Z]{2})?" required />
+</div>
+<div class="question" data-type="loc">
+    <label for="txt-loc-title">Locale name (human-readable):</label>
+    <input type="text" data-field="locale.title" id="txt-loc-title" autocomplete="none" required />
+</div>
+<div class="question" data-type="theme">
+    <label for="txt-theme-name">Theme class (lowercase letters and dashes):</label>
+    <input type="text" data-field="theme.name" id="txt-theme-name" autocomplete="none" pattern="\w[\w\-]+\w" required />
+</div>
+<div class="question" data-type="theme">
+    <label for="txt-theme-title">Theme name (human-readable):</label>
+    <input type="text" data-field="theme.title" id="txt-theme-title" autocomplete="none" required />
+</div>
+<div class="question" data-type="theme">
+    <p>Theme colors:</p>
+    <input type="color" id="color-background" value="#282C34">
+    <input type="color" id="color-medium" value="#ABB2BF">
+    <input type="color" id="color-text" value="#D7DAE0">
+    <input type="color" id="color-action" value="#528BFF">
+    <input type="color" id="color-error" value="#C34034">
+    <div class="theme">
+        Normal text and <span class="error">error</span>
+        <button type="submit">Button</button>
+        <button type="reset">Hollow button</button>
+        <ul>
+            <li>Here's a menu</li>
+            <li class="selected">I'm selected</li>
+        </ul>
+    </div>
+</div>
+
+<button id="btn-download">Download your plugin</button>
+
+<h2>Your plugin manifest</h2>
+<pre id="manifest"></pre>
+</body>
+</html>
