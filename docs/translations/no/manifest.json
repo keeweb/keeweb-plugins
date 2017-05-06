@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "language-norwegian",
+  "description": "Norwegian language",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/translations?lang=no",
+  "resources": {
+    "loc": "ndiCk9Yf6tYGN2xYwHnXCETRFpYr2qNQTZ+FLeB2h91b57sIwJmfrYzGaHnrdBW5aQhGCrZFJLq+ZRhGkndE2NOLSCayCwQnsTdhIFDGemvHRLDEXn7nuUQ2UespmkD85nmFB55v8Rb/56y80jDro8eg9ANk5/V0Z305crRdwYOCcgdk5uH18HJt3HdtkKSxcw7muAYbDBbGsIM0EuwngfnnnyGwClfUQNZyZYJ6CX5ddb77RUv6IMGlfftnek1K5ZQOzHWmjaUClUqT3VYkmwQNUQ0bGdkP52j8GOXSJe2SlKVRg+sTGn1M3hvus+WO4UNZ9yV6hJ/isdkBSYxPVA=="
+  },
+  "locale": {
+    "name": "no",
+    "title": "Norsk"
+  },
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+}

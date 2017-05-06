@@ -1,0 +1,80 @@
+{
+  "zh-CN": {
+    "name": "简体中文",
+    "nameEn": "Chinese Simplified",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "pt-PT": {
+    "name": "Português",
+    "nameEn": "Portuguese",
+    "count": 458,
+    "version": "1.0.0"
+  },
+  "ko": {
+    "name": "한국어",
+    "nameEn": "Korean",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "pl": {
+    "name": "Polski",
+    "nameEn": "Polish",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "hu": {
+    "name": "Magyar",
+    "nameEn": "Hungarian",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "no": {
+    "name": "Norsk",
+    "nameEn": "Norwegian",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "nl-NL": {
+    "name": "Nederlands",
+    "nameEn": "Dutch",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "fr-FR": {
+    "name": "Français",
+    "nameEn": "French",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "de-DE": {
+    "name": "Deutsch",
+    "nameEn": "German",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "it-IT": {
+    "name": "Italiano",
+    "nameEn": "Italian",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "ru-RU": {
+    "name": "Русский",
+    "nameEn": "Russian",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "es-ES": {
+    "name": "Español",
+    "nameEn": "Spanish",
+    "count": 468,
+    "version": "1.0.0"
+  },
+  "sv-SE": {
+    "name": "Svenska",
+    "nameEn": "Swedish",
+    "count": 468,
+    "version": "1.0.0"
+  }
+}

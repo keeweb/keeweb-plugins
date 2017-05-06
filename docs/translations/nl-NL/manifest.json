@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "language-dutch",
+  "description": "Dutch language",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/translations?lang=nl-NL",
+  "resources": {
+    "loc": "BibZwZEY5x1F9G249UY2vNto+365I+jQ8YMEgU6vSSWA7ryM9FoLOMW9sz8ZwBUA3PtMz/6uUO3qG7Ghp6+0HZzTTSO78Sd/V7xLaiIi3BL3/vF4jlWLU6IVBSNSkn5G1wdVtpyitJyTercD5wKaoHlPsKelKrxku3IyTgCi486pCSvxLS8oSjh0VGLjFEehMqjKp1X9wB/SPVGctw06uKWQN/Quom8Gy2aib3RWDweDOoKk+7ZHVqn+euSs60PMXRf2zndP0Os7xQuZ4Kt5PzJ3lgD4+d5wCCaLhyEi2cL4S/x2fdZ6lIBYVvmShk/TJ20GRK5GgoK1ROrIrNmKWw=="
+  },
+  "locale": {
+    "name": "nl-NL",
+    "title": "Nederlands"
+  },
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+}

@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "language-italian",
+  "description": "Italian language",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/translations?lang=it-IT",
+  "resources": {
+    "loc": "psyMrZoVTghv6c7YwPhYJZOlqXAJ0aUI+cGbJW/Wlbelj10fj0tGSgbgmryg/KxEHhpUmljX7AFH8t6t1TPorEATb6Uqu2oPevERnEOfLtNlZAsXYSNF4Sgm0KjeIeypzTqak4KweemHukhPP/Qw7u918x354ZbTcgXyb66w/U9Ew001Yb7jChX3oEuLRB+fCGGJCmnS8WltwBoqNA9Sp6r5xlHU51yigHXIB2v05sf9teT418JSijp82SFsOTdakXySFtH2zQb5hHGT7/F1aBQJjlacrNJUZNdr80v5lZheG0M8Q3aFP6xzBub+P6+6QU8A9F59YjgedqnIFDFl+g=="
+  },
+  "locale": {
+    "name": "it-IT",
+    "title": "Italiano"
+  },
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+}

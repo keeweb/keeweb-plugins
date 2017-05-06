@@ -1,0 +1,22 @@
+{
+  "name": "keeweb-plugins",
+  "version": "1.0.0",
+  "description": "KeeWeb plugins",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "translations": "node scripts/download-translations.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keeweb/keeweb-plugins.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keeweb/keeweb-plugins/issues"
+  },
+  "homepage": "https://github.com/keeweb/keeweb-plugins#readme"
+}

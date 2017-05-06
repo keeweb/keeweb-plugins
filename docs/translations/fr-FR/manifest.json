@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "language-french",
+  "description": "French language",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/translations?lang=fr-FR",
+  "resources": {
+    "loc": "k4LGmxzATcPpR/2iuxmm0HTYb1/LsDnoy9a2Ef3+lKiFVGybdASDmPnCs2kFGR3AMQnlLkQATjwFWipj9PaToASkDKgb7fcagVHTnk8RuYbE0jfC/knOniTNxKHBoR0NDAGJ5yGO9mYEEey8UkSH2XajeAbPeersc5zqMblzRhd/lf9eD+M3bib5zMEESHKwtV+CWs5k1ZDsZQeddIA89jWJT5f0AIQLjwcnTK9lp6ryek4nPLR2+1LeoWQ07HCm+T7e4SlQ0Ms54Iu4HWjOVlOWXeAq2VCzZBXg3MXFX9bQcuPrK1QofglffOLQiB8RaEDDGdEN76Gai9TA49g/4g=="
+  },
+  "locale": {
+    "name": "fr-FR",
+    "title": "Français"
+  },
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+}

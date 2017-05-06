@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KeeWeb translations</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var xhr = new XMLHttpRequest();
+            xhr.responseType = 'json';
+            xhr.open('GET', 'meta.json?_=' + Date.now(), true);
+            xhr.send();
+            xhr.onload = function() {
+                var languages = xhr.response;
+                var table = document.getElementById('list-languages');
+                Object.keys(languages).forEach(function(lang) {
+                    var langData = languages[lang];
+                    var url = 'https://plugins.keeweb.info/translations/' + lang;
+                    var row = table.insertRow();
+                    row.insertCell().innerHTML = '<a href="javascript:showLanguage(\'' + lang + '\');">' + lang + '</a>';
+                    row.insertCell().innerHTML = langData.name;
+                    row.insertCell().innerHTML = langData.nameEn;
+                    row.insertCell().innerHTML = langData.version;
+                    row.insertCell().innerHTML = langData.count;
+                    row.insertCell().innerHTML = '<a href="' + url + '">' + url + '</a>';
+                });
+            };
+        });
+
+        var selected = location.href.match(/lang=([\w\-]+)/);
+        if (selected) {
+            showLanguage(selected[1]);
+        }
+
+        function showLanguage(lang) {
+            var xhr = new XMLHttpRequest();
+            xhr.responseType = 'json';
+            xhr.open('GET', lang + '/' + lang + '.json', true);
+            xhr.send();
+            xhr.onload = function() {
+                document.getElementById('lang-data').style.display = 'block';
+                document.getElementById('lang-name').innerHTML = lang;
+                var data = xhr.response;
+                var table = document.getElementById('lang-table');
+                while (table.rows.length > 1) {
+                    table.deleteRow(1);
+                }
+                Object.keys(data).forEach(function(item) {
+                    var row = table.insertRow();
+                    row.insertCell().innerHTML = item;
+                    row.insertCell().innerHTML = data[item];
+                });
+            };
+            return false;
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>KeeWeb translations</h1>
+    <p>This site contains translations for <a href="https://keeweb.info">KeeWeb</a>.
+        You can add or edit translations at <a href="http://keeweb.oneskyapp.com/">OneSky</a>.</p>
+    <p>Language list</p>
+    <table id="list-languages" cellpadding="5" cellspacing="0" border="1">
+        <tr>
+            <th>Language</th>
+            <th>Name</th>
+            <th>English Name</th>
+            <th>Version</th>
+            <th>Phrase count</th>
+            <th>Plugin URL</th>
+        </tr>
+    </table>
+    <div id="lang-data" style="display: none;">
+        <p>Language: <span id="lang-name"></span></p>
+        <table id="lang-table" cellpadding="5" cellspacing="0" border="1">
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

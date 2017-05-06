@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "language-{name_ascii}",
+  "description": "{name_en} language",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/translations?lang={lang}",
+  "resources": {
+    "loc": "{signature}"
+  },
+  "locale": {
+    "name": "{lang}",
+    "title": "{name}"
+  },
+  "publicKey": "{key}"
+}
