@@ -11,4 +11,4 @@ You can add or edit translations at [OneSky](http://keeweb.oneskyapp.com/), they
 ```
 npm run-script translations
 ```
-Download translations from OneSky and saved as KeeWeb plugins.
+Download translations from OneSky and save as KeeWeb plugins.
