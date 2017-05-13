@@ -1,9 +1,10 @@
 {
-  "date": "2017-05-13T18:31:23.922Z",
-  "signature": "MTpkHrhnz3ezn9opzPVElMFNpbeDOFNoqAtNKJoPJ0zX++o3DVhEN+Uw22fXbYtABmfxkPgI05b1fJSEkSyBPiaBhWwoqxl8qTtj4oA6y0o+VlvGS28hmp22+N6Y2GNrg5JQSuvCdgRcam1nVU0t9USXUFCxYd9SCrMZn7FwCXIaNn5vVmjdGL3R58tm/6rN6rU9XMxYFW4rcu0udUaNoTRHj2ds+1u92c45HTk+IoFOmjxD2ksBIn6DWjxl5LK4jnrp5ZI+1oUSWp0gc2mtSOR7fLoTC1YXkr3W9TOFFJPWSeIXnhzsxKAxu2WLFLE/F3jxlaTlg9sx1SVxRXtHHQ==",
+  "date": "2017-05-13T19:56:30.456Z",
+  "signature": "j6JVjRKyjtLOTYmGbTL6d01B7JUvtIdtAiS5mcGC0NRRcdxADcJ+GvTc0nYzc6XoaLRIzKbO9cntqgPFD7FFQ95krw+8PpEGjwShC98xYrtanZyN5T2WcFHi7kv/ysm9G7Fbs7DzIxPWIzgzchvNylZyj7FxI84egnrQSPihhpzjzYr1LZScE6JmGv1iwrd56kqk46ohOkl7diilsY7f0g+oRdrehjNrCLVR7mZZbjvQt40BgCtDCuFnLFatC83GuLKvglyrslCVQalM2CVIrhecbc5gJKfjrvynb7oRH1Dk00zAgBVPAaZOvh0AnQlbpL0NMKK6flG2UOafi5XOmg==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -28,6 +29,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/pt-PT",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -52,6 +54,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/ko",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -76,6 +79,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/pl",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -100,6 +104,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/hu",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -124,6 +129,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/no",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -148,6 +154,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/nl-NL",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -172,6 +179,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/fr-FR",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -196,6 +204,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/de-DE",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -220,6 +229,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/it-IT",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -244,6 +254,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/ru-RU",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -268,6 +279,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/es-ES",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
@@ -292,6 +304,7 @@
     },
     {
       "url": "https://plugins.keeweb.info/translations/sv-SE",
+      "official": true,
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",

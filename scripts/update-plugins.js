@@ -16,7 +16,8 @@ const allTranslations = JSON.parse(fs.readFileSync('docs/translations/meta.json'
 for (const translation of Object.keys(allTranslations)) {
     const manifest = JSON.parse(fs.readFileSync(`docs/translations/${translation}/manifest.json`));
     const url = `https://plugins.keeweb.info/translations/${translation}`;
-    const pluginMeta = { url, manifest };
+    const official = true;
+    const pluginMeta = { url, official, manifest };
     const ix = data.plugins.findIndex(p => p.manifest.name === manifest.name);
     if (ix >= 0) {
         data.plugins.splice(ix, 1, pluginMeta);
