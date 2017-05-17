@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifestVersion": "0.1.0",
   "name": "language-swedish",
   "description": "Swedish language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=sv-SE",
   "resources": {
-    "loc": "iaQkXVWgfQyRep0IQUiFOvwIfZVQLbLal5liEjmKK9DOnLo9C3trj/l5Nn5eZ1pKAzedClxvYfLpc/9zarU5WfWxHsxfWg6xA0xPTQUPK/nXGAPszJLgbyqd/Om3eHbMy+v2RIcWQnlMZsvpccTinhoHgRMxXeH0hCH14doJIjXJJKJq1GpSXcTBXds7Zuxnhfo9RKsjlmh8S2almC350fvqkiql/8Bc1iNhAKeh8dTuiCqkudwIeI/+PuORptBhTkBmtdIAl5KlXYF73N4u2LO9G6cZuASAeAzfvJqrlO9ShrLtRMdTxJ5vdkNVhSOqr2JpmbCh8td2Eu7qAL14fQ=="
+    "loc": "t5p+ksLAdnyzh+OnPmWZGtNiRVpjfE6suhOA9/kYaD89l+oSujKeRdxffl+iQ5YhsyIeYNe9+uUc/QmJwsA9LZQ0bqMIE/DTd/eli+Dgp0Gm1O88ourp5ytBxQ4o+vEyf7j7AKBTDLBFojtlLOxrh/+nnOy5GA4jJdq/4M5a8PH6rjWrNPGHVuVg4ARe6xtozhJ72CQCx5ADvh1ob+8IYvE/stuDcpxsFi/MOmu8ds5Z4Dh2+BH0NsfdcnNZrv2f2CGzAbAvdxnx0se85kvMoyvpmQbKEEkKgSvrnQ+X8jchk5lT24TPA7JU6Ns3E28TK45M+jNBQgwavjdDYzRZRQ=="
   },
   "locale": {
     "name": "sv-SE",
