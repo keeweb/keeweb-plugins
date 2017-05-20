@@ -1,6 +1,6 @@
 {
-  "date": "2017-05-20T10:03:24.644Z",
-  "signature": "p8FWjhGc52D3ndCnDaPTQSYxHcr8izU3Xz+SP7LcyPfsD7zU9m7AuJxieNRtoYc0KE7ee4zN4E2aA1hihoMUR5gwp1mMOYCpV9C3t5bR9Kabm/30lI12Sj7ojQZ6zkHcJ4Ld2rCGmHF60U9amO3yuTKQcDSMT2NElwWDk3t6jrvFih15OUamEPfUmAuH/xrHwbMzbxGIdoKUEI4vyDjsalRTacdqlwj9NIbFNUYoQH/UXIq/1F49owpx9wOzrUUMVFHfnQmS0ANVMYjDLOc749QSYSeovQwF183QJHergs9tutR5eC8tqt1HKOyddfZh2eIPwTM3S4yj4gGbvapwQQ==",
+  "date": "2017-05-20T10:56:05.299Z",
+  "signature": "Wwz9VeN6xcwU/oqDbol9mWUKwriqkLqdvwsH8yU+MIGxDMlNiWEZCQaGnznWYYCZSrfDmBpNkAT8xVnatZUxjBRxAEZMsmr5JpWbAl04/U9rpjwlTWiRYxsBsbnH9Xm5QS9dxa2GfZ8vXY9CIXya68qX6TlQLP/1RIanwvcaj1l5LUBqcsfaxNOzcdOwIZ0X4JGOLzQx7T7xqxd+v5mO+AEcfuc3llgI02jE4Sl3TiIZbMiLWLQPIlaHfnc92Fv7Zt9PwcfrRTl3Zy9eiRbdgsi4XUTxJ/6YSQS6MjEDRpscnIFJELQTJnSThbXNSHQrinnWoYB/f2IZc9/habmd0w==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -292,7 +292,7 @@
       "url": "https://plugins.keeweb.info/translations/es-ES",
       "official": true,
       "manifest": {
-        "version": "1.2.0",
+        "version": "1.3.0",
         "manifestVersion": "0.1.0",
         "name": "language-spanish",
         "description": "Spanish language",
@@ -304,7 +304,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=es-ES",
         "resources": {
-          "loc": "UjP7Vut8Gik7q9+HNXVOVFC3dRYqmATCeBq6BM3XEpe8k7N/97Gq4okbtftHAp4/rretwUb22HNhETbQGMVFLUYfTBr6jNsptx1+b2LBFcWm2QPF2FCg2OEMSgnW8tVJSQHuIW9lsobJc9obxWWYveB/ocK9uhGLiG/J2KcFLGOZyAIg6czHpSDvfUvxlVrA6L9716Mj7IwSEX91ST9NNTYdAaQc+holdqlS0BqWByg8Ep04dKiWeNeRu+O3nEMlaq4uaqY6+GcRxmZsLR0myKgoKR2YVtXXnKgl2Rjy7NduBzJ77hXCs5Xu7RPOwdsxjawE0oqxj3uOWi4TB6EkBg=="
+          "loc": "Mq5nT1uy6Ctoqfvwq2F3WetDqNsAZnqK5RYE7cc/YcvWnTMfgMtzaCPwRl+VZ+100nBS7yfSgn4C5Pi2+OGaMQjojUZTYP6fB0KAnOWrjdixyJC/Rb7xyMAUvndpcBH6q5LtbNkOVCz4N/jz3q8SgEkwK+m1PuBCZoSnotL7cZPxAzfrcNiDmNVc4/ZVpRY85EsNCmL765h19squjTdnU++mhSNUR6Xw0dQpDTRCPIGPw0pg57WGA8F3UXi7kbf/Hew5xvdMKz/fdXpvSzSU/NFtSfyuHP8n15EQXFjo4Mm8Req6TUC7D4sQDY8jjgn5ys2ZTmJ0JNtJuvBwLIInBg=="
         },
         "locale": {
           "name": "es-ES",
