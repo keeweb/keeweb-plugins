@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "manifestVersion": "0.1.0",
   "name": "language-french",
   "description": "French language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=fr-FR",
   "resources": {
-    "loc": "tEBSg+LVrig41RRs7WnhjWq6RCJ4/ynZIOW488YfkCKh67c8ZmLZK1QsibQvQqsbN0OIp6ej7uVcwEHzMZ2tKzocR46fqlhby4vkJry2/0rvOkm+jDf2GkAhWJJnVtPnDzVvG0vGJabtBfwYS8W3eTOL9X37NbWqN9+5/YP3YMoc+p5moqwQJpudJT9nauPBmAeZb/rdz6JlsuGf/sccKFDRnaY6xV5HpjLP3ldutjzj00u//yTov1NKTeLSgSXgKRcns8JwBQbkVZfzo66xMdcUSIk6t4F8CcBia2x8i1T93lDAHqaL4l67ScMBT0S9sE2lc8Q1evPtPI/+BesIpg=="
+    "loc": "nsLxPEsGgFRUEU3O+BcqHbbHXnLFj26EX5krwp27+FyZ9UXl2c5rEG3Glh25zCcDf/20Tah77emzLQH5X1tDFecZWhyIg5v92EevCaoPbi9HOzIbV73HUZyP953oqCkAFIAieje4ekcbxPWO2HRM5xqiqB58u9Y7NPt4HrShel6sZyu96M2QTS7o0bd9BzeK8lvFLBZF2jtOM/Ipgx6yMtbjJ65beoeaWPQ2ntAGGNx8UTgkJaJrTuR6ptXPRiYSybDe/xWrnw3OwDR/i4C9/bNBdWjn2dlGd6BQT4mXUQd0dVVw8iADSZjyo3vFgVTuNeCoQiVQroitdCsTSnAAqw=="
   },
   "locale": {
     "name": "fr-FR",
