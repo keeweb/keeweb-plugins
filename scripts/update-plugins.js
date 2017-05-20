@@ -3,12 +3,14 @@ const crypto = require('crypto');
 
 console.log('Welcome to plugins updater');
 
+console.log('Loading...');
+
 const data = JSON.parse(fs.readFileSync('docs/plugins.json', 'utf8'));
 const privateKey = fs.readFileSync('keys/private-key.pem', 'binary');
 
-console.log('Updating metadata...');
-
-data.date = new Date().toISOString();
+data.signature = '';
+data.date = '';
+const oldData = JSON.stringify(data);
 
 console.log('Adding translations...');
 
@@ -26,9 +28,20 @@ for (const translation of Object.keys(allTranslations)) {
     }
 }
 
+console.log('Checking for changes...');
+
+const newData = JSON.stringify(data);
+if (newData === oldData) {
+    console.log('No changes');
+    process.exit(0);
+}
+
+console.log('Changes found, updating metadata...');
+
+data.date = new Date().toISOString();
+
 console.log('Signing...');
 
-data.signature = '';
 const dataToSign = JSON.stringify(data, null, 2);
 
 const sign = crypto.createSign('RSA-SHA256');
