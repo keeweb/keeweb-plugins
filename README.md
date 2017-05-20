@@ -8,7 +8,17 @@ You can add or edit translations at [OneSky](http://keeweb.oneskyapp.com/), they
 
 ## Scripts
 
+Download translations from OneSky and save as KeeWeb plugins:
 ```
 npm run-script translations
 ```
-Download translations from OneSky and save as KeeWeb plugins.
+
+Update plugin definitions:
+```
+npm run-script update
+```
+
+Update everything:
+```
+npm start
+```
