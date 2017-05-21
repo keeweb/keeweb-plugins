@@ -10,7 +10,7 @@ const AutoTypeFilter = require('auto-type/auto-type-filter');
 const Logger = require('util/logger');
 const Alerts = require('comp/alerts');
 
-const appModel = AutoType.appModel; // TODO: use AppModel.instance
+// const appModel = ...; TODO: use AppModel.instance
 
 const Version = '1.8.4.2';
 const KeyPrefix = 'plugin:keewebhttp:key_';
@@ -130,7 +130,7 @@ function encrypt(resp, value) {
 
 function verifyRequest(req) {
     if (req.Id && !keys[req.Id]) {
-        keys[req.Id] = appModel.settings.get(KeyPrefix + req.Id);
+        keys[req.Id] = AutoType.appModel.settings.get(KeyPrefix + req.Id);
     }
     const decrypted = decrypt(req, req.Verifier);
     if (decrypted !== req.Nonce) {
@@ -177,7 +177,7 @@ function associate(req) {
         });
     }).then(() => {
         const id = 'KeeWeb_' + new Date().toISOString() + '_' + crypto.randomBytes(16).toString('hex');
-        appModel.settings.set(KeyPrefix + id, req.Key);
+        AutoType.appModel.settings.set(KeyPrefix + id, req.Key);
         keys[id] = req.Key;
         fs.writeFileSync(path.join(__dirname, 'keys.json'), JSON.stringify(keys));
         return wrapResponse({
@@ -196,7 +196,7 @@ function getLogins(req, config) {
     const response = wrapResponse({
         RequestType: req.RequestType
     }, req.Id);
-    const filter = new AutoTypeFilter({ url }, appModel);
+    const filter = new AutoTypeFilter({ url }, AutoType.appModel);
     const entries = filter.getEntries();
     response.Count = entries.length;
     if (!config.onlyCount) {
