@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "manifestVersion": "0.1.0",
+  "name": "keewebhttp",
+  "description": "KeeWebHttp allows to use browser extensions with KeeWeb",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "http://keeweb.net"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/plugin/keewebhttp",
+  "resources": {
+    "js": "TBYsEeXIPNOFj+l5A11vpw6L1VotzpzmbYWQqRXO++fD2kevLkzWt0jx7xDxlZ0dRN3VzSxDUYqEHAYSgVn5ts/r6NXIOpPj7V2goR1TiknAymWhK59quEsaApcySO2oVtNo4UjZ3Kk34q2Mwlg2IiH1P5JhdjIb5cnQoN4gpSob0lbgCXnjUlZEPfZpOJ0zNtZpkE86OL1Lf2LrgzmauFXe+ColID4zNIP/6iGpPOnpe6FFqLMEgy5C4lkJ2/S0AHDAs49mzMKRhi+bcoh/PclrZ5hdqgUUIt0MNC1Wg0hxGHlHIpi+ObktARND9xcoMdZunzc/peUa91ZIC7n3Ig=="
+  },
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+}
