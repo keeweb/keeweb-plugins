@@ -2,8 +2,8 @@
   "zh-CN": {
     "name": "简体中文",
     "nameEn": "Chinese Simplified",
-    "count": 504,
-    "version": "1.3.0"
+    "count": 505,
+    "version": "1.4.0"
   },
   "pt-PT": {
     "name": "Português",
@@ -50,8 +50,8 @@
   "de-DE": {
     "name": "Deutsch",
     "nameEn": "German",
-    "count": 504,
-    "version": "1.2.0"
+    "count": 505,
+    "version": "1.3.0"
   },
   "it-IT": {
     "name": "Italiano",

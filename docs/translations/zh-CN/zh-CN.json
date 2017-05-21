@@ -496,6 +496,7 @@
   "setPlDevelopStart": "从这里开始",
   "setPlTranslate": "或者您也可以{}",
   "setPlTranslateLink": "将此应用翻译为您的语言",
+  "setPlAutoUpdate": "自动更新",
   "setAboutTitle": "关于",
   "setAboutBuilt": "此应用使用以下优秀工具构建",
   "setAboutLic": "许可",
