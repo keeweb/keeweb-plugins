@@ -4,6 +4,7 @@ const http = nodeRequire('http');
 const crypto = nodeRequire('crypto');
 const fs = nodeRequire('fs');
 const path = nodeRequire('path');
+const electron = nodeRequire('electron');
 
 const AutoType = require('auto-type/index');
 const AutoTypeFilter = require('auto-type/auto-type-filter');
@@ -13,7 +14,6 @@ const Alerts = require('comp/alerts');
 // const appModel = ...; TODO: use AppModel.instance
 
 const Version = '1.8.4.2';
-const KeyPrefix = 'plugin:keewebhttp:key_';
 const SignatureError = 'Request signature missing';
 
 const keys = {};
@@ -58,6 +58,16 @@ function init() {
         }
         logger.debug(`Server running at http://${hostname}:${port}/`);
     });
+    server.on('connection', function(conn) {
+        const key = conn.remoteAddress + ':' + conn.remotePort;
+        server.conn[key] = conn;
+        conn.on('close', () => {
+            if (server) {
+                delete server.conn[key];
+            }
+        });
+    });
+    server.conn = {};
 }
 
 function handleRequest(req) {
@@ -130,7 +140,7 @@ function encrypt(resp, value) {
 
 function verifyRequest(req) {
     if (req.Id && !keys[req.Id]) {
-        keys[req.Id] = AutoType.appModel.settings.get(KeyPrefix + req.Id);
+        // TODO: get key
     }
     const decrypted = decrypt(req, req.Verifier);
     if (decrypted !== req.Nonce) {
@@ -167,6 +177,7 @@ function testAssociate(req) {
 
 function associate(req) {
     verifyRequest(req);
+    electron.remote.app.getMainWindow().focus();
     return new Promise((resolve, reject) => {
         Alerts.yesno({
             header: 'Plugin Connecting',
@@ -177,7 +188,6 @@ function associate(req) {
         });
     }).then(() => {
         const id = 'KeeWeb_' + new Date().toISOString() + '_' + crypto.randomBytes(16).toString('hex');
-        AutoType.appModel.settings.set(KeyPrefix + id, req.Key);
         keys[id] = req.Key;
         fs.writeFileSync(path.join(__dirname, 'keys.json'), JSON.stringify(keys));
         return wrapResponse({
@@ -244,6 +254,9 @@ function generatePassword(req) {
 module.exports.uninstall = function() {
     if (server) {
         server.close();
+        for (const key of Object.keys(server.conn)) {
+            server.conn[key].destroy();
+        }
         server = null;
     }
     uninstalled = true;
