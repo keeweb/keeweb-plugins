@@ -14,7 +14,7 @@ const Alerts = require('comp/alerts');
 // const appModel = ...; TODO: use AppModel.instance
 
 const Version = '1.8.4.2';
-const SignatureError = 'Request signature missing';
+const DebugMode = true;
 
 const keys = {};
 
@@ -35,18 +35,24 @@ function init() {
             req.on('data', data => body.push(data));
             req.on('end', () => {
                 const postData = Buffer.concat(body).toString();
-                logger.debug('<', postData);
-                handleRequest(postData).then(result => {
-                    logger.debug('>', JSON.stringify(result));
-                    res.statusCode = 200;
-                    res.setHeader('Content-Type', 'application/json');
-                    res.end(JSON.stringify(result));
-                });
+                if (DebugMode) {
+                    logger.debug('< ' + postData);
+                }
+                new RequestContext(postData)
+                    .handle()
+                    .then(response => {
+                        if (DebugMode) {
+                            logger.debug('> ' + response);
+                        }
+                        res.statusCode = 200;
+                        res.setHeader('Content-Type', 'application/json');
+                        res.end(response);
+                    });
             });
         } else {
             res.statusCode = 200;
             res.setHeader('Content-Type', 'text/plain');
-            res.end('Nice to meet you! But you should POST here.');
+            res.end('Hey dude, you should POST here!');
         }
     });
     const port = 19455;
@@ -70,185 +76,207 @@ function init() {
     server.conn = {};
 }
 
-function handleRequest(req) {
-    try {
-        req = JSON.parse(req);
-        const response = executeRequest(req);
-        if (response instanceof Promise) {
-            return response.catch(e => {
-                return returnError(req, e);
-            });
-        } else {
-            return Promise.resolve(response);
+class RequestContext {
+    constructor(postData) {
+        this.postData = postData;
+    }
+
+    handle() {
+        let result;
+        try {
+            this.req = JSON.parse(this.postData);
+            const response = this.execute() || this.resp;
+            if (response instanceof Promise) {
+                result = response.catch(e => {
+                    return this.makeError(e);
+                });
+            } else {
+                result = Promise.resolve(response);
+            }
+        } catch (e) {
+            result = Promise.resolve(this.makeError(e));
         }
-    } catch (e) {
-        return returnError(req, e);
+        return result.then(res => JSON.stringify(res));
     }
-}
 
-function returnError(req, e) {
-    if (e !== SignatureError) {
+    execute() {
+        switch (this.req.RequestType) {
+            case 'test-associate':
+                return this.testAssociate();
+            case 'associate':
+                return this.associate();
+            case 'get-logins':
+                return this.getLogins({});
+            case 'get-logins-count':
+                return this.getLogins({ onlyCount: true });
+            case 'get-all-logins':
+                return this.getLogins({ all: true });
+            case 'set-login':
+                return this.setLogin();
+            case 'generate-password':
+                return this.generatePassword();
+            default:
+                throw 'Not implemented';
+        }
+    }
+
+    makeError(e) {
         logger.error('handleRequest error', e);
+        return {
+            Error: e ? e.toString() : '',
+            Success: false,
+            RequestType: this.req ? this.req.RequestType : '',
+            Version: Version
+        };
     }
-    return Promise.resolve({
-        Error: e ? e.toString() : '',
-        Success: false,
-        RequestType: req ? req.RequestType : '',
-        Version
-    });
-}
 
-function executeRequest(req) {
-    switch (req.RequestType) {
-        case 'test-associate':
-            return testAssociate(req);
-        case 'associate':
-            return associate(req);
-        case 'get-logins':
-            return getLogins(req, {});
-        case 'get-logins-count':
-            return getLogins(req, { onlyCount: true });
-        case 'get-all-logins':
-            return getLogins(req, { all: true });
-        case 'set-login':
-            return setLogin(req);
-        case 'generate-password':
-            return generatePassword(req);
-        default:
-            throw 'Not implemented';
+    decrypt(value) {
+        if (!this.aesKey) {
+            throw 'No key';
+        }
+        if (!this.req.Nonce) {
+            throw 'No nonce';
+        }
+        const key = Buffer.from(this.aesKey, 'base64');
+        const nonce = Buffer.from(this.req.Nonce, 'base64');
+        const decipher = crypto.createDecipheriv('aes-256-cbc', key, nonce);
+        return Buffer.concat([decipher.update(value, 'base64'), decipher.final()]).toString();
     }
-}
 
-function decrypt(req, value) {
-    const reqKey = keys[req.Id] || req.Key;
-    if (!reqKey || !req.Nonce || !req.Verifier) {
-        throw SignatureError;
-    }
-    const key = Buffer.from(reqKey, 'base64');
-    const nonce = Buffer.from(req.Nonce, 'base64');
-
-    const decipher = crypto.createDecipheriv('aes-256-cbc', key, nonce);
-    return Buffer.concat([decipher.update(value, 'base64'), decipher.final()]).toString();
-}
-
-function encrypt(resp, value) {
-    const key = Buffer.from(keys[resp.Id], 'base64');
-    const nonce = Buffer.from(resp.Nonce, 'base64');
-    const cipher = crypto.createCipheriv('aes-256-cbc', key, nonce);
-    return Buffer.concat([cipher.update(value, 'utf8'), cipher.final()]).toString('base64');
-}
-
-function verifyRequest(req) {
-    if (req.Id && !keys[req.Id]) {
-        // TODO: get key
-    }
-    const decrypted = decrypt(req, req.Verifier);
-    if (decrypted !== req.Nonce) {
-        throw 'Invalid signature';
-    }
-}
-
-function wrapResponse(resp, id) {
-    resp = Object.assign({
-        Success: true,
-        Nonce: '',
-        Verifier: '',
-        Version: Version
-    }, resp);
-    if (id && keys[id]) {
-        const key = Buffer.from(keys[id], 'base64');
-        const nonce = crypto.randomBytes(16);
+    encrypt(value) {
+        if (!this.aesKey) {
+            throw 'No key';
+        }
+        if (!this.resp || !this.resp.Nonce) {
+            throw 'No nonce';
+        }
+        const key = Buffer.from(this.aesKey, 'base64');
+        const nonce = Buffer.from(this.resp.Nonce, 'base64');
         const cipher = crypto.createCipheriv('aes-256-cbc', key, nonce);
-        const encrypted = Buffer.concat([cipher.update(nonce.toString('base64'), 'utf8'), cipher.final()]).toString('base64');
-        resp.Id = id;
-        resp.Nonce = nonce.toString('base64');
-        resp.Verifier = encrypted;
+        return Buffer.concat([cipher.update(value, 'utf8'), cipher.final()]).toString('base64');
     }
-    return resp;
-}
 
-function testAssociate(req) {
-    verifyRequest(req);
-    return wrapResponse({
-        RequestType: req.RequestType,
-        TriggerUnlock: req.TriggerUnlock
-    }, req.Id);
-}
+    getKeyById() {
+        return keys[this.req.Id];
+    }
 
-function associate(req) {
-    verifyRequest(req);
-    electron.remote.app.getMainWindow().focus();
-    return new Promise((resolve, reject) => {
-        Alerts.yesno({
-            header: 'Plugin Connecting',
-            body: 'A plugin is trying to connect to KeeWeb. If you are setting up your plugin, please allow the connection. ' +
-            'Otherwise, click No.',
-            success: () => { resolve(); },
-            cancel: () => { reject('Rejected'); }
+    saveKeyWithId() {
+        keys[this.req.Id] = this.req.Key;
+        // TODO
+    }
+
+    verifyRequest() {
+        if (!this.req.Verifier) {
+            throw 'No verifier';
+        }
+        if (!this.aesKey) {
+            this.aesKey = this.getKeyById();
+        }
+        const decrypted = this.decrypt(this.req.Verifier);
+        if (decrypted !== this.req.Nonce) {
+            throw 'Bad signature';
+        }
+    }
+
+    createResponse() {
+        const resp = {
+            Success: true,
+            Nonce: '',
+            Verifier: '',
+            Version: Version,
+            RequestType: this.req.RequestType
+        };
+        if (this.req.Id && keys[this.req.Id]) {
+            const key = Buffer.from(keys[this.req.Id], 'base64');
+            const nonce = crypto.randomBytes(16);
+            const cipher = crypto.createCipheriv('aes-256-cbc', key, nonce);
+            const encrypted = Buffer.concat([cipher.update(nonce.toString('base64'), 'utf8'), cipher.final()]).toString('base64');
+            resp.Id = this.req.Id;
+            resp.Nonce = nonce.toString('base64');
+            resp.Verifier = encrypted;
+        }
+        this.resp = resp;
+    }
+
+    testAssociate() {
+        if (!this.req.Id) {
+            return this.makeError('');
+        }
+        this.verifyRequest();
+        this.createResponse();
+    }
+
+    associate() {
+        if (this.req.Id) {
+            throw 'Id not expected';
+        }
+        if (!this.req.Key) {
+            throw 'No key';
+        }
+        this.aesKey = this.req.Key;
+        this.verifyRequest();
+        electron.remote.app.getMainWindow().focus();
+        return new Promise((resolve, reject) => {
+            Alerts.yesno({
+                header: 'External Connection',
+                body: 'Some app is trying to connect to KeeWeb. If you are setting up your plugin, please allow the connection. Otherwise, click No.',
+                success: () => { resolve(); },
+                cancel: () => { reject('Rejected by user'); }
+            });
+        }).then(() => {
+            this.req.Id = 'KeeWeb_' + new Date().toISOString() + '_' + crypto.randomBytes(16).toString('hex');
+            this.saveKeyWithId();
+            this.createResponse();
+            return this.resp;
         });
-    }).then(() => {
-        const id = 'KeeWeb_' + new Date().toISOString() + '_' + crypto.randomBytes(16).toString('hex');
-        keys[id] = req.Key;
-        fs.writeFileSync(path.join(__dirname, 'keys.json'), JSON.stringify(keys));
-        return wrapResponse({
-            RequestType: req.RequestType
-        }, id);
-    });
-}
-
-function getLogins(req, config) {
-    verifyRequest(req);
-    if (!req.Url) {
-        throw 'Invalid request';
     }
-    const url = decrypt(req, req.Url);
-    logger.debug('get-logins', url);
-    const response = wrapResponse({
-        RequestType: req.RequestType
-    }, req.Id);
-    const filter = new AutoTypeFilter({ url }, AutoType.appModel);
-    const entries = filter.getEntries();
-    response.Count = entries.length;
-    if (!config.onlyCount) {
-        response.Entries = entries.map(entry => ({
-            Login: entry.user ? encrypt(response, entry.user) : '',
-            Name: entry.title ? encrypt(response, entry.title) : '',
-            Password: entry.password ? encrypt(response, entry.password.getText()) : '',
+
+    getLogins(config) {
+        this.verifyRequest();
+        if (!this.req.Url) {
+            throw 'No url';
+        }
+        const url = this.decrypt(this.req.Url);
+        logger.debug('get-logins', url);
+        this.createResponse();
+        const filter = new AutoTypeFilter({ url }, AutoType.appModel);
+        const entries = filter.getEntries();
+        this.resp.Count = entries.length;
+        if (!config.onlyCount) {
+            this.resp.Entries = entries.map(entry => ({
+                Login: entry.user ? this.encrypt(entry.user) : '',
+                Name: entry.title ? this.encrypt(entry.title) : '',
+                Password: entry.password ? this.encrypt(entry.password.getText()) : '',
+                StringFields: null,
+                Uuid: this.encrypt(entry.id)
+            }));
+        }
+    }
+
+    setLogin() {
+        this.verifyRequest();
+        if (!this.req.Url || !this.req.Login || !this.req.Password) {
+            throw 'Invalid request';
+        }
+        const url = this.decrypt(this.req.Url);
+        const login = this.decrypt(this.req.Login);
+        const password = this.decrypt(this.req.Password);
+        logger.debug('set-login', url, login, password);
+        this.createResponse();
+    }
+
+    generatePassword() {
+        this.verifyRequest();
+        this.createResponse();
+        this.resp.Count = 1;
+        this.resp.Entries = [{
+            Login: '',
+            Name: '',
+            Password: this.encrypt('I am generated password: ' + new Date()),
             StringFields: null,
-            Uuid: encrypt(response, entry.id)
-        }));
+            Uuid: ''
+        }];
     }
-    return response;
-}
-
-function setLogin(req) {
-    verifyRequest(req);
-    if (!req.Url || !req.Login || !req.Password) {
-        throw 'Invalid request';
-    }
-    const url = decrypt(req, req.Url);
-    const login = decrypt(req, req.Login);
-    const password = decrypt(req, req.Password);
-    logger.debug('set-login', url, login, password);
-    return wrapResponse({
-        RequestType: req.RequestType
-    }, req.Id);
-}
-
-function generatePassword(req) {
-    verifyRequest(req);
-    const response = wrapResponse({
-        RequestType: req.RequestType
-    }, req.Id);
-    response.Count = 1;
-    response.Entries = [{
-        Login: '',
-        Name: '',
-        Password: encrypt(response, 'I am generated password: ' + new Date()),
-        StringFields: null,
-        Uuid: ''
-    }];
-    return response;
 }
 
 module.exports.uninstall = function() {
