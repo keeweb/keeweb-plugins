@@ -1,7 +1,5 @@
-let server;
-let uninstalled = false;
-
-setTimeout(run, 500);
+let uninstall;
+const timeout = setTimeout(run, 500);
 
 function run() {
     const nodeRequire = window.require;
@@ -25,7 +23,29 @@ function run() {
     const keys = {};
     const logger = new Logger('keewebhttp');
 
+    let uninstalled;
+    let server;
+
+    uninstall = function() {
+        uninstalled = true;
+        removeEventListeners();
+        stopServer();
+    };
+
+    addEventListeners();
     startServer();
+
+    function addEventListeners() {
+        AppModel.instance.files.on('add', fileOpened);
+    }
+
+    function removeEventListeners() {
+        AppModel.instance.files.off('add', fileOpened);
+    }
+
+    function fileOpened(e) {
+        console.log('file opened', e);
+    }
 
     function startServer() {
         if (uninstalled) {
@@ -76,6 +96,16 @@ function run() {
             });
         });
         server.conn = {};
+    }
+
+    function stopServer() {
+        if (server) {
+            server.close();
+            for (const key of Object.keys(server.conn)) {
+                server.conn[key].destroy();
+            }
+            server = null;
+        }
     }
 
     class RequestContext {
@@ -171,13 +201,17 @@ function run() {
         }
 
         getKeyById() {
-            // TODO
-            return keys[this.req.Id];
+            let key = keys[this.req.Id];
+            if (!key) {
+                key = ''; // TODO: read key
+                keys[this.req.Id] = key;
+            }
+            return key;
         }
 
         saveKeyWithId() {
             keys[this.req.Id] = this.req.Key;
-            // TODO
+            // TODO: write key
         }
 
         verifyRequest() {
@@ -236,8 +270,9 @@ function run() {
             electron.remote.app.getMainWindow().focus();
             return new Promise((resolve, reject) => {
                 Alerts.yesno({
+                    icon: 'plug',
                     header: 'External Connection',
-                    body: 'Some app is trying to connect to KeeWeb. If you are setting up your plugin, please allow the connection. Otherwise, click No.',
+                    body: 'Some app is trying to manage passwords in KeeWeb. If you are setting up your plugin, please allow the connection. Otherwise, click No.',
                     success: () => {
                         resolve();
                     },
@@ -247,7 +282,7 @@ function run() {
                 });
             }).then(() => {
                 this.req.Id = 'KeeWeb_' + new Date().toISOString() + '_' + crypto.randomBytes(16).toString('hex');
-                logger.info('associate: ', this.req.Id);
+                logger.info(`associate: ${this.req.Id}`);
                 this.saveKeyWithId();
                 this.createResponse();
                 return this.resp;
@@ -296,9 +331,10 @@ function run() {
             this.createResponse();
             const preset = GeneratorPresets.all.filter(p => p.default)[0] || GeneratorPresets.defaultPreset;
             const password = Generator.generate(preset);
+            const bits = Buffer.from(password, 'utf8').byteLength * 8;
             this.resp.Count = 1;
             this.resp.Entries = [{
-                Login: '',
+                Login: this.encrypt(bits.toString()),
                 Name: '',
                 Password: this.encrypt(password),
                 StringFields: null,
@@ -309,12 +345,9 @@ function run() {
 }
 
 module.exports.uninstall = function() {
-    if (server) {
-        server.close();
-        for (const key of Object.keys(server.conn)) {
-            server.conn[key].destroy();
-        }
-        server = null;
+    if (uninstall) {
+        uninstall();
+    } else {
+        clearTimeout(timeout);
     }
-    uninstalled = true;
 };
