@@ -10,7 +10,9 @@ function run() {
     const path = nodeRequire('path');
     const electron = nodeRequire('electron');
 
+    const kdbxweb = require('kdbxweb');
     const AppModel = require('models/app-model');
+    const EntryModel = require('models/entry-model');
     const AutoTypeFilter = require('auto-type/auto-type-filter');
     const Logger = require('util/logger');
     const Alerts = require('comp/alerts');
@@ -19,8 +21,12 @@ function run() {
 
     const Version = '1.8.4.2';
     const DebugMode = true;
+    const FileReadTimeout = 500;
+    const EntryTitle = 'KeePassHttp Settings';
+    const EntryFieldPrefix = 'AES Key: ';
 
     const keys = {};
+    const addedKeys = {};
     const logger = new Logger('keewebhttp');
 
     let uninstalled;
@@ -34,6 +40,7 @@ function run() {
 
     addEventListeners();
     startServer();
+    readAllKeys();
 
     function addEventListeners() {
         AppModel.instance.files.on('add', fileOpened);
@@ -41,10 +48,6 @@ function run() {
 
     function removeEventListeners() {
         AppModel.instance.files.off('add', fileOpened);
-    }
-
-    function fileOpened(e) {
-        console.log('file opened', e);
     }
 
     function startServer() {
@@ -112,6 +115,78 @@ function run() {
             }
             server = null;
         }
+    }
+
+    function fileOpened(file) {
+        setTimeout(() => {
+            readKeys(file);
+            writeAddedKeys(file);
+        }, FileReadTimeout);
+    }
+
+    function readAllKeys() {
+        AppModel.instance.files.forEach(file => readKeys(file));
+    }
+
+    function readKeys(file) {
+        if (uninstalled) {
+            return;
+        }
+        const entry = getSettingsEntry(file);
+        if (!entry) {
+            return;
+        }
+        for (const field of Object.keys(entry.fields)) {
+            if (field.startsWith(EntryFieldPrefix)) {
+                const key = field.replace(EntryFieldPrefix, '');
+                let value = entry.fields[field];
+                if (value && value.isProtected) {
+                    value = value.getText();
+                }
+                if (key && value && !keys[key]) {
+                    keys[key] = value;
+                }
+            }
+        }
+    }
+
+    function writeAddedKeysToAllFiles() {
+        AppModel.instance.files.forEach(file => {
+            writeAddedKeys(file);
+        });
+    }
+
+    function writeAddedKeys(file) {
+        if (uninstalled || !Object.keys(addedKeys).length) {
+            return;
+        }
+        let settingsEntry = getSettingsEntry(file);
+        if (!settingsEntry) {
+            settingsEntry = EntryModel.newEntry(file.get('groups').first(), file);
+            settingsEntry.setField('Title', EntryTitle);
+        }
+        for (const key of Object.keys(addedKeys)) {
+            const keyFieldName = EntryFieldPrefix + key;
+            const value = addedKeys[key];
+            let oldValue = settingsEntry.fields[keyFieldName];
+            if (oldValue && oldValue.isProtected) {
+                oldValue = oldValue.getText();
+            }
+            if (oldValue !== value) {
+                settingsEntry.setField(keyFieldName, kdbxweb.ProtectedValue.fromString(value));
+            }
+        }
+        file.reload();
+    }
+
+    function getSettingsEntry(file) {
+        let entry = null;
+        file.get('groups').first().forEachOwnEntry({ textLower: EntryTitle.toLowerCase() }, e => {
+            if (e.title === EntryTitle) {
+                entry = e;
+            }
+        });
+        return entry;
     }
 
     class RequestContext {
@@ -209,7 +284,6 @@ function run() {
         getKeyById() {
             let key = keys[this.req.Id];
             if (!key) {
-                key = ''; // TODO: read key
                 keys[this.req.Id] = key;
             }
             return key;
@@ -217,7 +291,8 @@ function run() {
 
         saveKeyWithId() {
             keys[this.req.Id] = this.req.Key;
-            // TODO: write key
+            addedKeys[this.req.Id] = this.req.Key;
+            writeAddedKeysToAllFiles();
         }
 
         verifyRequest() {
