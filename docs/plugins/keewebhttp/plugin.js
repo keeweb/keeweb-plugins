@@ -52,6 +52,16 @@ function run() {
             return;
         }
         server = http.createServer((req, res) => {
+            const origin = req.headers.origin;
+            const referer = req.headers.referrer || req.headers.referer;
+            if (req.method !== 'POST' || referer || origin && !origin.startsWith('chrome-extension://')) {
+                if (DebugMode) {
+                    logger.debug('Request dropped', req.method, req.url, req.headers);
+                }
+                req.client.destroy();
+                res.end();
+                return;
+            }
             if (req.method === 'POST') {
                 const body = [];
                 req.on('data', data => body.push(data));
@@ -71,10 +81,6 @@ function run() {
                             res.end(response);
                         });
                 });
-            } else {
-                res.statusCode = 200;
-                res.setHeader('Content-Type', 'text/plain');
-                res.end('Hey dude, you should POST here!');
             }
         });
         const port = 19455;
