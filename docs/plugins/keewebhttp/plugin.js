@@ -409,10 +409,32 @@ function run() {
             if (!this.req.Url || !this.req.Login || !this.req.Password) {
                 throw 'Invalid request';
             }
+            const uuid = this.req.Uuid ? this.decrypt(this.req.Uuid) : null;
             const url = this.decrypt(this.req.Url);
             const login = this.decrypt(this.req.Login);
             const password = this.decrypt(this.req.Password);
-            logger.info('setLogin', url, login, password);
+
+            if (uuid) {
+                let result = false;
+                AppModel.instance.files.forEach(file => {
+                    const entry = file.getEntry(file.subId(EntryUuid));
+                    if (entry) {
+                        if (entry.user !== login) {
+                            entry.setField('UserName', login);
+                        }
+                        if (!entry.password.equals(password)) {
+                            entry.setField('Password', kdbxweb.ProtectedValue.fromString(password));
+                        }
+                    }
+                    result = true;
+                });
+                logger.info(`setLogin(${url}, ${login}, ${password.length}): ${result}`);
+            } else {
+                logger.error(`setLogin(${url}, ${login}, ${password.length}): not implemented`);
+                // TODO: create entry
+            }
+            Backbone.trigger('refresh');
+
             this.createResponse();
         }
 
