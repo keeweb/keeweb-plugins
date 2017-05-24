@@ -10,6 +10,7 @@ function run() {
     const path = nodeRequire('path');
     const electron = nodeRequire('electron');
 
+    const Backbone = require('backbone');
     const kdbxweb = require('kdbxweb');
     const AppModel = require('models/app-model');
     const EntryModel = require('models/entry-model');
@@ -24,6 +25,7 @@ function run() {
     const FileReadTimeout = 500;
     const EntryTitle = 'KeePassHttp Settings';
     const EntryFieldPrefix = 'AES Key: ';
+    const EntryUuid = 'NGl6QIpbQcCfNol9Yj7LMQ==';
 
     const keys = {};
     const addedKeys = {};
@@ -163,6 +165,7 @@ function run() {
         let settingsEntry = getSettingsEntry(file);
         if (!settingsEntry) {
             settingsEntry = EntryModel.newEntry(file.get('groups').first(), file);
+            settingsEntry.entry.uuid = new kdbxweb.KdbxUuid(EntryUuid);
             settingsEntry.setField('Title', EntryTitle);
         }
         for (const key of Object.keys(addedKeys)) {
@@ -177,16 +180,11 @@ function run() {
             }
         }
         file.reload();
+        Backbone.trigger('refresh');
     }
 
     function getSettingsEntry(file) {
-        let entry = null;
-        file.get('groups').first().forEachOwnEntry({ textLower: EntryTitle.toLowerCase() }, e => {
-            if (e.title === EntryTitle) {
-                entry = e;
-            }
-        });
-        return entry;
+        return file.getEntry(file.subId(EntryUuid));
     }
 
     class RequestContext {
@@ -362,7 +360,7 @@ function run() {
                     }
                 });
             }).then(() => {
-                this.req.Id = 'KeeWeb_' + new Date().toISOString() + '_' + crypto.randomBytes(16).toString('hex');
+                this.req.Id = 'KeeWeb ' + new Date().toISOString();
                 logger.info(`associate: ${this.req.Id}`);
                 this.saveKeyWithId();
                 this.createResponse();
@@ -385,13 +383,24 @@ function run() {
             this.resp.Count = entries.length;
             logger.info(`getLogins(${url}): ${this.resp.Count}`);
             if (!config.onlyCount) {
-                this.resp.Entries = entries.map(entry => ({
-                    Login: entry.user ? this.encrypt(entry.user) : '',
-                    Name: entry.title ? this.encrypt(entry.title) : '',
-                    Password: entry.password ? this.encrypt(entry.password) : '',
-                    StringFields: null,
-                    Uuid: this.encrypt(entry.id)
-                }));
+                this.resp.Entries = entries.map(entry => {
+                    let customFields = null;
+                    for (const field of Object.keys(entry.fields)) {
+                        if (!customFields) {
+                            customFields = [];
+                        }
+                        const fieldKey = this.encrypt(field);
+                        const fieldValue = this.encrypt(entry.fields[field]);
+                        customFields.push({ Key: fieldKey, Value: fieldValue });
+                    }
+                    return {
+                        Login: entry.user ? this.encrypt(entry.user) : '',
+                        Name: entry.title ? this.encrypt(entry.title) : '',
+                        Password: entry.password ? this.encrypt(entry.password) : '',
+                        StringFields: customFields,
+                        Uuid: this.encrypt(entry.entry.uuid.id)
+                    };
+                });
             }
         }
 
