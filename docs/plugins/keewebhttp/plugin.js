@@ -6,8 +6,6 @@ function run() {
 
     const http = nodeRequire('http');
     const crypto = nodeRequire('crypto');
-    const fs = nodeRequire('fs');
-    const path = nodeRequire('path');
     const electron = nodeRequire('electron');
 
     const Backbone = require('backbone');
@@ -97,7 +95,7 @@ function run() {
             }
             logger.debug(`Server running at http://${hostname}:${port}/`);
         });
-        server.on('connection', function (conn) {
+        server.on('connection', conn => {
             const key = conn.remoteAddress + ':' + conn.remotePort;
             server.conn[key] = conn;
             conn.on('close', () => {
@@ -280,11 +278,7 @@ function run() {
         }
 
         getKeyById() {
-            let key = keys[this.req.Id];
-            if (!key) {
-                keys[this.req.Id] = key;
-            }
-            return key;
+            return keys[this.req.Id];
         }
 
         saveKeyWithId() {
