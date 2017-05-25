@@ -20,7 +20,7 @@ function run() {
     const GeneratorPresets = require('comp/generator-presets');
 
     const Version = '1.8.4.2';
-    const DebugMode = true;
+    const DebugMode = localStorage.keewebhttpDebug;
     const FileReadTimeout = 500;
     const EntryTitle = 'KeePassHttp Settings';
     const EntryFieldPrefix = 'AES Key: ';
@@ -232,13 +232,14 @@ function run() {
         }
 
         makeError(e, skipLog) {
+            const requestType = this.req && this.req.RequestType || '';
             if (!skipLog) {
-                logger.error('handleRequest error', e);
+                logger.error('handleRequest error', requestType, e);
             }
             return {
                 Error: e ? e.toString() : '',
                 Success: false,
-                RequestType: this.req ? this.req.RequestType : '',
+                RequestType: requestType,
                 Version: Version
             };
         }
@@ -417,9 +418,9 @@ function run() {
             const password = this.decrypt(this.req.Password);
 
             if (uuid) {
-                let result = false;
+                let result = 'not found';
                 AppModel.instance.files.forEach(file => {
-                    const entry = file.getEntry(file.subId(EntryUuid));
+                    const entry = file.getEntry(file.subId(uuid));
                     if (entry) {
                         if (entry.user !== login) {
                             entry.setField('UserName', login);
@@ -428,11 +429,11 @@ function run() {
                             entry.setField('Password', kdbxweb.ProtectedValue.fromString(password));
                         }
                     }
-                    result = true;
+                    result = 'updated';
                 });
                 logger.info(`setLogin(${url}, ${login}, ${password.length}): ${result}`);
             } else {
-                logger.error(`setLogin(${url}, ${login}, ${password.length}): not implemented`);
+                logger.info(`setLogin(${url}, ${login}, ${password.length}): inserted`);
                 let group, file;
                 AppModel.instance.files.forEach(f => {
                     f.forEachGroup(g => {
