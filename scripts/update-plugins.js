@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const fs = require('fs');
 const crypto = require('crypto');
 
@@ -25,6 +27,16 @@ for (const translation of Object.keys(allTranslations)) {
         data.plugins.splice(ix, 1, pluginMeta);
     } else {
         data.plugins.push(pluginMeta);
+    }
+}
+
+console.log('Updating plugins...');
+for (const plugin of data.plugins) {
+    if (plugin.manifest.locale) {
+        continue;
+    }
+    if (plugin.official) {
+        plugin.manifest = JSON.parse(fs.readFileSync(`docs/plugins/${plugin.manifest.name}/manifest.json`, 'utf8'));
     }
 }
 
