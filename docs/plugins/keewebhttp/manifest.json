@@ -1,5 +1,5 @@
 {
-  "version": "0.0.8",
+  "version": "0.1.0",
   "manifestVersion": "0.1.0",
   "name": "keewebhttp",
   "description": "KeeWebHttp allows to use browser extensions with KeeWeb",
