@@ -12,6 +12,7 @@ function run() {
     const kdbxweb = require('kdbxweb');
     const AppModel = require('models/app-model');
     const EntryModel = require('models/entry-model');
+    const GroupModel = require('models/group-model');
     const AutoTypeFilter = require('auto-type/auto-type-filter');
     const Logger = require('util/logger');
     const Alerts = require('comp/alerts');
@@ -24,6 +25,7 @@ function run() {
     const EntryTitle = 'KeePassHttp Settings';
     const EntryFieldPrefix = 'AES Key: ';
     const EntryUuid = 'NGl6QIpbQcCfNol9Yj7LMQ==';
+    const CreatePasswordsGroupTitle = 'KeePassHttp Passwords';
 
     const keys = {};
     const addedKeys = {};
@@ -425,7 +427,27 @@ function run() {
                 logger.info(`setLogin(${url}, ${login}, ${password.length}): ${result}`);
             } else {
                 logger.error(`setLogin(${url}, ${login}, ${password.length}): not implemented`);
-                // TODO: create entry
+                let group, file;
+                AppModel.instance.files.forEach(f => {
+                    f.forEachGroup(g => {
+                        if (g.get('title') === CreatePasswordsGroupTitle) {
+                            group = g;
+                            file = f;
+                        }
+                    });
+                });
+                if (!group) {
+                    file = AppModel.instance.files.first();
+                    group = GroupModel.newGroup(file.get('groups').first(), file);
+                    group.setName(CreatePasswordsGroupTitle);
+                }
+                const entry = EntryModel.newEntry(group, file);
+                const domain = url.match(/^(?:\w+:\/\/)?(?:(?:www|wwws|secure)\.)?([^\/]+)\/?(?:.*)/);
+                const title = domain && domain[1] || 'Saved Password';
+                entry.setField('Title', title);
+                entry.setField('URL', url);
+                entry.setField('UserName', login);
+                entry.setField('Password', kdbxweb.ProtectedValue.fromString(password));
             }
             Backbone.trigger('refresh');
 
