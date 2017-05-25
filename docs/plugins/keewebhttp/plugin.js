@@ -369,6 +369,12 @@ function run() {
             if (!this.req.Url && !config.all) {
                 throw 'No url';
             }
+            if (!AppModel.instance.files.hasOpenFiles()) {
+                if (this.req.TriggerUnlock === true) {
+                    electron.remote.app.getMainWindow().focus();
+                }
+                return this.makeError('Locked', true);
+            }
             const url = this.req.Url ? this.decrypt(this.req.Url) : '';
             this.createResponse();
             const filter = new AutoTypeFilter({url}, AppModel.instance);
