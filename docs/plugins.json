@@ -1,6 +1,6 @@
 {
-  "date": "2017-05-25T17:26:07.564Z",
-  "signature": "IQDUXBDcOgM/akEcLq1x6gOZg2TL1/ovUE7gJYEeeXP9Xfba054/m3sIQMqhBhpZ/cMY6tlcNfiI2Qfk0QNbCbtBo/VypB4xVARrgpOgriyhAP4f67GmbcZ38MiuSwqdLlfsHfxKrHhcEAegBwCQ+fd+Okgs3ccMTiwYq8db9hZkqnSwE4/YTaecK6l94uaSy4Bv+Or+o7Jbl+/JQyauDUS90GpZPn5XlFd4Tg524gmJr4/AmXr4JytptYW+JmSvhWLbjYstLNIsurtJXFaqxQpDI4K2+wKSZeFWhWhKTrNeKb5hg+a4tzCeNuBwnmCy0bZ2Qr0JEtmChdPCKXfH2w==",
+  "date": "2017-05-25T17:29:22.411Z",
+  "signature": "TqFhTrvmdzOTgI/0tkwH2vlAaXaSwXbZXHkfrzh1BUUOMh2tJjBLGi3lIbSrZ07h49UbHleTdoiD/UZDPpqPaO0NmmjPklqWTgYRE3hR7dk3C7ynNaGAsiPPSph22my0PDoiSRrvmuDaFyF+9DIu2oo3C5cToA/w6P0JdKoapKplW8U8IVDXSdoT8JQouTn7X4JqizSOOhBwHAgxyEB8mv8D9eQgg0FCV2ZE8bKQ0u3wEP8EIFd450sA6uA7CFNpXgOR285NJsspNVmX/yd9NlPG/u9wmzdKsK5B5R00IeI1yGJyVeEKqaIlxfLDUexSI1L1BeBrQ2+7tvu9C1Vq6Q==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -338,6 +338,28 @@
           "flag": "🇸🇪"
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/keewebhttp",
+      "official": true,
+      "manifest": {
+        "version": "0.1.0",
+        "manifestVersion": "0.1.0",
+        "name": "keewebhttp",
+        "description": "KeeWebHttp allows to use browser extensions with KeeWeb",
+        "author": {
+          "name": "KeeWeb",
+          "email": "antelle.net@gmail.com",
+          "url": "http://keeweb.net"
+        },
+        "licence": "MIT",
+        "url": "https://plugins.keeweb.info/plugins/keewebhttp",
+        "resources": {
+          "js": "lRwDBuKMwB93fa13+JILmRCxqKXgaIUxenXv0TAWRjZV6LuX6tFlon7P/AqeuVtr60VCshSKN6Nt3X1px1/nnW6OUrBYDcFEw9dqLjaKz5AtxAwaoD+PKYaqu4QJbiO5CyX21iGVrDNEStIGh7z3s6LyCnZYJogOGXmSlZkXSHWh6NQFA/lCadKtsrP0DrPdQCmizgpLmEfMfNaJtoSGHZt7gz0Ia0qnlr6IlZZMUPpx+uLqWC6wTeWyEdhvGdWiErv5i3A+TvLuyLH1cqmxq1C8Z1hI8NoMeCLScH6iLHrR1Re2+zepgM6dTdWx5O3a+2V8C+UHn4goRLCvCIE0gw=="
+        },
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+        "desktop": true
       }
     }
   ]
