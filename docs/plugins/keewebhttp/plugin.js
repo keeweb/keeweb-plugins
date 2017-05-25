@@ -371,7 +371,7 @@ function run() {
                 throw 'No url';
             }
             if (!AppModel.instance.files.hasOpenFiles()) {
-                if (this.req.TriggerUnlock === true) {
+                if (this.req.TriggerUnlock === true || this.req.TriggerUnlock === 'true') {
                     electron.remote.app.getMainWindow().focus();
                 }
                 return this.makeError('Locked', true);
