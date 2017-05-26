@@ -19,6 +19,7 @@ function run() {
     const Generator = require('util/password-generator');
     const GeneratorPresets = require('comp/generator-presets');
 
+    const ServerPort = 19455;
     const Version = '1.8.4.2';
     const DebugMode = localStorage.keewebhttpDebug;
     const FileReadTimeout = 500;
@@ -88,7 +89,7 @@ function run() {
                 });
             }
         });
-        const port = 19455;
+        const port = ServerPort;
         const hostname = '127.0.0.1';
         server.listen(port, hostname, () => {
             if (uninstalled) {
