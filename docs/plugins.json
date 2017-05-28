@@ -1,6 +1,6 @@
 {
-  "date": "2017-05-28T11:21:11.834Z",
-  "signature": "PKJmqNXECw753Mmg29OzzED33/cT2MCZeBCwdubEdwXDrf8GWILpeUZ7/retFixQMkswEPYu6xOx43Ldj/Lsz5IHtHCbZVXGIejojFRiYT8TgBkk5nD53u7K7KamPURYxHI/kuzcGD+c6lrYKt9yqFqy9KG7G0QbZyxzTCefG1iwWYSkhpxnyXy+XbmuSR9XG9fSjXULIqrYZzRgvTddRUkUdeaO8UiOslAGHaT2XgtGWA0kJE7alzPoqUomr5aLMKKgcfliWChsyKxgmPa8IbNKnoGmSfvI2cJOUd43OSTjLksrgWLS130jYJUVajRwVxKSLXM9XOFoIyV4clo9ug==",
+  "date": "2017-05-28T11:27:01.334Z",
+  "signature": "zCqqCK9b0TygiOVt6h/Txw4V4WCPDCWFAEvY16ZvH5HC2h9tM+9+2uQrvDxOBZ8ln5ZKD0kuwUc6W1L3Kez+iFo02m5tJNQVr3ExTvWyLFNkfz4ssjElbVZZSZ9yPUcl+p/Qpb8OpBt7WdgV4JRK0LLXumNpXGju+eTgEdRmixVSaw4Yvh/MhC4DnsQpBdSFSoK42cfbU0txsXSw8Yjsv6OdFuyjWpDsNFUfq/OnJPkV53bmYaeGiHkDUdmVjeD6vKt0d2djDALUluG0XVq2IPbtZjfjaBjjMc3r3fI3ZvNnTItc/ti2V82MlZrcG9NzOHBnjl/7jVTQ5jdWWOMI7w==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -382,7 +382,8 @@
         },
         "locale": {
           "name": "uk",
-          "title": "Українська"
+          "title": "Українська",
+          "flag": "🇺🇦"
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
       }
