@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "manifestVersion": "0.1.0",
   "name": "language-korean",
   "description": "Korean language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=ko",
   "resources": {
-    "loc": "vZ3DWp3Z155ayKmDZI214LYhoR5n1CAHvYWSghm2tDWPXstPbcepJVRJG5zpKuC1Uj7ZSOYSSKm5Nyxs2EU8wYCiIKKoWReWt6IkOTJzi3jqqfJfCvmenqHldbFsyWqAX1JLeFqtRNYEVOCepfDIsNOmteZc09pkcc5wRxeF2nV5fV0+vB4vgEYkCk1xxX7bWV3OJ31440S17qPEG5yOpHN+sTWENgqAoQr7TbWUT/tOVGSR0ECBHRekdZ6PjQmzFZDjY0u4/D+Y6I1q+ZY1uRFCQgMH6/+ZmrSJSw/+o3QrkB3DNlzR99eWT6PRdjCXPvkbGoYkNW4J0MmF90PawA=="
+    "loc": "Lx0cN3H5+9125DKT8xbODrTXjdCYwiTBx4mHtlDvFlkSgUlc8oVOrGjo6g8rdAbQ3fkjDkpLtmgK63yBn3fzzP7GMeAG0k8ATpvxXlaOe43Y4UQH4H7Vd91IQzZGuthq+Hl2+yYKHSuRd7mnsBqnzOb+eyIFsBZ5xSX0KmZZddQESa+tekUDj4sX8fvPmNSutGs7k2x75AqCFNvvXA+w7llQe2xb5q82MbmrBoacUiGYsULfFLYlmyE+JsSRgLbxmEeSFHt7a8Br1WlqK+gcPOd69bLPMLmb8V6rMK8whF/dQ6qJyaQ4C+d2OvftTnePFnkU6zOkd7QB9nSMfnB4Yw=="
   },
   "locale": {
     "name": "ko",

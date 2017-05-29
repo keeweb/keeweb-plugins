@@ -496,6 +496,8 @@
   "setPlDevelopStart": "Inizia qui",
   "setPlTranslate": "Oppure puoi {}",
   "setPlTranslateLink": "tradurre l'applicazione nella tua lingua",
+  "setPlAutoUpdate": "Aggiorna automaticamente",
+  "setPlLoadGallery": "Carica galleria plugin",
   "setAboutTitle": "Info su",
   "setAboutBuilt": "Questa applicazione è fatta con questi magnifici strumenti",
   "setAboutLic": "Licenza",
