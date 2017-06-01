@@ -2,8 +2,8 @@
   "zh-CN": {
     "name": "简体中文",
     "nameEn": "Chinese Simplified",
-    "count": 505,
-    "version": "1.4.0"
+    "count": 506,
+    "version": "1.5.0"
   },
   "pt-PT": {
     "name": "Português",
@@ -69,7 +69,7 @@
     "name": "Русский",
     "nameEn": "Russian",
     "count": 506,
-    "version": "1.4.0"
+    "version": "1.5.0"
   },
   "es-ES": {
     "name": "Español",
