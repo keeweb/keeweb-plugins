@@ -1,14 +1,13 @@
 /* eslint-disable no-console */
 
 const fs = require('fs');
-const crypto = require('crypto');
+const sign = require('./sign');
 
 console.log('Welcome to plugins updater');
 
 console.log('Loading...');
 
 const data = JSON.parse(fs.readFileSync('docs/plugins.json', 'utf8'));
-const privateKey = fs.readFileSync('keys/private-key.pem', 'binary');
 
 data.signature = '';
 data.date = '';
@@ -54,14 +53,13 @@ data.date = new Date().toISOString();
 
 console.log('Signing...');
 
-const dataToSign = JSON.stringify(data, null, 2);
+const dataToSign = Buffer.from(JSON.stringify(data, null, 2));
 
-const sign = crypto.createSign('RSA-SHA256');
-sign.write(new Buffer(dataToSign));
-sign.end();
-
-data.signature = sign.sign(privateKey).toString('base64');
-
-fs.writeFileSync('docs/plugins.json', JSON.stringify(data, null, 2));
-
-console.log('Done');
+sign(dataToSign).then(signature => {
+    data.signature = signature.toString('base64');
+    fs.writeFileSync('docs/plugins.json', JSON.stringify(data, null, 2));
+    console.log('Done');
+}).catch(err => {
+    console.error('Sign error', err);
+    process.exit(1);
+});
