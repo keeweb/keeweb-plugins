@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/keeweb/keeweb-plugins#readme",
   "devDependencies": {
-    "keychain": "^1.3.0",
+    "keytar": "^4.0.3",
     "pkcs15-smartcard-sign": "^1.0.0"
   }
 }
