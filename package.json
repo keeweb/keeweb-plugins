@@ -7,9 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "node --harmony-async-await scripts/start.js",
-    "update": "node --harmony-async-await scripts/update-plugins.js",
-    "translations": "node --harmony-async-await scripts/download-translations.js"
+    "start": "node scripts/start.js",
+    "update": "node scripts/update-plugins.js",
+    "translations": "node scripts/download-translations.js"
   },
   "repository": {
     "type": "git",
