@@ -3,6 +3,7 @@ const signer = require('pkcs15-smartcard-sign');
 const keychain = require('keychain');
 
 const verifyKey = fs.readFileSync('keys/public-key.pem');
+const key = '02';
 
 function getPin() {
     if (getPin.pin) {
@@ -21,5 +22,5 @@ function getPin() {
 }
 
 module.exports = function sign(data) {
-    return getPin().then(pin => signer.sign({ data, verifyKey, pin }).then(data => data.toString('base64')));
+    return getPin().then(pin => signer.sign({ data, verifyKey, pin, key }).then(data => data.toString('base64')));
 };
