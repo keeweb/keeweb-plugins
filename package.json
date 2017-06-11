@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "update": "node scripts/update-plugins.js",
-    "translations": "node scripts/download-translations.js"
+    "translations": "node scripts/download-translations.js",
+    "watch-plugin": "node ../keeweb/plugins/keeweb-plugin/keeweb-plugin.js watch docs/plugins/keewebhttp/ --bump-version --signer-module=/Users/Antelle/Projects/keeweb/keeweb-plugins/scripts/sign.js "
   },
   "repository": {
     "type": "git",
