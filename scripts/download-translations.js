@@ -105,10 +105,20 @@ module.exports = function() {
             }
             const langPhraseCount = Object.keys(languageTranslations).length;
             const percentage = Math.round(langPhraseCount / totalPhraseCount * 100);
-            const included = percentage >= PHRASE_COUNT_THRESHOLD_PERCENT;
-            const action = included ? '\x1b[36mOK\x1b[0m' : '\x1b[35mSKIP\x1b[0m';
+            let skip = percentage >= PHRASE_COUNT_THRESHOLD_PERCENT ? null : 'SKIP';
+
+            let languageJson = JSON.stringify(languageTranslations, null, 2);
+            if (!skip && fs.existsSync(`docs/translations/${lang}/${lang}.json`)) {
+                const oldJson = fs.readFileSync(`docs/translations/${lang}/${lang}.json`, { encoding: 'utf8' });
+                if (oldJson === languageJson) {
+                    skip = 'NO CHANGES';
+                }
+            }
+
+            const action = skip ? `\x1b[35m${skip}\x1b[0m` : '\x1b[36mOK\x1b[0m';
+
             console.log(`[${lang}] ${langPhraseCount} / ${totalPhraseCount} (${percentage}%) -> ${action}`);
-            if (included) {
+            if (!skip) {
                 langCount++;
                 for (const name of Object.keys(languageTranslations)) {
                     let text = languageTranslations[name];
@@ -142,17 +152,18 @@ module.exports = function() {
                         errors++;
                     }
                     if (text.indexOf('{}') >= 0 && enText.indexOf('{}') < 0) {
-                        const textHl = text.replace(/\{}/g, '\x1b[31m{}\x1b[0m');
+                        const textHl = text.replace(/{}/g, '\x1b[31m{}\x1b[0m');
                         console.error(`[${lang}]    \x1b[31mERROR:{}\x1b[0m ${name}: ${textHl}`);
                         errors++;
                     }
                     if (enText.indexOf('{}') >= 0 && text.indexOf('{}') < 0) {
-                        const enTextHl = enText.replace(/\{}/g, '\x1b[31m{}\x1b[0m');
+                        const enTextHl = enText.replace(/{}/g, '\x1b[31m{}\x1b[0m');
                         console.error(`[${lang}]    \x1b[31mERROR:NO{}\x1b[0m ${name}: ${text} <--> ${enTextHl}`);
                         errors++;
                     }
                 }
-                const languageJson = JSON.stringify(languageTranslations, null, 2);
+
+                languageJson = JSON.stringify(languageTranslations, null, 2);
 
                 const data = Buffer.from(languageJson);
                 const signature = await sign(data).catch(e => {
