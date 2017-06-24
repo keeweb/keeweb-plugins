@@ -1,6 +1,6 @@
 {
-  "date": "2017-06-05T09:38:55.297Z",
-  "signature": "Xgr5uZXjq9zKHQL0GhePtYNb3kx7VSbfCQHtVtwnqkUNQOWvQJJ+n6R3l1TvLFzwpST7LlVLHS5YNwLfFAw9EIn0fh9nGNSwwYGZ7Td91y36inqQ87KY6LKoXjdm55Wz75kPvuAfNsJZn06/s7cZZN5Tx1sK3z3W9yr0ZE1qq+CBA3cuEzlAneKoH8xJUU4jOWmo+OihnQmjB7s+0RnNRmSp073IXpZzDCxdNrOn+rf0CnaGwVzJc6sbP015+t0GA28i/j1TE7SBpzYTOJ2lq226mf3pccSM8BC7LRXF7+z9pSFRXOOH1jZD8XPRva+7GIpZGkodpWaPlEo1COZ6kg==",
+  "date": "2017-06-24T06:03:34.480Z",
+  "signature": "MvRBuDft9YayG9Cmm+SeQmvuJdqKfAjRXS/ESyQVQJj2zJiaT8+g4XcKM4bOs/bgkmkbubCrymN2vbi89oXructIG+j+zVKC9g0NPIPgms59sqDtBU9UKtCFvCmR+56H3Gim3hMgdp49ZAdtCqO6qgrBZuK73+vnOHJWcNc2NcS6/LEnH8enNTcat81oQsaOVXdKNGI9OqcgSkrR0/EdWJdOYlcgPPyUqeww5RqZKpDQhP2KU+6k7aVdLDuXbhcHFfRbUWiiI5PhieXy3HjPXCqRL9sSChhvBwLeGGkf4snQ8cgXYFEkug3ViDtF5JkFyjnGuvHdYXih501Vg5fMDg==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -266,7 +266,7 @@
       "url": "https://plugins.keeweb.info/translations/ru-RU",
       "official": true,
       "manifest": {
-        "version": "1.5.0",
+        "version": "1.6.0",
         "manifestVersion": "0.1.0",
         "name": "language-russian",
         "description": "Russian language",
@@ -278,7 +278,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=ru-RU",
         "resources": {
-          "loc": "mqiK82nUd0hZYCGup1bGipLu9B5VdY02BccVnbbDm+vRiCju+12N79b5tZWaBnAvVAwBKfbcJ9TvTcs87sGcWQ80Q+WwlKHo6z7X/ZVCd6PbCv66kVHq5oeot7y6FOHvy0BwsLewceWkLWAJYaFW+BrlAJFTUGXU+VCSMc4+zCXSFtdgtogQ4f3en2givLu4K2S7kElwLwoGS9W02M4A0jflSG99fFhB2VyFnxU8Arh1X0KW+81BApMkVWodTw3AgR6YbynVFHn5OA8umr9Lj3/HPZ/CpcR6Ztvf6IqdsVTrvuqo2vf0nSp3ssiCPPZ7eqDcjz2BamGXj2fgjxRGZA=="
+          "loc": "s0U6S4H2iQDNJHr9oZp3yaUUwn1OQasP+1GOp21Lkhuf+RL79ahzZpb9k7AJwGqU4uN5/wWb89wirG5kZsv1VwkylIL2CnmM4BA9uc+itzY88Cn3/aL52WjfUJtVtkkhynRfbC4xqy0E2UrUsEzT9fFUC/R/FoohVaW+hkDInUDSNJkE71Ly5KCvh9v59FQdG1kZlJqt0lumiNrS/CAweunzQe5sSTWpdynuS5cmE2le3aYsg03GMciguutluxmumaNmXhN7I0AZSxJ3h4YOlCtT3Bt18F9j87rh4xjTqoWpJuNRLQ5M+tf5AQtnXzs3O2eyL80INh3TV+f8wq/gPw=="
         },
         "locale": {
           "name": "ru-RU",
