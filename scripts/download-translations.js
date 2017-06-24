@@ -101,7 +101,7 @@ module.exports = function() {
         for (const lang of Object.keys(translations)) {
             const languageTranslations = translations[lang].translation;
             if (lang === 'en-US' || !languageTranslations) {
-                return;
+                continue;
             }
             const langPhraseCount = Object.keys(languageTranslations).length;
             const percentage = Math.round(langPhraseCount / totalPhraseCount * 100);
