@@ -118,7 +118,18 @@ module.exports = function() {
             const action = skip ? `\x1b[35m${skip}\x1b[0m` : '\x1b[36mOK\x1b[0m';
 
             console.log(`[${lang}] ${langPhraseCount} / ${totalPhraseCount} (${percentage}%) -> ${action}`);
-            if (!skip) {
+
+            const langInfo = languages.data.filter(x => x.code === lang)[0];
+            const region = (defaultCountries[langInfo.region] || langInfo.region).toLowerCase();
+            const langName = langInfo.locale === region ? langInfo.local_name.replace(/\s*\(.*\)/, '') : langInfo.local_name;
+            const langNameEn = langInfo.locale === region ? langInfo.english_name.replace(/\s*\(.*\)/, '') : langInfo.english_name;
+
+            if (skip) {
+                skipCount++;
+                if (skip !== 'SKIP') {
+                    meta[lang] = {name: langName, nameEn: langNameEn, count: langPhraseCount};
+                }
+            } else {
                 langCount++;
                 for (const name of Object.keys(languageTranslations)) {
                     let text = languageTranslations[name];
@@ -171,10 +182,6 @@ module.exports = function() {
                     process.exit(1);
                 });
 
-                const langInfo = languages.data.filter(x => x.code === lang)[0];
-                const region = (defaultCountries[langInfo.region] || langInfo.region).toLowerCase();
-                const langName = langInfo.locale === region ? langInfo.local_name.replace(/\s*\(.*\)/, '') : langInfo.local_name;
-                const langNameEn = langInfo.locale === region ? langInfo.english_name.replace(/\s*\(.*\)/, '') : langInfo.english_name;
                 meta[lang] = {name: langName, nameEn: langNameEn, count: langPhraseCount};
 
                 if (fs.existsSync(`docs/translations/${lang}`)) {
@@ -204,8 +211,6 @@ module.exports = function() {
                     );
                     meta[lang].version = '1.0.0';
                 }
-            } else {
-                skipCount++;
             }
         }
         console.log(`Done: ${langCount} written, ${skipCount} skipped, ${errors} errors`);
