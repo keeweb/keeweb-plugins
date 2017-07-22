@@ -1,8 +1,77 @@
 {
+  "zh-CN": {
+    "name": "简体中文",
+    "nameEn": "Chinese Simplified",
+    "count": 506
+  },
+  "pt-PT": {
+    "name": "Português",
+    "nameEn": "Portuguese",
+    "count": 450
+  },
+  "ko": {
+    "name": "한국어",
+    "nameEn": "Korean",
+    "count": 506
+  },
+  "cs": {
+    "name": "Čeština",
+    "nameEn": "Czech",
+    "count": 394
+  },
+  "pl": {
+    "name": "Polski",
+    "nameEn": "Polish",
+    "count": 506
+  },
+  "hu": {
+    "name": "Magyar",
+    "nameEn": "Hungarian",
+    "count": 460
+  },
+  "uk": {
+    "name": "Українська",
+    "nameEn": "Ukrainian",
+    "count": 506
+  },
+  "no": {
+    "name": "Norsk",
+    "nameEn": "Norwegian",
+    "count": 506
+  },
+  "nl-NL": {
+    "name": "Nederlands",
+    "nameEn": "Dutch",
+    "count": 506
+  },
+  "fr-FR": {
+    "name": "Français",
+    "nameEn": "French",
+    "count": 506
+  },
+  "de-DE": {
+    "name": "Deutsch",
+    "nameEn": "German",
+    "count": 506
+  },
+  "it-IT": {
+    "name": "Italiano",
+    "nameEn": "Italian",
+    "count": 506
+  },
   "ru-RU": {
     "name": "Русский",
     "nameEn": "Russian",
-    "count": 506,
-    "version": "1.6.0"
+    "count": 506
+  },
+  "es-ES": {
+    "name": "Español",
+    "nameEn": "Spanish",
+    "count": 506
+  },
+  "sv-SE": {
+    "name": "Svenska",
+    "nameEn": "Swedish",
+    "count": 460
   }
 }

@@ -1,6 +1,6 @@
 {
-  "date": "2017-06-24T06:03:34.480Z",
-  "signature": "MvRBuDft9YayG9Cmm+SeQmvuJdqKfAjRXS/ESyQVQJj2zJiaT8+g4XcKM4bOs/bgkmkbubCrymN2vbi89oXructIG+j+zVKC9g0NPIPgms59sqDtBU9UKtCFvCmR+56H3Gim3hMgdp49ZAdtCqO6qgrBZuK73+vnOHJWcNc2NcS6/LEnH8enNTcat81oQsaOVXdKNGI9OqcgSkrR0/EdWJdOYlcgPPyUqeww5RqZKpDQhP2KU+6k7aVdLDuXbhcHFfRbUWiiI5PhieXy3HjPXCqRL9sSChhvBwLeGGkf4snQ8cgXYFEkug3ViDtF5JkFyjnGuvHdYXih501Vg5fMDg==",
+  "date": "2017-07-22T07:30:39.357Z",
+  "signature": "imQnxy1q8ji2OLVo2x/1dkO7LNMMxJXPytkZbl/fJZC4eiGV9ky0zwhD2ctE10Aabz5epTvoShWOP5o7iiXyL55IAGODkZxQ+hyXjwIqBUfCdK6YBkd1W7t/5rgvfaWbfLQCmJXNblUVhYD5JujW74vhE98PfwS/4SnAcKRiC9XbQcpKdb+mI7nnHQxIUqK3a1MV/ciDuiOCcjK4yjY1h6Pob6yOjmWZdOYSzmx7clLxnjDCgacFUogUYsGeW6DDQjnyagqbSItKqiOgMs+2un9sglfLh2b5jLVGMoL4iOniMEqYfB7vmSNyULSjhExTYuFf4zutOk/FYCjOIUN91w==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -266,7 +266,7 @@
       "url": "https://plugins.keeweb.info/translations/ru-RU",
       "official": true,
       "manifest": {
-        "version": "1.6.0",
+        "version": "1.7.0",
         "manifestVersion": "0.1.0",
         "name": "language-russian",
         "description": "Russian language",
@@ -278,7 +278,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=ru-RU",
         "resources": {
-          "loc": "s0U6S4H2iQDNJHr9oZp3yaUUwn1OQasP+1GOp21Lkhuf+RL79ahzZpb9k7AJwGqU4uN5/wWb89wirG5kZsv1VwkylIL2CnmM4BA9uc+itzY88Cn3/aL52WjfUJtVtkkhynRfbC4xqy0E2UrUsEzT9fFUC/R/FoohVaW+hkDInUDSNJkE71Ly5KCvh9v59FQdG1kZlJqt0lumiNrS/CAweunzQe5sSTWpdynuS5cmE2le3aYsg03GMciguutluxmumaNmXhN7I0AZSxJ3h4YOlCtT3Bt18F9j87rh4xjTqoWpJuNRLQ5M+tf5AQtnXzs3O2eyL80INh3TV+f8wq/gPw=="
+          "loc": "sdVZja5U/ZFVnMdKXNZpOO6Ao3PcebHwXExLsS12r6Aq/klha8loyPH9ADJdV+cgSS4txcWWYOZN87NpVqPlqfnJDEsILVyMGMArr1TzcRkl87ETkvwNd3tkInbUmrBgwmmQwnJXElpKLhvtWSekZcAkPMYcDTuz9Kg/Gl0sdzLSfszYHwfowMvdSxLXqObc7gfu9zQOBXi7DdS+Va2YF0ccTqnvBYKeiAUcR9oWJ8X+5Rbs9o23ZsnelAdEy4XgBPX32ARloUBQGNEMJI1CGNTaDZR949NSa+x1APVSzKfSs8e56PfbVotfKGu/WHPEjD7gx793Z4Roj4jKDat6UQ=="
         },
         "locale": {
           "name": "ru-RU",
@@ -384,6 +384,32 @@
           "name": "uk",
           "title": "Українська",
           "flag": "🇺🇦"
+        },
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/translations/cs",
+      "official": true,
+      "manifest": {
+        "version": "1.0.0",
+        "manifestVersion": "0.1.0",
+        "name": "language-czech",
+        "description": "Czech language",
+        "author": {
+          "name": "KeeWeb",
+          "email": "antelle.net@gmail.com",
+          "url": "https://keeweb.info"
+        },
+        "licence": "MIT",
+        "url": "https://plugins.keeweb.info/translations?lang=cs",
+        "resources": {
+          "loc": "PtFaC0NCENQQJR2xaYB5cS5wjtFm2fFhkYc8wMYZoZSIaxeAA7Ex3YmdVtqWUXKeTMO5QF5GvjzWr6ZhJKQwezkhnGgtdmv1wOUB0cqbDOqkZdpc0+cXcP5Z0oZULYtAURFhRvJAZ2qWA62/tOmaNJUfTA2sv+h3uEk9KUAKFkHfMHflmkmsNblNvqFiKdMfIa/TANrH8Ud/ruvTel2Dq/9blpH9BJlbOUKnrvV7oljRF0GavoJhV+IIUinCq5B8LcfCgIxfQw1rW9cg1XB4L9zh4YLAOk0igGfNn66Uq8xXeyL7MBkXGqcDM85Ct/N2r3LZ2v6Eq+ENEaL4XoTqiw=="
+        },
+        "locale": {
+          "name": "cs",
+          "title": "Čeština",
+          "flag": "🇨🇿"
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
       }
