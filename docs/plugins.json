@@ -1,6 +1,6 @@
 {
-  "date": "2017-07-22T07:30:39.357Z",
-  "signature": "imQnxy1q8ji2OLVo2x/1dkO7LNMMxJXPytkZbl/fJZC4eiGV9ky0zwhD2ctE10Aabz5epTvoShWOP5o7iiXyL55IAGODkZxQ+hyXjwIqBUfCdK6YBkd1W7t/5rgvfaWbfLQCmJXNblUVhYD5JujW74vhE98PfwS/4SnAcKRiC9XbQcpKdb+mI7nnHQxIUqK3a1MV/ciDuiOCcjK4yjY1h6Pob6yOjmWZdOYSzmx7clLxnjDCgacFUogUYsGeW6DDQjnyagqbSItKqiOgMs+2un9sglfLh2b5jLVGMoL4iOniMEqYfB7vmSNyULSjhExTYuFf4zutOk/FYCjOIUN91w==",
+  "date": "2017-08-06T07:51:47.971Z",
+  "signature": "fDRgjOKsPSPXAowCESCPGgTiD+W6px21k/nW6EouVlUnMseBny7aDH+rBvirlNNcix0ayCgvFgL5mMXFPmE+7Lfduiuhc698R3WwyKAk7NsGosY7YNLA5WwPoCSwtBH5MaZgB3EukiAHxyJJgqFa2R6snPu9YaDdCTXGNO5J/o3ApGvLyH9MrdNBjLt+Yk+uM/d+Ld1mikNSP0CHxiWGyv/kSfIUX32mz+i2iZb7AnONiJCI8vOxwraAJVXy4X7DbSMuEdfsI4luEZSiV6CTJcfdzla553+zDJc3XFKUVU0bGXrgBp0I4phCa1T8P97VlFnRuHojwyBAKZ4oWYjbhw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -344,7 +344,7 @@
       "url": "https://plugins.keeweb.info/plugins/keewebhttp",
       "official": true,
       "manifest": {
-        "version": "0.1.0",
+        "version": "0.1.1",
         "manifestVersion": "0.1.0",
         "name": "keewebhttp",
         "description": "KeeWebHttp allows to use browser extensions with KeeWeb",
@@ -356,7 +356,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/plugins/keewebhttp",
         "resources": {
-          "js": "SraFQKgRc0B7AprDzO5Ce00QMW+f30pn/l/tL1xuoDgtI7FNcATTJdB/3JCAHmjDWoi2vDcw1SHHC04lhEdfg43ZV+DLpj16u04msGDGnyBYPse+SJkHGHgWcRUPFzwNxkvMcByQF33CkBEPdrzR62oAvwIzWCuaJ5q+YPpWinApN58bB52v5Ykbkvd8JsIr90Sopuhzm7RV4exv8ztIoCR0An+qR/OlhV1+NfMA9XdKwCVGu69fzQBrn+nnE3K634DzjpYJSXpFJP96Ho33YYp03bK9OHWadHKAjFdDoCCkw4ENsyysvbSXdcScHyRjLEnCAXtk8K/FLkTxuQCeqA=="
+          "js": "B0VspfvXSHdbPi6Ed2aHBgeda/hI6PT063yoFBTSbcFmdLGZpPVsTnqG9+xjvhNDZ3Q0PolGiSIN/gUheJxJZ8CJafZF2RrOKHFFz302S9bEtJ8ZdjU/+0iRUIuB8wKHuSOWwCBEVrIN/ZQo2nRgNIOZBYCamAhqsNTVXv0OdJfhUPA4OsI6ca8RmwA3ejYphB+/X7ue5k3xWVeIkH1onSPJ1qOoj89HKB7FS7/bz6wsi/bluXPC5M0rAPbtYhUQMhZJsjBJ53TnZ6a8uRyzYCbp/a0kxl8jwI6aFYGRHbsRZLIIxYP0Qm31pyToZA/8/JHTmlped+isCWXeFaLIcQ=="
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
         "desktop": true

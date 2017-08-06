@@ -60,7 +60,9 @@ function run() {
         server = http.createServer((req, res) => {
             const origin = req.headers.origin;
             const referer = req.headers.referrer || req.headers.referer;
-            if (req.method !== 'POST' || referer || origin && !origin.startsWith('chrome-extension://')) {
+            if (req.method !== 'POST' || referer || origin &&
+                !origin.startsWith('chrome-extension://') && !origin.startsWith('safari-extension://')
+            ) {
                 if (DebugMode) {
                     logger.debug('Request dropped', req.method, req.url, req.headers);
                 }
