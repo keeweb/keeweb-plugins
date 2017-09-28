@@ -433,7 +433,7 @@
   "setFileUseGenKeyFile": "생성된 키 파일 사용",
   "setFileUseOldKeyFile": "이전 키 파일 사용",
   "setFileGenKeyFile": "새 키 파일 생성",
-  "setFileDontUseKeyFile": "키 파일을 사용하지 마십시오",
+  "setFileDontUseKeyFile": "키 파일 사용 안 함",
   "setFileEmptyPass": "비어있는 비밀번호",
   "setFileEmptyPassBody": "비어있는 비밀번호로 데이터베이스를 저장하면 완전히 보호되지 않습니다. 정말 저장하시겠습니까?",
   "setFileSaveError": "저장 오류",

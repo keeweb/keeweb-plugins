@@ -1,0 +1,22 @@
+{
+  "version": "0.0.2",
+  "manifestVersion": "0.1.0",
+  "name": "theme-nord",
+  "description": "Nord theme",
+  "author": {
+    "name": "KeeWeb",
+    "email": "keeweb@keeweb.info",
+    "url": "https://keeweb.info"
+  },
+  "resources": {
+    "css": "fXPoQUOlM8+vzB7bOrvSSNLO6bRxdBr0KrYC0SStC0x6PiFf0sXAUQB9SQzmo+UHy1EVpsMLmz5YDtx8s0AQDh/x53WHdLeziNev1iwdTdpIq39dWr2SjmR8a0meDTr43Wr8CnARuTaHfrvMB5JnoUirwJiY/KP4RJYa2yd/Np+8BkoT3leOiURKIib1/Z4epZNAsz/QxJQHHdY6g/8czLzRMUPHR285bZ7jKsRqLUz/ujS2XC3QW3i48GCPkTCkv1+pphCw89ic0eKLdE8NMNuKKImmujVcAqVSBSqS2a+LJlbpqmqs4g3r4sRDWnj81hJlVTH9xQW4a9nF998FwA=="
+  },
+  "licence": "",
+  "url": "https://plugins.keeweb.info/plugins/theme-nord",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "nord",
+    "title": "Nord"
+  }
+}

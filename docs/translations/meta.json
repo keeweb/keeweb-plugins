@@ -1,4 +1,9 @@
 {
+  "zh-TW": {
+    "name": "繁體中文",
+    "nameEn": "Chinese Traditional",
+    "count": 506
+  },
   "zh-CN": {
     "name": "简体中文",
     "nameEn": "Chinese Simplified",
@@ -17,7 +22,7 @@
   "cs": {
     "name": "Čeština",
     "nameEn": "Czech",
-    "count": 394
+    "count": 415
   },
   "pl": {
     "name": "Polski",
@@ -33,6 +38,11 @@
     "name": "Українська",
     "nameEn": "Ukrainian",
     "count": 506
+  },
+  "pt-BR": {
+    "name": "Português (Brasil)",
+    "nameEn": "Portuguese (Brazil)",
+    "count": 380
   },
   "no": {
     "name": "Norsk",

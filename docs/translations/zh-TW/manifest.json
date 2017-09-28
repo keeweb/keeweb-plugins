@@ -1,22 +1,22 @@
 {
-  "version": "1.8.0",
+  "version": "1.2.0",
   "manifestVersion": "0.1.0",
-  "name": "language-russian",
-  "description": "Russian language",
+  "name": "language-chinese-traditional",
+  "description": "Chinese Traditional language",
   "author": {
     "name": "KeeWeb",
     "email": "antelle.net@gmail.com",
     "url": "https://keeweb.info"
   },
   "licence": "MIT",
-  "url": "https://plugins.keeweb.info/translations?lang=ru-RU",
+  "url": "https://plugins.keeweb.info/translations?lang=zh-TW",
   "resources": {
-    "loc": "pbLoPeR9SQGBJfzuLVa2JCTofNEd5rtptauBsKx/DSb3R/WtWlnP3fqgk4hBrwHe89TJfteRlGyReHPRjFIJjm3+b7ZVjdLGmZ+HF2gmuen5EBaJ0WJBC91pdrs+2PZKDIj9nHejy8EMfLbzQXCPb6dI1VjRo1SpOh4U6Gk9siSGf+iJlytZQS9WYY5VHPKHAwbVN+8RDLdLU5nRPXVPr2vKhdRpQJKlEI7H1zQvJa0MD0TiphmKoqQJpycNcqv2fChkcWk8pqJlRXLYdUxOotId8YRJMJvrtkDeOvdJFYvNSSlh6O+cMuxkleU8aXm3tiTrCFi1Z88yIy7HcFgbAg=="
+    "loc": "rJ9s8ZE1BOv1LDTRYHliTQsN7yXQAJJHwlQMz21GkY03K1ICLeocSfHA92/mrViIM5yKAMMtX+E8kKr5F7N3wWNSlbLErB2j9SKIZx0qoHvmsopH/4zbi3cpChCJkArljUPiBdCw6AIwOXhLvneCUT0LfzTjFW2UL+S4VMtcO+FtDJwHocjupRJkxIw2sBNFua16JDvo59dLid6FGIP1uPsNSRQBcW46UC10JuTUvgsPl53wg0z523accluj/2pEcFn/PS5Lr9F4tAPXtlElQqUV0qDiEdYyHUmp3dqCrdsHLh/ZeBJ8BIsa65SLQzUMWLWWogbrW92T0L0CnC8J9w=="
   },
   "locale": {
-    "name": "ru-RU",
-    "title": "Русский",
-    "flag": "🇷🇺"
+    "name": "zh-TW",
+    "title": "繁體中文",
+    "flag": "🇹🇼"
   },
   "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
 }

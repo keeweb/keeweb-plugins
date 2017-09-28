@@ -1,22 +1,22 @@
 {
   "version": "1.1.0",
   "manifestVersion": "0.1.0",
-  "name": "language-czech",
-  "description": "Czech language",
+  "name": "language-portuguese-brazil-",
+  "description": "Portuguese (Brazil) language",
   "author": {
     "name": "KeeWeb",
     "email": "antelle.net@gmail.com",
     "url": "https://keeweb.info"
   },
   "licence": "MIT",
-  "url": "https://plugins.keeweb.info/translations?lang=cs",
+  "url": "https://plugins.keeweb.info/translations?lang=pt-BR",
   "resources": {
-    "loc": "bCdsdjbcYMgPDQWqKeaxTbOIJR7k5xF9Q2iq26FoJyW8sMl7KFonVu1eRtMfeDsFfRoALgC56O7V8LaSILcSvlbj/tRqxvEzJMSzG4R7KvTIUmrcviS2mRIsoLQsAw0nu6PIx0YMj/oodpgI8AImnOg3VzJinUWQSXJhKBbdRvL9tc89etL8pnprENcyej1BGsmB5xq08YyD03HcsRoqZDI3jC0mk8j9Td0wfgjLt5zUh34EKslBBV0eLHtKZInFtDvdb2xmN6tcmsycAte1ylBjrEaMzhvpOUr9p6lpMAobMxDnZc1UtfwZjXPe/kYaWfOhpmK+7bBItfa6rtk7xw=="
+    "loc": "dPmmqVBai2GS4Y330aDW8OQeA63Ls95hSXPy3fPwuHJzb+45FCOOYZl4HAMTxLMD+RO2QUarC3gE3lfzq1tW5u7aNwBNzpER8u6LSTD6UU5zIr0cmA2qR7lfMIITn0v0r3zvmelSwKtLBX9HyA9SpIztlbmnPj3BIKIvawS92kRuuTyl4gHZmgfFZG4nofqY4EFYafIRO3z9iLwmI3vX56iGGTk3WI2UtZk4/pR6FqChJ0kM++lZZovH6mE4icJ0M6tYn49V6DklvfKKukbmM70e2r33IuTyP2bmhAvq/7Bz82xlR94sc/RLzNBvv0/DkH1y4hqmtSaTL9ui2w1kKQ=="
   },
   "locale": {
-    "name": "cs",
-    "title": "Čeština",
-    "flag": "🇨🇿"
+    "name": "pt-BR",
+    "title": "Português (Brasil)",
+    "flag": "🇧🇷"
   },
   "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
 }

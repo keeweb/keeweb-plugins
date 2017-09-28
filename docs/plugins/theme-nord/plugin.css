@@ -1,0 +1,13 @@
+.th-nord {
+  --action-color: #8ac0cf;
+  --background-color: #2e3440;
+  --error-color: #bd626b;
+  --intermediate-background-color: #3b4253;
+  --light-border-color: #3b4253;
+  --medium-color: #d8dee9;
+  --secondary-background-color: #434c5f;
+  --text-color: #d8dee9;
+  --text-contrast-action-color: #000000;
+  --form-box-shadow-color-focus: #2e3440;
+  --form-box-shadow-color-focus-error: #2e3440;
+}
