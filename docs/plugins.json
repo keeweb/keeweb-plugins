@@ -1,6 +1,6 @@
 {
-  "date": "2017-09-28T16:48:49.096Z",
-  "signature": "blfMEP/TwmziZfveXmt0Ch4s3h3i51bwLbfigvbdPF5aE+Alx1DCwlIu/+g3HDCQciX9yOrejYhPhiPyfVzIbgvaDI6pU/xErEZyizV7RjNCv6xGQqNOcEZhdZzP6FOKkdXt2LrOeFz1CPtHYXnYI3fhZhm+UeY2cwnCnkaI4c+Pzix3xoEbVTK4T3hlsOQRW+FcqOv5UDRSveCSzeyuTi7id0tiqx7CVt+OsPkrtq5sr0BH2HXsqemhNB3mah7MOqGtFNzFvNNOtxiu2EEmor3YEe8mrrbNAiOc4RN1zGLLqQfVBdjbPoxtJkJCm3Z4vKYCoQu4d11/wggPJc39aw==",
+  "date": "2017-09-28T16:53:01.122Z",
+  "signature": "CjNhGcxd9NLsCPjAezQeRRAqmrVOUr1H/sASb5IyNfaL/hy9D/fwwh9BT6z5sKfcJlAfgCniOi2TRzDxWengnKRRGfjsI+g7y/ETDebp4ODNXZGEWHeCEpiw1a0j6XEeXPNDhft5UUqyZw/yzzcS9yqF7vRMl6aA/q/K/PNaaqtG6kRHUMxWdQ3S00+GHChL07NxzrB/CQ4r11mC4BPodWGq7uievQH62IMdCaGYYlFEYefzPsQGsUx/WW8B9G2VA/Br4Y49muL7GAzysoZu6BdkYSEfrWgAugwkH0qB9u0xA9ZPeia0dOCUxrvgkWRewj0RjqeMd5k3CacoYFZiqA==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -363,6 +363,7 @@
       }
     },
     {
+      "url": "https://plugins.keeweb.info/plugins/theme-nord",
       "official": true,
       "manifest": {
         "version": "0.0.2",
