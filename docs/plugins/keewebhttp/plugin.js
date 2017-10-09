@@ -1,4 +1,6 @@
 let uninstall;
+let restart;
+let ServerPort = 19455;
 const timeout = setTimeout(run, 500);
 
 function run() {
@@ -19,7 +21,6 @@ function run() {
     const Generator = require('util/password-generator');
     const GeneratorPresets = require('comp/generator-presets');
 
-    const ServerPort = 19455;
     const Version = '1.8.4.2';
     const DebugMode = localStorage.keewebhttpDebug;
     const FileReadTimeout = 500;
@@ -39,6 +40,11 @@ function run() {
         uninstalled = true;
         removeEventListeners();
         stopServer();
+    };
+
+    restart = function() {
+        stopServer();
+        startServer();
     };
 
     addEventListeners();
@@ -478,6 +484,29 @@ function run() {
                 StringFields: null,
                 Uuid: ''
             }];
+        }
+    }
+}
+
+module.exports.getSettings = function() {
+    return [{
+        name: 'ServerPort',
+        label: 'Port to listen to (do not change if you don\'t know what you are doing)',
+        type: 'text',
+        maxlength: 5,
+        placeholder: 'port KeeWebHttp will listen to (default is 19455)',
+        value: '19455'
+    }]
+}
+
+module.exports.setSettings = function(changes) {
+    if(changes["ServerPort"] != undefined) {
+        var port = parseInt(changes["ServerPort"]);
+        if (Number.isInteger(port) && port > 1024 && port < 65535) {
+            ServerPort = port;
+            if(restart) {
+                restart();
+            }
         }
     }
 }
