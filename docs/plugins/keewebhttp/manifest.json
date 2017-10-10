@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "manifestVersion": "0.1.0",
   "name": "keewebhttp",
   "description": "KeeWebHttp allows to use browser extensions with KeeWeb",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/plugins/keewebhttp",
   "resources": {
-    "js": "B0VspfvXSHdbPi6Ed2aHBgeda/hI6PT063yoFBTSbcFmdLGZpPVsTnqG9+xjvhNDZ3Q0PolGiSIN/gUheJxJZ8CJafZF2RrOKHFFz302S9bEtJ8ZdjU/+0iRUIuB8wKHuSOWwCBEVrIN/ZQo2nRgNIOZBYCamAhqsNTVXv0OdJfhUPA4OsI6ca8RmwA3ejYphB+/X7ue5k3xWVeIkH1onSPJ1qOoj89HKB7FS7/bz6wsi/bluXPC5M0rAPbtYhUQMhZJsjBJ53TnZ6a8uRyzYCbp/a0kxl8jwI6aFYGRHbsRZLIIxYP0Qm31pyToZA/8/JHTmlped+isCWXeFaLIcQ=="
+    "js": "xRiIO2Y08FN8Qf/U1I+Ab3WI8UWNnRwVXmV5/XlxKDFUQIoWT1sMLP6pW7IrcUuFJ0zDwag+BlJuutnBt42+WgfRWCAZ2qRV5cRBCQYJ3q4W3JvkWSAfoTulgrmJ5C4ofiN9D8FL567+2eg7ni1BDA0sVrfLsA7SFNRfJ3vULKpeFjJHB6ypwO60v4xm1A8S+Cm3qckmvOA3Bp9WD1M8Gj1t9ULHKT9DYq6QG6rxwGWODqHsQRifFRojp73X5PM2j4GV1tEWASRGYCNmwmA7fCNHFmppk4W7ofpENF1/dbXrxDxqQ/unbHTixPp0oy+6R2Clnb3jOEYw6pnp0wxWLg=="
   },
   "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
   "desktop": true

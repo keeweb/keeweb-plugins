@@ -1,4 +1,6 @@
 let uninstall;
+let restart;
+let serverPort = 19455;
 const timeout = setTimeout(run, 500);
 
 function run() {
@@ -19,7 +21,6 @@ function run() {
     const Generator = require('util/password-generator');
     const GeneratorPresets = require('comp/generator-presets');
 
-    const ServerPort = 19455;
     const Version = '1.8.4.2';
     const DebugMode = localStorage.keewebhttpDebug;
     const FileReadTimeout = 500;
@@ -39,6 +40,11 @@ function run() {
         uninstalled = true;
         removeEventListeners();
         stopServer();
+    };
+
+    restart = function() {
+        stopServer();
+        startServer();
     };
 
     addEventListeners();
@@ -91,7 +97,7 @@ function run() {
                 });
             }
         });
-        const port = ServerPort;
+        const port = serverPort;
         const hostname = '127.0.0.1';
         server.listen(port, hostname, () => {
             if (uninstalled) {
@@ -481,6 +487,29 @@ function run() {
         }
     }
 }
+
+module.exports.getSettings = function() {
+    return [{
+        name: 'ServerPort',
+        label: 'Port to listen to (do not change this setting without a special need to do so)',
+        type: 'text',
+        maxlength: 5,
+        placeholder: '19455',
+        value: '19455'
+    }];
+};
+
+module.exports.setSettings = function(changes) {
+    if (changes.ServerPort) {
+        const port = +changes.ServerPort;
+        if (port > 1024 && port < 65535) {
+            serverPort = port;
+            if (restart) {
+                restart();
+            }
+        }
+    }
+};
 
 module.exports.uninstall = function() {
     if (uninstall) {
