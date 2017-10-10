@@ -1,6 +1,6 @@
 let uninstall;
 let restart;
-let ServerPort = 19455;
+let serverPort = 19455;
 const timeout = setTimeout(run, 500);
 
 function run() {
@@ -97,7 +97,7 @@ function run() {
                 });
             }
         });
-        const port = ServerPort;
+        const port = serverPort;
         const hostname = '127.0.0.1';
         server.listen(port, hostname, () => {
             if (uninstalled) {
@@ -491,25 +491,25 @@ function run() {
 module.exports.getSettings = function() {
     return [{
         name: 'ServerPort',
-        label: 'Port to listen to (do not change if you don\'t know what you are doing)',
+        label: 'Port to listen to (do not change this setting without a special need to do so)',
         type: 'text',
         maxlength: 5,
-        placeholder: 'port KeeWebHttp will listen to (default is 19455)',
+        placeholder: '19455',
         value: '19455'
-    }]
-}
+    }];
+};
 
 module.exports.setSettings = function(changes) {
-    if(changes["ServerPort"] != undefined) {
-        var port = parseInt(changes["ServerPort"]);
-        if (Number.isInteger(port) && port > 1024 && port < 65535) {
-            ServerPort = port;
-            if(restart) {
+    if (changes.ServerPort) {
+        const port = +changes.ServerPort;
+        if (port > 1024 && port < 65535) {
+            serverPort = port;
+            if (restart) {
                 restart();
             }
         }
     }
-}
+};
 
 module.exports.uninstall = function() {
     if (uninstall) {
