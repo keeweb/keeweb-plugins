@@ -32,7 +32,8 @@
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
-    "count": 460
+    "count": 483,
+    "version": "1.4.0"
   },
   "uk": {
     "name": "Українська",
