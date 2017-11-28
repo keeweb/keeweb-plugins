@@ -10,7 +10,8 @@
     "start": "node scripts/start.js",
     "update": "node scripts/update-plugins.js",
     "translations": "node scripts/download-translations.js",
-    "watch-plugin": "node ../keeweb/plugins/keeweb-plugin/keeweb-plugin.js watch docs/plugins/keewebhttp/ --bump-version --signer-module=/Users/Antelle/Projects/keeweb/keeweb-plugins/scripts/sign.js "
+    "watch": "run() { node ../keeweb/plugins/keeweb-plugin/keeweb-plugin.js watch docs/plugins/$1/ --bump-version --signer-module=../../../keeweb-plugins/scripts/sign; }; run",
+    "sign": "run() { node ../keeweb/plugins/keeweb-plugin/keeweb-plugin.js sign docs/plugins/$1/ --signer-module=../../../keeweb-plugins/scripts/sign; }; run"
   },
   "repository": {
     "type": "git",
