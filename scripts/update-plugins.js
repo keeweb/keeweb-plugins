@@ -34,9 +34,7 @@ for (const plugin of data.plugins) {
     if (plugin.manifest.locale) {
         continue;
     }
-    if (plugin.official) {
-        plugin.manifest = JSON.parse(fs.readFileSync(`docs/plugins/${plugin.manifest.name}/manifest.json`, 'utf8'));
-    }
+    plugin.manifest = JSON.parse(fs.readFileSync(`docs/plugins/${plugin.manifest.name}/manifest.json`, 'utf8'));
 }
 
 console.log('Checking for changes...');
