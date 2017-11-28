@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "manifestVersion": "0.1.0",
+  "name": "theme-orange",
+  "description": "Orange Theme",
+  "author": {
+    "name": "Jonathan Verbeek",
+    "email": "iredcraft@gmail.com",
+    "url": "http://nothing.com"
+  },
+  "resources": {
+    "css": true
+  },
+  "licence": "",
+  "url": "http://nothing.com",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi3yGI6YNWdxmQVv1AWudkcf+B6tV5ZG/vzU191IkzqAouEdeBOJDbHtXAPSHfRpvvO6NB0vKuXj15kDiMg19gRQlD3hhCoU2+iD/ecCTwwKneZdtI8D87TWwS2ATKNtKegMOO3RgTHWZ0FFvYJbb0MiqBiDf8nblGnJgzGXgTh2An6sg5GSfziWZOtc3afQZYd+4zjVIAsqS/aGqOu60xid41FiMq0A9SeTS1VyHkcKRP9/hr2dHt3JhsFh644tlf5nIfpR31tQb+cRIOseTeayai1I4TXTsUenOYjgZXItCGBzSeqkwoIdj8QBCJ2Z60KprangKcQBdaumGJYrGPQIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "darkOrange",
+    "title": "Dark Orange"
+  }
+}
