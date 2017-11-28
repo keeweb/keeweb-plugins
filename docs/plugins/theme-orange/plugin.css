@@ -1,7 +1,7 @@
-.th-darkOrange {
-  --background-color: #222222
-  --medium-color: #5e5e5e
-  --text-color: #eeeeee
-  --action-color: #e05d08
-  --error-color: #c34034
+.th-dark-orange {
+  --background-color: #222222;
+  --medium-color: #5e5e5e;
+  --text-color: #eeeeee;
+  --action-color: #e05d08;
+  --error-color: #c34034;
 }

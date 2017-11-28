@@ -13,10 +13,10 @@
   },
   "licence": "",
   "url": "http://nothing.com",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi3yGI6YNWdxmQVv1AWudkcf+B6tV5ZG/vzU191IkzqAouEdeBOJDbHtXAPSHfRpvvO6NB0vKuXj15kDiMg19gRQlD3hhCoU2+iD/ecCTwwKneZdtI8D87TWwS2ATKNtKegMOO3RgTHWZ0FFvYJbb0MiqBiDf8nblGnJgzGXgTh2An6sg5GSfziWZOtc3afQZYd+4zjVIAsqS/aGqOu60xid41FiMq0A9SeTS1VyHkcKRP9/hr2dHt3JhsFh644tlf5nIfpR31tQb+cRIOseTeayai1I4TXTsUenOYjgZXItCGBzSeqkwoIdj8QBCJ2Z60KprangKcQBdaumGJYrGPQIDAQAB",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
   "license": "MIT",
   "theme": {
-    "name": "darkOrange",
+    "name": "dark-orange",
     "title": "Dark Orange"
   }
 }
