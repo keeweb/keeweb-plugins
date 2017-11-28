@@ -1,6 +1,6 @@
 {
-  "date": "2017-11-28T17:40:45.646Z",
-  "signature": "cjy1JlJYlUng0FRno5JqsXNtUeDxFzq7GOQaA2/3JTDwAYRWHlHCqthvYE7n4UAC/dykn23K1CYnBkgRRADuP5wROnMxaaPbc4tLfqYNCPIUpqlmoPPNv8ISEarrtdUKtfrkg/NHvpMx8Fr14rofHMsqF+erP+P0lbhIjJG4k94PiVRQKLcBdxbgrasRPugZVIlYNWLmuM8I3ijxtmy60I3fRHmHLpAyj37wsypPnUDlv9KRBzae1JnH0Xy1kNLtrXFd5bFC3looek9KifiEkIE6PYICE//l8KDYSJmxqlYAjlamfGXTbqJqxkVhEJPxNMu+pQ5TSyiJN4eAZwau6A==",
+  "date": "2017-11-28T17:43:53.170Z",
+  "signature": "wNfEQafOrf4RjUByussYBgXS+M/WEw4jaxZszFr9lmo+hQYIDc3Wy+oZlG0Ray1wN9so8tg0fpz4yglKV1PQyDCq7OJf7rWo0ubl0Krc+zcGPcmcVW+7dBkegviNhdzc0acvhoz7O09P1D+sx3p+Q7IdvL8SlqLSfFHnQdawQkjaNEL4LKu2W1ZQpu98jV2CggPjsGkiR0Ik9tGNCqObAn4hzV3IS+NoaHIiAQzLd3NGStKAVFMExpLAa76xOP5II9YOpESizdFBTpajHKdZTfzOcBNq2no7pvg7SI/QvBThgSfWsjdW+yd/4CioZd5hw0cauycf/Zn7UE5p2djRkQ==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -385,6 +385,32 @@
         "theme": {
           "name": "nord",
           "title": "Nord"
+        }
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/theme-orange",
+      "official": false,
+      "manifest": {
+        "version": "0.0.1",
+        "manifestVersion": "0.1.0",
+        "name": "theme-orange",
+        "description": "Orange Theme",
+        "author": {
+          "name": "Jonathan Verbeek",
+          "email": "iredcraft@gmail.com",
+          "url": "http://nothing.com"
+        },
+        "resources": {
+          "css": "e4VT0kkG6pwPFaRT/sxZVIZbXGWjYhSLGG4v5VEp1GvGPKj1KQdnVkare/9hYkBOSW1y13PvPoctQrSMhtstHlr6IK01aaz/7IPU/oLk/aGnV4cL//09VryO+D7P06+wf+tIlwKFih3Z9Z1LW01UpOu66uZI8p22cBAU2dakqti1J8ENRZmxD//KjXS2NMtL7orv49snVTh/BFG53l/Xz5ij9RDdLRL17QmoYz6h1gWIY1ai9tDncsKG1tbSKbvIqOeMFxlwHAvbVbur1m2FMOotSpoOeKhPIABMUUjBPVMEsbSDods5AMIrQ6C1qGmh1vPnIpwshAqUm+dmMJXFBw=="
+        },
+        "licence": "",
+        "url": "http://nothing.com",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+        "license": "MIT",
+        "theme": {
+          "name": "dark-orange",
+          "title": "Dark Orange"
         }
       }
     },
