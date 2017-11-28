@@ -32,8 +32,7 @@
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
-    "count": 483,
-    "version": "1.4.0"
+    "count": 483
   },
   "uk": {
     "name": "Українська",
@@ -43,7 +42,8 @@
   "pt-BR": {
     "name": "Português (Brasil)",
     "nameEn": "Portuguese (Brazil)",
-    "count": 380
+    "count": 506,
+    "version": "1.2.0"
   },
   "no": {
     "name": "Norsk",

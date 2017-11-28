@@ -1,6 +1,6 @@
 {
-  "date": "2017-10-10T18:05:49.169Z",
-  "signature": "qqq+oTeP4M68vg/zT5gVJVE5PPX4OAYB0JCITYBGgzgA4kfKd4JA1RmD8twlv8ff7OdNS9lnNL7JzwhggLTf6rT8Pdbs/1umFugafPfJYexslD/42ygfULUorNu6915OFFIZYkfb47smVSk5P0hg9RImXjwxiUVtxGzwJH0aThtmlVkhtMjdCfSXY1ySdsSTub+Eq5oGJZbwKGjg/Uw7vFFNH18bZ6dMVVYShYkXPbnDhsT7dVUFsDuSSH6gIiRr7HYkzwUasHPEbkMZOMj31cCRJ6dR5J3AV0XOEJ16uo62x21PlbhFv308Oz0O/8cimIyCJZJfs7WxqJWrmMp6Ug==",
+  "date": "2017-11-28T17:40:45.646Z",
+  "signature": "cjy1JlJYlUng0FRno5JqsXNtUeDxFzq7GOQaA2/3JTDwAYRWHlHCqthvYE7n4UAC/dykn23K1CYnBkgRRADuP5wROnMxaaPbc4tLfqYNCPIUpqlmoPPNv8ISEarrtdUKtfrkg/NHvpMx8Fr14rofHMsqF+erP+P0lbhIjJG4k94PiVRQKLcBdxbgrasRPugZVIlYNWLmuM8I3ijxtmy60I3fRHmHLpAyj37wsypPnUDlv9KRBzae1JnH0Xy1kNLtrXFd5bFC3looek9KifiEkIE6PYICE//l8KDYSJmxqlYAjlamfGXTbqJqxkVhEJPxNMu+pQ5TSyiJN4eAZwau6A==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -470,7 +470,7 @@
       "url": "https://plugins.keeweb.info/translations/pt-BR",
       "official": true,
       "manifest": {
-        "version": "1.1.0",
+        "version": "1.2.0",
         "manifestVersion": "0.1.0",
         "name": "language-portuguese-brazil-",
         "description": "Portuguese (Brazil) language",
@@ -482,7 +482,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=pt-BR",
         "resources": {
-          "loc": "dPmmqVBai2GS4Y330aDW8OQeA63Ls95hSXPy3fPwuHJzb+45FCOOYZl4HAMTxLMD+RO2QUarC3gE3lfzq1tW5u7aNwBNzpER8u6LSTD6UU5zIr0cmA2qR7lfMIITn0v0r3zvmelSwKtLBX9HyA9SpIztlbmnPj3BIKIvawS92kRuuTyl4gHZmgfFZG4nofqY4EFYafIRO3z9iLwmI3vX56iGGTk3WI2UtZk4/pR6FqChJ0kM++lZZovH6mE4icJ0M6tYn49V6DklvfKKukbmM70e2r33IuTyP2bmhAvq/7Bz82xlR94sc/RLzNBvv0/DkH1y4hqmtSaTL9ui2w1kKQ=="
+          "loc": "HTBUHekwjr2qHncjpJ/AnIEzh9h3LWQ3AlSZlMu9GFBE5WyTyvlqKO+vUYGTYzm/C9oeIKABQjVpe3pmSOTKZ0znWDdzQnrPnFtb+wIoZjzSPCOyeNC4xQO8MmaqzX2jrcUp5v6R8hzK2LN/LpBBZgRWd9eCdZgWyaTwbOgJHlDJ3Ni1Q5pSrE7CxQaDj9BaOmYfwEAPZzZlmbi/Z2NcnpICgwHogYCjiMhdC0MMVyUyj2dOz5fmtUdYm1uao2fTpPU3aKXFIhl9TqKR0m93VZ4dFIrhYn7MwO3o2JXBkZIaJdg7mvsw7bu2ZcAJ7t4oR57QtRWbfx9b2sXfDY+zag=="
         },
         "locale": {
           "name": "pt-BR",
