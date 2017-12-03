@@ -127,7 +127,8 @@ module.exports = function() {
             if (skip) {
                 skipCount++;
                 if (skip !== 'SKIP') {
-                    meta[lang] = {name: langName, nameEn: langNameEn, count: langPhraseCount};
+                    const manifest = JSON.parse(fs.readFileSync(`docs/translations/${lang}/manifest.json`, 'utf8'));
+                    meta[lang] = {name: langName, nameEn: langNameEn, count: langPhraseCount, version: manifest.version};
                 }
             } else {
                 langCount++;
