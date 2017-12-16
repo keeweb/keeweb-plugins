@@ -56,8 +56,8 @@
   "no": {
     "name": "Norsk",
     "nameEn": "Norwegian",
-    "count": 493,
-    "version": "1.5.0"
+    "count": 501,
+    "version": "1.6.0"
   },
   "nl-NL": {
     "name": "Nederlands",
@@ -69,7 +69,7 @@
     "name": "Français",
     "nameEn": "French",
     "count": 501,
-    "version": "1.6.0"
+    "version": "1.7.0"
   },
   "de-DE": {
     "name": "Deutsch",

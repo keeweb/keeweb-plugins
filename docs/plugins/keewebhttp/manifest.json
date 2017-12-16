@@ -1,12 +1,12 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.3",
   "manifestVersion": "0.1.0",
   "name": "keewebhttp",
   "description": "KeeWebHttp allows to use browser extensions with KeeWeb",
   "author": {
     "name": "KeeWeb",
     "email": "antelle.net@gmail.com",
-    "url": "http://keeweb.net"
+    "url": "https://keeweb.info"
   },
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/plugins/keewebhttp",
