@@ -277,7 +277,7 @@ module.exports.uninstall = function() {
             }
             let css = `.th-${manifest.theme.name} {\n`;
             for (const el of document.querySelectorAll('input[type=color]')) {
-                css += el.id.replace('color-', '  --') + '-color: ' + el.value + '\n';
+                css += el.id.replace('color-', '  --') + '-color: ' + el.value + ';\n';
             }
             css += '}';
             return css;
