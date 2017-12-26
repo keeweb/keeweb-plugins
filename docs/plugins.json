@@ -1,6 +1,6 @@
 {
-  "date": "2017-12-16T11:40:05.098Z",
-  "signature": "ixaMa0DVc2B2RGO/at7986XKYtJJQnhJJKdMoa2VNCI8dJR1IqOOoLyBtlEIjCN9tNtq41Z590nS1HzvQlRyC17BJi4Oip3nUsPeLr+PHi+v+c2qlFZtLs4pXhs3kB6N9ht4+D9QUfHrd7IyIn4tGm2iHcRQd0aB5hpNEJSWaFvYfsJ1oepEIUjmnDN9ttPMrjZghHaGFKVoO2ypAI+QMNLKTtp8pS84V9c16MtivxEdpGwRUktWW4GKa8e8RKQXj4pOqQiRzIFTadH3xBHlYsOeYi5Vch9slV4F2bngpxtp2LgDBPDPPgqMmRcMcpfKTMOh7igccpn50N4XIu1kDw==",
+  "date": "2017-12-26T11:30:04.867Z",
+  "signature": "hKuVBFA83NK1M6GnqLPg0Aj9HAApy+/p4PidFyb4wecbVkJKC3G4+hHDV0Mly3dD1/7ADhazs2AtOa763VEmADs+vZEI7X9cVn+ziJkGfQyNKjuh8ZAntCTl1szmEgwiGpWVJYDTPClO8IQhzwfhqTJ4Zn67vtsB9xEMx5zLNxSXD6Si33VblB2PbmsM+gNuiFCb+ZiwaQNsCLwGtiSGeUtOsbAlAtPfwU3LL0LnCh9Vv8uIhfhUOF61xsAVuRzdOGDVVTHiOPgcXp8aJV5EgcFJNNxCgA/txc5pIPa55hPXvScOFqnb5Vn0ytU3KM9ERW7KDRsmoBeWCq6QN/LPHw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -444,7 +444,7 @@
       "url": "https://plugins.keeweb.info/translations/cs",
       "official": true,
       "manifest": {
-        "version": "1.3.0",
+        "version": "1.4.0",
         "manifestVersion": "0.1.0",
         "name": "language-czech",
         "description": "Czech language",
@@ -456,7 +456,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=cs",
         "resources": {
-          "loc": "dPJ5qS+XTC9jkPcG+B63C9RjezulrFhMbRBmk/+OFTZIPEhDkW1AXpJmUK/hzHfxwcxbaJVtJdC/IUUOxrwCHYrCnO6z3lbPakGlpiXHU5z3tcZeBymTeuEVyNlr25J1pwtmW1QsnAp5eI0Zz9MBaa+0CQfQazDegzLaD/vb6uIwQT6MJYm6zSuNhBtCU3V2vgUnQmiJputD/LgCEznw7xfo6xssyV7XAo5rry7n+ys/aluGLLrgUu7sSukgSzdvrUx6aBgucxAq+6C/nuayd7mV6w0ggKsNdfGbSgZPgBWbEIg25F05QP50HhgDc09JaLWJroPt5AY3g0X6y90bGw=="
+          "loc": "YW3Eb/jXGXKc/5tc45O8cxP3Pmm4cjHA87lf3Mx5plfufKGd/kCIDMuFIec/phwFakT3eOnj7qX81lD1SWhNNQjo/aMvp1tjcmynpUzIPdojtHo4aYUNSgK0lfX0hg6UQvT/cyJpp4Zfsa04/uUyWbl92okFD6oxOIBT9CSDc91kJ0RWLu4GWQioryB7ClylQwqe9+aqOPMAfwVcqqay7CEvTyZ9x9m8dQIxTBSiCnKKjrzhsi9knVduYgptz/5rS4mC1cZcO381q7osveDVJEUfBZKMZS32Z8z7s8jRcDOammzFBP5tzcc/C76u4tFQhGhFQgetenNv9wV9IhE2bQ=="
         },
         "locale": {
           "name": "cs",
