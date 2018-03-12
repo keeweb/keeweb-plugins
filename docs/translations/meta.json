@@ -26,8 +26,8 @@
   "cs": {
     "name": "Čeština",
     "nameEn": "Czech",
-    "count": 437,
-    "version": "1.4.0"
+    "count": 501,
+    "version": "1.5.0"
   },
   "pl": {
     "name": "Polski",
@@ -62,8 +62,8 @@
   "nl-NL": {
     "name": "Nederlands",
     "nameEn": "Dutch",
-    "count": 493,
-    "version": "1.5.0"
+    "count": 501,
+    "version": "1.6.0"
   },
   "fr-FR": {
     "name": "Français",
