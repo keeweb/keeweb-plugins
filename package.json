@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "lint": "eslint scripts docs/plugins",
     "update": "node scripts/update-plugins.js",
     "translations": "node scripts/download-translations.js",
     "watch": "run() { node ../keeweb/plugins/keeweb-plugin/keeweb-plugin.js watch docs/plugins/$1/ --bump-version --signer-module=../../../keeweb-plugins/scripts/sign; }; run",
@@ -24,6 +25,14 @@
   },
   "homepage": "https://github.com/keeweb/keeweb-plugins#readme",
   "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "optionalDependencies": {
     "keytar": "^4.0.3",
     "pkcs15-smartcard-sign": "^1.0.0"
   }
