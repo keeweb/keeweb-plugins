@@ -4,49 +4,41 @@
  * @license MIT
  */
 
-const DetailsView = require("views/details/details-view");
-const Alerts = require("comp/alerts");
+const DetailsView = require('views/details/details-view');
+const Alerts = require('comp/alerts');
 const Logger = require('util/logger');
 const InputFx = require('util/input-fx');
-
+const Kdbxweb = require('kdbxweb');
 const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
 
-DetailsView.prototype.checkPwnedPwd = false;
-DetailsView.prototype.checkPwnedName = false;
-DetailsView.prototype.blockPwnedPwd = false;
-DetailsView.prototype.blockPwnedName = false;
-DetailsView.prototype.logger = new Logger("HaveIBeenPwned");
-
-DetailsView.prototype._alert = function (msg) {
-    Alerts.info({ body: msg, title: "HaveIBeenPwned" });
-}
+const settings = { checkPwnedPwd: false, checkPwnedName: false, blockPwnedPwd: false, blockPwnedName: false };
+const logger = new Logger('HaveIBeenPwned');
 
 DetailsView.prototype.checkPwnedOnSettingsChanged = function (changes) {
-    //if (changes['CheckPwnedPwd'] || changes['CheckPwnedName'] || changes['CheckPwnedName'] || changes['CheckPwnedName']) {
-    // info('Full HaveIBeenPwned check not yet implemented. Checks are done one by one when you change a name or a password.');
-    //}
+    // if (changes['CheckPwnedPwd'] || changes['CheckPwnedName'] || changes['BlockPwnedPwd'] || changes['BlockPwnedName']) {
+    //   info('Full HaveIBeenPwned check not yet implemented. Checks are done one by one when you change a name or a password.');
+    // }
 };
 
-seen = [];
+let _seen = [];
 class HIBPUtils {
     constructor() {
-        seen = [];
-    }
-
+        _seen = [];
+    };
     replacer(key, value) {
-        if (value != null && typeof value == "object") {
-            if (seen.indexOf(value) >= 0) {
+        if (value != null && typeof value === 'object') {
+            if (_seen.indexOf(value) >= 0) {
                 return;
             }
-            seen.push(value);
+            _seen.push(value);
         }
         return value;
-    }
+    };
     stringify(obj) {
-        var ret = JSON.stringify(obj, this.replacer);
-        seen = [];
+        const ret = JSON.stringify(obj, this.replacer);
+        _seen = [];
         return ret;
-    }
+    };
     xhrcall (config) {
         const xhr = new XMLHttpRequest();
         if (config.responseType) {
@@ -67,56 +59,57 @@ class HIBPUtils {
             return config.error && config.error('timeout', xhr);
         });
         xhr.open(config.method || 'GET', config.url);
-        if (config.headers) config.headers.forEach((value, key) => {
-            xhr.setRequestHeader(key, value);
-        });
+        if (config.headers) {
+            config.headers.forEach((value, key) => {
+                xhr.setRequestHeader(key, value);
+            });
+        };
         xhr.send(config.data);
     };
-
     hex (buffer) {
-        var hexCodes = [];
-        var view = new DataView(buffer);
-        for (var i = 0; i < view.byteLength; i += 4) {
+        const hexCodes = [];
+        const view = new DataView(buffer);
+        for (let i = 0; i < view.byteLength; i += 4) {
             // Using getUint32 reduces the number of iterations needed (we process 4 bytes each time)
-            var value = view.getUint32(i)
+            const value = view.getUint32(i);
             // toString(16) will give the hex representation of the number without padding
-            var stringValue = value.toString(16)
+            const stringValue = value.toString(16);
             // We use concatenation and slice for padding
-            var padding = '00000000'
-            var paddedValue = (padding + stringValue).slice(-padding.length)
+            const padding = '00000000';
+            const paddedValue = (padding + stringValue).slice(-padding.length);
             hexCodes.push(paddedValue);
         }
-
         // Join all the hex strings into one
-        return hexCodes.join("");
-    }
-
+        return hexCodes.join('');
+    };
     digest(algo, str) {
         // We transform the string into an arraybuffer.
-        const buffer = new TextEncoder("utf-8").encode(str);
+        const buffer = Kdbxweb.ByteUtils.stringToBytes(str);
         const subtle = window.crypto.subtle || window.crypto.webkitSubtle;
-        var _self = this;
-        return crypto.subtle.digest(algo, buffer).then(function (hash) {
+        const _self = this;
+        return subtle.digest(algo, buffer).then(hash => {
             return _self.hex(hash);
-        });        
-    }
-
-
+        });
+    };
     sha1(str) {
-        return this.digest("SHA-1", str);
-    }
-
+        return this.digest('SHA-1', str);
+    };
     sha256(str) {
-        return this.digest("SHA-256", str);
-    }
+        return this.digest('SHA-256', str);
+    };
+    alert (msg) {
+        Alerts.info({ body: msg, title: 'HaveIBeenPwned' });
+    };
 }
 
+const hibp = new HIBPUtils();
+
 DetailsView.prototype.checkNamePwned = function (name) {
-    this.logger.info('check hibp name ' + name);
+    logger.info('check hibp name ' + name);
     name = encodeURIComponent(name);
     const url = `https://haveibeenpwned.com/api/v2/breachedaccount/${name}?truncateResponse=true`;
-    this.logger.info('url ' + url);
-    new HIBPUtils().xhrcall({
+    logger.info('url ' + url);
+    hibp.xhrcall({
         url: url,
         method: 'GET',
         responseType: 'json',
@@ -124,33 +117,32 @@ DetailsView.prototype.checkNamePwned = function (name) {
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
-            this.logger.info('xhr ' + JSON.stringify(xhr));
+            logger.info('xhr ' + JSON.stringify(xhr));
             if (data && data.length > 0) {
-                this.logger.info('found breaches ' + JSON.stringify(data));
-                var breaches = "";
+                logger.info('found breaches ' + JSON.stringify(data));
+                let breaches = '';
                 data.forEach(breach => { breaches += `<li>${breach.Name}</li>\n`; });
-                this._alert(`WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href="https://haveibeenpwned.com">https://haveibeenpwned.com</a>\n`);
+                hibp.alert(`WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>\n`);
                 this.userEditView.$el.focus();
                 this.userEditView.$el.addClass('input--error');
                 InputFx.shake(this.userEditView.$el);
             } else {
-                this.logger.info("check pwnd name passed...");
+                logger.info('check pwnd name passed...');
                 this.userEditView.$el.removeClass('input--error');
             }
         },
         error: (e, xhr) => {
-            let err = xhr.response && xhr.response.error || new Error('Network error');
-            this.logger.error('Pwned Password API error', 'GET', xhr.status, err);
+            const err = xhr.response && xhr.response.error || new Error('Network error');
+            logger.error('Pwned Password API error', 'GET', xhr.status, err);
             err.status = xhr.status;
         }
-    });   
+    });
 };
 
 DetailsView.prototype.checkPwdPwned = function (passwordHash) {
-    this.logger.info('check hibp pwd (hash) ' + passwordHash);
-    
-    prefix = passwordHash.substring(0, 5);
-    new HIBPUtils().xhrcall({
+    logger.info('check hibp pwd (hash) ' + passwordHash);
+    const prefix = passwordHash.substring(0, 5);
+    hibp.xhrcall({
         url: `https://api.pwnedpasswords.com/range/${prefix}`,
         method: 'GET',
         responseType: 'text',
@@ -159,44 +151,44 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
         statuses: [200, 404],
         success: data => {
             if (data) {
-                this.logger.info('found breaches ' + JSON.stringify(data));
+                logger.info('found breaches ' + JSON.stringify(data));
                 data.split('\r\n').forEach(line => {
-                    h = line.split(':');
-                    suffix = h[0]; nb = h[1];
+                    const h = line.split(':');
+                    const suffix = h[0]; const nb = h[1];
                     if (prefix + suffix === passwordHash) {
-                        this._alert(`WARNING: This password is referenced as pawned ${nb} times on <a href="https://haveibeenpwned.com">https://haveibeenpwned.com</a>!\n`);
+                        hibp.alert(`WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`);
                         this.passEditView.$el.focus();
                         this.passEditView.$el.addClass('input--error');
                         InputFx.shake(this.passEditView.$el);
                     }
                 });
             } else {
-                this.logger.info("check pwnd passwd passed...");
+                logger.info('check pwnd passwd passed...');
                 this.passEditView.$el.removeClass('input--error');
-            }    
+            }
         },
         error: (e, xhr) => {
-            let err = xhr.response && xhr.response.error || new Error('Network error');
-            this.logger.error('Pwned Password API error', 'GET', xhr.status, err);
+            const err = xhr.response && xhr.response.error || new Error('Network error');
+            logger.error('Pwned Password API error', 'GET', xhr.status, err);
             err.status = xhr.status;
         }
     });
 };
 
 DetailsView.prototype.fieldChanged = function (e) {
-    //this.logger.info('field changed ' + new HIBPUtils().stringify(e));
-    detailsViewFieldChanged.apply(this, [e]);
+    // logger.info('field changed ' + hibp.stringify(e));
+    detailsViewFieldChanged.apply(this, arguments);
     if (e.field) {
-        if (e.field === '$Password' && this.checkPwnedPwd) {
+        if (e.field === '$Password' && settings.checkPwnedPwd) {
             if (this.passEditView.value) {
                 const pwd = this.passEditView.value.getText();
                 if (pwd.replace(/\s/, '') !== '' && !pwd.startsWith('{REF:')) {
-                    new HIBPUtils().sha1(pwd).then(hash => {
+                    hibp.sha1(pwd).then(hash => {
                         this.checkPwdPwned(hash.toUpperCase());
                     });
                 }
             }
-        } else if (e.field === '$UserName' && this.checkPwnedName) {
+        } else if (e.field === '$UserName' && settings.checkPwnedName) {
             this.checkNamePwned(e.val);
         }
     }
@@ -207,22 +199,22 @@ module.exports.getSettings = function () {
         name: 'checkPwnedPwd',
         label: 'Check passwords against HaveIBeenPwned list',
         type: 'checkbox',
-        value: 'true'
+        value: true
     }, {
         name: 'checkPwnedName',
         label: 'Check user ids against HaveIBeenPwned list',
         type: 'checkbox',
-        value: 'true'
+        value: true
     }, {
         name: 'blockPwnedPwd',
         label: 'Block pwned passwords if they are in HaveIBeenPwned list',
         type: 'checkbox',
-        value: 'true'
+        value: true
     }, {
         name: 'blockPwnedName',
         label: 'Block pwned names if they are in HaveIBeenPwned list',
         type: 'checkbox',
-        value: 'true'
+        value: true
     }];
 };
 
@@ -235,16 +227,14 @@ module.exports.setSettings = function (changes) {
 
     // example: { MyText: 'value', MySel: 'selected-value', MyCheckbox: true }
     // info(JSON.stringify(changes));
-    s = ''
-    for (field in changes) {
-        ccfield = field.substr(0, 1).toLowerCase() + field.substring(1);
-        DetailsView.prototype[ccfield] = changes[field];
-        //s += ccfield + '=' + DetailsView.prototype[ccfield] + '; ';
+
+    for (const field in changes) {
+        const ccfield = field.substr(0, 1).toLowerCase() + field.substring(1);
+        settings[ccfield] = changes[field];
     }
     DetailsView.prototype.checkPwnedOnSettingsChanged.apply(changes);
-    //alert(s);
 };
 
 module.exports.uninstall = function () {
-    fieldChanged = detailsViewFieldChanged;
+    DetailsView.prototype.fieldChanged = detailsViewFieldChanged;
 };
