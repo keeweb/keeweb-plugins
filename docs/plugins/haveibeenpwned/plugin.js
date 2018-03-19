@@ -9,8 +9,9 @@ const Alerts = require('comp/alerts');
 const Logger = require('util/logger');
 const InputFx = require('util/input-fx');
 const Kdbxweb = require('kdbxweb');
-const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
+const _ = require('_');
 
+const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
 const settings = { checkPwnedPwd: false, checkPwnedName: false, blockPwnedPwd: false, blockPwnedName: false };
 const logger = new Logger('HaveIBeenPwned');
 
@@ -121,7 +122,7 @@ DetailsView.prototype.checkNamePwned = function (name) {
             if (data && data.length > 0) {
                 logger.info('found breaches ' + JSON.stringify(data));
                 let breaches = '';
-                data.forEach(breach => { breaches += `<li>${breach.Name}</li>\n`; });
+                data.forEach(breach => { breaches += '<li>' + _.escape(breach.Name) + '</li>\n'; });
                 hibp.alert(`WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>\n`);
                 this.userEditView.$el.focus();
                 this.userEditView.$el.addClass('input--error');
@@ -154,8 +155,9 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
                 logger.info('found breaches ' + JSON.stringify(data));
                 data.split('\r\n').forEach(line => {
                     const h = line.split(':');
-                    const suffix = h[0]; const nb = h[1];
+                    const suffix = h[0];
                     if (prefix + suffix === passwordHash) {
+                        const nb = _.escape(h[1]);
                         hibp.alert(`WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`);
                         this.passEditView.$el.focus();
                         this.passEditView.$el.addClass('input--error');
