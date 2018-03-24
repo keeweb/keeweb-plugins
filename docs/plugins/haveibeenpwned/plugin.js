@@ -5,8 +5,8 @@
  */
 
 const Logger = require('util/logger');
-// change log level here. See issue #893 on keeweb: I need to set Debug for seing Infos...
-const LogLevel = Logger.Level.Debug;
+// change log level here. 
+const LogLevel = Logger.Level.Info;
 
 const DetailsView = require('views/details/details-view');
 // const Alerts = require('comp/alerts');
