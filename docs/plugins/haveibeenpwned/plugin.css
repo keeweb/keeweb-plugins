@@ -1,0 +1,20 @@
+.hibp-pwned:after{
+    content: "';--";
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: white;
+    background-size:cover;
+    position: relative;;
+    width:20px;
+    height:20px;
+    animation: hibp-spin 1s linear 0s infinite;
+    transform-origin: center center;
+}
+@keyframes hibp-spin {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); color: rgb(226, 0, 0); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-10deg); color: rgb(126, 0, 0); }
+  100% { transform: rotate(0deg); }
+}
+
