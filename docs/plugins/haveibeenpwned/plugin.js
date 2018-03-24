@@ -12,8 +12,6 @@ const Kdbxweb = require('kdbxweb');
 const _ = require('_');
 
 const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
-const settings = { checkPwnedPwd: false, checkPwnedName: false, blockPwnedPwd: false, blockPwnedName: false };
-const logger = new Logger('HaveIBeenPwned');
 
 DetailsView.prototype.checkPwnedOnSettingsChanged = function (changes) {
     // if (changes['CheckPwnedPwd'] || changes['CheckPwnedName'] || changes['BlockPwnedPwd'] || changes['BlockPwnedName']) {
@@ -25,6 +23,11 @@ let _seen = [];
 class HIBPUtils {
     constructor() {
         _seen = [];
+        this.checkPwnedPwd = true;
+        this.checkPwnedName = true;
+        this.blockPwnedPwd = false;
+        this.blockPwnedName = false;
+        this.logger = new Logger('HaveIBeenPwned');
     };
     replacer(key, value) {
         if (value != null && typeof value === 'object') {
@@ -106,10 +109,10 @@ class HIBPUtils {
 const hibp = new HIBPUtils();
 
 DetailsView.prototype.checkNamePwned = function (name) {
-    logger.info('check hibp name ' + name);
+    hibp.logger.info('check hibp name ' + name);
     name = encodeURIComponent(name);
     const url = `https://haveibeenpwned.com/api/v2/breachedaccount/${name}?truncateResponse=true`;
-    logger.info('url ' + url);
+    hibp.logger.info('url ' + url);
     hibp.xhrcall({
         url: url,
         method: 'GET',
@@ -118,9 +121,9 @@ DetailsView.prototype.checkNamePwned = function (name) {
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
-            logger.info('xhr ' + JSON.stringify(xhr));
+            hibp.logger.info('xhr ' + JSON.stringify(xhr));
             if (data && data.length > 0) {
-                logger.info('found breaches ' + JSON.stringify(data));
+                hibp.logger.info('found breaches ' + JSON.stringify(data));
                 let breaches = '';
                 data.forEach(breach => { breaches += '<li>' + _.escape(breach.Name) + '</li>\n'; });
                 hibp.alert(`WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>\n`);
@@ -128,20 +131,20 @@ DetailsView.prototype.checkNamePwned = function (name) {
                 this.userEditView.$el.addClass('input--error');
                 InputFx.shake(this.userEditView.$el);
             } else {
-                logger.info('check pwnd name passed...');
+                hibp.logger.info('check pwnd name passed...');
                 this.userEditView.$el.removeClass('input--error');
             }
         },
         error: (e, xhr) => {
             const err = xhr.response && xhr.response.error || new Error('Network error');
-            logger.error('Pwned Password API error', 'GET', xhr.status, err);
+            hibp.logger.error('Pwned Password API error', 'GET', xhr.status, err);
             err.status = xhr.status;
         }
     });
 };
 
 DetailsView.prototype.checkPwdPwned = function (passwordHash) {
-    logger.info('check hibp pwd (hash) ' + passwordHash);
+    hibp.logger.info('check hibp pwd (hash) ' + passwordHash);
     const prefix = passwordHash.substring(0, 5);
     hibp.xhrcall({
         url: `https://api.pwnedpasswords.com/range/${prefix}`,
@@ -152,7 +155,7 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
         statuses: [200, 404],
         success: data => {
             if (data) {
-                logger.info('found breaches ' + JSON.stringify(data));
+                hibp.logger.info('found breaches ' + JSON.stringify(data));
                 data.split('\r\n').forEach(line => {
                     const h = line.split(':');
                     const suffix = h[0];
@@ -165,23 +168,23 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
                     }
                 });
             } else {
-                logger.info('check pwnd passwd passed...');
+                hibp.logger.info('check pwnd passwd passed...');
                 this.passEditView.$el.removeClass('input--error');
             }
         },
         error: (e, xhr) => {
             const err = xhr.response && xhr.response.error || new Error('Network error');
-            logger.error('Pwned Password API error', 'GET', xhr.status, err);
+            hibp.logger.error('Pwned Password API error', 'GET', xhr.status, err);
             err.status = xhr.status;
         }
     });
 };
 
 DetailsView.prototype.fieldChanged = function (e) {
-    // logger.info('field changed ' + hibp.stringify(e));
     detailsViewFieldChanged.apply(this, arguments);
     if (e.field) {
-        if (e.field === '$Password' && settings.checkPwnedPwd) {
+        // hibp.logger.info('field changed ' + hibp.stringify(e));
+        if (e.field === '$Password' && hibp.checkPwnedPwd) {
             if (this.passEditView.value) {
                 const pwd = this.passEditView.value.getText();
                 if (pwd.replace(/\s/, '') !== '' && !pwd.startsWith('{REF:')) {
@@ -190,34 +193,37 @@ DetailsView.prototype.fieldChanged = function (e) {
                     });
                 }
             }
-        } else if (e.field === '$UserName' && settings.checkPwnedName) {
+        } else if (e.field === '$UserName' && hibp.checkPwnedName) {
             this.checkNamePwned(e.val);
         }
     }
 };
 
 module.exports.getSettings = function () {
-    return [{
+    const ret = [{
         name: 'checkPwnedPwd',
         label: 'Check passwords against HaveIBeenPwned list',
         type: 'checkbox',
-        value: true
+        value: hibp.checkPwnedPwd
     }, {
         name: 'checkPwnedName',
         label: 'Check user ids against HaveIBeenPwned list',
         type: 'checkbox',
-        value: true
+        value: hibp.checkPwnedName
     }, {
         name: 'blockPwnedPwd',
         label: 'Block pwned passwords if they are in HaveIBeenPwned list',
         type: 'checkbox',
-        value: true
+        value: hibp.blockPwnedPwd
     }, {
         name: 'blockPwnedName',
         label: 'Block pwned names if they are in HaveIBeenPwned list',
         type: 'checkbox',
-        value: true
-    }];
+        value: hibp.blockPwnedName
+        }
+    ];
+    hibp.logger.info(hibp.stringify(ret));
+    return ret;
 };
 
 module.exports.setSettings = function (changes) {
@@ -232,9 +238,10 @@ module.exports.setSettings = function (changes) {
 
     for (const field in changes) {
         const ccfield = field.substr(0, 1).toLowerCase() + field.substring(1);
-        settings[ccfield] = changes[field];
+        hibp[ccfield] = changes[field];
     }
     DetailsView.prototype.checkPwnedOnSettingsChanged.apply(changes);
+    // hibp.logger.info(hibp.stringify(hibp));
 };
 
 module.exports.uninstall = function () {
