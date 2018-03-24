@@ -1,6 +1,6 @@
 {
-  "date": "2018-03-24T13:46:03.428Z",
-  "signature": "uJd/ki5xQF46jfx2sbeqpL0S/2+JzWMwN2/Z4fZwz5KCBobKW0NtgX6PnaRucO5vEFXqYL6ay4a/TwZ2ArhobpQJvCNaPo47Lo/MtIvp1YGO8O395zC6As97mw7xjYGhKK5qlP5Okw+bMCDbg23pt9OPT7uGF7JDtGf0aItUTz6T+2T7YBLjWN7oqY+tEDfT38agBXpI64IxbDoBzna32azjl5imnoxMSMhTOJnGyo3O0S7f4GJL3uMQcbjsDA6GNFMd8z8VEB0SNKc6fLLga1zbj03uSz3NfHCxa7ueQYwO9hRsk7auyKQ4Vw2aJVPtiaaMCT+ncl+tlis0Ma68kw==",
+  "date": "2018-03-24T13:49:59.942Z",
+  "signature": "afe3xLilbB5d/dGtnO1e+Fdk/9q8MT/XhaJzYHFj2ZhL4xue7s3x3NfClRwPn/otPVkk1GcINVARmL0Z7jwP+8a3nnbLqmHt+hIu2KQ5sufTECsF0M1HVldOZd+a3sNwjOj+FcCSWKi+Xk20FJtlkg9X44jaDPTXg/BtVAJmeJXjCt5aD73ZskC21exD6vcbc8RZH3NHWRS9zN8P8L4+pG8dEFtPdvGMh5KEyEeys/vca5TU09ky4WWp1q28L/lIKsL96dPFAbkD/d3Yy0zQ9nQ8xfHWtROZnIPn1nmOnouBPJnKsPD3YdxvfYh7Jpe/bFd/fk66rhdcbAbJATWbjw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -521,7 +521,7 @@
     {
       "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
       "manifest": {
-        "version": "0.0.2",
+        "version": "0.0.3",
         "manifestVersion": "0.1.0",
         "name": "haveibeenpwned",
         "description": "Check HaveIBeenPwned password database",
@@ -531,7 +531,7 @@
           "url": "https://github.com/leolivier"
         },
         "resources": {
-          "js": "0krIixjyfVZbu/RiyQbiRmzDjvF+5taIvjHEZPdzbfRZ1jC1aWBZ6fnhn/otxIfKHqUpIGsQYu2fRHAglpfsR2i/GW9BJysFC6fpoNntB7M2KRk5axP46jUazebtYBcRjnCanvHsILJksTlDtdnOJk8Uk6zRPoWQ1zIRUjqQe2fswz8hFFy9PC31HEGjozDmXsVQ2a7vly6BXeCBfZqbXYudoU8+1a78a8Qr6aW0bQ3aur8nVZq8ApHrR43bfyiw/tjPyyeHmry7cnqfDENAKS6EihOLkFu01LWO5q913b61elVtol4EMzQvuScrtOHGmkkFf5+MLKPh3+XquWHVXA=="
+          "js": "v4ywb0IknjyQB86IYbnI11S3kVHSb6Te7KuPlLz1SkRxeKQua4G2mWYU1DW0A36oep9suCMQ9pENFyh1UaT8AtzGyhX1DPa7paJdfODUvEdX0Zy7TdMRbvZOqmrmYBovsRGfiZenA3oEqJnHlW2EJpBud1MdYyKSdlEOAMPhON0moppON9oqRjb+MMnIPaTJcwya7OntfcEVSgvnwk7jj0eDJtsnjNHub+1DWg4IFaDUA0SIQ9qP0MtexwKYlQJhzfSSReQ3kgK7v09QcZZgEvl0VnjrZJtgTZGaWAYA3Sy6hooCIkeXDzADl6DPCCN6EK0PA2WBIzmcARbJ3Z38dg=="
         },
         "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",

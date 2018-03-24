@@ -220,8 +220,7 @@ module.exports.getSettings = function () {
         label: 'Block pwned names if they are in HaveIBeenPwned list',
         type: 'checkbox',
         value: hibp.blockPwnedName
-        }
-    ];
+    }];
     hibp.logger.info(hibp.stringify(ret));
     return ret;
 };
