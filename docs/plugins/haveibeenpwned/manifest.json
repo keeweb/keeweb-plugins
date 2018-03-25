@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.3",
   "manifestVersion": "0.1.0",
   "name": "haveibeenpwned",
   "description": "Check HaveIBeenPwned password database",
@@ -13,6 +13,6 @@
     "css": "SjqcXv4URjI8bGAnkmzSncSAcoUEwlVwhN9T/k5APlwaxu6MOqIObmmBclUoxblDJ5p/ZG5eZljyHdfrLKhbuFFOWR/78InuDr8Ybn9LH6El5G3uuQlowt+wn0QtIaznPoWTzNemtev3q+3ttaZFCf88Qw5rni6JEdaxJ1VZkx3nZM+zQjbHlgmeCE6UgSWEhqo6n334KSB1sJieKw9Aht4W/ZjuBdrlf3S4navns1KA1dJut8/H9fWmHyksMzkVgzGYwgc7UPrp9Pgh5eUdD2BGFDNJBXxMhs3V/Vam/9idzD7xzcRUApRx5JEwCPoCUlGLINzQJBz7TnHJDd14AA=="
   },
   "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp9Cay/z7whBsHcf9klDjlA4qylWT7a/igTJ2nvUq2XuQrx98PTOexzzzg5oflk8nPEaMIsaFIf90V/rvQjJ1z9DR4zuQKDb4/GZVzxoylECAwNk80LvSPc1G0+6mwXIFp48wc6Advd4iYQCMkzWDCJXEm/1E+q85ty+H6EaLleKcJI0vlW96bbA9vFCmOsM5PYZfoGnVFRBLVthyUcGneilMvsxu5J7DKggQKPs04/WQZ5oHbUG83mxkxTdYDC3glpvV4BiaAD6z+2usO+fA97bXb+rY3O2iHJgWsa7jH0ybO0Nif6txE4d2+LJOLmfoImv7kdyu/eN3A78KejCOhwIDAQAB",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
   "license": "MIT"
 }
