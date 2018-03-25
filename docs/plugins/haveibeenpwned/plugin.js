@@ -5,7 +5,7 @@
  */
 
 const Logger = require('util/logger');
-// change log level here. 
+// change log level here.
 const LogLevel = Logger.Level.Info;
 
 const DetailsView = require('views/details/details-view');
