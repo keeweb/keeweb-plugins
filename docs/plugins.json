@@ -1,6 +1,6 @@
 {
-  "date": "2018-03-12T22:35:01.053Z",
-  "signature": "JaXe3jJl3Fs1tuA6igWVSZAWJXbuVcC/UxsTQsyeRt3Sq5CLaOMb1Z+cu/yo/iSkJa1GccEtI/wp7PyYkpy/2+8/6hBZvYuFSYrpukcpDQJtx1O1zqtyMTP2JCzeRo6IP7UdI5p6548YCXzXInUQG+ZFA16JbDDNYIAzJCi5j42S6021oepjmniFvVhz9944IlBDmzd0f2wnI95uWOouPLAowqpxIAXPS4LsmTh9HabgHpnoq30UM8tx5Us5SqkZ28dMfQAlRuwKldE6uIvn45MexJtnlUDFvw8szNqBpUIP8BfVnQ4zbirUEnmUzImEvRf/EcnskYNDuy2dLHxdKA==",
+  "date": "2018-03-24T13:49:59.942Z",
+  "signature": "afe3xLilbB5d/dGtnO1e+Fdk/9q8MT/XhaJzYHFj2ZhL4xue7s3x3NfClRwPn/otPVkk1GcINVARmL0Z7jwP+8a3nnbLqmHt+hIu2KQ5sufTECsF0M1HVldOZd+a3sNwjOj+FcCSWKi+Xk20FJtlkg9X44jaDPTXg/BtVAJmeJXjCt5aD73ZskC21exD6vcbc8RZH3NHWRS9zN8P8L4+pG8dEFtPdvGMh5KEyEeys/vca5TU09ky4WWp1q28L/lIKsL96dPFAbkD/d3Yy0zQ9nQ8xfHWtROZnIPn1nmOnouBPJnKsPD3YdxvfYh7Jpe/bFd/fk66rhdcbAbJATWbjw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -516,6 +516,26 @@
           "flag": "🇧🇷"
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
+      "manifest": {
+        "version": "0.0.3",
+        "manifestVersion": "0.1.0",
+        "name": "haveibeenpwned",
+        "description": "Check HaveIBeenPwned password database",
+        "author": {
+          "name": "Olivier LEVILLAIN",
+          "email": "olivier.levillain@free.fr",
+          "url": "https://github.com/leolivier"
+        },
+        "resources": {
+          "js": "v4ywb0IknjyQB86IYbnI11S3kVHSb6Te7KuPlLz1SkRxeKQua4G2mWYU1DW0A36oep9suCMQ9pENFyh1UaT8AtzGyhX1DPa7paJdfODUvEdX0Zy7TdMRbvZOqmrmYBovsRGfiZenA3oEqJnHlW2EJpBud1MdYyKSdlEOAMPhON0moppON9oqRjb+MMnIPaTJcwya7OntfcEVSgvnwk7jj0eDJtsnjNHub+1DWg4IFaDUA0SIQ9qP0MtexwKYlQJhzfSSReQ3kgK7v09QcZZgEvl0VnjrZJtgTZGaWAYA3Sy6hooCIkeXDzADl6DPCCN6EK0PA2WBIzmcARbJ3Z38dg=="
+        },
+        "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+        "license": "MIT"
       }
     }
   ]
