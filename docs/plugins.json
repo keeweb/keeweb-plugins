@@ -1,6 +1,6 @@
 {
-  "date": "2018-03-24T13:49:59.942Z",
-  "signature": "afe3xLilbB5d/dGtnO1e+Fdk/9q8MT/XhaJzYHFj2ZhL4xue7s3x3NfClRwPn/otPVkk1GcINVARmL0Z7jwP+8a3nnbLqmHt+hIu2KQ5sufTECsF0M1HVldOZd+a3sNwjOj+FcCSWKi+Xk20FJtlkg9X44jaDPTXg/BtVAJmeJXjCt5aD73ZskC21exD6vcbc8RZH3NHWRS9zN8P8L4+pG8dEFtPdvGMh5KEyEeys/vca5TU09ky4WWp1q28L/lIKsL96dPFAbkD/d3Yy0zQ9nQ8xfHWtROZnIPn1nmOnouBPJnKsPD3YdxvfYh7Jpe/bFd/fk66rhdcbAbJATWbjw==",
+  "date": "2018-03-25T11:57:58.979Z",
+  "signature": "zSTtPfo/ceRtR/2zamJHrEQqPR1XbfoSQYxcX/pBB6HK10LCKIM/q7HHXJ7xqHb7QjtEt0QbS6TKQF/c9Ro/ksfs7sMTj1m3inEs/HhZ8OE8XNsdEjgIY2EhZOZkVSSH2MR7AxeArjXeWRRg1OLWURU2vEQXhgFlcML1/wIXNILU2SiyAswmTQPiyfANKHlRjWO5tP+i4LRjVb3aLU31/qasgVGMfJaH3iMmQATDHWMQPfDYskbHuo4eBx+HFNwN0Q5pFS3gJXZiSQBikVyYL6Dw3Wb9/dOSr/yobg3b8Rbc4r6kj09hsiQPzW288BvXEY/KhK6yJ+s8HisO1v6wjQ==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -521,7 +521,7 @@
     {
       "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
       "manifest": {
-        "version": "0.0.3",
+        "version": "0.0.4",
         "manifestVersion": "0.1.0",
         "name": "haveibeenpwned",
         "description": "Check HaveIBeenPwned password database",
@@ -531,7 +531,8 @@
           "url": "https://github.com/leolivier"
         },
         "resources": {
-          "js": "v4ywb0IknjyQB86IYbnI11S3kVHSb6Te7KuPlLz1SkRxeKQua4G2mWYU1DW0A36oep9suCMQ9pENFyh1UaT8AtzGyhX1DPa7paJdfODUvEdX0Zy7TdMRbvZOqmrmYBovsRGfiZenA3oEqJnHlW2EJpBud1MdYyKSdlEOAMPhON0moppON9oqRjb+MMnIPaTJcwya7OntfcEVSgvnwk7jj0eDJtsnjNHub+1DWg4IFaDUA0SIQ9qP0MtexwKYlQJhzfSSReQ3kgK7v09QcZZgEvl0VnjrZJtgTZGaWAYA3Sy6hooCIkeXDzADl6DPCCN6EK0PA2WBIzmcARbJ3Z38dg=="
+          "js": "PvSVaFRsPOIPWWGvRn85qFW1yCcVQxUU1HXWNYga91my8r+oly+psHXjDyCf8xLKEEPopneV2b5eUswqtt5GWOlR0U/oOEujBkzm/2nut5RLF4fM9MMpwW1TAgb6KGsANpsoRpdFCrK66/cQm+Z23XXweLLjL+qg8jjrQyrhYh5SFIHvbe/2tehPFIiwwgg1zAIbsgiGX18sYlMZtEikKQrDx0TMMcfQk2eIC5ME/Y9g4riefUDbpwNTAUJEqBMIjjKbTnqPBL/B+0GjnEEsK8wujN914kAa6QMIz/ekvEOLp2AxO1KQFHeEADu7JsKkg30lWPPmp8Hw0m/GZWzgUg==",
+          "css": "KMKMC06QLp7fH4fbRxEel6QL4Lwz9Fqkt6Pb42mp295ZvwToO4WZ+3fH9F0qYCrLZBWDiqq3t1RHvNwuzu8A6Lgq9CZPtqGVxaf14imLzyXTMgi8mRJrqquQ33rNH6gncQVSjWXG21AN/S7+p355vPEziPmFhN5lWF1k05fnuzjG2Lf9beeoOYQ3XItkJzQ5cStEPlb4UOEb0P76aiS+DmHS7IfoHl8P28+RaLNoeDhPogm4SVpwRbVyvPePYSkB2K4S/Fw/pv06vQS8Ohxvfdujt6iJ0Jl3KWNajg5IflHkV+LSbX1Meu82HU1rh9RJ8OJDuW87q47mcZ6upoy9UA=="
         },
         "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
