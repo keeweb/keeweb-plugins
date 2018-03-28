@@ -9,11 +9,9 @@ const Logger = require('util/logger');
 const LogLevel = Logger.Level.Info;
 
 const DetailsView = require('views/details/details-view');
-// const Alerts = require('comp/alerts');
 const InputFx = require('util/input-fx');
 const Kdbxweb = require('kdbxweb');
 const _ = require('_');
-// const Menu = require()
 const Tip = require('util/tip');
 const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
 
