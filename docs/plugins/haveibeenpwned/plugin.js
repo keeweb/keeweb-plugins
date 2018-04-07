@@ -157,7 +157,7 @@ class HIBPUtils {
             url: url,
             method: 'GET',
             responseType: 'json',
-            headers: null, 
+            headers: null,
             data: null,
             statuses: [200, 404]
         }).then(data => {
@@ -177,7 +177,7 @@ class HIBPUtils {
             url: `https://api.pwnedpasswords.com/range/${prefix}`,
             method: 'GET',
             responseType: 'text',
-            headers: null, 
+            headers: null,
             data: null,
             statuses: [200, 404]
         }).then(data => {
@@ -316,6 +316,7 @@ DetailsView.prototype.addFieldViews = function () {
             hibp.sha1(pwd)
                 .then(hibp.checkPwdPwned)
                 .then(npwned => {
+                    this.model.pwdPwned = npwned;
                     if (npwned) { // pawned
                         const warning = HIBPLocale.hibpPwdWarning.replace('{}', npwned);
                         hibp.alert(this.passEditView.$el, warning);
@@ -341,6 +342,7 @@ DetailsView.prototype.addFieldViews = function () {
         } else {
             hibp.checkNamePwned(name)
                 .then(breaches => {
+                    this.model.namePwned = breaches;
                     if (breaches) { // pawned
                         name = _.escape(name); // breaches already escaped
                         const warning = HIBPLocale.hibpNameWarning.replace('{name}', name).replace('{breaches}', breaches);
@@ -349,7 +351,6 @@ DetailsView.prototype.addFieldViews = function () {
                         hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
                     }
                 }).catch(error => {
-                    // hibp.logger.info('check pwned name error: ' + error.message);
                     hibp.logger.info('check pwned name error: ' + hibp.stringify(error));
                 });
         }
@@ -374,7 +375,6 @@ AppModel.prototype.getEntriesByFilter = function (filter) {
     const names = [];
     const pwds = [];
     hibp.logger.debug('entries already checked=' + this.pwnedListChecked);
-    // hibp.logger.debug('getEntriesByFilter: entries = ' + JSON.stringify(entries));
     if (hibp.checkPwnedList && !hibp.pwnedListChecked && entries && entries.length) {
         hibp.pwnedListChecked = true;
         hibp.logger.debug('getEntriesByFilter');
@@ -385,21 +385,15 @@ AppModel.prototype.getEntriesByFilter = function (filter) {
             if (name !== '') {
                 if (names[name]) names[name].push(item);
                 else names[name] = [item];
-                // hibp.logger.debug(`getEntriesByFilter: names[${name}]=` + names[name].map(item => item.title).join(' '));
             }
             let pwd = item.password;
             if (pwd) {
                 hibp.logger.debug(`getEntriesByFilter: pwd=${pwd}`);
-                pwd = pwd.getText();    
+                pwd = pwd.getText();
                 if (pwds[pwd]) pwds[pwd].push(item);
                 else pwds[pwd] = [item];
-                // hibp.logger.debug(`getEntriesByFilter: pwds[${pwd}]=` + pwds[pwd].map(item=>item.title).join(' '));
             }
         });
-        // hibp.logger.debug('getEntriesByFilter: names= ' + Object.entries(names).map(([name, items]) =>
-        //    '<' + name + ':>' + JSON.stringify(items)).join('|') + '@'); // items.map(item => item.title).join(', ')));
-        // hibp.logger.debug('getEntriesByFilter: pwds= ' + Object.entries(pwds).map(([pwd, items]) =>
-        //    '<' + pwd + ':>' + JSON.stringify(items)).join('|') + '@'); // items.map(item => item.title).join(', ')));
         // asynchronously look for pawned names
         setTimeout(() => {
             Object.entries(names).forEach(([name, items]) => {
