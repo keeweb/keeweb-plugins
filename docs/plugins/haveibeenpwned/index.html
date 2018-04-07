@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>KeeWeb Plugin: HaveIBeenPwned</title>
     <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="stylesheet" href="plugin.css" />
     <style>
         body {
             font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;;
@@ -12,10 +13,24 @@
     </style>
 </head>
 <body>
-<h1>KeeWeb Plugin: HaveIBeenPwned</h1>
-<a href="https://plugins.keeweb.info/plugins/haveibeenpwned">https://plugins.keeweb.info/plugins/haveibeenpwned</a>
-<p>This plugin checks the <a href="https://haveibeenpwned.com">HaveIBeenPwned</a> site each time you enter either a user name or a password to look if they have been pawned in a breach. The password is safely checked (not sent over the network).</p>
-<p>Freely inspired from the equivalent keepass plugin</p>
+    <h1>KeeWeb Plugin: HaveIBeenPwned</h1>
+    <a href="https://plugins.keeweb.info/plugins/haveibeenpwned">https://plugins.keeweb.info/plugins/haveibeenpwned</a>
+    <p>This plugin checks the <a href="https://haveibeenpwned.com">HaveIBeenPwned</a> site each time you enter either a user name or a password 
+    to look if they have been pawned in a breach. The password is safely checked (not sent over the network).</p>
+    <p>You can choose between different options for checking (independently on user names and passwords): </p>
+    <ul>
+        <li>No check at all</li>
+        <li>Be alerted if pawned</li>
+        <li>Be asked to revert or not when pawned</li>
+    </ul>
+    <p>A "pwned icon" (<span class="hibp-pwned"></span>) is displayed near the pawned fields in details view and in the items list...</p>
+    <p>The check is done :</p>
+    <ul>
+        <li>When you select an item</li>
+        <li>When you change either a password or a user name (depending on the options)</li>
+    </ul>
+    <p>You also have an option to check all entries asynchronously...</p>
+    <p><i>Freely inspired from the equivalent keepass plugin<i></p>
 </body>
 </html>
 
