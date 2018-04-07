@@ -14,13 +14,13 @@ const HIBPLocale = {
     hibpCheckLevelNone: 'No thanks, don\'t check',
     hibpCheckLevelAlert: 'Yes and alert me if pwned',
     hibpCheckLevelAskMe: 'Yes and ask me if pwned',
+    hibpCheckOnList: 'Show pawned entries on list',
     hibpPwdWarning: `WARNING! This password was used by {} pawned accounts referenced on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!`,
     hibpNameWarning: 'WARNING! The account named "{name}" has been pawned in the following breaches<br/>\n<ul>\n{breaches}\n</ul><p>Please check on <a href=\'https://haveibeenpwned.com\'>https://haveibeenpwned.com</a></p>',
     hibpChangePwd: 'Do you want to keep this new password?',
     hibpChangeName: 'Do you want to keep this new user name?',
     hibpApiError: 'HaveIBeenPwned API error'
 };
-
 
 const HIBPCheckLevel = {
     None: 'none',
@@ -29,6 +29,8 @@ const HIBPCheckLevel = {
 };
 
 const DetailsView = require('views/details/details-view');
+const ListView = require('views/list-view');
+const AppModel = require('models/app-model');
 const InputFx = require('util/input-fx');
 const Kdbxweb = require('kdbxweb');
 const _ = require('_');
@@ -37,12 +39,17 @@ const Alerts = require('comp/alerts');
 
 const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
 const detailsViewAddFieldViews = DetailsView.prototype.addFieldViews;
+const listViewRender = ListView.prototype.render;
+const appModelGetEntriesByFilter = AppModel.prototype.getEntriesByFilter;
+
 let _seen = [];
 class HIBPUtils {
     constructor() {
         _seen = [];
         this.checkPwnedPwd = HIBPCheckLevel.Alert;
         this.checkPwnedName = HIBPCheckLevel.Alert;
+        this.checkPwnedList = false;
+        this.pwnedListChecked = false;
         this.logger = new Logger('HaveIBeenPwned');
         this.logger.setLevel(LogLevel);
     };
@@ -56,7 +63,7 @@ class HIBPUtils {
         return value;
     };
     stringify(obj) {
-        const ret = JSON.stringify(obj, this._replacer);
+        const ret = JSON.stringify(obj, hibp._replacer);
         _seen = [];
         return ret;
     };
@@ -69,7 +76,7 @@ class HIBPUtils {
             const statuses = config.statuses || [200];
             xhr.open(config.method || 'GET', config.url);
             if (config.headers) {
-                config.headers.forEach((value, key) => {
+                _.forEach(config.headers, (value, key) => {
                     xhr.setRequestHeader(key, value);
                 });
             };
@@ -82,7 +89,7 @@ class HIBPUtils {
             });
             xhr.addEventListener('error', () => {
                 const err = xhr.response && xhr.response.error || new Error('Network error');
-                this.logger.error(HIBPLocale.hibpApiError, 'GET', xhr.status, err);
+                hibp.logger.error(HIBPLocale.hibpApiError, 'GET', xhr.status, err);
                 reject(xhr.statusText);
             });
             xhr.send(config.data);
@@ -107,20 +114,19 @@ class HIBPUtils {
     _digest(algo, str) {
         const buffer = Kdbxweb.ByteUtils.stringToBytes(str);
         const subtle = window.crypto.subtle || window.crypto.webkitSubtle;
-        const _self = this;
         return subtle.digest(algo, buffer).then(hash => {
-            return _self._hex(hash);
+            return hibp._hex(hash);
         });
     };
     sha1(str) {
-        return this._digest('SHA-1', str);
+        return hibp._digest('SHA-1', str);
     };
     sha256(str) {
-        return this._digest('SHA-256', str);
+        return hibp._digest('SHA-256', str);
     };
     stackTrace() {
         const err = new Error();
-        this.logger.debug(err.stack);
+        hibp.logger.debug(err.stack);
     }
     alert(el, msg) {
         // Alerts.info({ body: msg, title: 'HaveIBeenPwned' });
@@ -130,10 +136,10 @@ class HIBPUtils {
         el.find('.details__field-value').addClass('hibp-pwned');
         Tip.createTip(el, { title: msg, placement: 'bottom' }); // .show();
         InputFx.shake(el);
-        // this.stackTrace();
+        // hibp.stackTrace();
     };
     passed(el, msg) {
-        this.logger.info(msg);
+        hibp.logger.info(msg);
         el.removeClass('input--error');
         el.find('.details__field-value').removeClass('hibp-pwned');
         const tip = el._tip;
@@ -143,20 +149,20 @@ class HIBPUtils {
         }
     }
     checkNamePwned (name) {
-        this.logger.info('check hibp name ' + name);
+        hibp.logger.info('check hibp name ' + name);
         name = encodeURIComponent(name);
         const url = `https://haveibeenpwned.com/api/v2/breachedaccount/${name}?truncateResponse=true`;
         // hibp.logger.debug('url ' + url);
-        return this._xhrpromise({
+        return hibp._xhrpromise({
             url: url,
             method: 'GET',
             responseType: 'json',
-            headers: undefined,
+            headers: null, 
             data: null,
             statuses: [200, 404]
         }).then(data => {
             if (data && data.length > 0) {
-                this.logger.debug('found breaches ' + JSON.stringify(data));
+                hibp.logger.debug('found breaches ' + JSON.stringify(data));
                 let breaches = '';
                 data.forEach(breach => { breaches += '<li>' + _.escape(breach.Name) + '</li>\n'; });
                 return breaches;
@@ -165,33 +171,41 @@ class HIBPUtils {
     };
     checkPwdPwned (passwordHash) {
         passwordHash = passwordHash.toUpperCase();
-        this.logger.info('check hibp pwd (hash) ' + passwordHash);
+        hibp.logger.info('check hibp pwd (hash) ' + passwordHash);
         const prefix = passwordHash.substring(0, 5);
-        return this._xhrpromise({
+        return hibp._xhrpromise({
             url: `https://api.pwnedpasswords.com/range/${prefix}`,
             method: 'GET',
             responseType: 'text',
-            headers: undefined,
+            headers: null, 
             data: null,
             statuses: [200, 404]
         }).then(data => {
             let nb = null;
             if (data) {
-                // this.logger.debug('found breaches ' + JSON.stringify(data));
+                // hibp.logger.debug('found breaches ' + JSON.stringify(data));
                 data.split('\r\n').some(line => {
                     const h = line.split(':');
                     const suffix = h[0];
                     if (prefix + suffix === passwordHash) {
                         nb = _.escape(h[1]);
-                        // this.logger.debug('matching breach ' + suffix);
+                        // hibp.logger.debug('matching breach ' + suffix);
                         return true;
                     }
                 });
             }
-            this.logger.debug('pawned:' + nb);
+            hibp.logger.debug('pawned:' + nb);
             return nb;
         });
     };
+    showItem(model) {
+        if (model) {
+            hibp.logger.debug('show entry ' + model.title +
+                ': name=' + model.user + ', pwd=' + (model.password ? model.password.getText() : 'undefined') +
+                ', namePwned=' + model.namePwned + ', pwdPwned=' + model.pwdPwned
+            );
+        }
+    }
 };
 
 const hibp = new HIBPUtils();
@@ -200,10 +214,8 @@ DetailsView.prototype.fieldChanged = function (e) {
     if (e.field) {
         // hibp.logger.debug('field changed ' + hibp.stringify(e));
         if (e.field === '$Password' && hibp.checkPwnedPwd !== HIBPCheckLevel.None && this.passEditView.value) {
-            // const oldpwd = this.model.entry.fields.Password || Kdbxweb.ProtectedValue.fromString('');
             let pwd = e.val.getText();
             if (typeof pwd !== 'string') pwd = pwd.getText();
-            // hibp.logger.debug('pwd:>>>' + pwd + '<<< (obj=' + hibp.stringify(pwd) + ') oldpwd:>>>' + oldpwd + '<<<');
             hibp.logger.debug('pwd:>>>' + pwd + '<<< obj=' + hibp.stringify(pwd));
             if (pwd && pwd.replace(/\s/, '') !== '' && !pwd.startsWith('{REF:')) {
                 hibp.sha1(pwd)
@@ -218,20 +230,22 @@ DetailsView.prototype.fieldChanged = function (e) {
                                     body: warning,
                                     icon: 'exclamation-triangle',
                                     success: () => { // keep password but set an alert
+                                        this.model.pwdPwned = npwned;
                                         detailsViewFieldChanged.apply(this, arguments);
                                         hibp.alert(this.passEditView.$el, warning);
                                     },
-                                    cancel: () => { // reset password
+                                    cancel: () => { // reset password by not registering change
                                         hibp.logger.info('keeping old passwd');
-                                        // this.model.setField('Password', oldpwd);
                                     }
                                 });
                             } else { // check level = alert, keep pwd, set an alert
+                                this.model.pwdPwned = npwned;
                                 detailsViewFieldChanged.apply(this, arguments);
                                 hibp.alert(this.passEditView.$el, warning);
                             }
                         } else { // not pawned
                             hibp.passed(this.passEditView.$el, 'check pwned password passed...');
+                            this.model.pwdPwned = null;
                             detailsViewFieldChanged.apply(this, arguments);
                         }
                     }).catch(error => {
@@ -255,6 +269,7 @@ DetailsView.prototype.fieldChanged = function (e) {
                                     body: warning,
                                     icon: 'exclamation-triangle',
                                     success: () => { // keep name, but set an alert
+                                        this.model.namePwned = breaches;
                                         detailsViewFieldChanged.apply(this, arguments);
                                         hibp.alert(this.userEditView.$el, warning);
                                     },
@@ -263,11 +278,13 @@ DetailsView.prototype.fieldChanged = function (e) {
                                     }
                                 });
                             } else { // check level = alert, keep new name but sets an alert
+                                this.model.namePwned = breaches;
                                 detailsViewFieldChanged.apply(this, arguments);
                                 hibp.alert(this.userEditView.$el, warning);
                             }
                         } else { // not pawned
                             hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
+                            this.model.namePwned = null;
                             detailsViewFieldChanged.apply(this, arguments);
                         }
                     }).catch(error => {
@@ -284,40 +301,138 @@ DetailsView.prototype.fieldChanged = function (e) {
 
 DetailsView.prototype.addFieldViews = function () {
     detailsViewAddFieldViews.apply(this, arguments);
-    let pwd = this.model.entry.fields.Password;
+    let pwd = this.model.password;
     if (typeof pwd !== 'string') pwd = pwd.getText();
-    hibp.logger.debug('addfv pwd:>>>' + pwd + '<<<');
+    // hibp.logger.debug('addfv pwd:>>>' + pwd + '<<<');
     if (hibp.checkPwnedPwd !== HIBPCheckLevel.None && pwd && pwd.replace(/\s/, '') !== '' && !pwd.startsWith('{REF:')) {
-        hibp.sha1(pwd)
-            .then(hibp.checkPwdPwned)
-            .then(npwned => {
-                if (npwned) { // pawned
-                    const warning = HIBPLocale.hibpPwdWarning.replace('{}', npwned);
-                    hibp.alert(this.passEditView.$el, warning);
-                } else { // not pawned
-                    hibp.passed(this.passEditView.$el, 'check pwned password passed...');
-                }
-            }).catch(error => {
-                hibp.logger.info('check pwned password error: ' + error.message);
-            });
+        if (hibp.checkPwnedList) {
+            if (this.model.pwdPwned) {
+                const warning = HIBPLocale.hibpPwdWarning.replace('{}', this.model.pwdPwned);
+                hibp.alert(this.passEditView.$el, warning);
+            } else { // not pawned
+                hibp.passed(this.passEditView.$el, 'check pwned password passed...');
+            }
+        } else {
+            hibp.sha1(pwd)
+                .then(hibp.checkPwdPwned)
+                .then(npwned => {
+                    if (npwned) { // pawned
+                        const warning = HIBPLocale.hibpPwdWarning.replace('{}', npwned);
+                        hibp.alert(this.passEditView.$el, warning);
+                    } else { // not pawned
+                        hibp.passed(this.passEditView.$el, 'check pwned password passed...');
+                    }
+                }).catch(error => {
+                    hibp.logger.info('check pwned pwd error: ' + error);
+                });
+        }
     }
     let name = this.userEditView.value;
-    hibp.logger.debug('addfv name:>>>' + name + '<<<');
+    // hibp.logger.debug('addfv name:>>>' + name + '<<<');
     if (name && name.replace(/\s/, '') !== '' && hibp.checkPwnedName !== HIBPCheckLevel.None) {
-        hibp.checkNamePwned(name)
-            .then(breaches => {
-                if (breaches) { // pawned
-                    name = _.escape(name); // breaches already escaped
-                    const warning = HIBPLocale.hibpNameWarning.replace('{name}', name).replace('{breaches}', breaches);
-                    hibp.alert(this.userEditView.$el, warning);
-                } else { // not pawned
-                    hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
-                }
-            }).catch(error => {
-                hibp.logger.info('check pwned name error: ' + error.message);
-            });
+        if (hibp.checkPwnedList) {
+            if (this.model.namePwned) {
+                name = _.escape(name); // breaches already escaped
+                const warning = HIBPLocale.hibpNameWarning.replace('{name}', name).replace('{breaches}', this.model.namePwned);
+                hibp.alert(this.userEditView.$el, warning);
+            } else { // not pawned
+                hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
+            }
+        } else {
+            hibp.checkNamePwned(name)
+                .then(breaches => {
+                    if (breaches) { // pawned
+                        name = _.escape(name); // breaches already escaped
+                        const warning = HIBPLocale.hibpNameWarning.replace('{name}', name).replace('{breaches}', breaches);
+                        hibp.alert(this.userEditView.$el, warning);
+                    } else { // not pawned
+                        hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
+                    }
+                }).catch(error => {
+                    // hibp.logger.info('check pwned name error: ' + error.message);
+                    hibp.logger.info('check pwned name error: ' + hibp.stringify(error));
+                });
+        }
     }
 };
+
+ListView.prototype.render = function () {
+    listViewRender.apply(this, arguments);
+    if (hibp.checkPwnedList && this.items && this.items.length) {
+        hibp.logger.debug('rendering list in hibp');
+        // this.items.forEach(hibp.showItem);
+        this.items.filter(item => item.namePwned || item.pwdPwned).forEach(item => {
+            hibp.logger.debug('list pwned ' + item.title);
+            const itemEl = document.getElementById(item.id);
+            if (itemEl) { itemEl.classList.add('hibp-pwned'); }
+        });
+    }
+};
+
+AppModel.prototype.getEntriesByFilter = function (filter) {
+    const entries = appModelGetEntriesByFilter.apply(this, arguments);
+    const names = [];
+    const pwds = [];
+    hibp.logger.debug('entries already checked=' + this.pwnedListChecked);
+    // hibp.logger.debug('getEntriesByFilter: entries = ' + JSON.stringify(entries));
+    if (hibp.checkPwnedList && !hibp.pwnedListChecked && entries && entries.length) {
+        hibp.pwnedListChecked = true;
+        hibp.logger.debug('getEntriesByFilter');
+        entries.forEach(item => {
+            hibp.logger.debug('getEntriesByFilter: item = ' + item.title);
+            // get different user names and pwds to optimize queries
+            const name = item.user;
+            if (name !== '') {
+                if (names[name]) names[name].push(item);
+                else names[name] = [item];
+                // hibp.logger.debug(`getEntriesByFilter: names[${name}]=` + names[name].map(item => item.title).join(' '));
+            }
+            let pwd = item.password;
+            if (pwd) {
+                hibp.logger.debug(`getEntriesByFilter: pwd=${pwd}`);
+                pwd = pwd.getText();    
+                if (pwds[pwd]) pwds[pwd].push(item);
+                else pwds[pwd] = [item];
+                // hibp.logger.debug(`getEntriesByFilter: pwds[${pwd}]=` + pwds[pwd].map(item=>item.title).join(' '));
+            }
+        });
+        // hibp.logger.debug('getEntriesByFilter: names= ' + Object.entries(names).map(([name, items]) =>
+        //    '<' + name + ':>' + JSON.stringify(items)).join('|') + '@'); // items.map(item => item.title).join(', ')));
+        // hibp.logger.debug('getEntriesByFilter: pwds= ' + Object.entries(pwds).map(([pwd, items]) =>
+        //    '<' + pwd + ':>' + JSON.stringify(items)).join('|') + '@'); // items.map(item => item.title).join(', ')));
+        // asynchronously look for pawned names
+        setTimeout(() => {
+            Object.entries(names).forEach(([name, items]) => {
+                hibp.logger.debug('getEntriesByFilter: check name ' + name);
+                hibp.checkNamePwned(name)
+                    .then(breaches => {
+                        items.forEach(item => { item.namePwned = breaches; });
+                        if (breaches) this.refresh();
+                    });
+            });
+        }, 20);
+        // asynchronously look for pawned pwds
+        setTimeout(() => {
+            Object.entries(pwds).forEach(([pwd, items]) => {
+                hibp.logger.debug('getEntriesByFilter: check pwd ' + pwd);
+                hibp.sha1(pwd)
+                    .then(hibp.checkPwdPwned)
+                    .then(nb => {
+                        items.forEach(item => { item.pwdPwned = nb; });
+                        if (nb) this.refresh();
+                    });
+            });
+        }, 20);
+    }
+    return entries;
+};
+
+// for debug purpose
+// const dvrender = DetailsView.prototype.render;
+// DetailsView.prototype.render = function () {
+//     dvrender.apply(this, arguments);
+//     hibp.showItem(this.model);
+// },
 
 module.exports.getSettings = function () {
     const options = [
@@ -338,7 +453,13 @@ module.exports.getSettings = function () {
             type: 'select',
             options: options,
             value: hibp.checkPwnedName
+        }, {
+            name: 'checkPwnedList',
+            label: HIBPLocale.hibpCheckOnList,
+            type: 'checkbox',
+            value: hibp.checkPwnedList
         }
+
     ];
 };
 
@@ -353,4 +474,6 @@ module.exports.setSettings = function (changes) {
 module.exports.uninstall = function () {
     DetailsView.prototype.fieldChanged = detailsViewFieldChanged;
     DetailsView.prototype.addFieldViews = detailsViewAddFieldViews;
+    ListView.prototype.render = listViewRender;
+    AppModel.prototype.getEntriesByFilter = appModelGetEntriesByFilter;
 };
