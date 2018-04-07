@@ -17,4 +17,3 @@
   75% { transform: rotate(-10deg); color: var(--error-color); }
   100% { transform: rotate(0deg); }
 }
-
