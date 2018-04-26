@@ -1,8 +1,8 @@
-.hibp-pwned:after{
-    content: "';--";
+.hibp-pwned:before{
+    content: "';-- ";
     font: bold 1.2em "Courrier New";
     text-align: center;
-    background-color: var(--text-color);
+    background-color: var(--background-color);
     background-size:cover;
     position: relative;;
     width:1.5em;
@@ -17,4 +17,3 @@
   75% { transform: rotate(-10deg); color: var(--error-color); }
   100% { transform: rotate(0deg); }
 }
-
