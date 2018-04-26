@@ -16,7 +16,7 @@ hLogger.setLevel(Logger.Level.Debug);
 /**
  * Cache time to live
  * Set to 14 days (in milliseconds)
- * @type {integer}
+ * @type {number}
  */
 const CacheTTL = 1000 * 3600 * 24 * 14;
 
@@ -399,7 +399,7 @@ class HIBP {
     /**
      * Change the password field to display an alert or reset it depending on npwned value
      * @param {View} dview the details view
-     * @param {integer} npwned the number of times the password has been pawned (or null or 0 if none)
+     * @param {number} npwned the number of times the password has been pawned (or null or 0 if none)
      * @param {string} warning the warning to display
      * @param {...} args the arguments to be passed to the original 'fieldChanged' function
      */
@@ -685,7 +685,6 @@ DetailsView.prototype.addFieldViews = function () {
 
 /**
  * Replaces initial render function in ListView
- *
  */
 ListView.prototype.render = function () {
     listViewRender.apply(this, arguments);
@@ -697,12 +696,20 @@ ListView.prototype.render = function () {
     });
 };
 
+/**
+ * Replaces initial getEntriesByFilter in AppModel
+ * Check all entries to see if they are pawned
+ * @param {Filter} filter 
+ */
 AppModel.prototype.getEntriesByFilter = function (filter) {
     const entries = appModelGetEntriesByFilter.apply(this, arguments);
     hibp.filterEntries(this, entries);
     return entries;
 };
 
+/**
+ * @return settings of the plugin
+ */
 module.exports.getSettings = function () {
     const options = [
         { value: HIBPCheckLevel.None, label: HIBPLocale.hibpCheckLevelNone },
@@ -732,6 +739,10 @@ module.exports.getSettings = function () {
     ];
 };
 
+/**
+ * Take settings changes into account
+ * @param {Settings array} changes 
+ */
 module.exports.setSettings = function (changes) {
     for (const field in changes) {
         const ccfield = field.substr(0, 1).toLowerCase() + field.substring(1);
@@ -740,6 +751,9 @@ module.exports.setSettings = function (changes) {
     HIBPUtils.dump(hibp);
 };
 
+/**
+ * Reset all changes when the plugin is uninstalled
+ */
 module.exports.uninstall = function () {
     DetailsView.prototype.fieldChanged = detailsViewFieldChanged;
     DetailsView.prototype.addFieldViews = detailsViewAddFieldViews;
