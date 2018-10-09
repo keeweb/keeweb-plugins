@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "manifestVersion": "0.1.0",
+  "name": "keeweb-mojave",
+  "description": "A KeeWeb dark theme, inspired by the new Dark Mode of macOS Mojave",
+  "author": {
+    "name": "agurodriguez",
+    "email": "me@agurodriguez.net",
+    "url": "http://agurodriguez.net"
+  },
+  "resources": {
+    "js": "NWC5B0XRzvPAYGrTuVJXRcOLiV65FWYClvNeFVaKh2l3uCIZmuLi3I+ja/MPg5JN/6mEeLYE262FrjYIGUo1ZQvN2VCNsQ2Y1C34tSEB2tvoO9LEHUPfCpNncX1JeQxdADuON6MEVPikfyR0KFoFoyCa56JqjUWfdRrPdnvRzHo568FfrIL+JRBIw06dxe2LxR36Mm0IhOxUjmiTcNl89NAMe0q55SWdsY/J8Dexn+2KKy9SNq9ahu8OZ60xW4XOvUpxNkuJl3y8JF6nmlnpGlgH00rROZnAmAYjGr3GHro4U307Fet1TU0IB0p3dMy+ShtDte31xgkMwdnh+wTCxg==",
+    "css": "yKwlcd8ppbHQ7jNGcebv/YUp+wpT8CSDWKZUfcZ60RZ4c8wbLoPEauCwSawGSNJe7ZZm9x7KqffRxlKNWNdZoVdaISN4tYTD/rmiwzrewxmH3rJvgAcOFoM1EvAFUdhEafS/Zv+p4YY9jg7GBEQ9I2shPDEKbRLkdlD5kpvkfP9rQeW1im51yYHuD9c+TIAswtLjRiBZ9ihq5uAKPF2eCTK8FYm3i7OvDjR+KaW4frUhyxniq954qlQs2kCvOiN3S1ixYLjSyNovMlXPx+O+Mdn0OCHyKRKJfDeMp2IB1E7EKt9c/Yvl3rLPfFVZe+gstLq+C4zeT5NxdB7eiHXciQ=="
+  },
+  "licence": "MIT",
+  "url": "https://github.com/agurodriguez/keeweb-mojave",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyeJsWMw8Fv6Wr/4hG1CAv4PW8xhO/rV+Yrf1dclJJvlvINeVqbm2DQpfvGoBbIS/3cM336l7stnrHA2Ae6G2FRl+zwBT199+Dq7n9N8qkXRqcdFU6CGBwTXyHubUhzwZljLc1n95n/UVKEyLABkj+5+ZUmWN1qi0Q3+bu0n1mswnLA1TWsXNe5yRifvNPENPiuUq8O394QUnztfNE4nLerFJ/3SJDml8F0mguFDPsImPx864HLHNlxyTllAHGt81mAcgFiUnPlNQ3nYGPwLT1yFMxNEWgFICOaUiwh2K0amnaW8rMVOmtCFF0Ob4U9ajWyKpTLr0Vaag56EibEb13QIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "mojave",
+    "title": "Mojave"
+  }
+}
