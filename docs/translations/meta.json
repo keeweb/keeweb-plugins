@@ -29,6 +29,12 @@
     "count": 501,
     "version": "1.5.0"
   },
+  "tr": {
+    "name": "Türkçe",
+    "nameEn": "Turkish",
+    "count": 377,
+    "version": "1.1.0"
+  },
   "pl": {
     "name": "Polski",
     "nameEn": "Polish",
@@ -46,6 +52,12 @@
     "nameEn": "Ukrainian",
     "count": 493,
     "version": "1.3.0"
+  },
+  "et-EE": {
+    "name": "Eesti (Eesti)",
+    "nameEn": "Estonian (Estonia)",
+    "count": 392,
+    "version": "1.0.0"
   },
   "pt-BR": {
     "name": "Português (Brasil)",
@@ -69,7 +81,7 @@
     "name": "Français",
     "nameEn": "French",
     "count": 501,
-    "version": "1.7.0"
+    "version": "1.8.0"
   },
   "de-DE": {
     "name": "Deutsch",
@@ -87,13 +99,13 @@
     "name": "Русский",
     "nameEn": "Russian",
     "count": 501,
-    "version": "1.10.0"
+    "version": "1.11.0"
   },
   "es-ES": {
     "name": "Español",
     "nameEn": "Spanish",
     "count": 501,
-    "version": "1.6.0"
+    "version": "1.7.0"
   },
   "sv-SE": {
     "name": "Svenska",

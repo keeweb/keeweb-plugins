@@ -1,22 +1,22 @@
 {
-  "version": "1.11.0",
+  "version": "1.0.0",
   "manifestVersion": "0.1.0",
-  "name": "language-russian",
-  "description": "Russian language",
+  "name": "language-turkish",
+  "description": "Turkish language",
   "author": {
     "name": "KeeWeb",
     "email": "antelle.net@gmail.com",
     "url": "https://keeweb.info"
   },
   "licence": "MIT",
-  "url": "https://plugins.keeweb.info/translations?lang=ru-RU",
+  "url": "https://plugins.keeweb.info/translations?lang=tr",
   "resources": {
-    "loc": "VyoURhT+EFJd59UaaaldoCZ8ocltF3b8CLB+9dPXClBbnhv0zjYlCKL/Ol28zsQZX0hnY3htsgdhB5eg8tnspdGszavp8z9HglBM3NyJs79X5r4BcZnZSeiaipSpadJpqtEMNnkZyjwpm17leEVfuAzFl5ipGfFzKSr1/b1bHrpGhmpDh4TSxOOvFzpOQoLtsf77Bf5FfYK5XeWWHjo3MdkNvIoLw+s7O3mJWOdQdrfBm7wXjrLZEG8sfPOGVq2RiN9JXuk+m9SmSOmBuKRF5RgOBVono8bmBzyfKpteKWIsYoVgGCU7bFz0lwIzsuAohsBBtRb1gtJwYsu8d34+6Q=="
+    "loc": "fYCa6rOUxMku+yjQRuyEUUTfTVqTeNBDozCOOFdcoYzFTfOPu0VLU3OwwzqV1NDqxlLZmTA3zQtQB2nlbfS6r0qfzegM3YRHXvaqVswSKtfOmZhVm4eBW/b3rh0B+J/ijs2qn0sNrvENlFEx+xfxKF9geTMk78WD4BvJwP6nq9iu9iMYwTRUotufcazYBgPf9f6jWkiWcb3Q9kTLGnO0kmGep4Rv5AM9lJs3gKOzChQbZgb5tdaX8WVbzd2N2UR8nr0nwQLZdUFdf6BjP9cLePABFqlVqDRDAr1u4B1Fn3X22CTPuKq53ZBdovOjsHw1Ulyi5QLh8uSNHWrIzA26+w=="
   },
   "locale": {
-    "name": "ru-RU",
-    "title": "Русский",
-    "flag": "🇷🇺"
+    "name": "tr",
+    "title": "Türkçe",
+    "flag": "🇹🇷"
   },
   "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
 }
