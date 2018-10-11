@@ -5,20 +5,18 @@
  */
 
 const AppSettingsModel = require('models/app-settings-model');
+const RuntimeDataModel = require('models/runtime-data-model');
 const FeatureDetector = require('util/feature-detector');
 
 const FIRST_RUN_KEY = 'keeweb-mojave-first-run';
-const PREVIOUS_TITLEBAR_STYLE_KEY = 'keeweb-mojave-previous-titlebar-style';
 
 if (FeatureDetector.isDesktop) {
-    if (!localStorage.getItem(FIRST_RUN_KEY)) {
-        localStorage.setItem(FIRST_RUN_KEY, true);
-        localStorage.setItem(PREVIOUS_TITLEBAR_STYLE_KEY, AppSettingsModel.instance.get('titlebarStyle'));
+    if (!RuntimeDataModel.instance.get(FIRST_RUN_KEY)) {
         AppSettingsModel.instance.set('titlebarStyle', 'hidden');
+        RuntimeDataModel.instance.set(FIRST_RUN_KEY, true);
     }
 }
 
 module.exports.uninstall = function() {
-    localStorage.removeItem(FIRST_RUN_KEY);
-    localStorage.removeItem(PREVIOUS_TITLEBAR_STYLE_KEY);
+    RuntimeDataModel.instance.unset(FIRST_RUN_KEY);
 };
