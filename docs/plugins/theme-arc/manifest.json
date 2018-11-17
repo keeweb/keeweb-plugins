@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "manifestVersion": "0.1.0",
+  "name": "theme-arc",
+  "description": "Arc Theme",
+  "author": {
+    "name": "Stan Bogatkin",
+    "email": "sbog@sbog.ru",
+    "url": "https://sbog.ru"
+  },
+  "resources": {
+    "css": "V/ea/lHTXf7cepxVrzp4+pCXc4xOfJDOBlPv6x7HBHf073Zuh2xrLnZFVlKrUSmRWZJNAoj4zOR0PE2kNDPjceespCK7VPwCxWfSInd9zGrNkVOpwHdc46Gt7Gh/78WYnYBuAwL0ygLgft8vIsu6nuT7nRyHHFLduByhAHhM5zGFxvPTCnlff+o7zqJowzMHPtUwBQiXnuKP/VZDm4vH+W1WtkmWUKocCOpcJDA28IaNWGdb0lm57sdy0i5nYdC+ihNLclNliwonwirU0cviTyHkVGrrgETB+5XEqEuQ4SoDBx4pzgnL3VkYAXhPG39AFcJYL+g1O0GJmy4T0i3bHA=="
+  },
+  "licence": "",
+  "url": "https://plugins.keeweb.info/plugins/theme-arc",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzij9zbQc16W518KeZLrV31pSCVXNkcjkQqLnSq4aIJQhcvS+Lkvz9AT1nPJ2nA+A/rXxeYVjXCAucUigmy9qcW8+GBvYi7fE0eP/ddAU5cVsLyvf51aXeUzu13Bc4XNxoX6tTiG9nutStkJn6C0DTAwYKi0j78m0EHAHI+dISqIJg/sZqF1BPf0UEzMkT3xf+1vJ8jwsA/OgJGOy2s5J3abXBD1RE+8i9ipff7AHu5SYNJJFGY0QJKBYjGX2YajNHZLL7Qh8YtO4NRSyILVq4o0QJZVy1GkXgr86o0An9IRpnKE8skTUbjKjH3Jtet8Db4sDiryvI3sjoQaWbSM/4wIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "arc",
+    "title": "Arc"
+  }
+}
