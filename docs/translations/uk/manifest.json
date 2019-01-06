@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "manifestVersion": "0.1.0",
   "name": "language-ukrainian",
   "description": "Ukrainian language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=uk",
   "resources": {
-    "loc": "lFrSDqmBtclJOf77KhReCssc1+6pZM2hADfKZZ82vy1JNrO2a2yxVzB12w0l0BVwvgNjy+Huei0XKsiXQ3cQ2+eUD79OlAcQ257cOeHNX8dD7a9cKkUeUPc0+aJL63J99KCw2fbpaHsgEtBSxtd1uN8kBxi4O4eCao4zGKtTYj6icsSHj+LSHCtdEgH54VgL6U3ODgX4lnzGl+4UwUmPywcL5QzsBN5L8Ll8YnShSklHifYpz4MRsoL3KqqwMxXOJp5XT1viOQgi1g1j9ObaJVdFoXFLHfOZg8MhRQN9CVi2rVHzfTF0TN8xf0c4JJnO+Gx7UsSDqlILOAOnt4U0Mg=="
+    "loc": "BWydG0dlfCsGcmG26ILNdtGB+IEX8CCk/f6uwACYQ72H7M9b4N257IiDQOEUuhgI6Cer1sTeHl3JSPXZRr9OO+3f5gxnzYtmijR0vgV7aH1bE8eSWrsnyGfQOyIv4jCWE+wbPpqvYXIPiMtSPncEKAspvWBo2khzUkgldF7jHjBCwgoeKRGsOohR0iqfIICW6obrdtPRjY5quXlL1dRjLnSNnPj8y433Tugh4DYR6rLy8jS7vNnugJgsMZ0QzmsYrlAPqjcCOgqCoGLR4E2Yc/8P8Wc/M/0cv2j7jPZ7fLwBKldU76s7i3I9wZdxSxf6VWqS4CbitKdE7OlBXxCO4g=="
   },
   "locale": {
     "name": "uk",

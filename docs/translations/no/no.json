@@ -367,7 +367,6 @@
   "setGenTableView": "Oppføringsliste i tabellvisning",
   "setGenColorfulIcons": "Fargerike egenvalgte ikoner i listen",
   "setGenFunction": "Funksjon",
-  "setGenAutoSync": "Automatisk lagring og synkronisering",
   "setGenRememberKeyFiles": "Husk nøkkelfiler",
   "setGenNoRememberKeyFiles": "Ikke husk",
   "setGenRememberKeyFilesData": "Lagre i det interne app-minnet",

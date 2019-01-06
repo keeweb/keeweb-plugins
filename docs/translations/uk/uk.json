@@ -361,7 +361,6 @@
   "setGenTableView": "Перегляд списку записів у вигляді таблиці",
   "setGenColorfulIcons": "Кольоровий список не стандартних іконок",
   "setGenFunction": "Функції",
-  "setGenAutoSync": "Автоматичне збереження і синхронізація",
   "setGenRememberKeyFiles": "Запам'ятовувати файли-ключі",
   "setGenNoRememberKeyFiles": "Не запам'ятовувати ",
   "setGenRememberKeyFilesData": "Зберігати у внутрішній пам'яті програми",

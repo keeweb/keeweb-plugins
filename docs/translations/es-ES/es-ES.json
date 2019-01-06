@@ -367,7 +367,6 @@
   "setGenTableView": "Vista de tabla de lista de entradas",
   "setGenColorfulIcons": "Iconos coloridos customizados en lista",
   "setGenFunction": "Función",
-  "setGenAutoSync": "Guardar y sincronizar automáticamente",
   "setGenRememberKeyFiles": "Recordar archivos llave",
   "setGenNoRememberKeyFiles": "No recordar",
   "setGenRememberKeyFilesData": "Guardar en el almacenamiento interno",

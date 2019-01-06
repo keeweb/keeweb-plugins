@@ -361,7 +361,6 @@
   "setGenTableView": "항목 목록 테이블 형식으로 보기",
   "setGenColorfulIcons": "목록에 다채로운 사용자 정의 아이콘",
   "setGenFunction": "기능",
-  "setGenAutoSync": "자동 저장 및 동기화",
   "setGenRememberKeyFiles": "키 파일 기억하기",
   "setGenNoRememberKeyFiles": "기억하지 않음",
   "setGenRememberKeyFilesData": "내부 앱 저장소에 저장",

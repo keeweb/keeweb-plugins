@@ -1,22 +1,22 @@
 {
-  "version": "1.5.0",
+  "version": "1.0.0",
   "manifestVersion": "0.1.0",
-  "name": "language-swedish",
-  "description": "Swedish language",
+  "name": "language-danish",
+  "description": "Danish language",
   "author": {
     "name": "KeeWeb",
     "email": "antelle.net@gmail.com",
     "url": "https://keeweb.info"
   },
   "licence": "MIT",
-  "url": "https://plugins.keeweb.info/translations?lang=sv-SE",
+  "url": "https://plugins.keeweb.info/translations?lang=da",
   "resources": {
-    "loc": "AKT0nTjFNAtG6X0hyjvV3bnL1NpLzt0B+JtWk0FLkKe3qrALH1iTvQ68RYO7ObrXf4jq56vgmIbBp2+1RYDO2yxW4ItfuBcwTBCqXu3drh0ttwBe4PEzgFEwyxfLqdBI3I4fmj0rAgLgRFU5lQFkoRhwZO1VBJNPDtrMBWstKel9TN1D4fxFw6zij7IKmuphSkD46c73Ciz7q/jWkVQF01rwbHFn2QEXWM4Evd6j09I00gXHNT2Fl6eDcidDCs5GS2d8yiMkF7v0Es1hIwiEc5J2hu9ILk+8+FsriRf+zZq2etosf0+weOE3o3TVNfBZNZD5Gzp9hrqZ/u3zQTCthw=="
+    "loc": "YW6ELW0gerX/+oJ5P25Rq7nYunvSx7j212MLmguhd0EcbPd8EHdjfVFKSg3gfyH1lM5xfCv5AbrZwFY9VnwFotWJNzd8UfWPN5oh6WKeG03ZSeETUeElAqwACfqHQrLAqX4jehoAHHYFqsUr7Sg37VF7i8LnbpbCd+IRsCr5Q5XPXI7p1TZdkAZM9NbEdZQvRz6/qwF7jtAFixOS7s2UvbxiE128ZCZiS5cWgSx1V0K0p+JBVCNBgvXl9zCatnJoaOeA651ReJn3NUTCRpXkv4vAWj0QmQiTfIQsxKVobfwWmYhv9xIBFMoJrjzlH4CTPqsZewgqzWIBWKxnDo0BbA=="
   },
   "locale": {
-    "name": "sv-SE",
-    "title": "Svenska",
-    "flag": "🇸🇪"
+    "name": "da",
+    "title": "Dansk",
+    "flag": "🇩🇰"
   },
   "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
 }

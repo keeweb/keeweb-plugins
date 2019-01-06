@@ -367,7 +367,6 @@
   "setGenTableView": "Itemlijst tabelweergave",
   "setGenColorfulIcons": "Kleurvolle eigen iconen in lijst",
   "setGenFunction": "Functie",
-  "setGenAutoSync": "Automatisch opslaan en synchroniseren",
   "setGenRememberKeyFiles": "Sleutelbestanden onthouden",
   "setGenNoRememberKeyFiles": "Niet onthouden",
   "setGenRememberKeyFilesData": "Bewaar in de interne app-opslag",

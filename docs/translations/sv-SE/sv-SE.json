@@ -349,7 +349,6 @@
   "setGenTableView": "Inläggslista i tabellvy",
   "setGenColorfulIcons": "Färgrika specialikoner i lista",
   "setGenFunction": "Funktion",
-  "setGenAutoSync": "Spara automatiskt och synkronisera",
   "setGenRememberKeyFiles": "Kom ihåg nyckelfiler",
   "setGenNoRememberKeyFiles": "Kom inte ihåg",
   "setGenRememberKeyFilesData": "Lagra i intern applagring",

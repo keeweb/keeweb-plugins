@@ -357,7 +357,6 @@
   "setGenTableView": "Bejegyzések listája táblázatban",
   "setGenColorfulIcons": "Színes egyedi ikonok a listában",
   "setGenFunction": "Működés",
-  "setGenAutoSync": "Automatikus mentés és szinkronizálás",
   "setGenRememberKeyFiles": "Kulcs fájlok megjegyzése",
   "setGenNoRememberKeyFiles": "Ne jegyezze meg",
   "setGenRememberKeyFilesData": "Tárolja az alkalmazás belső tárolójában",

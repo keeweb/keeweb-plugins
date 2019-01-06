@@ -367,7 +367,6 @@
   "setGenTableView": "以表格视图显示记录",
   "setGenColorfulIcons": "在列表中显示彩色图标",
   "setGenFunction": "功能",
-  "setGenAutoSync": "自动保存和同步",
   "setGenRememberKeyFiles": "记住密钥文件",
   "setGenNoRememberKeyFiles": "不记忆",
   "setGenRememberKeyFilesData": "保存在应用内",

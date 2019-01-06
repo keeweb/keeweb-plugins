@@ -348,7 +348,6 @@
   "setGenTableView": "Visualização de registos em tabela",
   "setGenColorfulIcons": "Ícones coloridos customizados na lista",
   "setGenFunction": "Funcionamento",
-  "setGenAutoSync": "Gravar e sincronizar automaticamente",
   "setGenRememberKeyFiles": "Lembrar ficheiros-chave",
   "setGenLockInactive": "Bloquear automaticamente aplicação se inactiva",
   "setGenNoAutoLock": "Não bloquear automaticamente",

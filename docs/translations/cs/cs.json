@@ -367,7 +367,6 @@
   "setGenTableView": "Tabulkový pohled na záznamy",
   "setGenColorfulIcons": "Barevné vlastní ikony",
   "setGenFunction": "Funkce",
-  "setGenAutoSync": "Automaticky ukládat a synchronizovat",
   "setGenRememberKeyFiles": "Pamatovat klíčové soubory",
   "setGenNoRememberKeyFiles": "Nepamatovat",
   "setGenRememberKeyFilesData": "Uchovat v interní paměti aplikace",
