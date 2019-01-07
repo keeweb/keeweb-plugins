@@ -8,8 +8,8 @@
   "zh-CN": {
     "name": "简体中文",
     "nameEn": "Chinese Simplified",
-    "count": 500,
-    "version": "1.8.0"
+    "count": 523,
+    "version": "1.9.0"
   },
   "pt-PT": {
     "name": "Português",
@@ -44,8 +44,8 @@
   "da": {
     "name": "Dansk",
     "nameEn": "Danish",
-    "count": 500,
-    "version": "1.0.0"
+    "count": 523,
+    "version": "1.1.0"
   },
   "uk": {
     "name": "Українська",
@@ -80,14 +80,14 @@
   "fr-FR": {
     "name": "Français",
     "nameEn": "French",
-    "count": 500,
-    "version": "1.9.0"
+    "count": 523,
+    "version": "1.10.0"
   },
   "de-DE": {
     "name": "Deutsch",
     "nameEn": "German",
-    "count": 500,
-    "version": "1.7.0"
+    "count": 523,
+    "version": "1.8.0"
   },
   "it-IT": {
     "name": "Italiano",
@@ -98,14 +98,14 @@
   "ru-RU": {
     "name": "Русский",
     "nameEn": "Russian",
-    "count": 519,
-    "version": "1.12.0"
+    "count": 523,
+    "version": "1.13.0"
   },
   "es-ES": {
     "name": "Español",
     "nameEn": "Spanish",
-    "count": 500,
-    "version": "1.8.0"
+    "count": 523,
+    "version": "1.9.0"
   },
   "sv-SE": {
     "name": "Svenska",
