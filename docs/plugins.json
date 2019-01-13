@@ -1,6 +1,6 @@
 {
-  "date": "2019-01-07T17:41:27.479Z",
-  "signature": "0LH8JY1+L0BSYCSVpp4cM+G7zrlFd/X6N5R78KnAnEZsAvb5t+8nz5eOs9XlAxlgDT7ATmdE8ZmZXHG58ycV/tiZhEDZj1Y8k+wgTstT3lhv3smtPMQGnkyLW2wUy3r+PA89yYzidEWKancYgyyTA19Dk+oqewOo5VvzqkpCzB0/wf4QTSF1kCXpYI1HRWhjsmUF/iXyLdrGC/RnkivQThPpOwYwGse5JmT9dGbucStnIvq7PzWsP2fSO1DJjsO7l1J5+CBNffcJXwWDt8oOE/1BqZnmxcoIuisrO+sIAZrvKvvKqeavsWFRK9XSuvfbNr1DTPBq05uj6nt9SDktEA==",
+  "date": "2019-01-13T16:07:16.947Z",
+  "signature": "pBOYxE3fu1PyZM3oECQNqz9nDzthCL7LziKK9xntoKV/wFMPj2RfUQTjdMQlEDDFmD6d+UnN81vXJT28bymqvzwaHHt7E/w/wjzAT8JMO6MLz/g7siZrVMftyZZfrxHMsbaqMa1d7VMQ8drk3HpOxVD++h3VvyWcAqgBLGG5O24OgE3OOqPd99HBfll56fRHzJydaCT1ipTDLOAeB9R78U5A0NrhyW+eeKKVjc60huUXOpPhqvGXRMuY/pgROml+8Kj5CoTzkDTMNCOdH2ctOOTE9XFX47UtvRsQob62D0YZ7UWjKkUpLBHAUlEwKGuDiQpLFFBnVDolRwfJoPu7bw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -110,7 +110,7 @@
       "url": "https://plugins.keeweb.info/translations/hu",
       "official": true,
       "manifest": {
-        "version": "1.7.0",
+        "version": "1.8.0",
         "manifestVersion": "0.1.0",
         "name": "language-hungarian",
         "description": "Hungarian language",
@@ -122,7 +122,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=hu",
         "resources": {
-          "loc": "i333SLAxvOD1hJ8zNr/WB1FVjMbbLqK6CbD6W3ntclcCy1gTHPiog5AaxQncdBoXANij+QEk1tTdzUU6YZKZFFnJI2aH2WfnSk+oBMsBYhPSBgfaY7kbIcqm0OGyxGigEkWt/s6rEMnrvWufiybwuV7wvkUaI9dVbhDUTr4eXzoD0ULIJ2Zx0ZVNmvO5wdcBPZEgs3sJxhzrvqc9pZ/bTVy2N9vjUnEwrfJANIoCjcXg1p7SELI7bJ1b9tZr5qxHuNEkyyqjwxoaJf2XvNp5ePWEJ0wOZWzUXvnjuSXyq+A+JJQgbdCz4wtGrV3fbLN4mBq4200rqriK8VYfLHlVvw=="
+          "loc": "HINBAcjc0juT3wj8rXKDHRjKEIpKBaiGIxHEfZeEMtVCWISrKKQEHqwL8+8K8ERHfQllY6brIoUJwHBbrxPI7mwwFmzFm5rftGjQBUI3igGQJpJ4f/2TlfKSLW+pGmvaACUfDy9qcy6yI/Qnt3ch52UVTFQy9sGhOStBZeg5ILloVIeoPQtn2YdAzx1jZmvXwxSwqQPR66NrxPD0cqASKMRQcYc7USo/m5vv7ia9CdwFFaBt0ZRIVW/3kHBVVivUzAV20XMLaAQq1XJon++P30XVGIU28VPvTwLUwMG2rbVE1vFTUf5T42yTtpqUV9GX4FmNI/jmdZ65hJsAyxmofw=="
         },
         "locale": {
           "name": "hu",

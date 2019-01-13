@@ -182,7 +182,7 @@
   "openDropHere": "húzzon ide fájlokat",
   "openFailedRead": "Nem sikerült a fájlt beolvasni",
   "openNothingFound": "Nincs találat",
-  "openNothingFoundBody": "Nincs fájl, amit meg lehet nyitni.",
+  "openNothingFoundBody": "Nem találtunk alkalmas fájlt.",
   "openSelectFile": "Fájl kiválasztása",
   "openSelectFileBody": "Válassza ki a fájlt, amit meg szeretne nyitni",
   "openPassFor": "Jelszó a következőhöz:",
