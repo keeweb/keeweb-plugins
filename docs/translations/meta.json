@@ -11,6 +11,12 @@
     "count": 523,
     "version": "1.9.0"
   },
+  "ja": {
+    "name": "日本語",
+    "nameEn": "Japanese",
+    "count": 523,
+    "version": "1.1.0"
+  },
   "pt-PT": {
     "name": "Português",
     "nameEn": "Portuguese",
