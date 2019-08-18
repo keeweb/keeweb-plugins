@@ -20,7 +20,8 @@
         "no-mixed-operators": "off",
         "prefer-promise-reject-errors": "off",
         "standard/no-callback-literal": "off",
-        "object-curly-spacing": "off"
+        "object-curly-spacing": "off",
+        "quote-props": "off"
     },
     "parserOptions": {
         "sourceType": "module",

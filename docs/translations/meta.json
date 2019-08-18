@@ -44,14 +44,14 @@
   "pl": {
     "name": "Polski",
     "nameEn": "Polish",
-    "count": 523,
-    "version": "1.6.0"
+    "count": 529,
+    "version": "1.7.0"
   },
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
     "count": 523,
-    "version": "1.9.0"
+    "version": "1.10.0"
   },
   "da": {
     "name": "Dansk",
@@ -62,14 +62,8 @@
   "uk": {
     "name": "Українська",
     "nameEn": "Ukrainian",
-    "count": 492,
-    "version": "1.4.0"
-  },
-  "et-EE": {
-    "name": "Eesti (Eesti)",
-    "nameEn": "Estonian (Estonia)",
-    "count": 392,
-    "version": "1.0.0"
+    "count": 496,
+    "version": "1.5.0"
   },
   "pt-BR": {
     "name": "Português (Brasil)",
@@ -87,13 +81,13 @@
     "name": "Nederlands",
     "nameEn": "Dutch",
     "count": 523,
-    "version": "1.8.0"
+    "version": "1.9.0"
   },
   "fr-FR": {
     "name": "Français",
     "nameEn": "French",
-    "count": 523,
-    "version": "1.11.0"
+    "count": 529,
+    "version": "1.12.0"
   },
   "de-DE": {
     "name": "Deutsch",
@@ -110,14 +104,14 @@
   "ru-RU": {
     "name": "Русский",
     "nameEn": "Russian",
-    "count": 523,
-    "version": "1.13.0"
+    "count": 529,
+    "version": "1.14.0"
   },
   "es-ES": {
     "name": "Español",
     "nameEn": "Spanish",
-    "count": 523,
-    "version": "1.9.0"
+    "count": 529,
+    "version": "1.10.0"
   },
   "sv-SE": {
     "name": "Svenska",

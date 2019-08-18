@@ -26,6 +26,7 @@ class HIBPUtils {
         this.logger = new Logger('HaveIBeenPwned');
         this.logger.setLevel(LogLevel);
     };
+
     replacer(key, value) {
         if (value != null && typeof value === 'object') {
             if (_seen.indexOf(value) >= 0) {
@@ -35,11 +36,13 @@ class HIBPUtils {
         }
         return value;
     };
+
     stringify(obj) {
         const ret = JSON.stringify(obj, this.replacer);
         _seen = [];
         return ret;
     };
+
     xhrcall (config) {
         const xhr = new XMLHttpRequest();
         if (config.responseType) {
@@ -70,6 +73,7 @@ class HIBPUtils {
         };
         xhr.send(config.data);
     };
+
     hex (buffer) {
         const hexCodes = [];
         const view = new DataView(buffer);
@@ -86,6 +90,7 @@ class HIBPUtils {
         // Join all the hex strings into one
         return hexCodes.join('');
     };
+
     digest(algo, str) {
         const buffer = Kdbxweb.ByteUtils.stringToBytes(str);
         const subtle = window.crypto.subtle || window.crypto.webkitSubtle;
@@ -94,12 +99,15 @@ class HIBPUtils {
             return _self.hex(hash);
         });
     };
+
     sha1(str) {
         return this.digest('SHA-1', str);
     };
+
     sha256(str) {
         return this.digest('SHA-256', str);
     };
+
     alert (el, msg) {
         // Alerts.info({ body: msg, title: 'HaveIBeenPwned' });
         el.focus();
@@ -108,6 +116,7 @@ class HIBPUtils {
         Tip.createTip(el, { title: msg, placement: 'bottom' });
         InputFx.shake(el);
     };
+
     passed(el, msg) {
         hibp.logger.info(msg);
         el.removeClass('input--error');

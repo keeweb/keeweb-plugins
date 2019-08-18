@@ -190,7 +190,7 @@
   "openSelectFile": "Selecteer een bestand",
   "openSelectFileBody": "Selecteer een bestand om te openen",
   "openPassFor": "Wachtwoord",
-  "openRemoveLastQuestion": "Verwijder lokaal bestand?",
+  "openRemoveLastQuestion": "Lokaal bestand verwijderen? ",
   "openRemoveLastQuestionBody": "Het te verwijderen bestand is alleen opgeslagen in de app. Permanent verwijderen?",
   "openRemoveLastQuestionModBody": "Het bestand dat u wilt verwijderen heeft lokale wijzigingen. Wilt u het bestand verwijderen en deze wijzigingen ongedaan maken?",
   "openLocalFile": "Lokaal bestand",
