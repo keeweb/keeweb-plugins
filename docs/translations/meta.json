@@ -38,8 +38,8 @@
   "tr": {
     "name": "Türkçe",
     "nameEn": "Turkish",
-    "count": 523,
-    "version": "1.3.0"
+    "count": 529,
+    "version": "1.4.0"
   },
   "pl": {
     "name": "Polski",
@@ -92,8 +92,8 @@
   "de-DE": {
     "name": "Deutsch",
     "nameEn": "German",
-    "count": 523,
-    "version": "1.8.0"
+    "count": 529,
+    "version": "1.9.0"
   },
   "it-IT": {
     "name": "Italiano",

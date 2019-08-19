@@ -1,6 +1,6 @@
 {
-  "date": "2019-08-18T09:05:56.790Z",
-  "signature": "gUuBF5B2j3zNIPG4yvtsoLnsST1mX6xap1XQxRNdMmFIkLC9R1XLtJPpG1JH459l65h6rsyjMXAtH31K9mlQ0vwzmR8EJI8i/mOA5aSo/eomi8WX2BBgzXcKO7ZRDYmAKrSvdQJvhLCd+9ToZlEh0k/JCFcgpIM8hEXz5xddMD3nhMcnWWfwq3hegMC8b/EO4hGy+TFaSjVvudZP1/J5RbyaDgbCF5Pwym5tSK2CdR7ipUxICyj/alnesbszkSzQgYZZNWy62/xIslVzniT2jWi3cduaaj39KBxoVO60npexJOx+ebUbL+vAe24+UhI6H1PDpo00c+sw83qnIOBQQA==",
+  "date": "2019-08-19T19:01:21.162Z",
+  "signature": "b35KvYA93uPBaXTHL5pOQQCRZw2isiSWrjQpMl0AfcYKtrju7QTj4OM4gunjveIqD2dTQ/P0QYS1Xn17cdk/VSZ7tAzBn155TI291eh+BdguAco0GTxXV6jg8LzvhcRECaq3L2jvRkqQgNIhTAE0ynng91sEhaF3fGUtQzoW9YDlwmgPW4t0SImKBAzIWsmz6zh+xujhrQ5e75DpHWWVZbvONd1dD+eNehmJNF7O1N0QVfmUtUR/vVqOuHHNy85ibJ88Kr8HmcG+ggmWEkv9X+IaV5p8VI8/i2nh6RXknZl1U+QV9tJx2IfZNKIERjTvE8oCk0bwSazjMi3A73wEeA==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -214,7 +214,7 @@
       "url": "https://plugins.keeweb.info/translations/de-DE",
       "official": true,
       "manifest": {
-        "version": "1.8.0",
+        "version": "1.9.0",
         "manifestVersion": "0.1.0",
         "name": "language-german",
         "description": "German language",
@@ -226,7 +226,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=de-DE",
         "resources": {
-          "loc": "LFm0vPcvLHc7+sHEf9lrBSYHq7sPIiX1k101b2FfyGpFoAZDH0nkoYJxKdKQByG+OR7tkVCBFp2UzA3GF5MKhGldHV8wzS75MZst+ct6d2vs4opPa7/9q7BkbcRwVSCM0Qac0aacms7I1MI3qObJp/nAy9U5fRBa4c42hpdTOduxtyoSYccmUPD/u/VDpD1z+sH84LbYfliMpXVLYVBeuk6l5rb6cXs9xQ9Ju6DrRzk096ycPMgX/seWAwgKQby3AmAyy7hWSQ7yg2MlHpXcLgLTVUlouBo1ZpntPjRQGeSFBwbQX+Em1aYx9eRq79zuFZ0wA2bWcM2g95PjcFzNIQ=="
+          "loc": "iHkr5oZ/Wl1zQebFq7iNMCpu4kkApDHsZnMwfxRvNGhgLXIVvzhvHO2IjfgjKDVlurXUg4SM4HSR01MDWzya6mfsPa96iM9xF8mg3/JZXXLhT0moMZoibvGa9jREmhzXpxhxoFS3sDMSSC0s8S2tGbFF6lPlIO+i9pzi8ibkwMfXAszegkFDYp+kgyLnMCp6r/H4iZV0IU59L4KwuYf5kQrnswRB8COJDcSlE1fe5sTpGJNcZ7WAxJcnigPCuiKLAjJvBbgHC/egL1zSQjTKilVFIO/ljy5BL/5kjmtOImdaxRhmrevJkhVa4XXnO/2vADrEGE5aAGdRzHqD0JToDw=="
         },
         "locale": {
           "name": "de-DE",
@@ -596,7 +596,7 @@
       "url": "https://plugins.keeweb.info/translations/tr",
       "official": true,
       "manifest": {
-        "version": "1.3.0",
+        "version": "1.4.0",
         "manifestVersion": "0.1.0",
         "name": "language-turkish",
         "description": "Turkish language",
@@ -608,7 +608,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=tr",
         "resources": {
-          "loc": "vHKWX3YurZEehypsrrH5eWdQWx/uOilNEJ+L1JfiQvQrLfvkepQwHPwZ2uEG7UMSezIhUjnYnONn2CqwplSa8MV4Kmnfs0jMVPOU7K8SwK+Xp0/uzR6DOfQm1ih/fxkRV9TKEsfwh13q6f+lXeVg0OG3fDxvHan0w+4dljGBDMOl+zf7BTxYaR6uHCmgXxp9G2TlqrBf8ZvHq9Ny2ipMwEqeVo5cAwJ34RKjvAIzI1EoFtcHEiTLFq+sksw3gJvZRuIXzDev5JQOLBE/ZDhEL5+0OPIEhleDnqlC2cGdb5tdiaJDhNfRmWeTDNQz4o0CShP3Kl5KXfiavB3wGd97XQ=="
+          "loc": "n6AeQ14mLjY5/IOHMQ6gYZE4lMKHsSHajZP4ZWcsMHiXFVxu5qO+oKIr8oBggCK9dRSvvMsag/uC6ahCwMbHsBkC73cPQ3nupMscFWf20J2xXtqetKlhgQtY1QkH5B2Ql+Ac3n8dXmQ9EGRIxwLQVgvBgwgJE9VDKD36kaxDlBNkQctFuOO8jgokzWrKeFgqTaTKxvKo4pcFsAhCsVhhVNMF+lLgUUJJF9PgAK7KQZBvvIv7j5lxtE2r2lIiEqSLU2h4HoJb0K0uUvGBeIJ8H8PH2ePnF3FAUnZs3qH7LZqUgd89lNROy+AWJ9t5gGnwH+fpgVf2cpQE91zkFcpNLw=="
         },
         "locale": {
           "name": "tr",
