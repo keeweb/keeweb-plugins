@@ -50,8 +50,8 @@
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
-    "count": 523,
-    "version": "1.10.0"
+    "count": 529,
+    "version": "1.11.0"
   },
   "da": {
     "name": "Dansk",
@@ -93,7 +93,7 @@
     "name": "Deutsch",
     "nameEn": "German",
     "count": 529,
-    "version": "1.9.0"
+    "version": "1.10.0"
   },
   "it-IT": {
     "name": "Italiano",
@@ -111,7 +111,7 @@
     "name": "Español",
     "nameEn": "Spanish",
     "count": 529,
-    "version": "1.10.0"
+    "version": "1.11.0"
   },
   "sv-SE": {
     "name": "Svenska",
