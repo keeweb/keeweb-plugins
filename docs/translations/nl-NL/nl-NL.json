@@ -1,4 +1,13 @@
 {
+  "detDelToTrash": "Item verwijderen?",
+  "detDelToTrashBody": "Het item wordt naar de prullenbak verplaatst.",
+  "setGenThemeMacDark": "macOS Donker",
+  "setFileSaveToHtml": "HTML",
+  "exportFileInfo": "Bestandsinformatie",
+  "exportHtmlName": "Naam",
+  "exportHtmlDate": "Exportdatum",
+  "exportGenerator": "Software",
+  "exportDescription": "Dit bestand ie gegenereerd met {}.",
   "months": [
     "januari",
     "februari",

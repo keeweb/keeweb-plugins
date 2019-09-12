@@ -1,4 +1,13 @@
 {
+  "detDelToTrash": "Supprimer l'entrée ?",
+  "detDelToTrashBody": "L'entrée sera déplacer dans la poubelle.",
+  "setGenThemeMacDark": "Mode sombre de macOS",
+  "setFileSaveToHtml": "HTML",
+  "exportFileInfo": "Propriétés du fichier",
+  "exportHtmlName": "Nom",
+  "exportHtmlDate": "Date d'export",
+  "exportGenerator": "Logiciel",
+  "exportDescription": "Ce fichier est généré avec {}.",
   "months": [
     "Janvier",
     "Février",
@@ -439,7 +448,7 @@
   "setFileKeyFile": "Fichier clé",
   "setFileSelKeyFile": "Sélectionner fichier clé",
   "setFileNames": "Noms",
-  "setFileDefUser": "Nom par défaut",
+  "setFileDefUser": "Utilisateur par défaut",
   "setFileEnableTrash": "Activer corbeille",
   "setFileHistLen": "Longueur de l'historique, conserve les derniers enregistrements",
   "setFileHistSize": "Taille de l'historique, Mo par fichier",

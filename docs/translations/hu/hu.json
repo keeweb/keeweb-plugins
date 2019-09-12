@@ -1,4 +1,12 @@
 {
+  "detDelToTrash": "Töröljem a bejegyzést?",
+  "detDelToTrashBody": "A bejegyzés átkerül a lomtár mappába.",
+  "setGenThemeMacDark": "macOS Dark",
+  "setFileSaveToHtml": "HTML",
+  "exportFileInfo": "File információ",
+  "exportHtmlName": "Név",
+  "exportHtmlDate": "Exportálás dátuma",
+  "exportGenerator": "Szoftver",
   "months": [
     "Január",
     "Február",

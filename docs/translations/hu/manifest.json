@@ -1,5 +1,5 @@
 {
-  "version": "1.11.0",
+  "version": "1.12.0",
   "manifestVersion": "0.1.0",
   "name": "language-hungarian",
   "description": "Hungarian language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=hu",
   "resources": {
-    "loc": "uFjwFugVso5ryeFnPza4M0njN5NrzdrzWqfmSq3YAE1kpPL65qS/mRSujy/FlSKGO2f1Y/hwjYDXtgv5Y3uU8UwexE4evokoKM6AagTYQC8MrSMcbyq0D2xBZXxeMbRjdUlZGrKOlVSy64iYbvhuX03K8RMdKD2Ki3TudfO3uS7JRFJ5u8qgQFuqEhzjeyzSDi4NDLvfNH/hgFmjt/pPHjE4h4IcmRKvFJyYgAO5FyVk7KpkQP/Elv6hX2Kiw9d74hgP5tK0xLcBJbQF2rU5BUCei4f9JVkKAFaw8uHvR+nqr5/VhYd5+2/1wQ3KdhP776DsKN2FbdfxcvCednJGyQ=="
+    "loc": "KeFa0lWE+7O/Ow5cnThh4tgStrh8h6EqMXFM+kplWu1WSAVwyOLa1XFZbe4JAqTYCpftRH2VQ4y9fSYM8Q0GOjfLuMAcI3fl+kNDwCXl5Ur3KB2+WlN4v2OQ5ePpz3K9+ub3LUXIHwPcvmxJpEPXPgaNODJNvzoxzwgmoPtJld4DfA58PYST3xo5j8MByO91plUEIzJsm5YuxQIM7eCBoKSy8mo5Y57G35CWr71G69LeMb6r3u9XkAIkCu2gUCBWegzes/3CIV/d0qqIMhqYWU09y4iN3TNcuk/CSS4nzeQ8SiWi/AnuCsqpgbUST3ilMrzQIFcZP52UuUlgcL/pXQ=="
   },
   "locale": {
     "name": "hu",

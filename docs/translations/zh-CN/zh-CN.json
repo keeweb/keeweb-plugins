@@ -1,4 +1,7 @@
 {
+  "detDelToTrash": "删除记录？",
+  "detDelToTrashBody": "记录将被移除到回收站。",
+  "setGenThemeMacDark": "Mac暗黑模式",
   "months": [
     "一月",
     "二月",

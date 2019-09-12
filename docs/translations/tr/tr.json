@@ -1,4 +1,13 @@
 {
+  "detDelToTrash": "Giriş silinsin mi?",
+  "detDelToTrashBody": "Giriş çöp klasörüne taşınır.",
+  "setGenThemeMacDark": "macOS Koyu",
+  "setFileSaveToHtml": "HTML",
+  "exportFileInfo": "Dosya bilgisi",
+  "exportHtmlName": "İsim",
+  "exportHtmlDate": "Aktarma tarihi",
+  "exportGenerator": "Yazılım",
+  "exportDescription": "Bu dosya {} ile oluşturulmuştur.",
   "months": [
     "Ocak",
     "Şubat",
