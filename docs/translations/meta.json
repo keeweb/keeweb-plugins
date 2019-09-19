@@ -62,8 +62,8 @@
   "uk": {
     "name": "Українська",
     "nameEn": "Ukrainian",
-    "count": 496,
-    "version": "1.5.0"
+    "count": 533,
+    "version": "1.6.0"
   },
   "pt-BR": {
     "name": "Português (Brasil)",
@@ -87,7 +87,7 @@
     "name": "Français",
     "nameEn": "French",
     "count": 538,
-    "version": "1.13.0"
+    "version": "1.14.0"
   },
   "de-DE": {
     "name": "Deutsch",
