@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "steam-totp",
+  "description": "Steam TOTP for KeePass",
+  "author": {
+    "name": "Dylan Monroe",
+    "email": "monroe.dylan.m@gmail.com",
+    "url": "https://github.com/monroe-dylan-m"
+  },
+  "resources": {
+    "js": "dvvIs6sBZs1ObZLM8m5hESYOMiWm2cE/pRqKGTRGcSn033IYzLY5w+wvIbiLfjoQOzdqttFqsmFiqyFPvdVWBzFPtkCABcU6OjW5RMIFQKR98sxD71fewFfENlHc1MVWT80AT/6l/LyJjy1gDvTOMe0IvyfGMM5NB2pLMNYQmwRX2doRGTlOLQRrQkgrbu8bvKG4C0Ya4JSLINJujlQPgSLFQn2y9/wjfrj8cbOmIPTr1CXgwaMxfm1uj4SMuKi/vkWd+2aeV/GOUvw5ttWNUwoexWQqvfPoRZ+QQkMDJ+HqxoyDIPW5cDtCh+RPudyQ5/anUMuj5JrXY62vy8ge8g=="
+  },
+  "licence": "MIT",
+  "url": "https://github.com/monroe-dylan-m/steam-totp",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYvlojLLwm7yOqEf6wHaxA9X/ohundZeispGV8DJlzYEwv2Yd711/Q6H0+2/qZ7GQ1Y3WIaEokAMjYX/zLAvID6HPj4qzC/xGrdXedB7+E9kX+BJ9so/xlQuxdZrZCage/5iSf9slEnLmvOHOLIDRWJkc+XXJ1AAnxZ1bHlvkDVXVVGY+A9e/Mb7GFPl4k4ov4atjZtgl0p9/IOEMsqZm2zX+lykpAktMd9LJDCADbQU01mQzwztALjl43R6BZ1PcIKC/im37rnwDQFAHl2yCwSb9HEvg4TTOZNh8Xe7yHd4vJcRNRNdDqMs/1EZ8sceKHCah+2M9SQmSwjieoPNwwIDAQAB"
+}
