@@ -292,7 +292,7 @@
   "autoTypeNoMatches": "sem resultados",
   "appSecWarn": "Inseguro!",
   "appSecWarnBody1": "Iniciou a aplicação com uma conexão insegura. Alguém pode estar a observá-lo e a roubar as suas palavras-chave. Aconselhamos que pare a não ser que compreenda claramente o que está a fazer.",
-  "appSecWarnBody2": "Sim, a sua base de dados está encriptada mas ninguém pode guarantir que a sua aplicação não foi alterada até chegar a si.",
+  "appSecWarnBody2": "Sim, a sua base de dados está encriptada mas não é possível garantir que a aplicação não foi alterada até chegar a si.",
   "appSecWarnBtn": "Compreendo os riscos, prosseguir.",
   "appUnsavedWarn": "Alteraçõs não guardadas!",
   "appUnsavedWarnBody": "Tem alterações não guardadas, se fechar a aplicação perderá as suas alterações.",

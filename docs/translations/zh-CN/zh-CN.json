@@ -1,7 +1,4 @@
 {
-  "detDelToTrash": "删除记录？",
-  "detDelToTrashBody": "记录将被移除到回收站。",
-  "setGenThemeMacDark": "Mac暗黑模式",
   "months": [
     "一月",
     "二月",
@@ -257,6 +254,8 @@
   "detDelFromTrash": "从回收站中删除吗?",
   "detDelFromTrashBody": "删除后将无法恢复。",
   "detDelFromTrashBodyHint": "想要快速删除回收站内所有内容, 请点击回收站菜单的 清空 图标.",
+  "detDelToTrash": "删除记录？",
+  "detDelToTrashBody": "记录将被移除到回收站。",
   "detFieldCopied": "已复制",
   "detFieldCopiedTime": "已复制 剪贴板将在 {} 秒后清空",
   "detCopyHint": "您可以通过点击字段标题来复制字段值",
@@ -368,6 +367,7 @@
   "setGenThemeHc": "高对比度",
   "setGenThemeSd": "深绿",
   "setGenThemeSl": "浅绿",
+  "setGenThemeMacDark": "Mac暗黑模式",
   "setGenLocale": "语言",
   "setGenLocOther": "其他语言可作为插件获得",
   "setGenFontSize": "字体大小",
@@ -566,5 +566,8 @@
   "launcherSave": "保存密码数据库",
   "launcherFileFilter": "KeePass 文件",
   "authPopupRequired": "弹出窗口已被阻止",
-  "authPopupRequiredBody": "请在您的浏览器中允许此应用弹出窗口。"
+  "authPopupRequiredBody": "请在您的浏览器中允许此应用弹出窗口。",
+  "exportFileInfo": "文件信息",
+  "exportHtmlName": "名称",
+  "exportGenerator": "软件"
 }
