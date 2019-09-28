@@ -1,5 +1,5 @@
 {
-  "version": "1.15.0",
+  "version": "1.16.0",
   "manifestVersion": "0.1.0",
   "name": "language-russian",
   "description": "Russian language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=ru-RU",
   "resources": {
-    "loc": "Yp3m870rvcklBkNNL6I+xH9/X+5m6EBpPjInXJgdzX7wMCMJuoMVl4YZ0LAYG0xRLT44Ni7KrMW7ZKHOqdhGjmAwfUuGUwYd3m/Ufh67r/ahZecAVz9F70vxFRpxMihGbSTjBTIndGhuhJLNB+cxTTyrUfWcs0kMzRQh9RrAJVsEaSbylruBsQ0L+Sipno/hTGOcXwqvP4GuiRmF/noZ4Wth9gfOuVPLeslph69tv5mGdfH/2dKyrY/dL/JAi4/IBLoJ3E9b6YG08yf9uGrinndDfrPIPe8QrNJ94OTCya3f4mWMG9KRQaMAMPQZEsBrxDHsQU5ONtLaeejoyHItiw=="
+    "loc": "OIfD/UYTAAbIZQYgLVu4QoJKroUr5Q8/YDcVP+E8Ew6pFaF7KujgvXS6VIJQTGa+3Oika6BglRuuO0ipMSH3y6RqWUEOSbn8NyVCnwgNSI9mfZ+/sfZdjF7R+1/MH3xym5YGIf/8Pz7aMNDo66OFBCyaI3DPLkh6522ZVrYlVJd0iCEOadl/e9T8wptu7WNK0cYGpx9u1CTumR6sz1OG/r48s20P6/Xcc+WcT9OYisWpQvae3+aT990zZNyk7PEkWydhovkHkQ7KBsYoZF2mF/zvXBnwrfbDNQqW3d4ue+a8LtUDasSa/LZuU9xUKemEZ2xBIACt8E2kvfJztWQUHA=="
   },
   "locale": {
     "name": "ru-RU",
