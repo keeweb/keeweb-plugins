@@ -10,16 +10,16 @@ function run() {
     const crypto = nodeRequire('crypto');
     const electron = nodeRequire('electron');
 
-    const Backbone = require('backbone');
     const kdbxweb = require('kdbxweb');
-    const AppModel = require('models/app-model');
-    const EntryModel = require('models/entry-model');
-    const GroupModel = require('models/group-model');
-    const AutoTypeFilter = require('auto-type/auto-type-filter');
-    const Logger = require('util/logger');
-    const Alerts = require('comp/alerts');
-    const Generator = require('util/password-generator');
-    const GeneratorPresets = require('comp/generator-presets');
+    const Events = require('framework/events').Events;
+    const AppModel = require('models/app-model').AppModel;
+    const EntryModel = require('models/entry-model').EntryModel;
+    const GroupModel = require('models/group-model').GroupModel;
+    const AutoTypeFilter = require('auto-type/auto-type-filter').AutoTypeFilter;
+    const Logger = require('util/logger').Logger;
+    const Alerts = require('comp/ui/alerts').Alerts;
+    const PasswordGenerator = require('util/generators/password-generator').PasswordGenerator;
+    const GeneratorPresets = require('comp/app/generator-presets').GeneratorPresets;
 
     const Version = '1.8.4.2';
     const DebugMode = localStorage.keewebhttpDebug;
@@ -173,7 +173,7 @@ function run() {
         }
         let settingsEntry = getSettingsEntry(file);
         if (!settingsEntry) {
-            settingsEntry = EntryModel.newEntry(file.get('groups').first(), file);
+            settingsEntry = EntryModel.newEntry(file.groups[0], file);
             settingsEntry.entry.uuid = new kdbxweb.KdbxUuid(EntryUuid);
             settingsEntry.setField('Title', EntryTitle);
         }
@@ -189,7 +189,7 @@ function run() {
             }
         }
         file.reload();
-        Backbone.trigger('refresh');
+        Events.emit('refresh');
     }
 
     function getSettingsEntry(file) {
@@ -446,15 +446,15 @@ function run() {
                 let group, file;
                 AppModel.instance.files.forEach(f => {
                     f.forEachGroup(g => {
-                        if (g.get('title') === CreatePasswordsGroupTitle) {
+                        if (g.title === CreatePasswordsGroupTitle) {
                             group = g;
                             file = f;
                         }
                     });
                 });
                 if (!group) {
-                    file = AppModel.instance.files.first();
-                    group = GroupModel.newGroup(file.get('groups').first(), file);
+                    file = AppModel.instance.files[0];
+                    group = GroupModel.newGroup(file.groups[0], file);
                     group.setName(CreatePasswordsGroupTitle);
                 }
                 const entry = EntryModel.newEntry(group, file);
@@ -465,7 +465,7 @@ function run() {
                 entry.setField('UserName', login);
                 entry.setField('Password', kdbxweb.ProtectedValue.fromString(password));
             }
-            Backbone.trigger('refresh');
+            Events.emit('refresh');
 
             this.createResponse();
         }
@@ -474,7 +474,7 @@ function run() {
             this.verifyRequest();
             this.createResponse();
             const preset = GeneratorPresets.all.filter(p => p.default)[0] || GeneratorPresets.defaultPreset;
-            const password = Generator.generate(preset);
+            const password = PasswordGenerator.generate(preset);
             const bits = Buffer.from(password, 'utf8').byteLength * 8;
             this.resp.Count = 1;
             this.resp.Entries = [{
