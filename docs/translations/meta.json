@@ -47,6 +47,12 @@
     "count": 551,
     "version": "1.9.0"
   },
+  "fi": {
+    "name": "Suomi",
+    "nameEn": "Finnish",
+    "count": 415,
+    "version": "1.1.0"
+  },
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",

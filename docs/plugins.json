@@ -1,6 +1,6 @@
 {
-  "date": "2019-10-04T18:11:28.574Z",
-  "signature": "SDJgdfMioRdcVU44yvmjpQxUvd6xpjcYiXrHazcYm5qLQV8edawN6u7IoJgUffRc60jyc8tHZsynVp8uiW/8m3rg7QcgHFh79AGbdA/iY4Qy4b0BGBWgBjru8jSNvDampSLrSElfxdJPfm13mdat2es1TU3xXb0TWY/laqzMwqHf0JKYxGTg1MWmGfRoxmsyMGBzz8R4MMK6WAxE0By6q9QZZmHYN+mR4MlUSfS3N8tfynWrE4gjU2Q9F+HUdRzvwo9hBHE1a06tkhqAeAaVh7zhjrbiM9X/xF4dKrPo1kuBiv+ikVmYPxbecWzl3CtWwE8+yQi15dsFNYTnna2Llg==",
+  "date": "2019-10-04T21:15:20.411Z",
+  "signature": "PRmkgYbwsL3an/z7ov7yuKJ9TonsRgD5+slUK/k1vf4SXVA40mbDAXPYse4Q7lY8JJejEAThX2bU77rvJCvS7XJst1GabU3G3+jpRYXJjiJkP4QNGv2lGO2A7sdnrthmWZ3/MkCUFkJ1poXHkSiyzKDekTuZCXc1R8t3KyRkUZcjJqbMPyDAKKhQ2xcLGjQGT/hNH1tUUFcSUTtzcdSGCUBSGoTNGu3ANEt20X7fkunbhZmwycMEj/u22qA/PWdn5cmnpave5SmZPICkma8Zkq6gXCUYFUIcX+YfprUN7LlL6F22+jEA3kp8yxHCOY+kxY382E0nWQ09KbHRJ8yZFw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -691,7 +691,34 @@
         },
         "locale": {
           "name": "ja",
-          "title": "日本語"
+          "title": "日本語",
+          "flag": "🇯🇵"
+        },
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/translations/fi",
+      "official": true,
+      "manifest": {
+        "version": "1.1.0",
+        "manifestVersion": "0.1.0",
+        "name": "language-finnish",
+        "description": "Finnish language",
+        "author": {
+          "name": "KeeWeb",
+          "email": "antelle.net@gmail.com",
+          "url": "https://keeweb.info"
+        },
+        "licence": "MIT",
+        "url": "https://plugins.keeweb.info/translations?lang=fi",
+        "resources": {
+          "loc": "iWEhGgadyfBmOMmymcK62SWdhzTNS+9IO2KTYRaZeRoJlA5lAlsmNkqcj+gPbhI2SNr/1nQ1BSypwSMfffmzKNEVmIHM1/NJWOdPqngGdFtlIEyAOcjlZpHYyNg2F2q7YIQvPFY5dyorrRDNRrmtHg1Yx+F4CIdF9ZpoT+jJF5RCXG5CbT27O4c/zZ/5l50uXVEbbiQ38Z32opjRDWSbVmYnJ+dTEsZGWoddZ8f8tdJqBi+d6qeHSYk16LyxXBzDrSHoZ4v82jf3dpsMgT7kjl+Fym+sfrSgWvstplA8KlqvK/lNXaF90GqMWQnZze0PrkEppixnwNQBDs1kNY0ErA=="
+        },
+        "locale": {
+          "name": "fi",
+          "title": "Suomi",
+          "flag": "🇫🇮"
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
       }
