@@ -38,14 +38,14 @@
   "tr": {
     "name": "Türkçe",
     "nameEn": "Turkish",
-    "count": 551,
-    "version": "1.6.0"
+    "count": 554,
+    "version": "1.7.0"
   },
   "pl": {
     "name": "Polski",
     "nameEn": "Polish",
-    "count": 551,
-    "version": "1.9.0"
+    "count": 554,
+    "version": "1.10.0"
   },
   "fi": {
     "name": "Suomi",
@@ -69,7 +69,7 @@
     "name": "Українська",
     "nameEn": "Ukrainian",
     "count": 551,
-    "version": "1.7.0"
+    "version": "1.8.0"
   },
   "pt-BR": {
     "name": "Português (Brasil)",
@@ -86,8 +86,8 @@
   "nl-NL": {
     "name": "Nederlands",
     "nameEn": "Dutch",
-    "count": 551,
-    "version": "1.11.0"
+    "count": 554,
+    "version": "1.12.0"
   },
   "fr-FR": {
     "name": "Français",
@@ -98,8 +98,8 @@
   "de-DE": {
     "name": "Deutsch",
     "nameEn": "German",
-    "count": 551,
-    "version": "1.12.0"
+    "count": 554,
+    "version": "1.13.0"
   },
   "it-IT": {
     "name": "Italiano",
