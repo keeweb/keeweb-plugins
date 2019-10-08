@@ -491,8 +491,6 @@
   "setShGen": "generer kodeord",
   "setShSet": "app indstillinger",
   "setShCopyPassGlobal": "kopier kodeord (når app'en er i baggrunden)",
-  "setShCopyUserGlobal": "kopier brugernavn (når app'en er i baggrunden)",
-  "setShCopyUrlGlobal": "kopier hjememside  (når app'en er i baggrunden)",
   "setShAutoTypeGlobal": "autoudfyld  (når app'en er i baggrunden)",
   "setShLock": "lås database",
   "setPlInstallTitle": "Installer nyt plugin",

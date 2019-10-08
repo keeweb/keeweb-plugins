@@ -469,8 +469,6 @@
   "setShGen": "Genera password",
   "setShSet": "Impostazioni",
   "setShCopyPassGlobal": "Copia password (quando l'applicazione è in background)",
-  "setShCopyUserGlobal": "Copia utente (quando l'applicazione è in background)",
-  "setShCopyUrlGlobal": "Copia indirizzo web (quando l'applicazione è in background)",
   "setShAutoTypeGlobal": "Digita automaticamente (quando l'applicazione è in background)",
   "setShLock": "Blocca il database",
   "setPlInstallTitle": "Installa nuovi plugin",

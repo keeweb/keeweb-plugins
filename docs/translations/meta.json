@@ -2,127 +2,127 @@
   "zh-TW": {
     "name": "繁體中文",
     "nameEn": "Chinese Traditional",
-    "count": 500,
-    "version": "1.4.0"
+    "count": 498,
+    "version": "1.5.0"
   },
   "zh-CN": {
     "name": "简体中文",
     "nameEn": "Chinese Simplified",
-    "count": 529,
-    "version": "1.11.0"
+    "count": 556,
+    "version": "1.12.0"
   },
   "ja": {
     "name": "日本語",
     "nameEn": "Japanese",
-    "count": 551,
-    "version": "1.3.0"
+    "count": 558,
+    "version": "1.4.0"
   },
   "pt-PT": {
     "name": "Português",
     "nameEn": "Portuguese",
-    "count": 436,
-    "version": "1.5.0"
+    "count": 434,
+    "version": "1.6.0"
   },
   "ko": {
     "name": "한국어",
     "nameEn": "Korean",
-    "count": 492,
-    "version": "1.8.0"
+    "count": 490,
+    "version": "1.9.0"
   },
   "cs": {
     "name": "Čeština",
     "nameEn": "Czech",
-    "count": 500,
-    "version": "1.6.0"
+    "count": 498,
+    "version": "1.7.0"
   },
   "tr": {
     "name": "Türkçe",
     "nameEn": "Turkish",
-    "count": 554,
-    "version": "1.7.0"
+    "count": 558,
+    "version": "1.8.0"
   },
   "pl": {
     "name": "Polski",
     "nameEn": "Polish",
-    "count": 554,
-    "version": "1.10.0"
+    "count": 558,
+    "version": "1.11.0"
   },
   "fi": {
     "name": "Suomi",
     "nameEn": "Finnish",
-    "count": 415,
-    "version": "1.1.0"
+    "count": 421,
+    "version": "1.2.0"
   },
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
-    "count": 546,
-    "version": "1.13.0"
+    "count": 558,
+    "version": "1.14.0"
   },
   "da": {
     "name": "Dansk",
     "nameEn": "Danish",
-    "count": 523,
-    "version": "1.1.0"
+    "count": 521,
+    "version": "1.2.0"
   },
   "uk": {
     "name": "Українська",
     "nameEn": "Ukrainian",
-    "count": 551,
-    "version": "1.8.0"
+    "count": 549,
+    "version": "1.9.0"
   },
   "pt-BR": {
     "name": "Português (Brasil)",
     "nameEn": "Portuguese (Brazil)",
-    "count": 510,
-    "version": "1.5.0"
+    "count": 508,
+    "version": "1.6.0"
   },
   "no": {
     "name": "Norsk",
     "nameEn": "Norwegian",
-    "count": 540,
-    "version": "1.8.0"
+    "count": 538,
+    "version": "1.9.0"
   },
   "nl-NL": {
     "name": "Nederlands",
     "nameEn": "Dutch",
-    "count": 554,
-    "version": "1.12.0"
+    "count": 558,
+    "version": "1.13.0"
   },
   "fr-FR": {
     "name": "Français",
     "nameEn": "French",
-    "count": 551,
-    "version": "1.15.0"
+    "count": 558,
+    "version": "1.16.0"
   },
   "de-DE": {
     "name": "Deutsch",
     "nameEn": "German",
-    "count": 554,
-    "version": "1.13.0"
+    "count": 558,
+    "version": "1.14.0"
   },
   "it-IT": {
     "name": "Italiano",
     "nameEn": "Italian",
-    "count": 500,
-    "version": "1.6.0"
+    "count": 498,
+    "version": "1.7.0"
   },
   "ru-RU": {
     "name": "Русский",
     "nameEn": "Russian",
-    "count": 551,
-    "version": "1.16.0"
+    "count": 557,
+    "version": "1.17.0"
   },
   "es-ES": {
     "name": "Español",
     "nameEn": "Spanish",
-    "count": 551,
-    "version": "1.13.0"
+    "count": 558,
+    "version": "1.14.0"
   },
   "sv-SE": {
     "name": "Svenska",
     "nameEn": "Swedish",
-    "count": 460,
-    "version": "1.6.0"
+    "count": 458,
+    "version": "1.7.0"
   }
 }

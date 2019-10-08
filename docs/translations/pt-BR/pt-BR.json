@@ -478,8 +478,6 @@
   "setShGen": "gera senha",
   "setShSet": "config. do aplicativo",
   "setShCopyPassGlobal": "copia a senha (com o aplicativo em segundo plano)",
-  "setShCopyUserGlobal": "copia o usuário (com o aplicativo em segundo plano)",
-  "setShCopyUrlGlobal": "copia o site (com o aplicativo em segundo plano)",
   "setShAutoTypeGlobal": "auto-teclar (com o aplicativo em segundo plano)",
   "setShLock": "trava a base de dados",
   "setPlInstallTitle": "Instalar novos plugins",

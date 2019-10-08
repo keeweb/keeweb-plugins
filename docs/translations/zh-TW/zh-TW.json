@@ -469,8 +469,6 @@
   "setShGen": "生成密碼",
   "setShSet": "程式設定",
   "setShCopyPassGlobal": "複製密碼（程式在背景時）",
-  "setShCopyUserGlobal": "複製用戶名（程式在背景時）",
-  "setShCopyUrlGlobal": "複製網址（程式在背景時）",
   "setShAutoTypeGlobal": "自動輸入（程式在背景時）",
   "setShLock": "鎖定密碼庫",
   "setPlInstallTitle": "安裝新擴充套件",

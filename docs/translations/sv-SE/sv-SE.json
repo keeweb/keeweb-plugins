@@ -455,8 +455,6 @@
   "setShGen": "generera lösenord",
   "setShSet": "app inställningar",
   "setShCopyPassGlobal": "Kopiera lösenord (när appen är i bakgrunden)",
-  "setShCopyUserGlobal": "Kopiera användare (när appen är i bakgrunden)",
-  "setShCopyUrlGlobal": "Kopiera webbsidan (när appen är i bakgrunden)",
   "setShAutoTypeGlobal": "Auto-type (när appen är i bakgrunden)",
   "setShLock": "lås databas",
   "setPlInstallBtn": "Installera",

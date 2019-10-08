@@ -461,8 +461,6 @@
   "setShGen": "비밀번호 생성",
   "setShSet": "앱 설정",
   "setShCopyPassGlobal": "비밀번호 복사 (앱이 백그라운드 일 때)",
-  "setShCopyUserGlobal": "사용자 복사 (앱이 백그라운드 일 때)",
-  "setShCopyUrlGlobal": "웹사이트 복사 (앱이 백그라운드 일 때)",
   "setShAutoTypeGlobal": "자동 채우기 (앱이 백그라운드 일 때)",
   "setShLock": "데이터베이스 잠그기",
   "setPlInstallTitle": "새 플러그인 설치",

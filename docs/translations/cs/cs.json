@@ -469,8 +469,6 @@
   "setShGen": "vygenerovat heslo",
   "setShSet": "nastavení aplikace",
   "setShCopyPassGlobal": "zkopírovat heslo (když je aplikace na pozadí)",
-  "setShCopyUserGlobal": "zkopírovat uživatele (když je aplikace na pozadí)",
-  "setShCopyUrlGlobal": "zkopírovat webovou stránku (když je aplikace na pozadí)",
   "setShAutoTypeGlobal": "automaticky vyplnit (když je aplikace na pozadí)",
   "setShLock": "zamknout databázi",
   "setPlInstallTitle": "Nainstalovat nové doplňky",

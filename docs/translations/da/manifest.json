@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "manifestVersion": "0.1.0",
   "name": "language-danish",
   "description": "Danish language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=da",
   "resources": {
-    "loc": "Y9T8s94hOAa+r0EOs4BUwBbLrAMxHKpwnEbYX7TJanZ+NPzXY/hFF0BJ+LWZWa6ggXdnxw9nGY9qIHP8BSv2ep6RRfdxvF3+LoeNlZLOYzNGTZFeqCOnt5E+oIqftrBeIMVIK9pzR3y5j1z5BzcAwhA35Sdz/8VyGKJMF/CNy7ttcssbmffaqzBFppV4hIrjLO2U/VS3z3KPg/jLGfw06WTVcWQq+RRlGYJFLxdvMowx6+4BfUhTANdQQo5oKTDX20ik42NZRum9acfiMF82IS2nrjzOV1U6yORfigwGsa3ZzMhGd5OkseiXErqC8Wegv8SO25yY0zNO/vi3/7I3Fw=="
+    "loc": "AyqYPGU0JnUe5HlMBdGFEVFusqqjw9DNEfV9k4vP2MXtJkHIZRSU9IvEFlRwrpdLFZqqI+cLwa56DULLumOU1vGwttDOB/pX40IzWn7bLALunwUJgm+R3KEFgiNfL92B6k8jvfZooMIhIcB/sC+f221cvziGybbUPX02uIYiFrBGLfDA06GAzET4P1osr14JQSVHlpAXtQWt34rs3X9AniyA4BrC6lCYLAh2TIFniH3dUFT4z61JCjieDni0AT5bEaiAwKZj0gSpaAoEh1SP/aJOybL6IQBke/j73KyWEs9gvxkB2ZTqmbmH0tcvgEPgjLcFGwkV9W1MQZM0f7/wtQ=="
   },
   "locale": {
     "name": "da",

@@ -438,8 +438,6 @@
   "setShGen": "gerar palavra-passe",
   "setShSet": "configurações da aplicação",
   "setShCopyPassGlobal": "copiar palavra-passe (quando aplicação está minimizada)",
-  "setShCopyUserGlobal": "copiar utilizador (quando aplicação está minimizada)",
-  "setShCopyUrlGlobal": "copiar site (quando aplicação está minimizada)",
   "setShAutoTypeGlobal": "escrita automática (quando aplicação está minimizada)",
   "setShLock": "bloquear base de dados",
   "setAboutTitle": "Sobre",

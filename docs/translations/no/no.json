@@ -499,8 +499,6 @@
   "setShGen": "generér passord",
   "setShSet": "appinnstillinger",
   "setShCopyPassGlobal": "kopiér passord (når appen er i bakgrunnen)",
-  "setShCopyUserGlobal": "kopiér bruker (når appen er i bakgrunnen)",
-  "setShCopyUrlGlobal": "kopiér nettside (når appen er i bakgrunnen)",
   "setShAutoTypeGlobal": "autofyll (når appen er i bakgrunnen)",
   "setShLock": "lås database",
   "setPlInstallTitle": "Installér nye utvidelser",
