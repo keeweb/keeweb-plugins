@@ -1,6 +1,6 @@
 {
-  "date": "2019-10-08T18:18:24.567Z",
-  "signature": "T86V98X64Gt+TlCOhl0vS2nc6mbw4WP+/r8ORDYNofNWcFXjRlpS34m8XYSqZ5OE4C2V0/Jaw5A3itYBocmUtNiE1l3h+sDZ4l/zY3/0cPO2NBuEVHICPPYUiAz1VoF6Lwhpkz/DdRB9qFug/WDPWjp0kus1ru5Nwa0GmRx5xWQQg+2sHimS89n3F9A5+OeuInTLIdc27wJ7t/BGNa1ad/D6wYE+3Qx+XOn/RWPJSIT3jxKdbQMroyM5h2b4GG2EB1Q9A3VmNNNQ0C5h1YIJ9SEzCPjPvxfj98Z/xRPWeuPOO/QfuKIZt6stq7Erhl2DPE2EVQG2nptlUEk5XIks/A==",
+  "date": "2019-10-11T21:50:09.009Z",
+  "signature": "MfacohRlDjNiGVoezYooj0nc2T2qybJjtCXz17I2iHho8yBICIllYWK3giiFj2wjJ3Z/e2LjxIp6kAhWV18nVvyZq6svR2dsaWZGFOpM0+l3O1cCrTJS49OvyvbziGiDwzMR0X73zg/IOC704VIHHscOIgAsiAQ5DX6p5bPyjdqLuuYLc30Fv2uzZCPt+7tIJCdeUmK+WndQ4YeCkR7Z6f5Q7ROAttUsQCcqThc2NT+sHDP/Q5lBwqo9HSlRLeW/vi+ic9gNKEceBeuaW3l2m9crEak+nyahEhN5DMZyUfhPeMusNm0gXsLS4IG1TJyUEXElCuwjwqBBFLMv9Xy09Q==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -438,33 +438,6 @@
         "theme": {
           "name": "dark-orange",
           "title": "Dark Orange"
-        }
-      }
-    },
-    {
-      "url": "https://plugins.keeweb.info/plugins/theme-mojave",
-      "official": false,
-      "manifest": {
-        "version": "0.0.1",
-        "manifestVersion": "0.1.0",
-        "name": "theme-mojave",
-        "description": "A KeeWeb dark theme, inspired by the new Dark Mode of macOS Mojave",
-        "author": {
-          "name": "agurodriguez",
-          "email": "me@agurodriguez.net",
-          "url": "http://agurodriguez.net"
-        },
-        "resources": {
-          "js": "WqVhllBMwTBost0cXkOja/nrsVobHTv5OHL87564SKImsroy7XcI7YqkZscaZ99NsazbMOZBYfYQkpnY+mSB7TEhFG0aVzlT8n/4PrJq2E6xsCjJcqQiu+AfkpjzwIckP37i4sfrdlciMx9gPuZKS+9vHBBjszW0TzvO7KyVWLFhiSip5TOpvaUFGeaE1UYu4MuQ6UNcX5g3nl+O5aFx622L7jAOekJ2FV38hFrh9zR7FO4oq6QElawncJG/oIUPytV01XchbOUhyIBnVjzj18vy2R0rLwDVMwtnPE5zdbLKyIGVeAEx8mcS0rB6uOzB313KEXzb93QjFNW9H4yjYA==",
-          "css": "zDlZrARIb77gobUuGLEnEz4zxrD7MNjIlvQqzdHJ9T57eHwzqfZpw0VFyvvgdp+7bbKHrzJ+g92j4JAOGEKHu8Gl6WWcIS1NDGjnFegP7w3dk+OAdtL2jCfDpjW2XvwXqu13QNMiTvaEhq3jF8z1cyYKYaKZnbX+6//z/5efl2wK1OztDWt6d3E0yCt2xiuHq71Ayq90S/epOYyMXyWwDPgGck+6VDsgIOCtpr/CO8Yae8LUBFmverkRijcafpUvq2NTDRuSU/0CYAVzFcih7rbn0Lpi2nJHLdPlW1KjMTFu8HhQi7jZc9+05K+IT3rAzt6u+/ruOiQyNLHpmy8Syw=="
-        },
-        "licence": "MIT",
-        "url": "https://plugins.keeweb.info/plugins/theme-mojave",
-        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
-        "license": "MIT",
-        "theme": {
-          "name": "mojave",
-          "title": "Mojave"
         }
       }
     },
