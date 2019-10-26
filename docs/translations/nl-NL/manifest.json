@@ -1,5 +1,5 @@
 {
-  "version": "1.13.0",
+  "version": "1.14.0",
   "manifestVersion": "0.1.0",
   "name": "language-dutch",
   "description": "Dutch language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=nl-NL",
   "resources": {
-    "loc": "eDy81571h3WJWBpFzEKt361+qQakr1IHUd/hUO6cmkYyxtJgGjadNnSGy4St+4TZwdTEoWQpPjVBldbZ5U+owTJG2ijuVsDhQztXnsDyjQoeCpeuNmxb297yE2UfWrNs0L6zVK1fm9wOHUXQ6J5JxDfI2ePAYEcE7FaxRWLpFcE+xOOo/XW3dJVsLzHHBlup6gAgvYS5+PKYoujN0Jm0ZO5KnKi76xVBoKhbxdJJnq0qtkzEg44yxrxTl1hwpwmuEnwKVsSA1xLowiwNzwIZlCW6PZJO2uccdqIqNndIE2K/MX6HVsez7fQdQUbWC8tWlQ1wXJ3+Jbb7Ub2TGafbMA=="
+    "loc": "zy+/t1nluKLQFC2y4IccVMxa7staSBzHjwOP7Dg4nRM1tNyJyO25AbT7MmObiNayshJa4iP+bFwvikuJDkWm2w0Z32tObEy7jPgMnaNItZ+/kb+NUX+mDK5J92BqakykBQOeicwFU2+kXbFhmwLlhDz8yx+21MpCuoLl9G4ur6MucSDETRb5l+nejKaTIaH7vC3Vl5xQ6QTe7bnrUnZM/8eLwbiLJwsl2rsj3q80JFjwWCoU1O1UH4Tv6IR2Pin0yWiwqwnHIJMkVIPl/9rm5rJFlabZDkIoKB8vEPAEJ2vJbls5OM0X0GNORhSb0ncAZUP8Jkdf9bxkyR7kNl/B2g=="
   },
   "locale": {
     "name": "nl-NL",

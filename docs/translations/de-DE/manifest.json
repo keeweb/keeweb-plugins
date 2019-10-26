@@ -1,5 +1,5 @@
 {
-  "version": "1.14.0",
+  "version": "1.15.0",
   "manifestVersion": "0.1.0",
   "name": "language-german",
   "description": "German language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=de-DE",
   "resources": {
-    "loc": "jsJUdhar/cX7kJeiFLbsuzs8ZW+8g5gSYz1yn1asHfrXkrI3ByZiTujYf7WO7X1/uKPu4vJ976Z+s6ZKtyWF6ojEb/XKyu6QwL7y/qQO5F9sG2HSUfYuhU0Y9H87/sXqhhnQ1EtDTsIdQT/kUD+JrY5TltEN/X59oSPyxba5ZcjFh8o+U78zyXzv1AT2U8k6ued6H29S2hdMFGpjeR20jvTgXIEjsv2eO7zKiM2eJS1KZqTQt8BU5PRbD2x3fsNwSUl39YsOQpmr9K0k8ihKba4MblsoqfpPv4jvodAUIxirf4N9utOVCNLjDmyL12j+ClyyOofYQvivFCPEOk95WA=="
+    "loc": "LJivMFZhMoSC2Sl6WXCUx5m0RjWkwtu2mv4TLOZt3Z5UCWq+PPO8wgWQp+KXmM0c1aJcl26Ofj0WUbWYHzGKtM6ploZq+Yv8MHc2b6QSRuWvNJpgkUiFSqW68/V0Rt1NKhK6zldCaeAtSfyjlBI/+S1XPiFfKWsZBKuY+VJr7ITbfo8wwrWL3JHkn1SzO2wxXr2cxK8oga0aG96AuiVJR0OYUBSlNo5jzPXxxj2LIq5FyWqmPqrwFEBprPjHLgm3KPdcPXOnUtNOZdjP3glXKg/3JsafODWtXfrV626/paB7htwRGlxWhWQhvlaDs3ijw9yEnrmKIcwInGzlM6JZKg=="
   },
   "locale": {
     "name": "de-DE",
