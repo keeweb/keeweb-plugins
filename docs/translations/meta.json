@@ -44,8 +44,8 @@
   "pl": {
     "name": "Polski",
     "nameEn": "Polish",
-    "count": 558,
-    "version": "1.11.0"
+    "count": 560,
+    "version": "1.12.0"
   },
   "fi": {
     "name": "Suomi",
@@ -86,8 +86,8 @@
   "nl-NL": {
     "name": "Nederlands",
     "nameEn": "Dutch",
-    "count": 558,
-    "version": "1.14.0"
+    "count": 560,
+    "version": "1.15.0"
   },
   "fr-FR": {
     "name": "Français",
