@@ -1,6 +1,6 @@
 {
-  "date": "2019-10-27T09:40:30.195Z",
-  "signature": "RQjvfvNzW+9MLK5oe9/P3gKYXmcQM7ObQm5HdW8qthjKaKPMss/psZbXsnPUhu1aKezK+CYZv1p/9NbB++sWSM+D3/P+aMouMeGkyb1gPVJNvccfGYQccRTqOYh8JjfVl5puhHyFPMYbrqxj6tOJib9XcK7gtP7+njCQNPpunjcpvS9k98PWPT4WozgrmOmfxHouw/pKopKKKLTEQ20MbiQB8tiJLLRmaXE4xPSCLLdNNPXSiXwKwOc3gIvbsBeRAqClarlrQ2/Zb5/VQ7YaMTmyH+vlseCHOkL5iP6xJUqO4WZDx0FWMg1OQMe0yxfXWhEeLqbLiKn001/U2M6TGw==",
+  "date": "2019-11-03T11:24:34.982Z",
+  "signature": "PS7nJDu6d86exsCVhFJlAlrT2JU4L4deRYu9UDe7wySgLiRf+Eib6w6PrqHJONZp4bJ0seBUdI5ZmvYmODUWql1bRuXoKIpZIX7LjZ8Dh66yeyl/J1Ww9mklgflVaHzwiJ00TBvQlkc2e9Ucj/pbZoOsBSEJDFX/NcBWWSC+9sP6bP395plojz5kZWtfILzmhuDtrluy1+1CSDSHIazrshlL9o4tkwWMCQSjgCjQeQ4LcPia5TYjRu8hcPsGAvEJMXpnZxd2b1J9onswQ7rQ3F8refBD6Rj/C4STfGFje52Gbs/++QGyjZscY9gMugSdoEVa8+X46Tf/ejeDf2yH/A==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -570,7 +570,7 @@
       "url": "https://plugins.keeweb.info/translations/tr",
       "official": true,
       "manifest": {
-        "version": "1.9.0",
+        "version": "1.10.0",
         "manifestVersion": "0.1.0",
         "name": "language-turkish",
         "description": "Turkish language",
@@ -582,7 +582,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=tr",
         "resources": {
-          "loc": "KaWDffCZLSy9eojn7hpQ0I47hiQ1TgArLN8jrW4hH7nqFLRibuGXv4l4d2NDuHewwhvsAWILqFxx87fooy4ePwvfYPLP/LBxzSR36XNweDp8SiULx6E9PO8Cc2+jfv6nfSU0VDtrMVXyrtFGiUPK2ZE+sNP3nQgoIFOqW6YmB1z23kOeH2n/sn43Oad2XRxXWS1UkSCYEWK2qYPqSajcI6ShEiw06JKfJgbcNL2mqzR4xpio3UWj3F+5ATdqV55cjRxRyteyE7OXDK02FdPKDuV7+IYURhqvBicn4TlY4b3hsfiZozHU8Kao8fWdXxyixzkBsHo88eP8jydoEP9S2A=="
+          "loc": "zZDIoVWEQvSkeO5u3rADup269T6ZLmUwpYrDxJmaKj7Lv1a97617ocaeYC+miIn9FZNtP87p0LGksvNbF24SPdi8mfPoCn7r2APIWVU7SUO4Iwa2qre/hbrV+79tsLVjmm+/qvT89LsHUJ6u4vwfafOGfhP2Jnv1LqtrrKHwlmvkTAkfPhIm23/lGw3E0sPibC2fUSYJwfyPp4hIYDd4ZvcyMwjN75RhJv0CBIcgG/JLTYFMJY+KSTLFaw/HLDmxwGoAshXx0DGMskKZbjYf52HKYkqRsRXU52+3OKHj9xvrBRUrn26ZbIyhAq1/od4IO9xuoz/Hyfym6co+3rfa2A=="
         },
         "locale": {
           "name": "tr",
