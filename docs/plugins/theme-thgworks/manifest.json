@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "1.0.0",
+  "name": "theme-thgworks",
+  "description": "THGWorks Theme",
+  "author": {
+    "name": "Thiago Ferezim",
+    "email": "thiagoferezim@gmail.com",
+    "url": "https://thg.works"
+  },
+  "resources": {
+    "css": "NIaMQRGVCKdCfzx9dh8T4H8E9I1t889iXIDEbLHxFEMTn/zjeNtLeeBP3z8gIk7fuaYJT1+Gqv+gpK8aossCUWLnXsGiE1ihdqhOoXW2wEVPx1JHCUlgufAv5tJBIoVy3n8W0WNzjECSo+g4dhlIdDAqmGkamh9mvFhGst3BVuZxSDyab7nouvQMVODOao9kRigv/PTDgTXvL3vbr95iD3iWfI1EXRM89E3CmT0IjRoTWw58sz8SsXIPyGKFQ6Pos7m9CIN7GRk0QExsx8gex6u+TOMmmjF9G+VrNpZOqyH6rXJQ/UP2p4Zkx5AbB5PwYBaFYxl/VXmyjy1RgN368w=="
+  },
+  "licence": "MIT",
+  "url": "https://github.com/thgfrzm/theme-thgworks",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseOFGUc+OnMobQCBGJYuDnQ1CYovOWZxjPWWGo8BcTERIG0O39GMeE1rSkYdVvTimkeBUbP0xsIhl7DTxBKjfJ+CvF97T4xuEIMiE4SpXLY2bWZaVatlueSI/ow7RELPaE09VCSzlTrh8owRwdBu9nNIZfAm0pRc+bvRr6dHrpBlXgl5UhlyiNkXdvFvBiGaG30kZLc6GWkJEkCcg98t/HEJq4/cEUbI7aglM7N8/H/2rh57QU3S1WjPLq9P2Y1nBWlaOB0Qa0RHI0LwYiECWwldph34fD9FwVJRqvY8DFZMvOPk61vDmXdngcAqEvjFVAE4s1N1wbm9nTi38icDfwIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "thgworks",
+    "title": "THGWorks Theme"
+  }
+}
