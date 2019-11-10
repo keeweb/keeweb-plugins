@@ -1,6 +1,6 @@
 {
-  "date": "2019-11-10T16:12:11.445Z",
-  "signature": "kliRAyClSyhgkLVjr53pjsjRkPbN93IeXe+wL4jJ+iz+rK75OBiEIvvffekAlzoPqyRktg54NyRn7heP7MkMEGBTp7RtDEbdMeCSoiwHIg2sjUaYGxCsBgkr+zKEu83hKXPga1VGaSpKGPmsk3NaWObaelVXlYYt+DJo5+YWrAdIauG1To5IH7tOaYMkfcVUKX0nuP7Mubj/Q1K6Dgd9gdecCBGmBdwq17M6foEZ0NQa5fzWlGxHH/EC/eD6sQbbw1QOi+hMC4Jw6vGMZg4gj/AuuUbUomNUqXVWptm4qKQdHKWDdXNrXc76WKKcDX5hCFtmRdkL4MTKIM8+dZsAtg==",
+  "date": "2019-11-10T16:14:00.653Z",
+  "signature": "z+FaNrGS8Qy9/x+xCS8WBYy/Z7B2BEtq2ehxOn35kA3hOE4yJMx4LaGef+qzRSf2lgMUhWLRqMl0ncqqjI0zFhqpDIEfvoQ0YcWa5lNnd0Cp6dAehziENe7AvT7lyEO8WpU67xhk41y8enKImzr3MFSIvTuMfbxLEg2ixr0Ps0hoJxYofvy8heTvoeKKZeoAVCKeAEJhgjT4mVJc4wQoglqNR8HNMz9ZawAmSvAz2qi8E70YUz27zqLi0ofWWkuVeyUz7gV+5BHHGv9sF4ncs0r8TPYvXgh/mp15RBXqAVtxfNTw0mUZg1zmwOQIlhF87d6HKRgLK2wWQj5gN8B/5g==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -445,8 +445,8 @@
       "url": "https://plugins.keeweb.info/plugins/theme-thgworks",
       "official": false,
       "manifest": {
-        "version": "1.0.0",
-        "manifestVersion": "1.0.0",
+        "version": "1.0.1",
+        "manifestVersion": "0.1.0",
         "name": "theme-thgworks",
         "description": "THGWorks Theme",
         "author": {
