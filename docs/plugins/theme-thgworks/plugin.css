@@ -1,0 +1,32 @@
+.th-thgworks {
+  --background-color: #262626;
+  --medium-color:  #737373;
+  --text-color:  #f1f1f1;
+  --action-color:  #da9c6b;
+  --action-background-color-focus: #C16341;
+  --action-background-color-focus-tr: rgba(174,125,125,0.1);
+  --action-background-color-active: rgba(164,117,80,1);
+  --action-background-color-active-tr: rgba(164,117,117,0.15);
+  --form-box-shadow-color-focus: hsla(7,60%,64%,1);
+  --error-color:  #C16341;
+  --error-background-color-focus: #C1634199;
+  --error-background-color-focus-tr: #C1634120;
+  --error-background-color-active: #C16341bb;
+  --error-background-color-active-tr: #C1634140;
+  --form-box-shadow-color-focus-error: hsla(2,63%,57%,1);
+  --text-selection-bg-color: #404040;
+  --text-semi-muted-color: #da9c6b99;
+  --muted-color: #bebebe;
+  --dropdown-box-shadow-color: #f1f1f120;
+  --text-contrast-action-color: #f1f1f1;
+  --base-border-color: rgba(178,178,178,1);
+  --accent-border-color: rgba(159,159,159,1);
+  --light-border-color: #404040;
+  --form-box-border-focus: #da9c6b;
+  --secondary-background-color: #da9c6b20;
+  --intermediate-background-color: #40404066; 
+  --intermediate-pressed-background-color: #737373;
+  --disabled-background-color: #404040;
+  --modal-background-color: #737373;
+  --modal-background-color-tr: #057253;
+}

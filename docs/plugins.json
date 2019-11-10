@@ -1,6 +1,6 @@
 {
-  "date": "2019-11-10T16:00:47.026Z",
-  "signature": "QQeacLCRKyVXHxLQvUmwRtWfEg5I6B8TmZhipGUp3uT+uWFodcQ/Cskx+cpM/pe3ocMmJw/L7dUBva2IkhkCGeUhMZTh30G6X5WPS4iwvkMXTmNzvOkC+8w/F2K7a5lX9ecY+fJa5l7uedXojXrGdOhWEtK30P0yl7WB8o1shS1MbSOl8S5VHFnML1ZWehROCbBkL5F2re0KS6O1RE25kHyp/1Bf7D2lNdc2jIup42a5WeXuQKzxuCklHSNYhnnY9GHX0FFSgh+n4buLB5W/jU7wENkYTng4UvdFDxHg+1O0ApsMvDRQjjHhfbp6Wm5pNpuI9MOnp2EbKeoFy0X+RQ==",
+  "date": "2019-11-10T16:12:11.445Z",
+  "signature": "kliRAyClSyhgkLVjr53pjsjRkPbN93IeXe+wL4jJ+iz+rK75OBiEIvvffekAlzoPqyRktg54NyRn7heP7MkMEGBTp7RtDEbdMeCSoiwHIg2sjUaYGxCsBgkr+zKEu83hKXPga1VGaSpKGPmsk3NaWObaelVXlYYt+DJo5+YWrAdIauG1To5IH7tOaYMkfcVUKX0nuP7Mubj/Q1K6Dgd9gdecCBGmBdwq17M6foEZ0NQa5fzWlGxHH/EC/eD6sQbbw1QOi+hMC4Jw6vGMZg4gj/AuuUbUomNUqXVWptm4qKQdHKWDdXNrXc76WKKcDX5hCFtmRdkL4MTKIM8+dZsAtg==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -438,6 +438,32 @@
         "theme": {
           "name": "dark-orange",
           "title": "Dark Orange"
+        }
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/theme-thgworks",
+      "official": false,
+      "manifest": {
+        "version": "1.0.0",
+        "manifestVersion": "1.0.0",
+        "name": "theme-thgworks",
+        "description": "THGWorks Theme",
+        "author": {
+          "name": "Thiago Ferezim",
+          "email": "thiagoferezim@gmail.com",
+          "url": "https://thg.works"
+        },
+        "resources": {
+          "css": "SkJ5tMyZftnfRx8HCLbvM+v8FflWRaHiTAv+lrrR3o4tTE5TVL22p+PRYLDH0ycLA5pF9KQozEpyZ8Gsxdw6/izYMtBtXBNJZoC3PcNnjyEUA+XxM6zEmoD1uXqjSfPQqOvM2RllgNdo9JJWiKta4Wqnkl6OH4xeMabgYAjuhebm7U15I+6g+PTDGDZ8IbXucp5kE/nLYqa3XHIb/49oVK0btDy7qahek1VxUnMssSFb8YFfuUGRv4Kw/IpU6MypbEnw+HIwmwjUTwM+hfyX8VSUEou1yg74bclD/c1EbnuCSVh9ktKt6jdlXmanLJ3d2GMmoZFs/3MWEuDf3Xjqqw=="
+        },
+        "licence": "MIT",
+        "url": "https://github.com/thgfrzm/theme-thgworks",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+        "license": "MIT",
+        "theme": {
+          "name": "thgworks",
+          "title": "THGWorks Theme"
         }
       }
     },
