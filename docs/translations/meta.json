@@ -2,8 +2,8 @@
   "zh-TW": {
     "name": "繁體中文",
     "nameEn": "Chinese Traditional",
-    "count": 498,
-    "version": "1.5.0"
+    "count": 506,
+    "version": "1.6.0"
   },
   "zh-CN": {
     "name": "简体中文",
@@ -87,7 +87,7 @@
     "name": "Nederlands",
     "nameEn": "Dutch",
     "count": 560,
-    "version": "1.15.0"
+    "version": "1.16.0"
   },
   "fr-FR": {
     "name": "Français",
