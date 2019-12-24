@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "manifestVersion": "0.1.0",
   "name": "language-finnish",
   "description": "Finnish language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=fi",
   "resources": {
-    "loc": "pvSwTH+ZqZxF/0Ghccaof700p7c9Bs05Dn6njEmrfEjsOaJYJRtS4VlpSjhVPeYleisqoDLob+kZDdyUpzlB8EIZ1kLlw3BibQPyQGSfRkWjvFWEvrU3Tw55QiIZ8sEa2DmH2fxNJv8QyIHTIXyRuI9l3LcxRBOWdGvyqOKPXWYP8TprdPmZ3/7X3EDzxBgSjnE5RvM/cfpaG1SsOWB3hp7eAK0sBwqdQBjr2jguNpOcsq5sMKH9h9MuXpX8Cp5xS+6ackaqAOMQ/Y3x5WWbyDz0XJjp4cN7bgFX9FJnwjvm8UJ1a9vRQZg3Ie3XdIX72OXjehMaxTq4g+zIIfic4g=="
+    "loc": "p/k/H1vv/xWX0lJppKzJueYQiPfdmR2NHEEY650lVM3nIWWEjTp5dSxMls7CvZub5Esdv+iF1xcJXEzI1fCtv0xnPqiq4oqVenek6B3EgU1RAIGa4E8WyP5ACd9SPHvUWSH87opulMr1p8xQmGZm5yu4Qu1n3qxjpvPLFvaHGDGwyFM9uAt9QvIVozbQ06bxc/0kydH6HMSfgKRf/uYaVJc/xZluBeF/2i+n++DrnYvOnNH+XmNhDe/dXXo8gwpjuKkL6K5LtjBoWG77tX5yAktxd0DHSV/V7sghWhR7fGxuIqveojH8QRnuXm56066c93ki189EbH3LoxtrHuV4Yw=="
   },
   "locale": {
     "name": "fi",
