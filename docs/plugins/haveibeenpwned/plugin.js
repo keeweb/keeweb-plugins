@@ -4,15 +4,15 @@
  * @license MIT
  */
 
-const Logger = require('util/logger');
+const Logger = require('util/logger').Logger;
 // change log level here.
 const LogLevel = Logger.Level.Info;
 
-const DetailsView = require('views/details/details-view');
-const InputFx = require('util/input-fx');
+const DetailsView = require('views/details/details-view').DetailsView;
+const InputFx = require('util/ui/input-fx').InputFx;
 const Kdbxweb = require('kdbxweb');
-const _ = require('_');
-const Tip = require('util/tip');
+const utilFn = require('util/fn');
+const Tip = require('util/ui/tip').Tip;
 const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
 
 let _seen = [];
@@ -142,7 +142,7 @@ DetailsView.prototype.checkNamePwned = function (name) {
             if (data && data.length > 0) {
                 hibp.logger.debug('found breaches ' + JSON.stringify(data));
                 let breaches = '';
-                data.forEach(breach => { breaches += '<li>' + _.escape(breach.Name) + '</li>\n'; });
+                data.forEach(breach => { breaches += '<li>' + utilFn.escape(breach.Name) + '</li>\n'; });
                 hibp.alert(this.userEditView.$el, `WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>\n`);
             } else {
                 hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
@@ -168,7 +168,7 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
                     const h = line.split(':');
                     const suffix = h[0];
                     if (prefix + suffix === passwordHash) {
-                        const nb = _.escape(h[1]);
+                        const nb = utilFn.escape(h[1]);
                         hibp.alert(this.passEditView.$el, `WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`);
                     }
                 });
