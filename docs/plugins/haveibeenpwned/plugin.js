@@ -222,15 +222,15 @@ module.exports.getSettings = function () {
         //        value: hibp.blockPwnedName
     }];
 };
+// disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
+hibp.checkPwnedName = false;
+hibp.blockPwnedName = false;
 
 module.exports.setSettings = function (changes) {
     for (const field in changes) {
         const ccfield = field.substr(0, 1).toLowerCase() + field.substring(1);
         hibp[ccfield] = changes[field];
     }
-// disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
-    hibp.checkPwnedName = false;
-    hibp.blockPwnedName = false;
 };
 
 module.exports.uninstall = function () {
