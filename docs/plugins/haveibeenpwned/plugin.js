@@ -67,7 +67,7 @@ class HIBPUtils {
         });
         xhr.open(config.method || 'GET', config.url);
         if (config.headers) {
-            for (let key in config.headers) {
+            for (const key in config.headers) {
                 xhr.setRequestHeader(key, config.headers[key]);
             };
         };
@@ -135,7 +135,7 @@ DetailsView.prototype.checkNamePwned = function (name) {
         url: url,
         method: 'GET',
         responseType: 'json',
-        headers: { 'Access-Control-Allow-Origin':  '*'},
+        headers: {'Access-Control-Allow-Origin': '*'},
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
