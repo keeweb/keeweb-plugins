@@ -4,15 +4,15 @@
  * @license MIT
  */
 
-const Logger = require('util/logger');
+const Logger = require('util/logger').Logger;
 // change log level here.
 const LogLevel = Logger.Level.Info;
 
-const DetailsView = require('views/details/details-view');
-const InputFx = require('util/input-fx');
+const DetailsView = require('views/details/details-view').DetailsView;
+const InputFx = require('util/ui/input-fx').InputFx;
 const Kdbxweb = require('kdbxweb');
-const _ = require('_');
-const Tip = require('util/tip');
+const utilFn = require('util/fn');
+const Tip = require('util/ui/tip').Tip;
 const detailsViewFieldChanged = DetailsView.prototype.fieldChanged;
 
 let _seen = [];
@@ -26,6 +26,7 @@ class HIBPUtils {
         this.logger = new Logger('HaveIBeenPwned');
         this.logger.setLevel(LogLevel);
     };
+
     replacer(key, value) {
         if (value != null && typeof value === 'object') {
             if (_seen.indexOf(value) >= 0) {
@@ -35,11 +36,13 @@ class HIBPUtils {
         }
         return value;
     };
+
     stringify(obj) {
         const ret = JSON.stringify(obj, this.replacer);
         _seen = [];
         return ret;
     };
+
     xhrcall (config) {
         const xhr = new XMLHttpRequest();
         if (config.responseType) {
@@ -64,12 +67,13 @@ class HIBPUtils {
         });
         xhr.open(config.method || 'GET', config.url);
         if (config.headers) {
-            config.headers.forEach((value, key) => {
-                xhr.setRequestHeader(key, value);
-            });
+            for (var key in config.headers) {
+                xhr.setRequestHeader(key, config.headers[key]);
+            };
         };
         xhr.send(config.data);
     };
+
     hex (buffer) {
         const hexCodes = [];
         const view = new DataView(buffer);
@@ -86,6 +90,7 @@ class HIBPUtils {
         // Join all the hex strings into one
         return hexCodes.join('');
     };
+
     digest(algo, str) {
         const buffer = Kdbxweb.ByteUtils.stringToBytes(str);
         const subtle = window.crypto.subtle || window.crypto.webkitSubtle;
@@ -94,12 +99,15 @@ class HIBPUtils {
             return _self.hex(hash);
         });
     };
+
     sha1(str) {
         return this.digest('SHA-1', str);
     };
+
     sha256(str) {
         return this.digest('SHA-256', str);
     };
+
     alert (el, msg) {
         // Alerts.info({ body: msg, title: 'HaveIBeenPwned' });
         el.focus();
@@ -108,6 +116,7 @@ class HIBPUtils {
         Tip.createTip(el, { title: msg, placement: 'bottom' });
         InputFx.shake(el);
     };
+
     passed(el, msg) {
         hibp.logger.info(msg);
         el.removeClass('input--error');
@@ -126,14 +135,14 @@ DetailsView.prototype.checkNamePwned = function (name) {
         url: url,
         method: 'GET',
         responseType: 'json',
-        headers: undefined,
+        headers: { "Access-Control-Allow-Origin" :  '*'},  //, "Access-Control-Allow-Methods" : 'GET,OPTIONS', "Access-Control-Allow-Headers" : 'Content-Type'}, 
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
             if (data && data.length > 0) {
                 hibp.logger.debug('found breaches ' + JSON.stringify(data));
                 let breaches = '';
-                data.forEach(breach => { breaches += '<li>' + _.escape(breach.Name) + '</li>\n'; });
+                data.forEach(breach => { breaches += '<li>' + utilFn.escape(breach.Name) + '</li>\n'; });
                 hibp.alert(this.userEditView.$el, `WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>\n`);
             } else {
                 hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
@@ -149,7 +158,7 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
         url: `https://api.pwnedpasswords.com/range/${prefix}`,
         method: 'GET',
         responseType: 'text',
-        headers: undefined,
+        headers: {'Access-Control-Allow-Origin': '*'},
         data: null,
         statuses: [200, 404],
         success: data => {
@@ -159,7 +168,7 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
                     const h = line.split(':');
                     const suffix = h[0];
                     if (prefix + suffix === passwordHash) {
-                        const nb = _.escape(h[1]);
+                        const nb = utilFn.escape(h[1]);
                         hibp.alert(this.passEditView.$el, `WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`);
                     }
                 });
@@ -195,21 +204,22 @@ module.exports.getSettings = function () {
         label: 'Check passwords against HaveIBeenPwned list',
         type: 'checkbox',
         value: hibp.checkPwnedPwd
-    }, {
-        name: 'checkPwnedName',
-        label: 'Check user ids against HaveIBeenPwned list',
-        type: 'checkbox',
-        value: hibp.checkPwnedName
+// disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
+//    }, {
+//        name: 'checkPwnedName',
+//        label: 'Check user ids against HaveIBeenPwned list',
+//        type: 'checkbox',
+//        value: hibp.checkPwnedName
     }, {
         name: 'blockPwnedPwd',
         label: 'Block pwned passwords if they are in HaveIBeenPwned list',
         type: 'checkbox',
         value: hibp.blockPwnedPwd
-    }, {
-        name: 'blockPwnedName',
-        label: 'Block pwned names if they are in HaveIBeenPwned list',
-        type: 'checkbox',
-        value: hibp.blockPwnedName
+//    }, {
+//        name: 'blockPwnedName',
+//        label: 'Block pwned names if they are in HaveIBeenPwned list',
+//        type: 'checkbox',
+//        value: hibp.blockPwnedName
     }];
 };
 
@@ -218,6 +228,9 @@ module.exports.setSettings = function (changes) {
         const ccfield = field.substr(0, 1).toLowerCase() + field.substring(1);
         hibp[ccfield] = changes[field];
     }
+// disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
+    hibp.checkPwnedName = false;
+    hibp.blockPwnedName = false
 };
 
 module.exports.uninstall = function () {
