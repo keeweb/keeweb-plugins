@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "language-slovak",
+  "description": "Slovak language",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/translations?lang=sk",
+  "resources": {
+    "loc": "wNsvJA9pgkMYhXF4V84RjJiVCajLwu8IfoMOJ9/3TIwxG4k/9DLvbr6KEn5UmsN1WjXgdRRrGEeO2q2HcjnWLXyw3XwfWJB6XymkjHqyMAkumyV4ShhOvdAS3L4auungMqkN4oflDiujphvwKuNhfvniYlOUXRfRwq+jPKYQoEma0jFwV5fsWoVGI8TZx/eGzN6Pun6L+gkHyIjXCpF04FRZ8N7No9VShQfEbg09iQ5Yo8wliF+NHXIy0MqoPb98AUmy9sXIHajDTxS8YiKZS56d+sMJQxyiTalJXRZVdz2xJYTtV0AgvUxiS/hiDdCBlPNQmIuKuh3UxXy2VAbBtw=="
+  },
+  "locale": {
+    "name": "sk",
+    "title": "Slovenčina"
+  },
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+}

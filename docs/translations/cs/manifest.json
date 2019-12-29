@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.7.0",
   "manifestVersion": "0.1.0",
   "name": "language-czech",
   "description": "Czech language",
@@ -11,7 +11,7 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=cs",
   "resources": {
-    "loc": "akfWqc3Ce2B2nLRcbVaTRGIWnBS6cYtzbrPuf8/W9MP4FIEhjFz4fcXbIPCoeCuIHCghkFGe6ikX+vbDO6HOiDei/rYvEu0ozj4NcWni4SyUvGjkKO3urH4KGOFShiWhNYSY9mMMBuJ7qB90Er+Dh4AfDTDO/oMVhffmMKQp9ZSgQXjpQlHSYeASX4Q3kUupbxrnUnovOWPQeXCDNdWZ9eUJnDXLFXVZgFw4QiNFu6CwVaKWPx1XoOC9p8tpwIdQWkYZu760KvIOF9h7CZGWQLrYZCeOZ9SEPDvWYRbH26GhbJXT7Hzha0g1Kd7TWmIX2zJKY2boDks78PMm++yVtw=="
+    "loc": "dJLbD14qmHb1biSH9Y8L9iaBIWqNkwrxFKNMOwxJC4p4aUxFlsljzP0uem1ZYzn/fZr8J174a98/t5rIojJOstSX0rt7BjjkHLYyxSOyuPRDq3A+MxuchDQK9Ns/Z3/X2XmWEZRICq263hbTjl9iQRLuf8kJ7+vgDZX9ay1WGxxoSiF82DF81IhviWc0z0m69dhxAlD6UQwLN04UW9mTegwnaoUGjXjA8XuyJAhAU4Xp/HhuD/jnjoNCz1m2/5tsgH4ToAjp6sAuBzAqqsf3lQtR406i+5paF9Ran1WMvqhiQoWpSVnO0k4XFPdhBQpM6jgHNPg/lPiJTEuk7cVI4Q=="
   },
   "locale": {
     "name": "cs",

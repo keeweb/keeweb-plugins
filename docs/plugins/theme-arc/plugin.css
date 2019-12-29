@@ -1,0 +1,10 @@
+.th-arc {
+    --background-color: #e7e8eb;
+    --medium-color: #abb2bf;
+    --text-color: #404552;
+    --action-color: #5294e2;
+    --error-color: #da4453;
+    --mute-percent: 100%;
+    --light-border-color: #d3dae3;
+    --muted-color: #a3a5ac;
+}

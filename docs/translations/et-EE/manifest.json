@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "language-estonian-estonia-",
+  "description": "Estonian (Estonia) language",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/translations?lang=et-EE",
+  "resources": {
+    "loc": "B+SU8NWKr79BEMhy9M/aeNhAvmu6ZJWS8goMOcNuzOej70lb9eKQB9PBQyYPouakO/HGnYu3p92O4qcIC4mw0okIT9yvo/hsXe6+IkQK+bE2cTdhDFgu8ojUHF1ckJc/vPlp94x3MCS1KIVxAaMuHIIphRfH9e9C8sv/FrboJYcC0uUsNANEgToLwHxNT5/0M5y6EYXg7VdS1EDrW+Wc0wg8fp7pRDP6ZkxcsdruaOdMLwG7LoFjDlNhPrAmMDnBuqb9lqGsCRPq+IoWUiwipvQ1F+pa6UfWAdmY5lwTdoJ6Wn+UmZ1GbMhewd6TeAgG+abxw5Qn6ZarwJaMDOB59g=="
+  },
+  "locale": {
+    "name": "et-EE",
+    "title": "Eesti (Eesti)",
+    "flag": "🇪🇪"
+  },
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+}
