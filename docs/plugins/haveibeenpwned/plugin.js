@@ -67,7 +67,7 @@ class HIBPUtils {
         });
         xhr.open(config.method || 'GET', config.url);
         if (config.headers) {
-            for (var key in config.headers) {
+            for (let key in config.headers) {
                 xhr.setRequestHeader(key, config.headers[key]);
             };
         };
@@ -135,7 +135,7 @@ DetailsView.prototype.checkNamePwned = function (name) {
         url: url,
         method: 'GET',
         responseType: 'json',
-        headers: { "Access-Control-Allow-Origin" :  '*'},  //, "Access-Control-Allow-Methods" : 'GET,OPTIONS', "Access-Control-Allow-Headers" : 'Content-Type'}, 
+        headers: { 'Access-Control-Allow-Origin':  '*'},
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
@@ -204,22 +204,22 @@ module.exports.getSettings = function () {
         label: 'Check passwords against HaveIBeenPwned list',
         type: 'checkbox',
         value: hibp.checkPwnedPwd
-// disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
-//    }, {
-//        name: 'checkPwnedName',
-//        label: 'Check user ids against HaveIBeenPwned list',
-//        type: 'checkbox',
-//        value: hibp.checkPwnedName
+        // disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
+        //    }, {
+        //        name: 'checkPwnedName',
+        //        label: 'Check user ids against HaveIBeenPwned list',
+        //        type: 'checkbox',
+        //        value: hibp.checkPwnedName
     }, {
         name: 'blockPwnedPwd',
         label: 'Block pwned passwords if they are in HaveIBeenPwned list',
         type: 'checkbox',
         value: hibp.blockPwnedPwd
-//    }, {
-//        name: 'blockPwnedName',
-//        label: 'Block pwned names if they are in HaveIBeenPwned list',
-//        type: 'checkbox',
-//        value: hibp.blockPwnedName
+        //    }, {
+        //        name: 'blockPwnedName',
+        //        label: 'Block pwned names if they are in HaveIBeenPwned list',
+        //        type: 'checkbox',
+        //        value: hibp.blockPwnedName
     }];
 };
 
@@ -230,7 +230,7 @@ module.exports.setSettings = function (changes) {
     }
 // disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
     hibp.checkPwnedName = false;
-    hibp.blockPwnedName = false
+    hibp.blockPwnedName = false;
 };
 
 module.exports.uninstall = function () {
