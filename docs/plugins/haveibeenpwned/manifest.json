@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.7",
   "manifestVersion": "0.1.0",
   "name": "haveibeenpwned",
   "description": "Check HaveIBeenPwned password database",
@@ -9,8 +9,8 @@
     "url": "https://github.com/leolivier"
   },
   "resources": {
-    "js": "EEBWgG1bDfxgoVs3oe5QE9tefQs5PUvjx/52pL3K1vFSop7eRVCQk7RO0QoiMmWccvwQc3xEdgJNXNtFc8FsAhvoypTASyBcdpW39XRQyNEnNMywmlWoxEzZ+4i6upmijZ/1k/aoZTRu0n9rJGovSY69UU2EWHMTfwDVE0+/NV38iQll7u9jJU4HS2kVFaJOgf6KVAulZYjDDH15rJEPBQOm9OWcZlShijcS7RzSFYwy90tebFGiWMhOsjASYsj4HiyyMMoD59h8ERMBiClEjmf4PcMYWAEydwugqbQugKE+aV675Os47H5XH7fPEag7i1S0XF3Sif9e+QiZoATPBg==",
-    "css": "POSiE6zEtm9jwglrZFddoO9Z6H2xv7/wo+4joOaOx28d0J3vPqWFHcuNAhfwOTmRLgM5wBEa86LrBbu+1vU1zqF9fUXXKLLFpd80xtvqy+Rwr/JanXIB8j9AU5/+QbNUC+6u5z7usdn/vMKLHSDcHSI/OwXCCdIpgIsjGQw7IaSxRv6fYRf2p8MqUsU4bL7RIPWBc7qiyvK2I7QGpkwe2nu87laX7cNOYPMI2hTJJruErGIfFVmxLUhfHdDIbU3f4hDyreVIGQT3UtkQSkpKc6pYIWsihs+OnjLrMiHQCjekBxP53aButrWSMFDt1koC7bzdtIJX4u8tsM0G2d/1XQ=="
+    "js": "eyKqyfSby3DX7+u0qmF45JCzxZOhrY7y//LC6Mlz8vdaGPQrGvAS3vAPK99/qLZK9GF327NyCU2Zs/sGLFNxw4/gUpPtLj7t4/wH7ctQcE8H9S1LtlGwWhrGYBN7PpXe5rtlcfOR6ttpag8xCMQT87cc6sw0TiUoAb6110ANpi3LbloJWs3flCuxwtbKEO7IVPS99GvEMgeUPe1ZyVbNnnO83FzuNjILlsrkEmctJDGZLLbOZIVO24VsD4HtnmQcsDKbRcCwoCO3dEGRvmcgi7Hpsz8D3zzsqMnN+6xAsiD10rLqubRjfm/IkWbu2xm8Ax7+YDzFuN0cXKN6eqFjcw==",
+    "css": "F8hkZOvzoYhHhACwsSct+CJofHL/FVQ0mO5VcRByQpnGjYqkNh9qCrsLfm7I8DA1dcvv1R4P+44YnrTeAJ/S3bgDCq2PlJ+rg/0L0EeIVLOfqedMQU7VCFIRoM5Zz51sKzakjCEs7iNpddEtI0vz7fDeV6PXo4UPMS9vzNu00Ja8Bx5HDzfuvlgQppT46LKZEqyvTtl//24hOwTmuhpRbEseBqEpfrC9aSj0UsB9IhvDirycH99ZYZ+PBvMnPUM1N8iexsab9dN3TaS/8uc3rVq6n8KQ/dGmb6aGq4q4WtOm23hN82LVS6Zpf1Vfl7x6ULRHGUxDbMbdWJ490vcpSA=="
   },
   "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
   "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",

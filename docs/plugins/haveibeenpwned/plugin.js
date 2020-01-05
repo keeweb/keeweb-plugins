@@ -67,9 +67,9 @@ class HIBPUtils {
         });
         xhr.open(config.method || 'GET', config.url);
         if (config.headers) {
-            config.headers.forEach((value, key) => {
-                xhr.setRequestHeader(key, value);
-            });
+            for (const key in config.headers) {
+                xhr.setRequestHeader(key, config.headers[key]);
+            };
         };
         xhr.send(config.data);
     };
@@ -135,7 +135,7 @@ DetailsView.prototype.checkNamePwned = function (name) {
         url: url,
         method: 'GET',
         responseType: 'json',
-        headers: undefined,
+        headers: {'Access-Control-Allow-Origin': '*'},
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
@@ -158,7 +158,7 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
         url: `https://api.pwnedpasswords.com/range/${prefix}`,
         method: 'GET',
         responseType: 'text',
-        headers: undefined,
+        headers: {'Access-Control-Allow-Origin': '*'},
         data: null,
         statuses: [200, 404],
         success: data => {
@@ -204,23 +204,27 @@ module.exports.getSettings = function () {
         label: 'Check passwords against HaveIBeenPwned list',
         type: 'checkbox',
         value: hibp.checkPwnedPwd
-    }, {
-        name: 'checkPwnedName',
-        label: 'Check user ids against HaveIBeenPwned list',
-        type: 'checkbox',
-        value: hibp.checkPwnedName
+        // disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
+        //    }, {
+        //        name: 'checkPwnedName',
+        //        label: 'Check user ids against HaveIBeenPwned list',
+        //        type: 'checkbox',
+        //        value: hibp.checkPwnedName
     }, {
         name: 'blockPwnedPwd',
         label: 'Block pwned passwords if they are in HaveIBeenPwned list',
         type: 'checkbox',
         value: hibp.blockPwnedPwd
-    }, {
-        name: 'blockPwnedName',
-        label: 'Block pwned names if they are in HaveIBeenPwned list',
-        type: 'checkbox',
-        value: hibp.blockPwnedName
+        //    }, {
+        //        name: 'blockPwnedName',
+        //        label: 'Block pwned names if they are in HaveIBeenPwned list',
+        //        type: 'checkbox',
+        //        value: hibp.blockPwnedName
     }];
 };
+// disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
+hibp.checkPwnedName = false;
+hibp.blockPwnedName = false;
 
 module.exports.setSettings = function (changes) {
     for (const field in changes) {
