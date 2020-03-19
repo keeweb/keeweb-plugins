@@ -1,9 +1,9 @@
 const fs = require('fs');
-const signer = require('pkcs15-smartcard-sign');
+const signer = require('pkcs11-smartcard-sign');
 const keytar = require('keytar');
 
 const verifyKey = fs.readFileSync('keys/public-key.pem');
-const key = '02';
+const signerOptions = JSON.parse(fs.readFileSync('keys/keeweb-sign.json', 'utf8'));
 
 function getPin() {
     if (getPin.pin) {
@@ -20,5 +20,6 @@ function getPin() {
 }
 
 module.exports = function sign(data) {
-    return getPin().then(pin => signer.sign({ data, verifyKey, pin, key }).then(data => data.toString('base64')));
+    return getPin().then(pin => signer.sign({ data, verifyKey, pin, ...signerOptions })
+        .then(data => data.toString('base64')));
 };
