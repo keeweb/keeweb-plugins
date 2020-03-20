@@ -26,7 +26,7 @@
   "homepage": "https://github.com/keeweb/keeweb-plugins#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
@@ -36,6 +36,6 @@
     "keytar": "^5.4.0"
   },
   "dependencies": {
-    "pkcs11-smartcard-sign": "^1.0.0"
+    "pkcs11-smartcard-sign": "^1.0.1"
   }
 }
