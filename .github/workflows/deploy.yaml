@@ -18,4 +18,4 @@ jobs:
       - name: Restore git mtime
         run: curl -Ss https://raw.githubusercontent.com/MestreLion/git-tools/f3cc70b73200154d027554714c354f35a08680ed/git-restore-mtime | python3
       - name: Sync
-        run: gsutil -m rsync -r -d -x "^\.|^[a-f\d-]{36}$|^README\.md$" . gs://plugins.keeweb.info/
+        run: gsutil -m rsync -r -d -x "^\.|^[a-f\d-]{36}$|^README\.md$" docs gs://plugins.keeweb.info/
