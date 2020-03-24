@@ -60,3 +60,12 @@ p {
     fill: #6386EC;
     margin: 20px 10px;
 }
+
+@media only screen and (max-width: 480px) {
+    p, h1 {
+        margin-bottom: 1em;
+    }
+    img.img-install {
+        width: 100% !important;
+    }
+}
