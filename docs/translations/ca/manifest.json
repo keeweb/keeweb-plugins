@@ -1,22 +1,21 @@
 {
-  "version": "1.8.0",
+  "version": "1.0.0",
   "manifestVersion": "0.1.0",
-  "name": "language-portuguese-brazil-",
-  "description": "Portuguese (Brazil) language",
+  "name": "language-catalan",
+  "description": "Catalan language",
   "author": {
     "name": "KeeWeb",
     "email": "antelle.net@gmail.com",
     "url": "https://keeweb.info"
   },
   "licence": "MIT",
-  "url": "https://plugins.keeweb.info/translations?lang=pt-BR",
+  "url": "https://plugins.keeweb.info/translations?lang=ca",
   "resources": {
-    "loc": "X4NdYjCLQv/N/nZwpUYeaCXoKossn14AycUUigFV19RV1HKSZKTuRLwD/C5EIZ1h+br8tUqGMhIpqQoIYFbjIrkE7p2Rq78dsMYUYScBPqNbq3IpwdlYoly5O7Ms7hkyjMTlhbT5qe2upeeG7Uk9toNaSM+oDJ6X8DEVwUmVRUm+fliXrKSJI6xcLZPIBEEfUHSqGO3UkhN+YrcR/qEugk/aNGcT/AS198v5LghZxKEwwioxjyWzTNQJr7OtS6sntijzjv6jqXwDJwKPAg8iGFkBGjgvxfHEzFP655Gh1w1fP4GLrXlzl+c97BUUZeXDM0y4ZbsxDc9Lc9B1NxXY5w=="
+    "loc": "QTIVIZMObOutR32RpRfhNl/ycijgp++Mk28qqBmZjbPqkKpzq8zKWGefPc0MkWqNDUhVh4w9ApfMzsZNEbBZvwvfJuygZnKaWGW+WpJFSJUUWJ1WoDbQ/jAa7hUu1+mDEFRKFRFFWao1m6K6hXQW1v4XJh1YFhq4aAeci4MoTz1K2f08m2NDaI8dG8bq2U5pmMdcDmAb1kj4p3+YwwsAGPprcYs8GuNU7AK2t1+tfRJ0dFVDbqSCYcZeCICtJFDmBLTCKogy8FKc1CJ0XdieICZn+qYOJtYZpIToAi9wPLiXV/F0BOnpjRIlzW1ccfH1dcR6pctq4+cNrTMhPofu9g=="
   },
   "locale": {
-    "name": "pt-BR",
-    "title": "Português (Brasil)",
-    "flag": "🇧🇷"
+    "name": "ca",
+    "title": "Català"
   },
   "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }
