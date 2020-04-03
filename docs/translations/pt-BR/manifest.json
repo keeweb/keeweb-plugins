@@ -1,5 +1,5 @@
 {
-  "version": "1.7.0",
+  "version": "1.7.1",
   "manifestVersion": "0.1.0",
   "name": "language-portuguese-brazil-",
   "description": "Portuguese (Brazil) language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=pt-BR",
   "resources": {
-    "loc": "VZXLNSnZ3W3IF35U4U8/0Xc0tm7o7IdXgkRHb8G38CIg9S6//tb1ZVSvjFa641PgVayWcrHp7+XSb2xTurbqzN1+/ztwtzBP2q8td4qPwwgKuy2BhVZwvHkIHA9453o2/c2zzXpKLBYrtiw0TQGw6KqsuL3AKMHwBvailH5+aKzTR0X43KEQXMT8Cxb+QjcHQwNNBXuK8bohhG5g/qMCnOL9HfQhhe4qlJo3XBtX4gXm9OVmNFvgyeIe04ob1wZzSaebf9neDR+iV6fOcB6n+Corf4q9irb1V+WHCiywVAliP8T++D5ojed6zb10Mgy6KwDWFppx+5Auls+1H85MRw=="
+    "loc": "II2Bd34hp7Aab1vUZo4rZYNVvATFVLdYmYOXynnKagEqFmIQC5Gxh5v5mOL1DZXfeFWsbSYEhBDmKWnu8q0nV/V9rWn9mRQV9YHodpunOkw+6lT9LrwQs0A9YhUj+2tRa6xbBy6ASRdNIud6lAhn0js6y2HfIbKinG0tqYZsJMnUmSfs32AnyU00ZCQrzPeSN42JFXFtJMFBAvO9GQTxdmhSaZhbVF1+5RevQStDPTz+mpCc7cfJacXrJ9XFTxl7LgMI5TZSbGmgqNUW3hIjfjUtBOXHuNcLeg/5Wid/Ot9UPudq3cBGKYBcdKTQgMB8BLStUJlrErbHC2qufOAbNg=="
   },
   "locale": {
     "name": "pt-BR",
     "title": "Português (Brasil)",
     "flag": "🇧🇷"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

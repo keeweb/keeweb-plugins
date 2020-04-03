@@ -1,5 +1,5 @@
 {
-  "version": "1.15.0",
+  "version": "1.15.1",
   "manifestVersion": "0.1.0",
   "name": "language-hungarian",
   "description": "Hungarian language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=hu",
   "resources": {
-    "loc": "jkzVyZRKbVBek1mpD4afpXOcMapkKazNhO5RbZSfRK7CCHhX5taty2OcHFG3YbYtEmgXnkGCPy/Yr3XcFdkxKy854Jaw6oJ4lVLxKL3Mbt1/Mq0XTYWAO9IjUVKlTDyJ/qGx79c5HkjeT9SLojeV0I5Yg5fVs5VJcpwJ7dKP6r0RAG+kUpaKF9PSgsdrRv/7atM8KCw4yzlvm3fu9arvMUeV7h0QXwLjVHWa4juqdpjzq9uPq6RE9SwXCelZ2iBzJktDOO/UVWofpMWldczFyU2C2duO4Td54AYhS7xM7+NlGTx9ufidhZMOHedwAIGkpmVp8o/iYSXSwZiOuASKeQ=="
+    "loc": "fX2x+9vEGmxzWcIyKUeHe429fhp4fyd0kiPFw6cJrfHfb40XLeDuzLuieQNXBebmW/En/Et9FDdu5wnbu5KhAYxniXQvebs3fmDImR/JvquBfktGTF/S6p6/8XwPFiQ1H+tg8yz/aMQwmGE/4jtVThsSL348vr1in86SaLt7MBdNzLX4CdjugjGyWrN/CFs1RQPyVrT+pIJIgNzsf25E/575fMfGKcPWWqoyTB7BDDf5UaTox/jEo7qGjni3bhr5nst8w5vSAsXBV0MXcmXU8wHehWEQ8Z97954zDsfBfM1zs3YRTk7nUqIG9V4kRSsTillY+connkpbrKG/mF6fWg=="
   },
   "locale": {
     "name": "hu",
     "title": "Magyar",
     "flag": "🇭🇺"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

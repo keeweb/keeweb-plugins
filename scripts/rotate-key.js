@@ -26,7 +26,7 @@ for (const pluginDir of pluginDirs) {
             'sign',
             path.join(pluginDir, pluginName),
             '--signer-module=../../../keeweb-plugins/scripts/sign',
-            '--bump-version=true'
+            '--bump-version'
         ], {
             stdio: 'inherit'
         });

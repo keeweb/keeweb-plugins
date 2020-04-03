@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "manifestVersion": "0.1.0",
   "name": "language-danish",
   "description": "Danish language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=da",
   "resources": {
-    "loc": "AyqYPGU0JnUe5HlMBdGFEVFusqqjw9DNEfV9k4vP2MXtJkHIZRSU9IvEFlRwrpdLFZqqI+cLwa56DULLumOU1vGwttDOB/pX40IzWn7bLALunwUJgm+R3KEFgiNfL92B6k8jvfZooMIhIcB/sC+f221cvziGybbUPX02uIYiFrBGLfDA06GAzET4P1osr14JQSVHlpAXtQWt34rs3X9AniyA4BrC6lCYLAh2TIFniH3dUFT4z61JCjieDni0AT5bEaiAwKZj0gSpaAoEh1SP/aJOybL6IQBke/j73KyWEs9gvxkB2ZTqmbmH0tcvgEPgjLcFGwkV9W1MQZM0f7/wtQ=="
+    "loc": "BCoi2FuOzAIH2cYqmX1frYgsvYShh8b8XCW+mPjdXxsIUBDxjT5pk3tyxVQAfoTWU7p5koI5w6NTbRih2CB4FCCT70j9uFlaoejtjpwk8tlqF3yUmWA/nOb1K3/huhxjn8bu5cjpGbTInBaCaavqk7bHwRQFxvNZEk/8O1vSvYiAHzX39UMVbBnFoOg/sHxKn9UjVC/iKgplN8VoEtEAxqJqoKr+gjIWjIgzNVNiBTacb8H5/3mrUCtJGnEdtwbHQ/p+o7cv1dmoDcQ4Nsf8fPk74kAAUxxJlf6jd/7m2ah0D5PNZ8BZAQ1qpWPwOPai4ZcoiOeEnO0D04vjZDl2Iw=="
   },
   "locale": {
     "name": "da",
     "title": "Dansk",
     "flag": "🇩🇰"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

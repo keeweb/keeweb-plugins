@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifestVersion": "0.1.0",
   "versionMin": "1.11.0",
   "name": "keewebhttp",
@@ -12,8 +12,8 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/plugins/keewebhttp",
   "resources": {
-    "js": "uhYCp/SeCQCaXNty/qLFyZLjjXYepQb7Z+D5y9R7gXgPoM8pe4ZALj1fuSr1M4rXFw6n2YJppKCrq3t4uCF6wcNP6Uwa2Fj6QDknnKUHaseJGQ/4EFMtUWuXHHMuJdDN6c/cQcPf6gBLXOlssXNs76QQYHCEcKiXeCdTiVpiazSK7c9tC4i2z2Dv+aiY76YxorJtm1+BzD3P6Hiv/Bwdl5zE+bPPV4frn1Lp80xF8bWWRId8e9vlpT7+riWDEwS90TrgmjceP51JlHu4jM0VoNQyqqFdZAKXMISbcj3Hb/Ndbw4LOOj7dbF0XTo4KznIb6f9YSHGEPrv1BJhQwtKrg=="
+    "js": "eSZB8/wvbPI20d4w+Uls9+QE6r1qpwPnjCXgukIA5y2WoVd0qXn/QRf6Pu+3AJNwiFQMZRZyAsC9BJRbUC7vLyycHr+MQGdYEANe3idDYSlmObOf9EXhX179+/TQTVq+lMPSnPgg7Y9xhYCq91WjtUK0in1Ozy0x2EoQjSH8IhroBwY499CU1eaFOAB4JBtSJfm52x4mFpmH93Gg1yVzynYOXfqm5fis2yGElqPe1ePfreZdUWYmDlK9E8/sRlx6jxQ/fjvX8CJ30ZH+VwPseOrnfqejKqbQoE60hrtwhaDke2UZaksXlZJn5dKQin7M9T0Ig6PLx5EJOm12mrSEjA=="
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
   "desktop": true
 }

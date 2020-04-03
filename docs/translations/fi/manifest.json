@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.3.1",
   "manifestVersion": "0.1.0",
   "name": "language-finnish",
   "description": "Finnish language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=fi",
   "resources": {
-    "loc": "p/k/H1vv/xWX0lJppKzJueYQiPfdmR2NHEEY650lVM3nIWWEjTp5dSxMls7CvZub5Esdv+iF1xcJXEzI1fCtv0xnPqiq4oqVenek6B3EgU1RAIGa4E8WyP5ACd9SPHvUWSH87opulMr1p8xQmGZm5yu4Qu1n3qxjpvPLFvaHGDGwyFM9uAt9QvIVozbQ06bxc/0kydH6HMSfgKRf/uYaVJc/xZluBeF/2i+n++DrnYvOnNH+XmNhDe/dXXo8gwpjuKkL6K5LtjBoWG77tX5yAktxd0DHSV/V7sghWhR7fGxuIqveojH8QRnuXm56066c93ki189EbH3LoxtrHuV4Yw=="
+    "loc": "ELCtzPZ8NL2RBVSU5bhbglMlWGTgSjBJNhsL08dmEp917d0fE0TDuE95OQTKLhu6mv1YRIcL0KYhU6r/79mxhhbrS+bObw9Daq8Wc7d5kH7GjK+jX38VMqr2RTI+JEmQS9872lekwEgzpPS3jhFboOef2Q5pJgMd4GJ65JLuHevF+yF2OJj3DeyzX2Su28Y0YIbtEc/qDzpPuJCix0VgMs/DhTHEJ2hdBpGlHnUoIP3fN/dRchmvTdawb0+YOXlTCNoKvEOrF7t9Tl9FJ+4IAbVEAIFi2iagcllYGb7TL1Wsmw4k70uob93V29RGB3FZU9jsMcJ3HWCckPHYSl8kEw=="
   },
   "locale": {
     "name": "fi",
     "title": "Suomi",
     "flag": "🇫🇮"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

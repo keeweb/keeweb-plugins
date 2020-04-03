@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifestVersion": "0.1.0",
   "name": "theme-arc",
   "description": "Arc Theme",
@@ -9,11 +9,11 @@
     "url": "https://sbog.ru"
   },
   "resources": {
-    "css": "Wf2DRG9Gdovj8pu4ToAVokK0i6ZYWjBGxFNFp36JyctjB/TKGjeRQnYFcHq2b3l1c0q/ZmL5FWATksmFWu3FyNlVNdpD2RccDyqGxgPbeCCkPxCxNWtZT3+U91NIpdg1ibgG3AqT4O3DFyhzb9hWTWGwi119lw+T+y9Wvr7RNEXfCy/i6AI+28KrwQQGdT0t8XDVtaldMrZqrN7bkhuRjAk9oabC5hOwclDuuMbdDEXlyBBtbh6qc8Pm1PLfhfapx/48+QJAz7BLbs+xNop5TqVvUHwbdJOW53bg7HceGbAo/w/k1P1XSLljLd2t6JOta+NzhlOoCBNm+cU0RA2dVQ=="
+    "css": "cGbKAOoM/6HlQgjudZosjwNGq43WqM5azUwRWds86XlAfCXJKkDEIurTYCBDRZZK07c0Se8BoNPgtOs5m/4D9bwyphWCvbKGTbfduCk6bFUNJyNFnshgwF+WunWiiD5gZFgsgrEU4FmaShHmijhXJ4YG6E6JSwUbwcQMPGlkNV6p5RnHP/5maCdZQeXKjKKHsV50YUsJlwH8IkTRsy+pZrqVtX95Lj2A+g1SPKD/DyfDyGMI//rVsccRR+0Lu68VBSINWAXfwJYjcdnVxRF7dlAdRDdDSAV9Kn2KeuRNVYK54So1C4ZwCHOmQj0dRYSbhBxeoJa6dg4WDKZle18Esw=="
   },
   "licence": "",
   "url": "https://plugins.keeweb.info/plugins/theme-arc",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
   "license": "MIT",
   "theme": {
     "name": "arc",

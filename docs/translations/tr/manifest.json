@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0",
+  "version": "1.10.1",
   "manifestVersion": "0.1.0",
   "name": "language-turkish",
   "description": "Turkish language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=tr",
   "resources": {
-    "loc": "zZDIoVWEQvSkeO5u3rADup269T6ZLmUwpYrDxJmaKj7Lv1a97617ocaeYC+miIn9FZNtP87p0LGksvNbF24SPdi8mfPoCn7r2APIWVU7SUO4Iwa2qre/hbrV+79tsLVjmm+/qvT89LsHUJ6u4vwfafOGfhP2Jnv1LqtrrKHwlmvkTAkfPhIm23/lGw3E0sPibC2fUSYJwfyPp4hIYDd4ZvcyMwjN75RhJv0CBIcgG/JLTYFMJY+KSTLFaw/HLDmxwGoAshXx0DGMskKZbjYf52HKYkqRsRXU52+3OKHj9xvrBRUrn26ZbIyhAq1/od4IO9xuoz/Hyfym6co+3rfa2A=="
+    "loc": "YnGqKhokhBYZLCqzaE9szGa2dvk3ocl7FF3vUFctQtbj9BmZo4+36kP2kdJiQyVrxxJjrkpXvQKSS4YY6UqYKOuxysMwMH/2wPrA5DUP+XrEiKW2TiO+T4FPVMYzE+hFOtPVzmxCy6Okgkh3h2nyNYAOOQ1NI2peRwDjPr2T2B90BfQMLnvm+sya25g/pDdceL2QbpPnA7qFXmO9Lfuh9M6vqnshcPiww+g1qEVgQntI+tJhfs2rlngTJp6MjdQ1XHvgHMY+BxWKrNp/CBGNbZ6aX5YDjy7DfR2VcaoOhJL5sR6J7DE4+pIVOrhtEhlsl9UosE+h9XH1BTE1XKORkw=="
   },
   "locale": {
     "name": "tr",
     "title": "Türkçe",
     "flag": "🇹🇷"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

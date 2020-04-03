@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0",
+  "version": "1.10.1",
   "manifestVersion": "0.1.0",
   "name": "language-ukrainian",
   "description": "Ukrainian language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=uk",
   "resources": {
-    "loc": "vGuVEQXv9a3KrbzsSWOmfOh2sYXWbAmAKf1egs9p1EfpExM5uz7YTdtkk3riDdLgeQBSy1NSfxXue9vI7KD+TD4QGoyUpmwohnULuZpWKvxqzOo4l2syZDSXBRxmHp3ugr0aR9mMv+1X1gahRB7FAEYISgyvslcsEvtl2Gf1JCQnwt0wrCwveiy42A5wy1vYQjXj/MLB+CC0mi1aCQnVKO1dZBjK+bevIgtNQWtoKO61o8k1rXjwcdGtdJoCylFO4HM3TMqiUB21vRQATXUUvvH1aBokfY6JHfzHyKZVu3roa00WRK2DPDCStxWpIcqE25uRRQ5SLbAzhkfHtkeL/A=="
+    "loc": "RoKigykc476QTMlHjeGrz3axMqdzlJdVU/zFAWzNckldEa+mWXb181m1OoMzvnwVr4zXZpKPxEu4l4PfWPv6ggDHQOA8n4pjDaCtieOHXoOE+XP3hLfTpFJsPmdYirzUZb80XHr7U68gFP7VNRF/57zwkXK46GMs5+LBYvoS1ERxSX1AJXhbrxjRgw43ZCj8pczkzm2fbD7wF/KZczhvzNrk4nqKIYwujiIEb+Iznv3ESQMVBD+NbyhfJPKnU0WFtWcteXS7CA6ac0fHbcMlAKKABgRAAuk8glE4kNaig3frazJ3MlnOPyIlpKfcnfzfByrMJpJV53Yg1on5JxAHhw=="
   },
   "locale": {
     "name": "uk",
     "title": "Українська",
     "flag": "🇺🇦"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

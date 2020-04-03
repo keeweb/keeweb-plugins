@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.6.1",
   "manifestVersion": "0.1.0",
   "name": "language-chinese-traditional",
   "description": "Chinese Traditional language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=zh-TW",
   "resources": {
-    "loc": "W8EpCRJwqm0jdqEjTqKCfpQt81SqZZZ4FGN1nCYQqfWbHEbFW5EhkTEYyqSzMNnlUmxwWI9yTl+TUZfL4tJi+2JUhtPjEhVsL+P7UGivUQrZQoGyUrl3igpId3Xh7ib3aSCngLKWqVF5BNKJBozDHiSozqUoKo8r8EE4tr9sRuc7fMVMM7eMqxXnNBt+V/Pk5FPSX0Atamxy4NjwpTszLpP44y2rn7CGX0ElOLCAaQV+lsp8n2pCyP/34cckkcKFvfiIDp4CjlIdKMwIJTMiIQ6UfRRtDki1TufCSt3SG6w+9yTKK8SJ+JL0SE3lCI6QtxQAwjC87SGidFjT6a+idg=="
+    "loc": "Alj1jZJX0GdIooAH21SVWJYiYcbBO3LdiuwS+v3ikAVg7ikvC9u0LtrAxNZpLteIYxG1h24mKAgwqcs22pD1uEmiI4/hiiXLtmbbhk8HJoUGweubWKb14CeHN1tbv5yXCo8fAB8kK881GLHDro/nm2BK661+xSl1T9cgENx+Eb//UEtn2gg8xdvI+FmoDSCJ+2e49yzMmGykGKxn6fQN2fgYOlVIc7H36WpcQhJKQlDetc7apBNiv3XuTcngPO32nsNtEJ35Y9rYwk4ynoa3CXs8Wb10GOmVvGnkGPuajrNoNlCDolPNHz/om9SlGA2aGuif1LAiMvUW95Ygr/HdEA=="
   },
   "locale": {
     "name": "zh-TW",
     "title": "繁體中文",
     "flag": "🇹🇼"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

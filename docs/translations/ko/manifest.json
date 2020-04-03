@@ -1,5 +1,5 @@
 {
-  "version": "1.9.0",
+  "version": "1.9.1",
   "manifestVersion": "0.1.0",
   "name": "language-korean",
   "description": "Korean language",
@@ -11,12 +11,12 @@
   "licence": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=ko",
   "resources": {
-    "loc": "rknvU5cy2Llsym7/Nr+h2DYdpiVTS395uU8HpjYzIip5ZD8ve1kZwRg5ntwCtADDCz8+OeUuJAI/UExn8HtMcSN4AQnHXaJkPa69RwH26hQ+Fu4g36rdmMIqQ2zTsRORkIDnNqeaC4XiKGGsheSnulqFJwULWZwlqumZmpqFuBTLDLRXCxKpIMum3XOB5Wz3fdx+HJzWGHjDj6uQ1KTvQ04LM0VlOIFcRQRPK1uA9chD4pbQql/bZEx4KT8EpE2ud/tNF6nk4CtEwrpnbhbT1GaYVb3QXZAzfwGa/vvMuzsQj5gswbnlyuMrSJv388+YUD55aCVwJvAqYXyOnoj0Ew=="
+    "loc": "JQ2ItEfnTx9mowdeC0RwVoK0qMmIvG84vNTWeKeWH+ZGhQivV7Bl//BjagBiREyBHX8CFxE3xHpXN/RcCNcDHjy3A7sbxwyuU/s3dYwQMliXsNX4OWxGyFkjp8eoWtg73x3DOzNl8xCRy0OVyjdIRUUdR4333lbsa6vG7Is7seShG9ldM4fi9sJw17wKRjMCzM3C0WA8jTfPTrj6mIDgRVb0x/JQXxAXRYvKl8+MDJFym5wqsjomGR1XNlJddQdCCmJ3tNgl+JHRu3HQt8iVjw4tQsEtkG82ZNvWqFPy5yte5Mqx1nYzFRjxCpRvEPbpwf0jn66dl2JZwvGmjNGyzg=="
   },
   "locale": {
     "name": "ko",
     "title": "한국어",
     "flag": "🇰🇷"
   },
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB"
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
 }

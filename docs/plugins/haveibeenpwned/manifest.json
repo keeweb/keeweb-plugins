@@ -1,5 +1,5 @@
 {
-  "version": "0.1.7",
+  "version": "0.1.8",
   "manifestVersion": "0.1.0",
   "name": "haveibeenpwned",
   "description": "Check HaveIBeenPwned password database",
@@ -9,10 +9,10 @@
     "url": "https://github.com/leolivier"
   },
   "resources": {
-    "js": "eyKqyfSby3DX7+u0qmF45JCzxZOhrY7y//LC6Mlz8vdaGPQrGvAS3vAPK99/qLZK9GF327NyCU2Zs/sGLFNxw4/gUpPtLj7t4/wH7ctQcE8H9S1LtlGwWhrGYBN7PpXe5rtlcfOR6ttpag8xCMQT87cc6sw0TiUoAb6110ANpi3LbloJWs3flCuxwtbKEO7IVPS99GvEMgeUPe1ZyVbNnnO83FzuNjILlsrkEmctJDGZLLbOZIVO24VsD4HtnmQcsDKbRcCwoCO3dEGRvmcgi7Hpsz8D3zzsqMnN+6xAsiD10rLqubRjfm/IkWbu2xm8Ax7+YDzFuN0cXKN6eqFjcw==",
-    "css": "F8hkZOvzoYhHhACwsSct+CJofHL/FVQ0mO5VcRByQpnGjYqkNh9qCrsLfm7I8DA1dcvv1R4P+44YnrTeAJ/S3bgDCq2PlJ+rg/0L0EeIVLOfqedMQU7VCFIRoM5Zz51sKzakjCEs7iNpddEtI0vz7fDeV6PXo4UPMS9vzNu00Ja8Bx5HDzfuvlgQppT46LKZEqyvTtl//24hOwTmuhpRbEseBqEpfrC9aSj0UsB9IhvDirycH99ZYZ+PBvMnPUM1N8iexsab9dN3TaS/8uc3rVq6n8KQ/dGmb6aGq4q4WtOm23hN82LVS6Zpf1Vfl7x6ULRHGUxDbMbdWJ490vcpSA=="
+    "js": "c74ScRWvc5bxSgjff9xEtrOuh79DgSOI2PMzY6VC5mQU0D3JzyfVCaMnjg959RgMyvM6cX5xd5PMzdChK53PF3kfadnbFSckJzN7uMbqc/rBwbQwhpDMI+rCZfRijLopKuDxPXGHA2I2GcEeaVDll6vT79YBmdmUQCQc3vKqfhAzUakljUU/4CQFC3YpChMpneTj7gdHDUX0cZ17/1XlvaUs2thXpITmYNV0G/vLUJUQhqYOTuUJH2fsl1pHCEETX/iZEd3/y/qBm7+Z56XTHLNPPua6vpN9cLK6EANoPTbM1kzrrurppGcxlNibU7Vhf/8se2JSGY/2e8R/t8Hxwg==",
+    "css": "K8gtQONyUe5AMIEa2ozxHvVC4umblP5r6FOdKgX+288Il3m928SquewF9fIqDeeMONtGEQnFpMG60jgP1edEZvBZdjhT3qJySdTUYf7etmjQInY/4/0K18HenixwhW4C6XQm/+M90voHsiKOcZMSY4/uSCmltnI7qaRr3Ag+2+QQXdpMDNQthRCZhgrh3KtO0hHAcGYURRQ2YEfHcfT5JZrl4kpOhJYTTt3Dy0XNnRQaa30qedVY2rCQtAnE870D+MSUpri4BGAGdxz2Wi3BdWUtBPT6wAdoJQWhsIcuRv0f0LIFbjsw1sI52do2oj/dmfJ1lJ3RnEB/ALHDIvx+ew=="
   },
   "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
   "license": "MIT"
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifestVersion": "0.1.0",
   "name": "theme-orange",
   "description": "Orange Theme",
@@ -9,11 +9,11 @@
     "url": "http://nothing.com"
   },
   "resources": {
-    "css": "e4VT0kkG6pwPFaRT/sxZVIZbXGWjYhSLGG4v5VEp1GvGPKj1KQdnVkare/9hYkBOSW1y13PvPoctQrSMhtstHlr6IK01aaz/7IPU/oLk/aGnV4cL//09VryO+D7P06+wf+tIlwKFih3Z9Z1LW01UpOu66uZI8p22cBAU2dakqti1J8ENRZmxD//KjXS2NMtL7orv49snVTh/BFG53l/Xz5ij9RDdLRL17QmoYz6h1gWIY1ai9tDncsKG1tbSKbvIqOeMFxlwHAvbVbur1m2FMOotSpoOeKhPIABMUUjBPVMEsbSDods5AMIrQ6C1qGmh1vPnIpwshAqUm+dmMJXFBw=="
+    "css": "HbWS1VOZ79ag0NKUg2JU5wtdl3//xmE5TN+Im3sMfBi1U2M1YzbjOiwP+cgVUo2vpvuFGSEV35Kw9BQP7TmpnoxGtqJeYp8MG7HQcoW/suuF8wqVnG7c4NV1NRzAUTEK5t0U7NESn+huP1YByQseceoLB+ghx8ygbmJN5tugWZuBIBVAckP1Yj1U5sOWbts5Lyu8qMuslTcV8vSFGlNRSLM4bkfitifXwpyH6jvg0pOoAkq9gJap6yvEgJGR0ElepG+Fst0p8xNyaORWOpibdcV0DEZUyBk+6B4LeU6Y6y3OeB2r2IGd4S/S2WXczePY4UWlAOJMFbbqdXbOW7Sfhw=="
   },
   "licence": "",
   "url": "http://nothing.com",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0oZB2Kt7AzRFNqf8FuO3C3kepHPAIQYiDPYdQxHcsiaFCwyKVx6K1cE/3vBhb8/2rj+QIIWNfAAuu1Y+2VK90ZBeq6HciukWzQRO/HWhfdy0c7JwDAslmyGI5olj0ZQkNLhkde1MiMxjDPpRhZtdJaryVO5cFJaJESpv3dV6m0qXsaQCluWYOSNfSjP9C8o2zRVjSi3ZQZnZIV5pnk9K2MtlZIPXrN9iJiM5zZ9DTSnqApI6dC9mX4R3LvGN+GTovm9C8Crl+qb106nGRR3LcweicDnPyMtZLa/E0DBpWYxUVLDp6WeLhxoUBr+6+t3Xp9IDnPoANDQXJXD0f1vQxQIDAQAB",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
   "license": "MIT",
   "theme": {
     "name": "dark-orange",
