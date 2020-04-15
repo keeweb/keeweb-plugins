@@ -75,7 +75,7 @@
     "name": "Українська",
     "nameEn": "Ukrainian",
     "count": 573,
-    "version": "1.11.0"
+    "version": "1.12.0"
   },
   "pt-BR": {
     "name": "Português (Brasil)",
@@ -105,13 +105,13 @@
     "name": "Deutsch",
     "nameEn": "German",
     "count": 573,
-    "version": "1.16.0"
+    "version": "1.17.0"
   },
   "it-IT": {
     "name": "Italiano",
     "nameEn": "Italian",
-    "count": 549,
-    "version": "1.8.0"
+    "count": 573,
+    "version": "1.9.0"
   },
   "ru-RU": {
     "name": "Русский",
