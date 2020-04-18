@@ -1,5 +1,4 @@
 {
-  "appBrowserAuthComplete": "认证已经完成，您可以关闭这个选项卡。",
   "months": [
     "一月",
     "二月",
@@ -358,6 +357,7 @@
   "appRightsAlert": "锁定 KeeWeb 应用",
   "appRightsAlertBody1": "您的 KeeWeb 应用目前未被保护以抵御未经授权的更改。我们向您请求许可，以使应用仅能被管理员写入。",
   "appRightsAlertBody2": "不想授权？您可以在终端中手动操作",
+  "appBrowserAuthComplete": "认证已经完成，您可以关闭这个选项卡。",
   "setGenTitle": "全局设置",
   "setGenUpdate": "更新",
   "setGenNewVersion": "新的应用版本已经发布并下载完毕",
@@ -434,6 +434,7 @@
   "setGenLockAutoType": "自动输入时",
   "setGenLockOrSleep": "当计算机被锁定或进入睡眠状态",
   "setGenStorage": "存储",
+  "setGenStorageLogout": "退出",
   "setGenShowAdvanced": "显示高级设置",
   "setGenDevTools": "显示开发工具",
   "setGenTryBeta": "试用测试版本直到重启",
@@ -588,6 +589,9 @@
   "dropboxSetupDesc": "通过托管应用使用 Dropbox 需要一些额外注册信息。请创建您自己的 Dropbox 应用，并在下方填写app key。",
   "dropboxAppKey": "Dropbox app key",
   "dropboxAppKeyDesc": "从您的 Dropbox 应用中复制 key (开发者设置)",
+  "dropboxAppKeyHint": "你的公钥",
+  "dropboxAppSecret": "Dropbox密钥",
+  "dropboxAppSecretDesc": "密钥可在公钥下方找到",
   "dropboxFolder": "应用文件夹",
   "dropboxFolderDesc": "如果您的应用已经链接到整个 Dropbox (而不是应用文件夹)，请在这里设置您的 kdbx 文件所在文件夹。",
   "dropboxFolderSettingsDesc": "请选 Dropbox 中保存文件的文件夹(默认为根文件夹)",

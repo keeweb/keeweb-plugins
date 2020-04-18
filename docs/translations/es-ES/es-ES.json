@@ -1,5 +1,4 @@
 {
-  "appBrowserAuthComplete": "Se ha completado la autenticación, puedes cerrar esta pestaña.",
   "months": [
     "Enero",
     "Febrero",
@@ -358,6 +357,7 @@
   "appRightsAlert": "Bloqueando la aplicación KeeWeb",
   "appRightsAlertBody1": "Tu aplicación KeeWeb no está protegida todavía contra cambios no autorizados. Te estamos pidiendo permiso para hacer que la aplicación tenga permiso de escritura solo para administradores.",
   "appRightsAlertBody2": "¿No quieres dar permisos? Puedes hacerlo tú mismo en Terminal",
+  "appBrowserAuthComplete": "Se ha completado la autenticación, puedes cerrar esta pestaña.",
   "setGenTitle": "Opciones generales",
   "setGenUpdate": "Actualizar",
   "setGenNewVersion": "Nueva versión de aplicación liberada y descargada",

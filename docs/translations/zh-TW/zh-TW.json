@@ -1,5 +1,4 @@
 {
-  "appBrowserAuthComplete": "認證已經完成，您可以關閉這個標籤頁。",
   "months": [
     "一月",
     "二月",
@@ -343,6 +342,7 @@
   "appRightsAlert": "正在鎖定 KeeWeb",
   "appRightsAlertBody1": "需要 KeeWeb 管理者權限才能寫入目前的修改資料",
   "appRightsAlertBody2": "不想授權嗎？可以在終端模式手動操作",
+  "appBrowserAuthComplete": "認證已經完成，您可以關閉這個標籤頁。",
   "setGenTitle": "一般設定",
   "setGenUpdate": "更新",
   "setGenNewVersion": "新程式版本已推出並已下載",

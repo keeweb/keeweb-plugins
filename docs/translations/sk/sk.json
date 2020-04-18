@@ -1,5 +1,4 @@
 {
-  "appBrowserAuthComplete": "Overenie kompletné, môžete zavrieť tento tab.",
   "months": [
     "Január",
     "Február",
@@ -358,6 +357,7 @@
   "appRightsAlert": "Zamykanie KeeWeb aplikácie",
   "appRightsAlertBody1": "Vaša aplikácia KeeWeb nie je aktuálne chránená proti neautorizovaným zmenám. Žiadame si oprávnenia, aby aplikácia bola zapisovateľná len pre administrátorov.",
   "appRightsAlertBody2": "Nechcete poskytnúť oprávnenia? Môžete to urobit pomocou Terminálu.",
+  "appBrowserAuthComplete": "Overenie kompletné, môžete zavrieť tento tab.",
   "setGenTitle": "Všeobecné Nastavenia",
   "setGenUpdate": "Aktualizácia",
   "setGenNewVersion": "Bola vydaná a stiahnutá nová verzia aplikácie",
