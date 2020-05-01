@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "keeweb-cupertino-theme-auto",
+  "description": "Cupertino Theme (Auto)",
+  "author": {
+    "name": "Jonas Gnioui",
+    "email": "btxtiger@outlook.com",
+    "url": "https://github.com/btxtiger"
+  },
+  "resources": {
+    "css": true
+  },
+  "licence": "",
+  "url": "https://github.com/btxtiger/keeweb-cupertino-theme",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlDUd+J2+3iAcJMOQSsx6eu+0HVCJrHMO1srrCZvj9Ip+eweGfyKKp4Ksn+1JU5Nabe04//xL/vkncT8uW+S4I+Er/Ny5AvfJfOXUfSDA0G9LQPRHolIBhlyeM2N49rhnUs8Kt8Pk7hQ+7KlpTG1hk5QxzVC1ku/dCZUYQJg69zcfSJCKD1jfzEedAP/PUltFUNnLSXRzq3JKkfLpMcyw2pdh1y11LvFBLpqQGZBm9BdXkrGzvk1BbZm40IQna7DitbAmTcZCjr8GB0KNU2PVy1sIc4DcwowZsI/BKW4hs1vby6IlgVkcM2BZCB9rOUlO+uAanWeaJheVhZyXCBEzHQIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "keeweb-cupertino-theme",
+    "title": "Cupertino Theme (Auto)"
+  }
+}
