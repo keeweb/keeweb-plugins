@@ -1,6 +1,6 @@
 {
-  "date": "2020-05-01T16:46:15.588Z",
-  "signature": "K5agXAiR73eQj5TlW7GdtAcUWapJyi3GdsmN02X3rOZ2sQCCp3iKfdbqaYN2k4/5ovwy3UcVV3uata9l47rSNJH6m9lS3+qCZu0F15zOLs9Q+nWdSSXz5yfrJHvNah7bCy0iCGOxBOd+WWh6Gqy8fohv2aS817WWNLGDCxLo49wTGL1zctX0OyKOVGb3gxJOBTMlmZgRyXStA1SoWb/Ce2RCpJS/6yCdrKdoqD32Yf2UUk0pIdIFPL5ynb2bnRYR5QuASsKN2EpXBjY1X/FP2UQQAxrFY9gTNW/0Sx2aMt2M6ViejiS1Nkdv222PrzPwSew0YPotosMfxFaYf/E0Tw==",
+  "date": "2020-05-01T17:34:39.026Z",
+  "signature": "KrRTAZtEQQWG3Wb2+DF8VMgRoHNrChNFyHpInhdgfz5Y+gvJWTfld0Am5vQX6qKnetQinYbuJhBiynS4ppAtcYWEzfmnMR5NTMTbbfOP6gCo2NZfvi3e3BGH5grDoB8+kMoRKUe4Sntq6jgH+oTDvivI0NrRzQUSBtC5VJ0VH+Dbb/5ZnB9GzwK1/I8UHUfAbWZGKyB5ai62kg/Fu0bO+G/g7DziRyXplY0Hxe4pTYVKqCz22vOU7Ubu2bxKzEy4k3XBxMOMHA1kr99CKFEcQ8FKKjUBXJVFGinvsCdVy0XU6mxy+bJ+Ab/bATGsFVJ9dSTDOFNtvJmIEAJgarMMfQ==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -467,7 +467,7 @@
       "url": "https://plugins.keeweb.info/plugins/theme-cupertino-auto",
       "official": false,
       "manifest": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "manifestVersion": "0.1.0",
         "name": "theme-cupertino-auto",
         "description": "Cupertino Theme (Auto)",
@@ -477,13 +477,13 @@
           "url": "https://github.com/btxtiger"
         },
         "resources": {
-          "css": "BI52ooiX0LrHqtVMvyQiyeB+wb0kjVvi5DaiwbfcwdrI5Ys2eZGQC/zm/KEMW28Lfr05N7bfMgSLEIFyuUA8G4SS3YXV+YTQRnjEpnG22OQ6rn678qCNsy8Y/K0pfVmbxO27b9wxeUdXFCXPFi/e7TS0z8hubW/1cTtqCpcpcSioqWXtZyfme5wn1z6dYzuGko8IcTAtiXLjFajS+O612FVSr09rSlML0hVqNjo3NaphLSozO9grb1SITkLoW60Dj+se41m0lgLIBLdlVOPbFn/MTF08LexaN02yLLXv060oKdCjJDmnOnNG94nlDPeSZtGpCggrZ+VNNcDWc+bFHg=="
+          "css": "UDE64btaEXUzXt7Diex5DUKAmL/DAIVEJxXv664TvkI7P51vwB7eNSLiDNv243vcOfboW0mLzPUzrRBB+out2GoOMkLVNN+rqZYQhLEJWCJj8417diF9IiRsctGb7F2qfUlnR1hU+TsZ0sRw9hZtJ/RnqxOllMjb2fZAeFIgIolCbWSGSnhe+/QBCLQkot1pmmUYUf57ETwLxWH1n4Q90HQ6gq9rgZRrJSsdc382o8h9l66/NpWrIsb6WgLXH3G5rICfoZbA5AAnSqag8CgwN4CgpLdPhjnd87B4tHQ9Rsm59/chDWz8vvTzGLi0Occa00IkM2AgZ8tgQfB3Jnb6Rg=="
         },
         "url": "https://plugins.keeweb.info/plugins/theme-cupertino-auto",
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
         "license": "MIT",
         "theme": {
-          "name": "keeweb-cupertino-theme",
+          "name": "keeweb-cupertino-auto",
           "title": "Cupertino Theme (Auto)"
         }
       }
@@ -492,7 +492,7 @@
       "url": "https://plugins.keeweb.info/plugins/theme-cupertino-dark",
       "official": false,
       "manifest": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "manifestVersion": "0.1.0",
         "name": "theme-cupertino-dark",
         "description": "Cupertino Theme (Dark)",
@@ -502,13 +502,13 @@
           "url": "https://github.com/btxtiger"
         },
         "resources": {
-          "css": "aT7cFpD9SiWopZiH63gQSOZFoD8aLxBEdbZuK+Y3YzYsaS79uDqm7ZNNdNszB4uu9eDrtZfyUM6BiL50Y9CmXICDODLDb5GQodZbzLPaqNN5K8JF2pIAAHkY+qGZsStxMaQCm3Tq3bX+MuEWtSF2tyr+BN2nPcrqBrNyK/GlrdzAVuK8NXTZWuuh1MfVWUbGGdlhOoNI0n/TlSHv+Miqtycx/MVSEkPLDMcg7eiIq63i7GryeqcuCHpepwQeX1YL+v5aPqsnquf/A5l+VTC+7yg6GvmM3Nwjwx+IEh86jdbH11z+ZXdqd6bFEKcLn6IHmzI2yfrpFNnQQzZSnq+lQA=="
+          "css": "LK0tV/aPym/6emha+eGwS5BZfa3xPdLRUqc7c+dKmccV/vmRsnVMrJnyPl+/Yyw9TiXvOhgWXcKuAxSueOSWaOiBOmcdGaDJia3etIUam6xiWcdbXnbvbDIov9jFB7cfWcGHcAA8C6wf5qpoyTszI33lmbR+cNQYe24ximVxGLdbaWT75zRuWjMpz2eJ47l/DfYbWLpTr9GsWV5orcUAbobEuPSHcj0SN2ulmzTbk/clDrjFJfjUF4n4WxFElADs4okjfze/EMdwX+8uMQ/bHBr4H21CTMrrhHajPa9YhM7jP/RG6m5hMen8Ex+m/K+yOysfdTfDrqsRevW0TFZraQ=="
         },
         "url": "https://plugins.keeweb.info/plugins/theme-cupertino-dark",
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
         "license": "MIT",
         "theme": {
-          "name": "keeweb-cupertino-theme",
+          "name": "keeweb-cupertino-dark",
           "title": "Cupertino Theme (Dark)"
         }
       }
@@ -517,7 +517,7 @@
       "url": "https://plugins.keeweb.info/plugins/theme-cupertino-light",
       "official": false,
       "manifest": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "manifestVersion": "0.1.0",
         "name": "theme-cupertino-light",
         "description": "Cupertino Theme (Light)",
@@ -527,13 +527,13 @@
           "url": "https://github.com/btxtiger"
         },
         "resources": {
-          "css": "Mmobp7ogAH9+X7FMw5bknyeOEhYeX257o2vLQ3S0+mxgPfql6twCSPIsFm4v0p2yWmxEBORNoSxO4XeVswWIpmc4fN4JsYr+BKmtvJ9cjZkN1k5nLqn+tzm6a6R3yLtnqpFbNSinPpfsA3L7mX0VUxkloEXlu6X07FEBAuwn5FB81/W66ncLtiRjXmFcTY0jBJn/vMEpMgcNGTINPYVtM8p8TnDxq3Bx3mi6fIZFkH0W8NlITioUUEZWTRraXL2TgSGvxqN0vXWXBe+f7udqbMt/iMshtWTLPlA7qAqVo17vO2RxrpzS9hffQaxsMKbdeappLnf3ZCrU4qOzbK5Rhg=="
+          "css": "cgAHkI+doLpStpySwpQUKhXMQKQ1AogrSekPE9WbIDN9sajvzm4EtZQ6WWfZuKAwQgygOJCjVO1yESX2zOwzlaVS46371maw1IgXIQai77KEkxWRcZMzydYOP2tr651lHrv85mNT++SIqKXFvODiC4qk6JyafWFdZ520PnfKsyqHbB0Mrt6lKGa3P9kqWrOm9JYZfXfGpJ2pp7/qMPcOhwSsvvbjd8Hy6DnCBf/ThnNXpsxvmh3UaBAm0ZUP8uFl8sH4miltl6M7KOL9o6wN0yGbR2u3q1sVtEMk29kkO3ut/zEfulIWE8DXxS5zyl+aUy+12XJZJfyY8881z+t1mA=="
         },
         "url": "https://plugins.keeweb.info/plugins/theme-cupertino-light",
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
         "license": "MIT",
         "theme": {
-          "name": "keeweb-cupertino-theme",
+          "name": "keeweb-cupertino-light",
           "title": "Cupertino Theme (Light)"
         }
       }
