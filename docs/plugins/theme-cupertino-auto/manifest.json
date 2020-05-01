@@ -9,13 +9,13 @@
     "url": "https://github.com/btxtiger"
   },
   "resources": {
-    "css": "BI52ooiX0LrHqtVMvyQiyeB+wb0kjVvi5DaiwbfcwdrI5Ys2eZGQC/zm/KEMW28Lfr05N7bfMgSLEIFyuUA8G4SS3YXV+YTQRnjEpnG22OQ6rn678qCNsy8Y/K0pfVmbxO27b9wxeUdXFCXPFi/e7TS0z8hubW/1cTtqCpcpcSioqWXtZyfme5wn1z6dYzuGko8IcTAtiXLjFajS+O612FVSr09rSlML0hVqNjo3NaphLSozO9grb1SITkLoW60Dj+se41m0lgLIBLdlVOPbFn/MTF08LexaN02yLLXv060oKdCjJDmnOnNG94nlDPeSZtGpCggrZ+VNNcDWc+bFHg=="
+    "css": true
   },
-  "url": "https://plugins.keeweb.info/plugins/theme-cupertino-auto",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+  "url": "https://github.com/btxtiger/keeweb-cupertino-theme",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlDUd+J2+3iAcJMOQSsx6eu+0HVCJrHMO1srrCZvj9Ip+eweGfyKKp4Ksn+1JU5Nabe04//xL/vkncT8uW+S4I+Er/Ny5AvfJfOXUfSDA0G9LQPRHolIBhlyeM2N49rhnUs8Kt8Pk7hQ+7KlpTG1hk5QxzVC1ku/dCZUYQJg69zcfSJCKD1jfzEedAP/PUltFUNnLSXRzq3JKkfLpMcyw2pdh1y11LvFBLpqQGZBm9BdXkrGzvk1BbZm40IQna7DitbAmTcZCjr8GB0KNU2PVy1sIc4DcwowZsI/BKW4hs1vby6IlgVkcM2BZCB9rOUlO+uAanWeaJheVhZyXCBEzHQIDAQAB",
   "license": "MIT",
   "theme": {
-    "name": "keeweb-cupertino-theme",
+    "name": "keeweb-cupertino-auto",
     "title": "Cupertino Theme (Auto)"
   }
 }
