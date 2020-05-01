@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "manifestVersion": "0.1.0",
+  "name": "keeweb-cupertino-theme-dark",
+  "description": "Cupertino Theme (Dark)",
+  "author": {
+    "name": "Jonas Gnioui",
+    "email": "btxtiger@outlook.com",
+    "url": "https://github.com/btxtiger"
+  },
+  "resources": {
+    "css": true
+  },
+  "licence": "",
+  "url": "https://github.com/btxtiger/keeweb-cupertino-theme",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlRC2zOmBL8RUOoXRkEdpkb/Le3y/VKC+4mGefYxg9a3KO4Jeqayt1Xm38/QNLMTz7Fy8D3N+BaOLN2Avky/m5ggmvynHieW+rxEGMwWozh4aAB3l9JO8BXm0+98jME+TjnbwS81QM985Y3PUhQaTCNqkWeRX02CHZQWSU+BY+XVEr37f0s35sELZWEMvxf4KKp/oagOdVS7FFuprsMV/e+q4ezOpmx7o6ZVeEhfC0rVB4CxQZ7jeY3RUjiVzI1vT5D0tuxxniDN2ZKdG4J4uIE7A4cLkVFTNUl0EHIjmxIkMqUX+fyUgrpDv9KUd5d4UeqErMX3zGPuKferGIGZPXQIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "keeweb-cupertino-theme",
+    "title": "Cupertino Theme (Dark)"
+  }
+}
