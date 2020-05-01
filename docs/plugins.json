@@ -1,6 +1,6 @@
 {
-  "date": "2020-04-23T16:58:37.769Z",
-  "signature": "RAmXkKZ/uDIuoYSaUVYHcgPide0XhFipO6o1GpQbAOBOkt7mipEzDl2KOWjfhE2QUm0dGdFJ6WU6DUKzI3e+9qmy0AoeaYcEHZGXpTzSnRxxJNAlIixDxBCV0zS7LWPxBYUs7sGcil1TW4O9YIDQ8m+VEk6PJy5wAC0fgeueIW3QAa/E4WrxMCpADU4ESyi4MjNhmTpTTH8B3heOGUvu+tQ1rWJt2yO4MJfGGweV29cMPil2GPrTHnK/maKOzNuuRMM6IudbRJQla0VOASw8uNmT6InJ0H1HPpGVXnLacDRyfZoT5eokhJ6e6vMONXkRmTAnVvZeSiPS3xz1rQ8KeA==",
+  "date": "2020-05-01T16:33:52.721Z",
+  "signature": "WgTkhNvfA0Y47Ies7Jng/AAOR5LIAxxKUlW3jPR8hrjHitahfvZKIPKDB/5+KNjyex8aG39ITzov1JZK+SQ85uqrsOIKLpEPHIgxldnWW+8DP9hnEKKzb7w7I7JgLnMWAJyyJA8V0v02VYXseWcidPwmCYOFgtWIzwYrIjX0us9ZFTHrV9fbeuUPCI9ExBLMtW7eP+NPCO7PKKoI4rnaAnnzkz7rEscKUP5IlO8liVHrWTSj3wgXGJcRwkqHS1Gv9eQbgRNReKkFjRid9kX6UZcHf0nZJVQ/jFst0jJsvO055XgHfKUW/qP/DScIKJmCPvYBJQ65vpfugqvVA4g3Ug==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -468,10 +468,88 @@
       }
     },
     {
+      "url": "https://plugins.keeweb.info/plugins/theme-cupertino-auto",
+      "official": false,
+      "manifest": {
+        "version": "1.0.0",
+        "manifestVersion": "0.1.0",
+        "name": "theme-cupertino-auto",
+        "description": "Cupertino Theme (Auto)",
+        "author": {
+          "name": "Jonas Gnioui",
+          "email": "btxtiger@outlook.com",
+          "url": "https://github.com/btxtiger"
+        },
+        "resources": {
+          "css": "BI52ooiX0LrHqtVMvyQiyeB+wb0kjVvi5DaiwbfcwdrI5Ys2eZGQC/zm/KEMW28Lfr05N7bfMgSLEIFyuUA8G4SS3YXV+YTQRnjEpnG22OQ6rn678qCNsy8Y/K0pfVmbxO27b9wxeUdXFCXPFi/e7TS0z8hubW/1cTtqCpcpcSioqWXtZyfme5wn1z6dYzuGko8IcTAtiXLjFajS+O612FVSr09rSlML0hVqNjo3NaphLSozO9grb1SITkLoW60Dj+se41m0lgLIBLdlVOPbFn/MTF08LexaN02yLLXv060oKdCjJDmnOnNG94nlDPeSZtGpCggrZ+VNNcDWc+bFHg=="
+        },
+        "licence": "MIT",
+        "url": "https://plugins.keeweb.info/plugins/theme-cupertino-auto",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+        "license": "MIT",
+        "theme": {
+          "name": "keeweb-cupertino-theme",
+          "title": "Cupertino Theme (Auto)"
+        }
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/theme-cupertino-dark",
+      "official": false,
+      "manifest": {
+        "version": "1.0.0",
+        "manifestVersion": "0.1.0",
+        "name": "theme-cupertino-dark",
+        "description": "Cupertino Theme (Dark)",
+        "author": {
+          "name": "Jonas Gnioui",
+          "email": "btxtiger@outlook.com",
+          "url": "https://github.com/btxtiger"
+        },
+        "resources": {
+          "css": "aT7cFpD9SiWopZiH63gQSOZFoD8aLxBEdbZuK+Y3YzYsaS79uDqm7ZNNdNszB4uu9eDrtZfyUM6BiL50Y9CmXICDODLDb5GQodZbzLPaqNN5K8JF2pIAAHkY+qGZsStxMaQCm3Tq3bX+MuEWtSF2tyr+BN2nPcrqBrNyK/GlrdzAVuK8NXTZWuuh1MfVWUbGGdlhOoNI0n/TlSHv+Miqtycx/MVSEkPLDMcg7eiIq63i7GryeqcuCHpepwQeX1YL+v5aPqsnquf/A5l+VTC+7yg6GvmM3Nwjwx+IEh86jdbH11z+ZXdqd6bFEKcLn6IHmzI2yfrpFNnQQzZSnq+lQA=="
+        },
+        "licence": "MIT",
+        "url": "https://plugins.keeweb.info/plugins/theme-cupertino-dark",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+        "license": "MIT",
+        "theme": {
+          "name": "keeweb-cupertino-theme",
+          "title": "Cupertino Theme (Dark)"
+        }
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/theme-cupertino-light",
+      "official": false,
+      "manifest": {
+        "version": "1.0.0",
+        "manifestVersion": "0.1.0",
+        "name": "theme-cupertino-light",
+        "description": "Cupertino Theme (Light)",
+        "author": {
+          "name": "Jonas Gnioui",
+          "email": "btxtiger@outlook.com",
+          "url": "https://github.com/btxtiger"
+        },
+        "resources": {
+          "css": "Mmobp7ogAH9+X7FMw5bknyeOEhYeX257o2vLQ3S0+mxgPfql6twCSPIsFm4v0p2yWmxEBORNoSxO4XeVswWIpmc4fN4JsYr+BKmtvJ9cjZkN1k5nLqn+tzm6a6R3yLtnqpFbNSinPpfsA3L7mX0VUxkloEXlu6X07FEBAuwn5FB81/W66ncLtiRjXmFcTY0jBJn/vMEpMgcNGTINPYVtM8p8TnDxq3Bx3mi6fIZFkH0W8NlITioUUEZWTRraXL2TgSGvxqN0vXWXBe+f7udqbMt/iMshtWTLPlA7qAqVo17vO2RxrpzS9hffQaxsMKbdeappLnf3ZCrU4qOzbK5Rhg=="
+        },
+        "licence": "MIT",
+        "url": "https://plugins.keeweb.info/plugins/theme-cupertino-light",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+        "license": "MIT",
+        "theme": {
+          "name": "keeweb-cupertino-theme",
+          "title": "Cupertino Theme (Light)"
+        }
+      }
+    },
+    {
       "url": "https://plugins.keeweb.info/translations/uk",
       "official": true,
       "manifest": {
-        "version": "1.13.0",
+        "version": "1.14.0",
         "manifestVersion": "0.1.0",
         "name": "language-ukrainian",
         "description": "Ukrainian language",
@@ -483,7 +561,7 @@
         "licence": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=uk",
         "resources": {
-          "loc": "gtG7Chfvr36ige414JwbN8QSSbp48t2wWML+SqkRFAlihpPTmVG5g7Ll1YFBKGdyKC34gsKuZu66B8nLpzNuODukoxX3/2wz6NJ9B1vNKMskHHiqDBVYzKifTuKxFsFy5TyS/YCM/W+VdCGzre56KCpkTZt8YD+S7/HzCNBr1GxWDqLnCzIQu2tM9cCxUG5qyeU/ooO3loLnou17j1aqWHx+T4IFYYMcdzsu3b7rjuvFT8BJRqV8LG+e8EY513jIwRzhawW6LcPQLSRtgEj8ITxknpDcjC8IY99lvBU2fpYp6Oc55RGNhyHUEEN9eExgY8aUFVRo73//Xf2Yfl9cRg=="
+          "loc": "DuKC1QBiwhFyaEDLBHka2BZFce5p5lYAqqAuFkporUbw4FAV/GoRcVfgAC5gX0KVIU2X9yka4d739aocfBLvc91S6Lg/4U5mJp4+8KcZSTZ8MOTjg/sGRo3HrMzpjuLqU5hjLCsqJPEH0IZ88r8ckfxack4k6oAYDT/aELWSA4wd+/of1n1tNI9Ay9MZMiREAnH4u0kCEzx2djEJOS2zdUqlDQoY4QVmuh8rF9oG2zZ6Oo0KbBMUwqcKeWVYm+231NM8XY+nkuHuEtiP/w4SXVXFljDzt0+gapoqNoX0+6SCZbB+SSDjqblyNdDjyYdFn514nHgrNx6ClDNOED9Jkw=="
         },
         "locale": {
           "name": "uk",

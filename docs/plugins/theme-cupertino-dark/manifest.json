@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "manifestVersion": "0.1.0",
-  "name": "keeweb-cupertino-theme-dark",
+  "name": "theme-cupertino-dark",
   "description": "Cupertino Theme (Dark)",
   "author": {
     "name": "Jonas Gnioui",
@@ -9,11 +9,11 @@
     "url": "https://github.com/btxtiger"
   },
   "resources": {
-    "css": true
+    "css": "aT7cFpD9SiWopZiH63gQSOZFoD8aLxBEdbZuK+Y3YzYsaS79uDqm7ZNNdNszB4uu9eDrtZfyUM6BiL50Y9CmXICDODLDb5GQodZbzLPaqNN5K8JF2pIAAHkY+qGZsStxMaQCm3Tq3bX+MuEWtSF2tyr+BN2nPcrqBrNyK/GlrdzAVuK8NXTZWuuh1MfVWUbGGdlhOoNI0n/TlSHv+Miqtycx/MVSEkPLDMcg7eiIq63i7GryeqcuCHpepwQeX1YL+v5aPqsnquf/A5l+VTC+7yg6GvmM3Nwjwx+IEh86jdbH11z+ZXdqd6bFEKcLn6IHmzI2yfrpFNnQQzZSnq+lQA=="
   },
-  "licence": "",
-  "url": "https://github.com/btxtiger/keeweb-cupertino-theme",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlRC2zOmBL8RUOoXRkEdpkb/Le3y/VKC+4mGefYxg9a3KO4Jeqayt1Xm38/QNLMTz7Fy8D3N+BaOLN2Avky/m5ggmvynHieW+rxEGMwWozh4aAB3l9JO8BXm0+98jME+TjnbwS81QM985Y3PUhQaTCNqkWeRX02CHZQWSU+BY+XVEr37f0s35sELZWEMvxf4KKp/oagOdVS7FFuprsMV/e+q4ezOpmx7o6ZVeEhfC0rVB4CxQZ7jeY3RUjiVzI1vT5D0tuxxniDN2ZKdG4J4uIE7A4cLkVFTNUl0EHIjmxIkMqUX+fyUgrpDv9KUd5d4UeqErMX3zGPuKferGIGZPXQIDAQAB",
+  "licence": "MIT",
+  "url": "https://plugins.keeweb.info/plugins/theme-cupertino-dark",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
   "license": "MIT",
   "theme": {
     "name": "keeweb-cupertino-theme",
