@@ -1,6 +1,6 @@
 {
-  "date": "2020-05-24T16:54:09.224Z",
-  "signature": "mSMryw/iGI7WJfw2b6CnolCmGXKIS90wXPtBx/kDPMBcSEpJahXWg6ER80QSS0ieaznODr8Ah6QrHBTiNy91oMWJp7BTu3C0rjsLQhz81rqghmsojRVtHQy2NQ0g4Nqri/EsgnP4iG5fBWC5auFxHhUxHtzIjwKFxOwqadpFiHGc1MyZBiFpT4KII+B9B2tyXDvOYh9NjNJHnVP7CeJ41c0pf0No1hOnBLBw6wIja8fT+6Co2VMvrtkobFhTQlfcYe9rQ1HktY/VuMjdQsmhlI/WuIcVck/OIMgd4qXzzHsq9SDM4XLeF2FuLU37gzMI0rqUtL6sNeBeodQs6DXNyg==",
+  "date": "2020-05-24T16:59:15.199Z",
+  "signature": "HLn7TdPE7xvtqiq6pj5GwCs6n5/sMvC/iqnWfEdGMDDfA29hbixmCYclW4WBd+2Z+8gE7RCI6f6wdDK1Sk/ZvRQl1l+NsmHOZ9Yu+gGV279/lZ77HaX0RPqYuApEAEpkQDw0F3KBWFHUDi3TpuMtwYnZ5n4fJcbv9lTqGS3r82UVYWE6fx8vX8UX1RxRsu/s3+Ih6Ovr0bLEaGnlINVi0NyJ5GOEuSSZwUkLoSghQHQOma33LBPtFueODf7n2omdrHnHniC8GVruarjZFUVCPKWl1HqREO6rrB9Vxg47JYma6ijDIiB6BZw13RrqZyNkJJ4ew3tHXI4TmM3bt3muZg==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -846,7 +846,7 @@
     {
       "url": "https://plugins.keeweb.info/plugins/external-selection-menu",
       "manifest": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "manifestVersion": "0.1.0",
         "name": "external-selection-menu",
         "description": "Use an external menu such as dmenu when prompted to select an entry for auto-type",
@@ -859,7 +859,7 @@
           "js": "RvSZ2bbByyAOv5JPT13iq99mki0c7eYxDYzjlB0ZGREZiRVs/keybiVDjhqipxkn0mamzYjXCgZMAnXm0j7Vc6+9StQ37/3ImsdKIwsOmOepdVjuf7GhvEYeIKfLwNlG4D7b1mtn9QqnKyjE4gVhc/hm42xrmCgUQKySGfkqk5RWlcxSeG7DZJhgH7Rcs89d3WPWlPT9/JSosoBLl1NoXyuKKXT0lwMkUbQv6PIDheLB3rGb9AdcGS9pKi6AulimP4ApvpJuGcPcalrbgaWZ7n+VUdzI7xNp9JIziLS2BGhQCMKS16VkLCEXM4kRtGovIziaygm5KjiBbtnFtVVXYg=="
         },
         "license": "MIT",
-        "url": "https://github.com/b3nj5m1n/keeweb-external-selection-menu",
+        "url": "https://plugins.keeweb.info/plugins/external-selection-menu",
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
         "desktop": true
       }
