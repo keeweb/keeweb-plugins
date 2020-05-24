@@ -34,7 +34,9 @@ for (const plugin of data.plugins) {
     if (plugin.manifest.locale) {
         continue;
     }
-    plugin.manifest = JSON.parse(fs.readFileSync(`docs/plugins/${plugin.manifest.name}/manifest.json`, 'utf8'));
+    plugin.manifest = JSON.parse(
+        fs.readFileSync(`docs/plugins/${plugin.manifest.name}/manifest.json`, 'utf8')
+    );
 }
 
 console.log('Checking for changes...');
@@ -53,11 +55,13 @@ console.log('Signing...');
 
 const dataToSign = Buffer.from(JSON.stringify(data, null, 2));
 
-sign(dataToSign).then(signature => {
-    data.signature = signature.toString('base64');
-    fs.writeFileSync('docs/plugins.json', JSON.stringify(data, null, 2));
-    console.log('Done');
-}).catch(err => {
-    console.error('Sign error', err);
-    process.exit(1);
-});
+sign(dataToSign)
+    .then(signature => {
+        data.signature = signature.toString('base64');
+        fs.writeFileSync('docs/plugins.json', JSON.stringify(data, null, 2));
+        console.log('Done');
+    })
+    .catch(err => {
+        console.error('Sign error', err);
+        process.exit(1);
+    });
