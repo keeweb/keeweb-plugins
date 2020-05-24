@@ -10,7 +10,7 @@ const logger = new Logger.Logger('external-selection-menu');
 const launcher = require('comp/launcher');
 const Launcher = launcher.Launcher;
 
-const autoType = require('auto-type/index.js')
+const autoType = require('auto-type/index.js');
 const originalProcessEventWithFilter = autoType.AutoType.processEventWithFilter; /* Preserve original method for uninstall */
 
 const selectView = require('views/auto-type/auto-type-select-view.js');
@@ -23,21 +23,20 @@ function pad(n, width, z) {
     return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
-
 // Command to execute
 let cmd = 'dmenu';
 let args = ['-c'];
 
 // Overwrite processEventWithFilter function
 autoType.AutoType.processEventWithFilter = function (evt) {
-    // Default code for when a matching entry can be found without having to select one
+    // Default code for when a matching entry can be found without having to select one; disabled for now
     //
-    const initEntries = evt.filter.getEntries(); if (initEntries.length === 1 && AppSettingsModel.directAutotype) {
-        this.hideWindow(() => {
-            autoType.AutoType.runAndHandleResult({ entry: initEntries[0] }, evt.windowInfo.id);
-        });
-        return;
-    }
+    // const initEntries = evt.filter.getEntries(); if (initEntries.length === 1 && AppSettingsModel.directAutotype) {
+    //     this.hideWindow(() => {
+    //         autoType.AutoType.runAndHandleResult({ entry: initEntries[0] }, evt.windowInfo.id);
+    //     });
+    //     return;
+    // }
     // Custom code replacing the selection menu
     //
     evt.filter.ignoreWindowInfo = true; /* Set filter to ignore windowInfo */
@@ -45,11 +44,11 @@ autoType.AutoType.processEventWithFilter = function (evt) {
     const entries = this.selectEntryView.model.filter.getEntries(); /* Get all entries from selectEntryView */
     this.selectEntryView = null; /* Remove selectEntryView */
 
-    this.data = ""; /* Init data string, will be used as stdin for the command */
+    this.data = ''; /* Init data string, will be used as stdin for the command */
 
     // Loop over all entries and add information from that entry to the data string
-    for (var i = 0, len = entries.length; i < len; i++) {
-        this.data += pad([i], 3) + ": " + entries[i].title + " - " + entries[i].user + " - " + entries[i].url + " - " + entries[i].tags + "\n";
+    for (let i = 0, len = entries.length; i < len; i++) {
+        this.data += pad([i], 3) + ': ' + entries[i].title + ' - ' + entries[i].user + ' - ' + entries[i].url + ' - ' + entries[i].tags + '\n';
     }
     // Spawn a new command (dmenu)
     Launcher.spawn({
@@ -58,22 +57,17 @@ autoType.AutoType.processEventWithFilter = function (evt) {
         data: this.data,
         complete: (err, stdout, code) => {
             if (err) {
-                delete entries; /* Remove entries */
                 return;
             }
             // Callback function
             const cb = function () {
-                let i = parseInt(stdout.split(":")[0], 10); /* From selection, get everything up to the first : (This will be the index of the entry) and parse it to an int to remove leading zeroes */
+                const i = parseInt(stdout.split(':')[0], 10); /* From selection, get everything up to the first : (This will be the index of the entry) and parse it to an int to remove leading zeroes */
                 autoType.AutoType.runAndHandleResult({ entry: entries[i] }, evt.windowInfo.id); /* runAndHandleResult with the selected entry */
-                delete entries; /* Remove entries */
             };
             cb(err, stdout, code);
         }
     });
-    return;
 };
-
-
 
 module.exports.getSettings = function() {
     return [
@@ -97,13 +91,11 @@ module.exports.getSettings = function() {
 };
 
 module.exports.setSettings = function(changes) {
-    if (changes['External menu command'])
-    {
+    if (changes['External menu command']) {
         cmd = changes['External menu command'];
     }
-    if (changes['External menu command arguments'])
-    {
-        args = changes['External menu command arguments'].split(" ");
+    if (changes['External menu command arguments']) {
+        args = changes['External menu command arguments'].split(' ');
     }
     logger.info('Menu command changed to: ' + cmd + ' ' + args);
 };
@@ -111,5 +103,4 @@ module.exports.setSettings = function(changes) {
 module.exports.uninstall = function() {
     delete autoType.AutoType.processEventWithFilter;
     autoType.AutoType.processEventWithFilter = originalProcessEventWithFilter;
-
 };
