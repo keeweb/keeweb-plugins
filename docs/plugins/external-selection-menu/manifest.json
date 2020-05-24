@@ -1,0 +1,18 @@
+{
+  "version": "1.0.1",
+  "manifestVersion": "0.1.0",
+  "name": "external-selection-menu",
+  "description": "Use an external menu such as dmenu when prompted to select an entry for auto-type",
+  "author": {
+    "name": "Benjamin",
+    "email": "b3nj4m1n@gmx.net",
+    "url": "https://github.com/b3nj5m1n"
+  },
+  "resources": {
+    "js": "rUotQQLQ5DSTeJsvnZHwli7djmWl4gsrHLR9f9ZE3GUImbcnibZICTJrmOQAPMPKUGggT9+ZES6Zd2xVJynkYR9pi9Vh4Ena5jsBRJX43kKTHzTR9ghd1/tRcpy2sh67QBuqtP9YoR2PEZKd4n5fIMv6SP21Dx0BnkFHLi1TOlOlm1qRV13HIpa4Seh9PE9LpLe2BpwGMf0x9NKMIVWtgNokrrvec+ch2tUpz+8X1tL5kF3yl0+zUxUhiI1BH/UfwcdMKWLzIMLyCbK8/DZxUMAXdnQEm4oRg/VkNHWDAy9wsWwcQ/HBBq8pCwoqtiGQwsOuASwL7xL3QY2L7pU3tw=="
+  },
+  "license": "MIT",
+  "url": "https://github.com/b3nj5m1n/keeweb-external-selection-menu",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6ibQ/D4FoT4AK0wQPalHvTLWKUMMa5oRL8jQi4fzRgCam/PhA/gzaaPZ/ttC/sjEBPOxhaQ4A76jWnMJ7E/f1zfHbPvpB+tvDGDKNHpjrldTOQIYcz4uU+y+qsFWSv0bJjDORxHbfQT3xXJ09wT7vjSXyD7ERuUIvm6jr+L5v168EZ8iscPnM3pUKp2wYJDR4AGWJ+WD7IHzDZZ8cUvMSsP7IPvVhSfHZZpkfakswgQ1kNWRNcFtmlxcR62xOiLIeJiAix1LXkkDJCT2MjH2XgCG3PNDSChPKr6rui90Wa5O5iGqn0bx6KAyxuP7/adM8ZzAW0HvDPGIV1RfevNpuQIDAQAB",
+  "desktop": true
+}
