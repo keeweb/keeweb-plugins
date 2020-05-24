@@ -3,10 +3,12 @@ const fs = require('fs');
 const path = require('path');
 const ps = require('child_process');
 
-const oldKey = fs.readFileSync('keys/public-key-old.pem', 'utf8')
+const oldKey = fs
+    .readFileSync('keys/public-key-old.pem', 'utf8')
     .match(/-+BEGIN PUBLIC KEY-+([\s\S]+?)-+END PUBLIC KEY-+/)[1]
     .replace(/\s+/g, '');
-const newKey = fs.readFileSync('keys/public-key.pem', 'utf8')
+const newKey = fs
+    .readFileSync('keys/public-key.pem', 'utf8')
     .match(/-+BEGIN PUBLIC KEY-+([\s\S]+?)-+END PUBLIC KEY-+/)[1]
     .replace(/\s+/g, '');
 
@@ -21,15 +23,19 @@ for (const pluginDir of pluginDirs) {
         }
         manifest.publicKey = newKey;
         fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
-        const result = ps.spawnSync('node', [
-            '../keeweb/plugins/keeweb-plugin/keeweb-plugin.js',
-            'sign',
-            path.join(pluginDir, pluginName),
-            '--signer-module=../../../keeweb-plugins/scripts/sign',
-            '--bump-version'
-        ], {
-            stdio: 'inherit'
-        });
+        const result = ps.spawnSync(
+            'node',
+            [
+                '../keeweb/plugins/keeweb-plugin/keeweb-plugin.js',
+                'sign',
+                path.join(pluginDir, pluginName),
+                '--signer-module=../../../keeweb-plugins/scripts/sign',
+                '--bump-version'
+            ],
+            {
+                stdio: 'inherit'
+            }
+        );
         if (result.status) {
             throw 'Sign error';
         }

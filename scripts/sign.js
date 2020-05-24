@@ -20,6 +20,9 @@ function getPin() {
 }
 
 module.exports = function sign(data) {
-    return getPin().then(pin => signer.sign({ data, verifyKey, pin, ...signerOptions })
-        .then(data => data.toString('base64')));
+    return getPin().then(pin =>
+        signer
+            .sign({ data, verifyKey, pin, ...signerOptions })
+            .then(data => data.toString('base64'))
+    );
 };
