@@ -1,6 +1,6 @@
 {
-  "date": "2020-05-01T17:34:39.026Z",
-  "signature": "KrRTAZtEQQWG3Wb2+DF8VMgRoHNrChNFyHpInhdgfz5Y+gvJWTfld0Am5vQX6qKnetQinYbuJhBiynS4ppAtcYWEzfmnMR5NTMTbbfOP6gCo2NZfvi3e3BGH5grDoB8+kMoRKUe4Sntq6jgH+oTDvivI0NrRzQUSBtC5VJ0VH+Dbb/5ZnB9GzwK1/I8UHUfAbWZGKyB5ai62kg/Fu0bO+G/g7DziRyXplY0Hxe4pTYVKqCz22vOU7Ubu2bxKzEy4k3XBxMOMHA1kr99CKFEcQ8FKKjUBXJVFGinvsCdVy0XU6mxy+bJ+Ab/bATGsFVJ9dSTDOFNtvJmIEAJgarMMfQ==",
+  "date": "2020-05-24T16:54:09.224Z",
+  "signature": "mSMryw/iGI7WJfw2b6CnolCmGXKIS90wXPtBx/kDPMBcSEpJahXWg6ER80QSS0ieaznODr8Ah6QrHBTiNy91oMWJp7BTu3C0rjsLQhz81rqghmsojRVtHQy2NQ0g4Nqri/EsgnP4iG5fBWC5auFxHhUxHtzIjwKFxOwqadpFiHGc1MyZBiFpT4KII+B9B2tyXDvOYh9NjNJHnVP7CeJ41c0pf0No1hOnBLBw6wIja8fT+6Co2VMvrtkobFhTQlfcYe9rQ1HktY/VuMjdQsmhlI/WuIcVck/OIMgd4qXzzHsq9SDM4XLeF2FuLU37gzMI0rqUtL6sNeBeodQs6DXNyg==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -622,7 +622,7 @@
       "manifest": {
         "version": "1.8.0",
         "manifestVersion": "0.1.0",
-        "name": "language-portuguese-brazil-",
+        "name": "language-portuguese-brazil",
         "description": "Portuguese (Brazil) language",
         "author": {
           "name": "KeeWeb",
@@ -695,7 +695,7 @@
       "manifest": {
         "version": "1.0.0",
         "manifestVersion": "0.1.0",
-        "name": "language-estonian-estonia-",
+        "name": "language-estonian-estonia",
         "description": "Estonian (Estonia) language",
         "author": {
           "name": "KeeWeb",
@@ -841,6 +841,27 @@
           "title": "Català"
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/external-selection-menu",
+      "manifest": {
+        "version": "1.0.1",
+        "manifestVersion": "0.1.0",
+        "name": "external-selection-menu",
+        "description": "Use an external menu such as dmenu when prompted to select an entry for auto-type",
+        "author": {
+          "name": "Benjamin",
+          "email": "b3nj4m1n@gmx.net",
+          "url": "https://github.com/b3nj5m1n"
+        },
+        "resources": {
+          "js": "RvSZ2bbByyAOv5JPT13iq99mki0c7eYxDYzjlB0ZGREZiRVs/keybiVDjhqipxkn0mamzYjXCgZMAnXm0j7Vc6+9StQ37/3ImsdKIwsOmOepdVjuf7GhvEYeIKfLwNlG4D7b1mtn9QqnKyjE4gVhc/hm42xrmCgUQKySGfkqk5RWlcxSeG7DZJhgH7Rcs89d3WPWlPT9/JSosoBLl1NoXyuKKXT0lwMkUbQv6PIDheLB3rGb9AdcGS9pKi6AulimP4ApvpJuGcPcalrbgaWZ7n+VUdzI7xNp9JIziLS2BGhQCMKS16VkLCEXM4kRtGovIziaygm5KjiBbtnFtVVXYg=="
+        },
+        "license": "MIT",
+        "url": "https://github.com/b3nj5m1n/keeweb-external-selection-menu",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+        "desktop": true
       }
     }
   ]
