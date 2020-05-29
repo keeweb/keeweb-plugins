@@ -1,6 +1,6 @@
 {
-  "date": "2020-05-24T16:59:15.199Z",
-  "signature": "HLn7TdPE7xvtqiq6pj5GwCs6n5/sMvC/iqnWfEdGMDDfA29hbixmCYclW4WBd+2Z+8gE7RCI6f6wdDK1Sk/ZvRQl1l+NsmHOZ9Yu+gGV279/lZ77HaX0RPqYuApEAEpkQDw0F3KBWFHUDi3TpuMtwYnZ5n4fJcbv9lTqGS3r82UVYWE6fx8vX8UX1RxRsu/s3+Ih6Ovr0bLEaGnlINVi0NyJ5GOEuSSZwUkLoSghQHQOma33LBPtFueODf7n2omdrHnHniC8GVruarjZFUVCPKWl1HqREO6rrB9Vxg47JYma6ijDIiB6BZw13RrqZyNkJJ4ew3tHXI4TmM3bt3muZg==",
+  "date": "2020-05-29T06:41:58.364Z",
+  "signature": "mBqmkGue0pcIE+9sqcWQ3P6OWWhbrKxJjQXa1gAOnxpIxbEJ+KA1IVYttQdXq3GlrcDNYkswvBtqGZV9KNwbzzo5EG/tJXgnZJ/+RiR0aSprjlw6tJmPMUC+JLOLAQtm5qLSzvzA/X1za1bZ7PToM5GHIEIT8IOC8Cu/NdmmZQVk2wwCZ9FV477UBh50I3lozmDikn4Ve6X+8tR+pyeqcHycuSFA/LndVT5zQlx2GqLrA4uzed1U+ldrghhg64SAaJWlpGCgqDYe6MHz1dKGHEpgzrzYekArby5tcEHh+S8ckCJ3WkWoAk5UzrBQIUxJXVdIINb8FyMPOOtfcIpW+A==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -745,7 +745,7 @@
       "url": "https://plugins.keeweb.info/translations/ja",
       "official": true,
       "manifest": {
-        "version": "1.5.1",
+        "version": "1.6.0",
         "manifestVersion": "0.1.0",
         "name": "language-japanese",
         "description": "Japanese language",
@@ -757,7 +757,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=ja",
         "resources": {
-          "loc": "Hx1D8LrflyJQeJs/fUbyWRwjEut6NhxM6ZjqpCZ+XI13AvPt22beUzXdsvP/76HUBdnJKN/XzNnOAGm/oWqjzTKDMOy6WQEhfCDf9lBUYnO/ka2uQKxpe/mVRtPz/lV0Nx+7ggV2+XLUcxQ9V3KnckBds+azVTPHAZkjDWMwwwxZqK7gsXhs8qm4AEOA4aQTQAUyV1cgEm1QqhBRXmDTDIvRy/lx0ejz7vRCt58KUxyl6FjSY+lh7GFkpvylYMP6SGjf7bihGWczjcBWpEPeSlvODGJ0FklAaGK28jJX7iOM7cyJZbGUKqgLrR7IhKevPRZ8aNVBnPr5ZnsBYetCFw=="
+          "loc": "LpZllSMsxryP7Or9WqhSr+7804bo+AbGS0ZFPURxv6fqvsc0xr3l2iLKLsrI4OQKxvahTliQBWxIN3sdK+R4Eg7rV5b0zQ61SVUG9mV8zP7TVemscdcmSqNW2G0psDTv+eHKl7/4Mm5dT3tIzbu7OcBdHySj5p3llrS5BRLXQPlREERPdvLZpFCfWGqsdyuR4MnImozUXQeDzCOSTFJ1jiainwBKuC4q/LIuugCT0ny6tvSINDdByv2fuWGaSHE0kheSYdpR2NfftjAMG1WyoLw9aINhGbsJElpBd/jurHg3qtktEsb7fNc0FKpg8NI35frAxkfDoCS435EQB+Ts3g=="
         },
         "locale": {
           "name": "ja",
@@ -846,7 +846,7 @@
     {
       "url": "https://plugins.keeweb.info/plugins/external-selection-menu",
       "manifest": {
-        "version": "1.0.2",
+        "version": "1.1.0",
         "manifestVersion": "0.1.0",
         "name": "external-selection-menu",
         "description": "Use an external menu such as dmenu when prompted to select an entry for auto-type",
@@ -856,7 +856,7 @@
           "url": "https://github.com/b3nj5m1n"
         },
         "resources": {
-          "js": "RvSZ2bbByyAOv5JPT13iq99mki0c7eYxDYzjlB0ZGREZiRVs/keybiVDjhqipxkn0mamzYjXCgZMAnXm0j7Vc6+9StQ37/3ImsdKIwsOmOepdVjuf7GhvEYeIKfLwNlG4D7b1mtn9QqnKyjE4gVhc/hm42xrmCgUQKySGfkqk5RWlcxSeG7DZJhgH7Rcs89d3WPWlPT9/JSosoBLl1NoXyuKKXT0lwMkUbQv6PIDheLB3rGb9AdcGS9pKi6AulimP4ApvpJuGcPcalrbgaWZ7n+VUdzI7xNp9JIziLS2BGhQCMKS16VkLCEXM4kRtGovIziaygm5KjiBbtnFtVVXYg=="
+          "js": "PLORQ7qFkXDNIALV4r5O1pItMWIpZ1UmZ7+znlr/zva0qddt3ssk2fG7d/OH4XeVRDkCj2/wEeq66hqtWnL4lNjLECw/52cP9B5yBfUgWgsP5zIeSlqP0YARY/JSf+9Fyaa8YUgffzve62rgEA+JW/8MLBLMvNdqBivjqLDDcWYR8mJOTKMbWWAHGJSOLQHWDzUYZYaAbp2kzmPXGE7nnFu7TT3bdKz4FtHYPdGZ8UAZQoXCUskBATTHbKafip7Vd+p9JPZjAUilcwgaszqJlJjjH0Er38Kyq31jWLWAFzO6dTDfghO4xg++nKFliVPgspWz4Te5pOkGDPfh7wJY6A=="
         },
         "license": "MIT",
         "url": "https://plugins.keeweb.info/plugins/external-selection-menu",
