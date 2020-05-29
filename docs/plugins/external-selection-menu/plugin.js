@@ -4,8 +4,8 @@
  * @license MIT
  */
 
-const Logger = require('util/logger');
-const logger = new Logger.Logger('external-selection-menu');
+// const Logger = require('util/logger');
+// const logger = new Logger.Logger('external-selection-menu');
 
 const launcher = require('comp/launcher');
 const Launcher = launcher.Launcher;
@@ -29,14 +29,12 @@ let args = ['-c'];
 
 // Overwrite processEventWithFilter function
 autoType.AutoType.processEventWithFilter = function (evt) {
-    // Default code for when a matching entry can be found without having to select one; disabled for now
+    // Default code for when a matching entry can be found without having to select one
     //
-    // const initEntries = evt.filter.getEntries(); if (initEntries.length === 1 && AppSettingsModel.directAutotype) {
-    //     this.hideWindow(() => {
-    //         autoType.AutoType.runAndHandleResult({ entry: initEntries[0] }, evt.windowInfo.id);
-    //     });
-    //     return;
-    // }
+    const initEntries = evt.filter.getEntries(); if (initEntries.length === 1) {
+        autoType.AutoType.runAndHandleResult({entry: initEntries[0]}, evt.windowInfo.id);
+        return;
+    }
     // Custom code replacing the selection menu
     //
     evt.filter.ignoreWindowInfo = true; /* Set filter to ignore windowInfo */
@@ -77,7 +75,7 @@ module.exports.getSettings = function() {
             type: 'text',
             maxlength: 50,
             placeholder: '',
-            value: 'dmenu'
+            value: 'rofi'
         },
         {
             name: 'External menu command arguments',
@@ -85,19 +83,31 @@ module.exports.getSettings = function() {
             type: 'text',
             maxlength: 50,
             placeholder: '',
-            value: '-c'
+            value: '--dmenu,-p,"> "'
         }
     ];
 };
 
 module.exports.setSettings = function(changes) {
     if (changes['External menu command']) {
-        cmd = changes['External menu command'];
+        cmd = changes['External menu command'] + '';
     }
     if (changes['External menu command arguments']) {
-        args = changes['External menu command arguments'].split(' ');
+        args = changes['External menu command arguments'];
+        // Make sure there is actually 1+ arguments, otherwise set args to null
+        if (args === '' || args === ' ' || args === '-') {
+            args = null;
+        }
+        // If there are args, split them into an array (Using , as the delimiter) and remove any quotes around the input
+        if (args !== null) {
+            args = args.split(',');
+            for (let i = 0, len = args.length; i < len; i++) {
+                if (args[i][0] === '"' && args[i][args[i].length - 1] === '"') {
+                    args[i] = args[i].replace(/"([^"]+(?="))"/g, '$1');
+                }
+            }
+        }
     }
-    logger.info('Menu command changed to: ' + cmd + ' ' + args);
 };
 
 module.exports.uninstall = function() {
