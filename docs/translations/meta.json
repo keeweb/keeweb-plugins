@@ -44,8 +44,8 @@
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
-    "count": 590,
-    "version": "1.18.0"
+    "count": 627,
+    "version": "1.19.0"
   },
   "da": {
     "name": "Dansk",
@@ -86,8 +86,8 @@
   "fr-FR": {
     "name": "Français",
     "nameEn": "French",
-    "count": 577,
-    "version": "1.20.0"
+    "count": 627,
+    "version": "1.21.0"
   },
   "de-DE": {
     "name": "Deutsch",
