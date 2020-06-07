@@ -667,5 +667,7 @@
   "yubiKeyNoKeyBody": "Voer je YubiKey in met serienummer {}",
   "yubiKeySlot": "slot",
   "yubiKeyTouchRequestedHeader": "Raak je YubiKey aan",
-  "yubiKeyTouchRequestedBody": "Raak je YubiKey aan met serienummer {}"
+  "yubiKeyTouchRequestedBody": "Raak je YubiKey aan met serienummer {}",
+  "yubiKeyDisabledErrorHeader": "USB is uitgeschakeld",
+  "yubiKeyDisabledErrorBody": "YubiKey is vereist om dit bestand te openen, schakel in instellingen USB-apparaten in."
 }

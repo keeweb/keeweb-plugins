@@ -667,5 +667,7 @@
   "yubiKeyNoKeyBody": "Kérem helyezze be a {} szériaszámú Yubikey-t",
   "yubiKeySlot": "csatlakozó",
   "yubiKeyTouchRequestedHeader": "Érintse meg a YubiKey-t",
-  "yubiKeyTouchRequestedBody": "Kérem érintse meg a {} szériaszámú YubiKey-t"
+  "yubiKeyTouchRequestedBody": "Kérem érintse meg a {} szériaszámú YubiKey-t",
+  "yubiKeyDisabledErrorHeader": "Az USB nincs engedélyezve",
+  "yubiKeyDisabledErrorBody": "YubiKey szükséges a fájl megnyitásához, kérlek engedélyezd az USB eszközöket a beállításokban."
 }

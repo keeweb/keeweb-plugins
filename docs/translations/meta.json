@@ -39,13 +39,13 @@
     "name": "Polski",
     "nameEn": "Polish",
     "count": 629,
-    "version": "1.18.0"
+    "version": "1.19.0"
   },
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
-    "count": 627,
-    "version": "1.20.0"
+    "count": 629,
+    "version": "1.21.0"
   },
   "da": {
     "name": "Dansk",
@@ -80,8 +80,8 @@
   "nl-NL": {
     "name": "Nederlands",
     "nameEn": "Dutch",
-    "count": 627,
-    "version": "1.22.0"
+    "count": 629,
+    "version": "1.23.0"
   },
   "fr-FR": {
     "name": "Français",

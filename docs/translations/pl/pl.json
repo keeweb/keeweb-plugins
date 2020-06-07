@@ -593,7 +593,7 @@
   "setDevicesTitle": "Urządzenia",
   "setDevicesEnableUsb": "Włącz interakcję z urządzeniami USB",
   "setDevicesYubiKeyIntro": "Zaleca się przeczytanie {} przed użyciem YubiKey.",
-  "setDevicesYubiKeyIntroLink": "ten dokument",
+  "setDevicesYubiKeyIntroLink": "tego dokumentu",
   "setDevicesYubiKeyToolsDesc": "Aby móc korzystać z YubiKey w tym trybie, musisz zainstalować narzędzie o nazwie {}.",
   "setDevicesYubiKeyToolsDesc2": "{}, aby uzyskać więcej informacji o tym narzędziu.",
   "setDevicesYubiKeyToolsDescLink": "Kliknij tutaj",
