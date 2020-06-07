@@ -18,3 +18,11 @@ jobs:
         run: curl -Ss https://raw.githubusercontent.com/MestreLion/git-tools/f3cc70b73200154d027554714c354f35a08680ed/git-restore-mtime | python3
       - name: Sync
         run: gsutil -m rsync -r -d -x "^\.|^[a-f\d-]{36}$|^README\.md$" docs gs://plugins.keeweb.info/
+      - name: Purge CloudFlare cache
+        env:
+            CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+            curl -sS -X POST "https://api.cloudflare.com/client/v4/zones/dbda8e7e454d23edb08d4bc3b3f6f872/purge_cache" \
+              -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+              -H "Content-Type: application/json" \
+              --data '{"purge_everything":true}'
