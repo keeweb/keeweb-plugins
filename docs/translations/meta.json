@@ -8,8 +8,8 @@
   "zh-CN": {
     "name": "简体中文",
     "nameEn": "Chinese Simplified",
-    "count": 577,
-    "version": "1.14.0"
+    "count": 588,
+    "version": "1.15.0"
   },
   "ja": {
     "name": "日本語",
@@ -68,8 +68,8 @@
   "pt-BR": {
     "name": "Português (Brasil)",
     "nameEn": "Portuguese (Brazil)",
-    "count": 557,
-    "version": "1.8.0"
+    "count": 567,
+    "version": "1.9.0"
   },
   "no": {
     "name": "Norsk",
