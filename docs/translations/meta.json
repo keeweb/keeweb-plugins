@@ -81,7 +81,7 @@
     "name": "Nederlands",
     "nameEn": "Dutch",
     "count": 629,
-    "version": "1.23.0"
+    "version": "1.24.0"
   },
   "fr-FR": {
     "name": "Français",
@@ -98,14 +98,14 @@
   "it-IT": {
     "name": "Italiano",
     "nameEn": "Italian",
-    "count": 573,
-    "version": "1.10.0"
+    "count": 619,
+    "version": "1.11.0"
   },
   "ru-RU": {
     "name": "Русский",
     "nameEn": "Russian",
-    "count": 573,
-    "version": "1.20.0"
+    "count": 611,
+    "version": "1.21.0"
   },
   "es-ES": {
     "name": "Español",

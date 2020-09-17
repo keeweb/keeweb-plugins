@@ -322,7 +322,7 @@
   "detOtpQrError": "QR-code scanfout",
   "detOtpQrErrorBody": "Sorry, we konden de QR-code niet lezen, probeer het nog eens of neem contact op met de app makers en geef de details van de foutmelding door.",
   "detOtpQrWrong": "Verkeerde QR-code",
-  "detOtpQrWrongBody": "De QR-code was succesvol gescand, maar het bevat niet de data van een eenmalig wachtwoord.",
+  "detOtpQrWrongBody": "De QR-code was succesvol gescand, maar het bevat niet de gegevens van een eenmalig wachtwoord.",
   "detOtpField": "Eenmalige code",
   "detOtpClickToTouch": "Klik om te genereren",
   "detOtpGenerating": "Bezig met genereren...",
