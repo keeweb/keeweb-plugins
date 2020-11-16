@@ -25,7 +25,7 @@ class HIBPUtils {
         this.blockPwnedName = false;
         this.logger = new Logger('HaveIBeenPwned');
         this.logger.setLevel(LogLevel);
-    };
+    }
 
     replacer(key, value) {
         if (value != null && typeof value === 'object') {
@@ -35,15 +35,15 @@ class HIBPUtils {
             _seen.push(value);
         }
         return value;
-    };
+    }
 
     stringify(obj) {
         const ret = JSON.stringify(obj, this.replacer);
         _seen = [];
         return ret;
-    };
+    }
 
-    xhrcall (config) {
+    xhrcall(config) {
         const xhr = new XMLHttpRequest();
         if (config.responseType) {
             xhr.responseType = config.responseType;
@@ -57,7 +57,7 @@ class HIBPUtils {
             }
         });
         xhr.addEventListener('error', () => {
-            const err = xhr.response && xhr.response.error || new Error('Network error');
+            const err = (xhr.response && xhr.response.error) || new Error('Network error');
             this.logger.error('HaveIBeenPwned API error', 'GET', xhr.status, err);
             err.status = xhr.status;
             return err;
@@ -69,12 +69,12 @@ class HIBPUtils {
         if (config.headers) {
             for (const key in config.headers) {
                 xhr.setRequestHeader(key, config.headers[key]);
-            };
-        };
+            }
+        }
         xhr.send(config.data);
-    };
+    }
 
-    hex (buffer) {
+    hex(buffer) {
         const hexCodes = [];
         const view = new DataView(buffer);
         for (let i = 0; i < view.byteLength; i += 4) {
@@ -89,33 +89,33 @@ class HIBPUtils {
         }
         // Join all the hex strings into one
         return hexCodes.join('');
-    };
+    }
 
     digest(algo, str) {
         const buffer = Kdbxweb.ByteUtils.stringToBytes(str);
         const subtle = window.crypto.subtle || window.crypto.webkitSubtle;
         const _self = this;
-        return subtle.digest(algo, buffer).then(hash => {
+        return subtle.digest(algo, buffer).then((hash) => {
             return _self.hex(hash);
         });
-    };
+    }
 
     sha1(str) {
         return this.digest('SHA-1', str);
-    };
+    }
 
     sha256(str) {
         return this.digest('SHA-256', str);
-    };
+    }
 
-    alert (el, msg) {
+    alert(el, msg) {
         // Alerts.info({ body: msg, title: 'HaveIBeenPwned' });
         el.focus();
         el.addClass('input--error');
         el.addClass('hibp-pwned');
         Tip.createTip(el, { title: msg, placement: 'bottom' });
         InputFx.shake(el);
-    };
+    }
 
     passed(el, msg) {
         hibp.logger.info(msg);
@@ -135,15 +135,20 @@ DetailsView.prototype.checkNamePwned = function (name) {
         url: url,
         method: 'GET',
         responseType: 'json',
-        headers: {'Access-Control-Allow-Origin': '*'},
+        headers: { 'Access-Control-Allow-Origin': '*' },
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
             if (data && data.length > 0) {
                 hibp.logger.debug('found breaches ' + JSON.stringify(data));
                 let breaches = '';
-                data.forEach(breach => { breaches += '<li>' + utilFn.escape(breach.Name) + '</li>\n'; });
-                hibp.alert(this.userEditView.$el, `WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>\n`);
+                data.forEach((breach) => {
+                    breaches += '<li>' + utilFn.escape(breach.Name) + '</li>\n';
+                });
+                hibp.alert(
+                    this.userEditView.$el,
+                    `WARNING! This account has been pawned in the following breaches<br/>\n<ul>\n${breaches}\n</ul>\n<p>Please check on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>\n`
+                );
             } else {
                 hibp.passed(this.userEditView.$el, 'check pwned user name passed...');
             }
@@ -158,18 +163,21 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
         url: `https://api.pwnedpasswords.com/range/${prefix}`,
         method: 'GET',
         responseType: 'text',
-        headers: {'Access-Control-Allow-Origin': '*'},
+        headers: { 'Access-Control-Allow-Origin': '*' },
         data: null,
         statuses: [200, 404],
-        success: data => {
+        success: (data) => {
             if (data) {
                 hibp.logger.debug('found breaches ' + JSON.stringify(data));
-                data.split('\r\n').forEach(line => {
+                data.split('\r\n').forEach((line) => {
                     const h = line.split(':');
                     const suffix = h[0];
                     if (prefix + suffix === passwordHash) {
                         const nb = utilFn.escape(h[1]);
-                        hibp.alert(this.passEditView.$el, `WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`);
+                        hibp.alert(
+                            this.passEditView.$el,
+                            `WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`
+                        );
                     }
                 });
             } else {
@@ -187,7 +195,7 @@ DetailsView.prototype.fieldChanged = function (e) {
             if (this.passEditView.value) {
                 const pwd = this.passEditView.value.getText();
                 if (pwd.replace(/\s/, '') !== '' && !pwd.startsWith('{REF:')) {
-                    hibp.sha1(pwd).then(hash => {
+                    hibp.sha1(pwd).then((hash) => {
                         this.checkPwdPwned(hash.toUpperCase());
                     });
                 }
@@ -199,28 +207,31 @@ DetailsView.prototype.fieldChanged = function (e) {
 };
 
 module.exports.getSettings = function () {
-    return [{
-        name: 'checkPwnedPwd',
-        label: 'Check passwords against HaveIBeenPwned list',
-        type: 'checkbox',
-        value: hibp.checkPwnedPwd
-        // disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
-        //    }, {
-        //        name: 'checkPwnedName',
-        //        label: 'Check user ids against HaveIBeenPwned list',
-        //        type: 'checkbox',
-        //        value: hibp.checkPwnedName
-    }, {
-        name: 'blockPwnedPwd',
-        label: 'Block pwned passwords if they are in HaveIBeenPwned list',
-        type: 'checkbox',
-        value: hibp.blockPwnedPwd
-        //    }, {
-        //        name: 'blockPwnedName',
-        //        label: 'Block pwned names if they are in HaveIBeenPwned list',
-        //        type: 'checkbox',
-        //        value: hibp.blockPwnedName
-    }];
+    return [
+        {
+            name: 'checkPwnedPwd',
+            label: 'Check passwords against HaveIBeenPwned list',
+            type: 'checkbox',
+            value: hibp.checkPwnedPwd
+            // disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
+            //    }, {
+            //        name: 'checkPwnedName',
+            //        label: 'Check user ids against HaveIBeenPwned list',
+            //        type: 'checkbox',
+            //        value: hibp.checkPwnedName
+        },
+        {
+            name: 'blockPwnedPwd',
+            label: 'Block pwned passwords if they are in HaveIBeenPwned list',
+            type: 'checkbox',
+            value: hibp.blockPwnedPwd
+            //    }, {
+            //        name: 'blockPwnedName',
+            //        label: 'Block pwned names if they are in HaveIBeenPwned list',
+            //        type: 'checkbox',
+            //        value: hibp.blockPwnedName
+        }
+    ];
 };
 // disabled since API V3 of HaveIbeenPwned is not free anymore for checking accounts
 hibp.checkPwnedName = false;
