@@ -135,7 +135,6 @@ DetailsView.prototype.checkNamePwned = function (name) {
         url: url,
         method: 'GET',
         responseType: 'json',
-        headers: { 'Access-Control-Allow-Origin': '*' },
         data: null,
         statuses: [200, 404],
         success: (data, xhr) => {
@@ -163,7 +162,6 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
         url: `https://api.pwnedpasswords.com/range/${prefix}`,
         method: 'GET',
         responseType: 'text',
-        headers: { 'Access-Control-Allow-Origin': '*' },
         data: null,
         statuses: [200, 404],
         success: (data) => {
