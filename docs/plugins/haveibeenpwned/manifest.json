@@ -1,5 +1,5 @@
 {
-  "version": "0.1.8",
+  "version": "0.1.9",
   "manifestVersion": "0.1.0",
   "name": "haveibeenpwned",
   "description": "Check HaveIBeenPwned password database",
@@ -9,7 +9,7 @@
     "url": "https://github.com/leolivier"
   },
   "resources": {
-    "js": "c74ScRWvc5bxSgjff9xEtrOuh79DgSOI2PMzY6VC5mQU0D3JzyfVCaMnjg959RgMyvM6cX5xd5PMzdChK53PF3kfadnbFSckJzN7uMbqc/rBwbQwhpDMI+rCZfRijLopKuDxPXGHA2I2GcEeaVDll6vT79YBmdmUQCQc3vKqfhAzUakljUU/4CQFC3YpChMpneTj7gdHDUX0cZ17/1XlvaUs2thXpITmYNV0G/vLUJUQhqYOTuUJH2fsl1pHCEETX/iZEd3/y/qBm7+Z56XTHLNPPua6vpN9cLK6EANoPTbM1kzrrurppGcxlNibU7Vhf/8se2JSGY/2e8R/t8Hxwg==",
+    "js": "HdZam/qyt5QuuVtjtNd643OHz2HQaXxO785l7AkMSb9A88jn2I+zZH3keHbQFwcw/AaxxEaIJOIACBfc+xg5Hl1QNaOe3lYRMUuzv9fI12bK4FO2PGkZ779xN2FULzdayWYDwPUY/5kidgm9hs8afZI3XwH9b/c9M/TOMu4mOhpgImIuf4wM5gguuiLWYn2OqBmEm2h6sMD7r5wSoEQZpPardoRipcS+lkb1EfPCrmV740C668xzkF2XBjG3Oaf9EsrF9tTJgHPklmx1qLDeOVUQ6rDGBCcoMbO7xYu5mYcXwD7FTNCau9pRk7sEqlRVU2gZP3JVV3TkzR4KM534Yg==",
     "css": "K8gtQONyUe5AMIEa2ozxHvVC4umblP5r6FOdKgX+288Il3m928SquewF9fIqDeeMONtGEQnFpMG60jgP1edEZvBZdjhT3qJySdTUYf7etmjQInY/4/0K18HenixwhW4C6XQm/+M90voHsiKOcZMSY4/uSCmltnI7qaRr3Ag+2+QQXdpMDNQthRCZhgrh3KtO0hHAcGYURRQ2YEfHcfT5JZrl4kpOhJYTTt3Dy0XNnRQaa30qedVY2rCQtAnE870D+MSUpri4BGAGdxz2Wi3BdWUtBPT6wAdoJQWhsIcuRv0f0LIFbjsw1sI52do2oj/dmfJ1lJ3RnEB/ALHDIvx+ew=="
   },
   "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
