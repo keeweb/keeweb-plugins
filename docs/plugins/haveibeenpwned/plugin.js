@@ -175,7 +175,7 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
                     if (prefix + suffix === passwordHash) {
                         const nb = utilFn.escape(h[1]);
                         hibp.alert(
-                            this.passEditView.$el,
+                            this.getFieldView('$Password').$el,
                             `WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`
                         );
                     }
@@ -192,8 +192,8 @@ DetailsView.prototype.fieldChanged = function (e) {
     if (e.field) {
         hibp.logger.debug('field changed ' + hibp.stringify(e));
         if (e.field === '$Password' && hibp.checkPwnedPwd) {
-            if (this.passEditView.value) {
-                const pwd = this.passEditView.value.getText();
+            if (this.getFieldView('$Password').value) {
+                const pwd = this.getFieldView('$Password').value.getText();
                 if (pwd.replace(/\s/, '') !== '' && !pwd.startsWith('{REF:')) {
                     hibp.sha1(pwd).then((hash) => {
                         this.checkPwdPwned(hash.toUpperCase());
