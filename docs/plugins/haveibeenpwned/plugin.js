@@ -174,7 +174,7 @@ DetailsView.prototype.checkPwdPwned = function (passwordHash) {
                         const nb = utilFn.escape(h[1]);
                         hibp.alert(
                             this.getFieldView('$Password').$el,
-                            `WARNING: This password is referenced as pawned ${nb} times on <a href='https://haveibeenpwned.com'>https://haveibeenpwned.com</a>!\n`
+                            `WARNING: This password is referenced as pawned ${nb} times on https://haveibeenpwned.com!\n`
                         );
                     }
                 });
