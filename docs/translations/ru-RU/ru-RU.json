@@ -1,4 +1,6 @@
 {
+  "webdavNoLastModified": "HTTP-заголовок Last-Modified отсутствует",
+  "yubiKeyErrorWithCode": "Ошибка YubiKey, код {}.",
   "months": [
     "Января",
     "Февраля",

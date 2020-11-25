@@ -1,4 +1,7 @@
 {
+  "webdavNoLastModified": "Brak nagłówka HTTP Last-Modified",
+  "webdavStatReload": "Zawsze przeładowuj plik zamiast polegać na nagłówku HTTP Last-Modified",
+  "yubiKeyErrorWithCode": "Błąd YubiKey, kod {}.",
   "months": [
     "styczeń",
     "luty",
@@ -647,7 +650,7 @@
   "gdriveSharedWithMe": "Udostępnione dla mnie",
   "webdavSaveMethod": "Metoda zapisu",
   "webdavSaveMove": "Prześlij tymczasowy plik i przenieś",
-  "webdavSavePut": "Nadpisz plik KDBX przez PUT",
+  "webdavSavePut": "Nadpisz plik KDBX za pomocą PUT",
   "launcherSave": "Zapisz bazę danych haseł",
   "launcherFileFilter": "Pliki KeePass",
   "authPopupRequired": "Okna pop-up są zablokowane",

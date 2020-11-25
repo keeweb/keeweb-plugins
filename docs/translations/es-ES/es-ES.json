@@ -1,4 +1,7 @@
 {
+  "webdavNoLastModified": "Falta la cabecera HTTP Last-Modified",
+  "webdavStatReload": "Recargar el archivo siempre en lugar de confiar en la cabecera HTTP Last-Modified",
+  "yubiKeyErrorWithCode": "Error de YubiKey, código {}.",
   "months": [
     "Enero",
     "Febrero",
