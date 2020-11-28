@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Install npm
+      - name: NPM install
         run: npm ci
       - name: Lint
         run: npm run lint
