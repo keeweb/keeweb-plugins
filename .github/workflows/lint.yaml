@@ -1,0 +1,13 @@
+name: Deploy
+on: [push, pull_request]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install npm
+        run: npm ci
+      - name: Lint
+        run: npm run lint
