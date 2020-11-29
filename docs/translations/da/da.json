@@ -1,50 +1,4 @@
 {
-  "months": [
-    "Januar",
-    "Februar",
-    "Marts",
-    "April",
-    "Maj",
-    "Juni",
-    "Juli",
-    "August",
-    "September",
-    "Oktober",
-    "November",
-    "December"
-  ],
-  "monthsShort": [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "Maj",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Okt",
-    "Nov",
-    "Dec"
-  ],
-  "weekdays": [
-    "Søndag",
-    "Mandag",
-    "Tirsdag",
-    "Onsdag",
-    "Torsdag",
-    "Fredag",
-    "Lørdag"
-  ],
-  "weekdaysShort": [
-    "Søn",
-    "Man",
-    "Tir",
-    "Ons",
-    "Tor",
-    "Fre",
-    "Lør"
-  ],
   "retToApp": "tilbage til app",
   "name": "navn",
   "icon": "ikon",
@@ -360,7 +314,6 @@
   "setGenTheme": "Tema",
   "setGenThemeFb": "Flad blå",
   "setGenThemeDb": "Mørk brun",
-  "setGenThemeWh": "Hvid",
   "setGenThemeTe": "Terminal",
   "setGenThemeHc": "Høj kontrast",
   "setGenThemeSd": "Solariseret mørk",

@@ -1,5 +1,5 @@
 {
-  "version": "1.21.0",
+  "version": "1.22.0",
   "manifestVersion": "0.1.0",
   "name": "language-polish",
   "description": "Polish language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=pl",
   "resources": {
-    "loc": "fi4HFjsxOMg54uGqX0SPlSYSJXetJrgN145diVreITexvyEPDUBLSKJXGeC9hrUbeGvF0XQioQK0QGGuh3w6+uU1P/xTixp5DHvWJsbBx/8rqlsae3/mLC3LedIAUoHDiWdXsm4zcHYHuPcantlzF3C/V31ELMzrGDMBYdL+bZ0SJHaJhNYDMe4DmeVyMudMuFeZgCjfCz0ESN+fq8VAgg8cXY3oUCMmr9KixN7tADzudcDQoIVdjtnYcGHMKuj+qOqN8yV2oW3jgs82cMjJoG/VJTMpzEp8/z2H+IoK0zpHAQCctqoJxIsuPkyN6U5BLT83XRt21kXXvKjLnXOzOQ=="
+    "loc": "SDSQViCcBAmv5mXx/hznt82FSy1LCNG37Uq/A5FbKv0824PONp7pmxaImy+VuE2qQB1AC3aWHmcJ7yeiq6RpFkhblT9ECCVnHhkqiTG/x3tApPPXIFdntgjl9BxjQnwknb+yS3Q5yPH/55BRfNGIzNRYmYunb00eI05kkqusbFlgln2vbLR8r4cTwEVniOkd5S7V4Sxz8p6CQunJkBBRmy/CASvZVZv0XOS4rKfvChrz/asm3Txl7h7U3DPp1W+nj/aMIOQCLtW442eNDhFWx2ABiBEGOt7cD1vjbW4zt7S9tO6R6Nf0Dj3sYU5SZzIe0qFvEzwsfAOtztqh9nFGkg=="
   },
   "locale": {
     "name": "pl",

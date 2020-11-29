@@ -1,50 +1,4 @@
 {
-  "months": [
-    "leden",
-    "únor",
-    "březen",
-    "duben",
-    "květen",
-    "červen",
-    "červenec",
-    "srpen",
-    "září",
-    "říjen",
-    "listopad",
-    "prosinec"
-  ],
-  "monthsShort": [
-    "led.",
-    "ún.",
-    "bře.",
-    "dub.",
-    "kvě.",
-    "čer.",
-    "čvc.",
-    "srp.",
-    "zář.",
-    "říj.",
-    "lis.",
-    "pro."
-  ],
-  "weekdays": [
-    "neděle",
-    "pondělí",
-    "úterý",
-    "středa",
-    "čtvrtek",
-    "pátek",
-    "sobota"
-  ],
-  "weekdaysShort": [
-    "Ne",
-    "Po",
-    "Út",
-    "St",
-    "Čt",
-    "Pá",
-    "So"
-  ],
   "retToApp": "zpět do aplikace",
   "name": "jméno",
   "icon": "ikona",
@@ -348,7 +302,6 @@
   "setGenTheme": "Motiv",
   "setGenThemeFb": "Fádní modrá",
   "setGenThemeDb": "Tmavě hnědá",
-  "setGenThemeWh": "Bílá",
   "setGenThemeTe": "Terminál",
   "setGenThemeHc": "Vysoký kontrast",
   "setGenThemeSd": "Přeexponovaná tmavá",

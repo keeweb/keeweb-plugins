@@ -1,5 +1,5 @@
 {
-  "version": "1.9.1",
+  "version": "1.10.0",
   "manifestVersion": "0.1.0",
   "name": "language-norwegian",
   "description": "Norwegian language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=no",
   "resources": {
-    "loc": "fPgNqsa2HRBKcH/q0smokzx/hin0FXf/sIHVyyu9iWV9aEShm9SOVIX52rKKbHXKb+JY5P5W71o3CXbnVa3NSPqeJcT/iSeTIBKicvl5OE3LASYZrDunt/8ivvwNda2+9w9uH6nXWgYTQAPqbIX2wVairTjgJQusvWR21Ifhe4un7gaAmRuzgIBj0Y5RRdU+tnF4ppTPD6TYiAzr9dZniTdCI9SL9I7JXX26qOP6p25YUHxhh0cJq9R6K86ws5/y4qQXw5wKTUJwMLdpIeYR63dNjXscHTq1Eo6FjHrOT0Widz2TQ4bBb20eC6xsLxGFpfBNZTgiCMPCHQvYK3VMEg=="
+    "loc": "EhoVCihCyxR1drLvKKIszyoTjBrrjpqMsGexn1UJLVjslY2Wye8Ht7unnYVlp16gtvClhIB8EAOLiKVsDEK04IOfOOrUEoR7PHUnwuue95DPKPSWuVZIRYmadblXPobv0Ij8ySeidf1QKwEDZv2M090ywjadYPIRd9f9Li6nlX6gjYliIecDji5E0eW2KMHNNe9xkVPNnU4MLyppaDwLKP8Z16DC8elPQo9HBJP9U7b53XDzVZwtKL0MoVlFNqhtxzO/QXfFVq2rdLDCw77CH4y5+0z5vkmbzlgtf2ROz/NAed0lKdYbF9jRrohd7Vgl7fpBRz728u4wuDU8XNpj0g=="
   },
   "locale": {
     "name": "no",

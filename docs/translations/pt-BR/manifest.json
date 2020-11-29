@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0",
+  "version": "1.11.0",
   "manifestVersion": "0.1.0",
   "name": "language-portuguese-brazil",
   "description": "Portuguese (Brazil) language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=pt-BR",
   "resources": {
-    "loc": "mYaFyhfWyVvA5n4c7OkZOr1sfsJmsv2+uiTqAaKFv38w2ziZ967iHLV7HPQY5nuM+peCULpfpMDUgyQRFkDoYUTmrSHCADt7D3QOS9Lz+0fvvfl6klLKfgE3Vdj8aM++r50X2+YGwdqMr6flnHohg/5sK9GcEro+mMGsDQ1mMGuXkuRUflNPvYcASIlH+Ct3waU7s6RfBuekDctI7Tu8vf69J0QzYk4w4g5ByS4esMzKrDIS2JrMtrYu0AmgUopfmjt/z6vCpTryy+Libyw4xeoR/FIjGv2SG4ve/ZbMzKhCZxqWCut1eZkK7k/BLhDcJkCL/3K8G+4wKqPCwLtm4A=="
+    "loc": "ZwzTAnt9ehnfni4j5recudyblV/Pt9dUf7VoqgF9P31qUgua8dzLdCkmAoqj2Z3sWxrIWwzYlxZVg8XS1bI6NpD2LqanHH2tMFF8jY8NjkU1CUv5Nz2sqEhKBqA3lg0s52Sqh32AFzb4tX+BKhGAzi2vbJ9XjqIO+0goh/BA7wgTawQ6tJvHUd4GazZSfgVyPy6vGzXj4crwyBpDeRuMX4NEMVDMER+TDW3+Ko5xl+t3qYmpjzDa7UD23Bzx/vvzN6v5wFCB1xYTpsTDmudbDvMMi3TbgLC4Lz1EESUWVHSrNut4vOS2UKtFJ33mBqn4abR8ECOxEfGarb5ivv7cFw=="
   },
   "locale": {
     "name": "pt-BR",
