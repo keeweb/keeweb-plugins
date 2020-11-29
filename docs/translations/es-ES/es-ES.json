@@ -1,7 +1,4 @@
 {
-  "webdavNoLastModified": "Falta la cabecera HTTP Last-Modified",
-  "webdavStatReload": "Recargar el archivo siempre en lugar de confiar en la cabecera HTTP Last-Modified",
-  "yubiKeyErrorWithCode": "Error de YubiKey, código {}.",
   "months": [
     "Enero",
     "Febrero",
@@ -616,7 +613,7 @@
   "setAboutTitle": "Acerca de",
   "setAboutBuilt": "Esta aplicación está hecha con estas magníficas utilidades",
   "setAboutLic": "Licencia",
-  "setAboutLicComment": "La aplicación en sí misma y todos los complementos incluidos que no son de dominio público están autorizados bajo la licencia MIT.",
+  "setAboutLicComment": "La aplicación en sí misma y todos los complementos incluidos están autorizados bajo la licencia MIT.",
   "setAboutFirst": "Esta es una aplicación open-source creada por {}",
   "setAboutSecond": "y licenciada bajo {}.",
   "setAboutSource": "El código fuente e incidencias están en {}.",
@@ -650,7 +647,9 @@
   "gdriveSharedWithMe": "Compartido conmigo",
   "webdavSaveMethod": "Modo de guardado",
   "webdavSaveMove": "Subir un archivo temporal y mover",
-  "webdavSavePut": "Sobreescribir archivo kdbx con PUT",
+  "webdavSavePut": "Sobreescribir el archivo kdbx con PUT",
+  "webdavNoLastModified": "Falta la cabecera HTTP Last-Modified",
+  "webdavStatReload": "Recargar el archivo siempre en lugar de confiar en la cabecera HTTP Last-Modified",
   "launcherSave": "Guardar base de datos de contraseñas",
   "launcherFileFilter": "Archivos KeePass",
   "authPopupRequired": "Las ventanas emergentes están bloqueadas",
@@ -672,5 +671,6 @@
   "yubiKeyTouchRequestedHeader": "Toca tu YubiKey",
   "yubiKeyTouchRequestedBody": "Por favor, toca tu YubiKey con el número de serie {}",
   "yubiKeyDisabledErrorHeader": "USB desactivado",
-  "yubiKeyDisabledErrorBody": "Se requiere una YubiKey para abrir este archivo, por favor, activa los dispositivos USB en las opciones."
+  "yubiKeyDisabledErrorBody": "Se requiere una YubiKey para abrir este archivo, por favor, activa los dispositivos USB en las opciones.",
+  "yubiKeyErrorWithCode": "Error de YubiKey, código {}."
 }

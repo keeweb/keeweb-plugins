@@ -1,7 +1,4 @@
 {
-  "webdavNoLastModified": "Utoljára módosított HTTP fejléc hiányzik",
-  "webdavStatReload": "Mindig töltse újra a fájlt ahelyett, hogy az utoljára módosított HTTP fejlécre hagyatkozna",
-  "yubiKeyErrorWithCode": "YubiKey hiba, kód {}.",
   "months": [
     "Január",
     "Február",
@@ -651,6 +648,8 @@
   "webdavSaveMethod": "Mentési módszer",
   "webdavSaveMove": "Ideiglenes fájl feltöltése és áthelyezése",
   "webdavSavePut": "A kdbx fájl felülírása, PUT-al",
+  "webdavNoLastModified": "Utoljára módosított HTTP fejléc hiányzik",
+  "webdavStatReload": "Mindig töltse újra a fájlt ahelyett, hogy az utoljára módosított HTTP fejlécre hagyatkozna",
   "launcherSave": "Jelszó adatbázis mentése",
   "launcherFileFilter": "KeePass fájlok",
   "authPopupRequired": "Az előugró ablakok blokkoltak",
@@ -672,5 +671,6 @@
   "yubiKeyTouchRequestedHeader": "Érintse meg a YubiKey-t",
   "yubiKeyTouchRequestedBody": "Kérem érintse meg a {} szériaszámú YubiKey-t",
   "yubiKeyDisabledErrorHeader": "Az USB nincs engedélyezve",
-  "yubiKeyDisabledErrorBody": "YubiKey szükséges a fájl megnyitásához, kérlek engedélyezd az USB eszközöket a beállításokban."
+  "yubiKeyDisabledErrorBody": "YubiKey szükséges a fájl megnyitásához, kérlek engedélyezd az USB eszközöket a beállításokban.",
+  "yubiKeyErrorWithCode": "YubiKey hiba, kód {}."
 }

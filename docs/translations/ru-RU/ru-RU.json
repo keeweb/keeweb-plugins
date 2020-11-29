@@ -1,6 +1,4 @@
 {
-  "webdavNoLastModified": "HTTP-заголовок Last-Modified отсутствует",
-  "yubiKeyErrorWithCode": "Ошибка YubiKey, код {}.",
   "months": [
     "Января",
     "Февраля",
@@ -635,6 +633,7 @@
   "webdavSaveMethod": "Метод сохранения",
   "webdavSaveMove": "Отправка временного файла и перемещение",
   "webdavSavePut": "Перезаписать файл kdbx с помощью PUT",
+  "webdavNoLastModified": "HTTP-заголовок Last-Modified отсутствует",
   "launcherSave": "Сохранение паролей базы данных",
   "launcherFileFilter": "Файлы KeePass",
   "authPopupRequired": "Всплывающие окна заблокированы",
@@ -655,5 +654,6 @@
   "yubiKeyTouchRequestedHeader": "Прикоснитесь к YubiKey",
   "yubiKeyTouchRequestedBody": "Прикоснитесь к YubiKey с серийным номером {}",
   "yubiKeyDisabledErrorHeader": "USB отключён",
-  "yubiKeyDisabledErrorBody": "YubiKey необходим для открытия этого файла, включите USB-устройства в настройках."
+  "yubiKeyDisabledErrorBody": "YubiKey необходим для открытия этого файла, включите USB-устройства в настройках.",
+  "yubiKeyErrorWithCode": "Ошибка YubiKey, код {}."
 }

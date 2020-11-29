@@ -1,7 +1,4 @@
 {
-  "webdavNoLastModified": "Brak nagłówka HTTP Last-Modified",
-  "webdavStatReload": "Zawsze przeładowuj plik zamiast polegać na nagłówku HTTP Last-Modified",
-  "yubiKeyErrorWithCode": "Błąd YubiKey, kod {}.",
   "months": [
     "styczeń",
     "luty",
@@ -400,6 +397,8 @@
   "setGenDownloadAndRestart": "Pobierz aktualizację i uruchom ponownie",
   "setGenAppearance": "Wygląd",
   "setGenTheme": "Motyw",
+  "setGenThemeDark": "Ciemny",
+  "setGenThemeLight": "Jasny",
   "setGenThemeFb": "Płaski błękit",
   "setGenThemeDb": "Ciemny brąz",
   "setGenThemeWh": "Biel",
@@ -407,6 +406,7 @@
   "setGenThemeHc": "Wysoki kontrast",
   "setGenThemeSd": "Solaryzowany ciemny",
   "setGenThemeSl": "Solaryzowany jasny",
+  "setGenMoreThemes": "Więcej motywów",
   "setGenThemeMacDark": "MacOS Ciemny",
   "setGenLocale": "Język",
   "setGenLocOther": "inne języki są dostępne jako wtyczki",
@@ -616,7 +616,7 @@
   "setAboutTitle": "O",
   "setAboutBuilt": "Ta aplikacja jest zbudowana za pomocą tych wspaniałych narzędzi",
   "setAboutLic": "Licencja",
-  "setAboutLicComment": "Sama aplikacja oraz wszystkie dołączone komponenty, które nie są w domenie publicznej, są licencjonowane na mocy licencji MIT",
+  "setAboutLicComment": "Sama aplikacja i wszystkie zawarte w niej komponenty są objęte licencją MIT",
   "setAboutFirst": "Jest to aplikacja otwartoźródłowa stworzona przez {}",
   "setAboutSecond": "i na mocy licencji {}.",
   "setAboutSource": "Kod źródłowy oraz zagadnienia dostępne na {}.",
@@ -651,6 +651,8 @@
   "webdavSaveMethod": "Metoda zapisu",
   "webdavSaveMove": "Prześlij tymczasowy plik i przenieś",
   "webdavSavePut": "Nadpisz plik KDBX za pomocą PUT",
+  "webdavNoLastModified": "Brak nagłówka HTTP Last-Modified",
+  "webdavStatReload": "Zawsze przeładowuj plik zamiast polegać na nagłówku HTTP Last-Modified",
   "launcherSave": "Zapisz bazę danych haseł",
   "launcherFileFilter": "Pliki KeePass",
   "authPopupRequired": "Okna pop-up są zablokowane",
@@ -672,5 +674,6 @@
   "yubiKeyTouchRequestedHeader": "Dotknij YubiKey",
   "yubiKeyTouchRequestedBody": "Proszę dotknąć YubiKey o numerze seryjnym {}",
   "yubiKeyDisabledErrorHeader": "USB jest wyłączone",
-  "yubiKeyDisabledErrorBody": "YubiKey jest wymagany do otwarcia tego pliku, włącz urządzenia USB w ustawieniach."
+  "yubiKeyDisabledErrorBody": "YubiKey jest wymagany do otwarcia tego pliku, włącz urządzenia USB w ustawieniach.",
+  "yubiKeyErrorWithCode": "Błąd YubiKey, kod {}."
 }

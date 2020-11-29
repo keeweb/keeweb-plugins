@@ -1,7 +1,4 @@
 {
-  "webdavNoLastModified": "Laatst gewijzigde HTTP-header ontbreekt",
-  "webdavStatReload": "Laad het bestand altijd opnieuw in plaats van te vertrouwen op de laatst gewijzigde HTTP-header",
-  "yubiKeyErrorWithCode": "Yubikey fout, code {}",
   "months": [
     "januari",
     "februari",
@@ -400,6 +397,8 @@
   "setGenDownloadAndRestart": "Update downloaden en opnieuw starten",
   "setGenAppearance": "Uiterlijk",
   "setGenTheme": "Thema",
+  "setGenThemeDark": "Donker",
+  "setGenThemeLight": "Licht",
   "setGenThemeFb": "Strak blauw",
   "setGenThemeDb": "Donkerbruin",
   "setGenThemeWh": "Wit",
@@ -407,6 +406,7 @@
   "setGenThemeHc": "Hoog contrast",
   "setGenThemeSd": "Overbelicht donker",
   "setGenThemeSl": "Overbelicht licht",
+  "setGenMoreThemes": "Meer thema's",
   "setGenThemeMacDark": "macOS Donker",
   "setGenLocale": "Taal",
   "setGenLocOther": "andere talen zijn beschikbaar als plug-in",
@@ -651,6 +651,8 @@
   "webdavSaveMethod": "Opslagmethode",
   "webdavSaveMove": "Sla een tijdelijk bestand op en verplaats",
   "webdavSavePut": "Overschrijf kdbx-bestand met PUT",
+  "webdavNoLastModified": "Laatst gewijzigde HTTP-header ontbreekt",
+  "webdavStatReload": "Laad het bestand altijd opnieuw in plaats van te vertrouwen op de laatst gewijzigde HTTP-header",
   "launcherSave": "Wachtwoordendatabase opslaan",
   "launcherFileFilter": "KeePass-bestanden",
   "authPopupRequired": "Pop-ups zijn geblokkeerd",
@@ -672,5 +674,6 @@
   "yubiKeyTouchRequestedHeader": "Raak je YubiKey aan",
   "yubiKeyTouchRequestedBody": "Raak je YubiKey aan met serienummer {}",
   "yubiKeyDisabledErrorHeader": "USB is uitgeschakeld",
-  "yubiKeyDisabledErrorBody": "YubiKey is vereist om dit bestand te openen, schakel in instellingen USB-apparaten in."
+  "yubiKeyDisabledErrorBody": "YubiKey is vereist om dit bestand te openen, schakel in instellingen USB-apparaten in.",
+  "yubiKeyErrorWithCode": "Yubikey fout, code {}"
 }
