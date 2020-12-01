@@ -1,0 +1,20 @@
+.th-darker {
+    --background-color: #1c1c1c;
+    --medium-color: #b7b7b8;
+    --text-color: #f7f7f7;
+    --action-color: #317ef6;
+    --error-color: #ec655a;
+
+    --form-box-border-color-focus: #407091;
+    --form-box-shadow-color-focus: #3a698b;
+    --form-box-shadow-color-hover: rgba(58, 105, 139, 0.8);
+    --light-border-color: rgba(68, 68, 69, 0.6);
+    --secondary-background-color: transparent;
+    --selected-item-color: #2463c8;
+    --selected-on-secondary-item-color: #3a383a;
+    --selectable-on-secondary-item-color: #272627;
+}
+
+.th-darker .list__item--active .blue-color {
+    color: #689ff7;
+}

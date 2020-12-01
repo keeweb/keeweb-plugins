@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "manifestVersion": "0.1.0",
+  "versionMin": "1.16.0",
+  "name": "theme-darker",
+  "description": "Darker Theme",
+  "author": {
+    "name": "KeeWeb",
+    "email": "antelle.net@gmail.com",
+    "url": "https://keeweb.info"
+  },
+  "resources": {
+    "css": "QKfTau6vGoFnHZd6ID3j3FolZ+6S+WGouviYTNEHjGryiSDXvGxIYci5J/voejn8WCRHMU5uZcu1hEYVOm+fp7C45AgiDZyPQZs10zGENWXfbfxn0dM1gOTKnowI4w7PE2LC551YzWv1wt9APZxzuV1roA8i0tcldzcJ3bGxezO+w3msSSjslMx5pKoq2XYRYR+5/A5VGXyfG6r/gvB44vdeN3jjHOgF2idIpOGKDmd6FXN9srasAHtZBI7acAn8e8+pzt4uqAnESojEKT19Y3gEwZ9GiiEfd3HwPmFEoQxDPoEitu8r8ayPhySSriWS5G0XPs2DSuHNPL9M84GQ+w=="
+  },
+  "url": "https://plugins.keeweb.info/plugins/theme-darker",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+  "license": "MIT",
+  "theme": {
+    "name": "darker",
+    "title": "Darker"
+  }
+}
