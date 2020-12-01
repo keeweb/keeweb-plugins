@@ -1,6 +1,6 @@
 {
-  "date": "2020-11-29T22:27:46.086Z",
-  "signature": "FAusUm1zAcJqwcGIDOHqgEC2W82SP1qFuq+BDfqaqdoUMXjverYiEDkeHwNW32hIvL3E/7hKr6zUrRDPdRe/AdRNydcI0B0Xxeums0/PfLelt8UI3B6RbH+7wnJhKsnodc0lkwNjsYgGz2fJYAIcm5Mw35ohWnKQzSfIJRG1UnuTZ9megGNHfDizOMsKLoX4WBNFcxlOsVFtytsC6tFPafG/8WYpl+OtT45dX1/aECbf2bMOLg6yA+QuLvx1sPKeV6eogIGRDKwFd0W/9FoiuljVCOjEQ/B3TG3hmZE2STmHvnPbJ/bDaxGli0dPfbBkrOOMBGka2gvS2tk/V/SiiA==",
+  "date": "2020-12-01T18:55:11.255Z",
+  "signature": "hBC/hp9/+VxlUg7ShEIpnsaVrb5Y4gf0QTwy9ZXHiP2aWKDEsckbT+2j7vLSE277uS4VMHC/vScA0eMokVRUORfobaTknCn4qTmT7N/XRwGvShYBFcRFBB3CAW4X5wjwWma6V4N6fsEhCejRAumZRyRkTcn0p0iu7jCPZie5WqB7XURRDVepyxHoayqP3L+FE6CW/Cqoz3JV4FhLJkk9w3w52/20guJF3GeUUWsX5sbMqYU9tE25SJic+1n9kHXNlB1TJNMR/wqR6fNIrTlZqrMnPf6vawzs14HWIfCk/vgKwDl8wolJwiHytJQ0CtAgZUfl9SAA2GObOo9OptJbiA==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -188,7 +188,7 @@
       "url": "https://plugins.keeweb.info/translations/fr-FR",
       "official": true,
       "manifest": {
-        "version": "1.24.0",
+        "version": "1.25.0",
         "manifestVersion": "0.1.0",
         "name": "language-french",
         "description": "French language",
@@ -200,7 +200,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=fr-FR",
         "resources": {
-          "loc": "gIX+QOo4H4st/jxDZ/qfnCdKZrQJmWKnFnZlFVHEpTJH1sPUHocLP1kCDF+LKhPM/a0D31g7Lft6hyywn+UERJE+Pu/pkig3OvgTOrNa1cIlO7t3YjioxC5KIbiTuLzT1hyDDczgwdUgFNWoRmXzUKmsscyt0hk0Ze7hhxebRFRJKeFCS/OLMCsmacXNW3CzNYTXoIiXyIC8NiZF0VFe65GGZryurKZ5+4PSmRnR4lhb6OaxOC4NfJ9pFzprasYy1oEPfw2FvjWhUOMwWW2vXBVFEKGB5FKjx0ShGOGB0hg8Q3xxyqssITVVVM/b4H9U4qhNBGXmALlZ/vS/in2rAQ=="
+          "loc": "IcIGGZ9Vf0gmK85bRFIc6MqvKKADhdUCVw4w44Gb0RpGlTqQpNGuMbS+lYwXnRFtHa9NjXYAb17nhOs3bZX1/I8R/Rxkq+ezAYhj88GmeZz7Rfkvl3REyVOo+rEKAbAcwgub9/C0MtVFIhVpmcGZ8Y/6ufQu0M8kUHrpL6HaSn42cF31PqhUOhvh+fepuozOS6JcjDvSH1EEIHOGIIVYFUdIdLa6dILe7eaQEVrBy5eKK60iuhtJ5SqCPLzj4ReG3lWLGVE4/eiEnLjuhJL6LDIOWMiR1EJLW3kEqQj9LmJFjBDRFIUt7kmuVTheq2wj7o3v8XfJO1PeRwv8Fz+dUQ=="
         },
         "locale": {
           "name": "fr-FR",
@@ -361,6 +361,32 @@
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
         "desktop": true
+      }
+    },
+    {
+      "url": "https://plugins.keeweb.info/plugins/theme-darker",
+      "official": true,
+      "manifest": {
+        "version": "0.0.1",
+        "manifestVersion": "0.1.0",
+        "versionMin": "1.16.0",
+        "name": "theme-darker",
+        "description": "Darker Theme",
+        "author": {
+          "name": "KeeWeb",
+          "email": "antelle.net@gmail.com",
+          "url": "https://keeweb.info"
+        },
+        "resources": {
+          "css": "QKfTau6vGoFnHZd6ID3j3FolZ+6S+WGouviYTNEHjGryiSDXvGxIYci5J/voejn8WCRHMU5uZcu1hEYVOm+fp7C45AgiDZyPQZs10zGENWXfbfxn0dM1gOTKnowI4w7PE2LC551YzWv1wt9APZxzuV1roA8i0tcldzcJ3bGxezO+w3msSSjslMx5pKoq2XYRYR+5/A5VGXyfG6r/gvB44vdeN3jjHOgF2idIpOGKDmd6FXN9srasAHtZBI7acAn8e8+pzt4uqAnESojEKT19Y3gEwZ9GiiEfd3HwPmFEoQxDPoEitu8r8ayPhySSriWS5G0XPs2DSuHNPL9M84GQ+w=="
+        },
+        "url": "https://plugins.keeweb.info/plugins/theme-darker",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+        "license": "MIT",
+        "theme": {
+          "name": "darker",
+          "title": "Darker"
+        }
       }
     },
     {
