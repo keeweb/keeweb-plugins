@@ -1,6 +1,6 @@
 {
-  "date": "2020-12-01T18:55:11.255Z",
-  "signature": "hBC/hp9/+VxlUg7ShEIpnsaVrb5Y4gf0QTwy9ZXHiP2aWKDEsckbT+2j7vLSE277uS4VMHC/vScA0eMokVRUORfobaTknCn4qTmT7N/XRwGvShYBFcRFBB3CAW4X5wjwWma6V4N6fsEhCejRAumZRyRkTcn0p0iu7jCPZie5WqB7XURRDVepyxHoayqP3L+FE6CW/Cqoz3JV4FhLJkk9w3w52/20guJF3GeUUWsX5sbMqYU9tE25SJic+1n9kHXNlB1TJNMR/wqR6fNIrTlZqrMnPf6vawzs14HWIfCk/vgKwDl8wolJwiHytJQ0CtAgZUfl9SAA2GObOo9OptJbiA==",
+  "date": "2020-12-02T20:23:06.893Z",
+  "signature": "eII1XkhI2T3al0deyGkhtlC5nIlL7vu8IRfqlIPXJalHtvMggRvs2N2k48N6bYcH7gRJAZ7tGHltAU9cYxuVg7BuzmdBx+eioy29MGTbR1m2JFJU4DAjnhxst5sjcsi8vwcDeW7k6l7nP7mSn1fSXqp6pPeefMNnKxTkkxHDA+bJVr8OkwrfbEPnKQ+uH5cLvm8wtNPiZF/dqLqGVgad+1BFKbpyXfCbvhjw/j5o3zZzTM1xJbXAhHKjiamiOp6Bo+4ak3couOff2QHrt3mMrnpPQDXyMF7h6z2gY6GZyEW6yOJHbW33XqolNCyLlThVRD+W9wDqW2lEp5xmSRLn7Q==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -110,7 +110,7 @@
       "url": "https://plugins.keeweb.info/translations/hu",
       "official": true,
       "manifest": {
-        "version": "1.24.0",
+        "version": "1.25.0",
         "manifestVersion": "0.1.0",
         "name": "language-hungarian",
         "description": "Hungarian language",
@@ -122,7 +122,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=hu",
         "resources": {
-          "loc": "VcTXmJmf6ILuq/kiXqliL62CfZedM2uGOL44cp9rYzY3ghjWxOpobADhggEs4BnH/5kk706WyWwvs+9wli2YQg28mOrm3xXsvAL0fidfkT7E4dptcIE6Ez2SF7UANxjpHFV0Xc3RcMHHhlsbUOWamTe9i0L3IDKjau8PcsyxFn4rK4iCiQZEQky7NXeuq7PpcVKhJt/6r9TgBYsAYlXyMAwSsKjKFnptap1DPhdL8hhnr8T3eJPCoYZqhAHbyzXIVix6l0yIUWB6HZlkEW3Edi8VgGBHvrZftgDhHwVXdToB4aolKo5gBKHBhfBr9/QT502r1275Wi5gzpSYXv4OXw=="
+          "loc": "Cvt49JFJMy6reDNZHWglo3A/k0hENbdddT05cJGa/TGhIoX+cojPSAMIycsM0QJzVur7Qs73B3ZbkHGJXpd9F5zmj5mxXUhe1mDy12Z+/B4fK955keXdc7knNM3LigJyW/PQ1BH+x67RRL3BniUcWEuMdNmJRj43h3qBcQZ4lzDYNlhwiJzdhGUTXtlR4PAgjZ0F2Ija6YcSDlrX/Ie0SVyXvs3g/wkkpyZLwgPPPdP19sVODwEyebv81uAjH3lKgje79Za2I6zFnih3J0g4VHo2kGfx9ijLiCwjmZbYDgnTD5Q0RuspeixFMInDFfY/5Q8SILLhIrdVLFmc0IX5+g=="
         },
         "locale": {
           "name": "hu",
