@@ -1,4 +1,6 @@
 {
+  "appSaveErrorExitLoseChanges": "Afsluiten en alle aanpassingen kwijtraken",
+  "appSaveErrorExitLoseChangesBody": "Je kunt de app afsluiten en alle wijzigingen kwijtraken, of je kunt de bestandsinstellingen gebruiken om gegevens te exporteren",
   "retToApp": "retour vers l'appli",
   "name": "nom",
   "icon": "icône",

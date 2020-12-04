@@ -1,4 +1,6 @@
 {
+  "appSaveErrorExitLoseChanges": "Ukončiť a stratiť všetky zmeny.",
+  "appSaveErrorExitLoseChangesBody": "Môžete buď ukončiť aplikáciu a stratiť všetky zmeny, alebo ísť do nastavení súborov a exportovať dáta.",
   "retToApp": "návrat do aplikácie",
   "name": "meno",
   "icon": "ikona",
@@ -351,12 +353,15 @@
   "setGenDownloadAndRestart": "Stiahnuť aktualizáciu a reštartovať",
   "setGenAppearance": "Vzhľad",
   "setGenTheme": "Téma",
+  "setGenThemeDark": "Tmavá",
+  "setGenThemeLight": "Svetlá",
   "setGenThemeFb": "fádna modrá",
   "setGenThemeDb": "Tmavá hnedá",
   "setGenThemeTe": "Terminál",
   "setGenThemeHc": "Vysoký kontrast",
   "setGenThemeSd": "Preexponovaná tmavá",
   "setGenThemeSl": "Preexponovaná svetlá",
+  "setGenMoreThemes": "Viac tém",
   "setGenLocale": "Jazyk",
   "setGenLocOther": "ďalšie jazyky sú dostupné ako doplnok",
   "setGenFontSize": "Veľkosť písma",
@@ -565,7 +570,7 @@
   "setAboutTitle": "O",
   "setAboutBuilt": "Aplikácia je vytvorená týmito úžasnými nástrojmi",
   "setAboutLic": "Licencia",
-  "setAboutLicComment": "Aplikácia samotná a všetky zahrnuté komponenty, ktoré nie sú vo verejnej doméne, sú licencované pod MIT licenciou",
+  "setAboutLicComment": "Aplikácia samotná a všetky zahrnuté komponenty sú licencované pod MIT licenciou",
   "setAboutFirst": "Túto aplikáciu s otvoreným kódom vytvoril {}",
   "setAboutSecond": "a licencovaná pod {}",
   "setAboutSource": "Zdrojové kódy a problémy sú na {}",
@@ -600,6 +605,7 @@
   "webdavSaveMethod": "Metóda uloženia",
   "webdavSaveMove": "Nahrať dočasný súbor a presunúť",
   "webdavSavePut": "Prepísať kdbx súbor metódou PUT",
+  "webdavNoLastModified": "Chýba posledne zmenená HTTP hlavička.",
   "launcherSave": "Uložiť Databázu Hesiel",
   "launcherFileFilter": "Súbor KeePass",
   "authPopupRequired": "Vyskakovacie okná sú blokované",
@@ -621,5 +627,6 @@
   "yubiKeyTouchRequestedHeader": "Dotknite sa svojho YubiKey",
   "yubiKeyTouchRequestedBody": "Prosím, dotknite sa svojho YubiKey so sériovým číslom {}",
   "yubiKeyDisabledErrorHeader": "USB je zakázané",
-  "yubiKeyDisabledErrorBody": "YubiKey požaduje otvoriť tento súbor, prosím povoľte USB zariadenia v nastaveniach."
+  "yubiKeyDisabledErrorBody": "YubiKey požaduje otvoriť tento súbor, prosím povoľte USB zariadenia v nastaveniach.",
+  "yubiKeyErrorWithCode": "Chyba YubiKey, kód {}."
 }

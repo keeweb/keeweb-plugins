@@ -1,4 +1,6 @@
 {
+  "appSaveErrorExitLoseChanges": "Zamknij i utrać wszystkie zmiany",
+  "appSaveErrorExitLoseChangesBody": "Możesz zamknąć aplikację i utracić wszystkie zmiany lub przejść do ustawień pliku, aby wyeksportować dane",
   "retToApp": "Wróć do aplikacji",
   "name": "Nazwa",
   "icon": "Ikona",
