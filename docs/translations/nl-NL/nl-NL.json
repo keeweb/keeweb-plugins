@@ -1,6 +1,4 @@
 {
-  "appSaveErrorExitLoseChanges": "Afsluiten en alle wijzigingen kwijtraken",
-  "appSaveErrorExitLoseChangesBody": "Je kunt de app afsluiten en alle wijzigingen kwijtraken, of de bestandsinstellingen gebruiken om gegevens te exporteren",
   "retToApp": "terug naar de app",
   "name": "naam",
   "icon": "Pictogram",
@@ -318,6 +316,8 @@
   "appSaveError": "Fout bij het opslaan",
   "appSaveErrorBody": "Bestand is niet automatisch opgeslagen",
   "appSaveErrorBodyMul": "Niet automatisch opgeslagen bestanden:",
+  "appSaveErrorExitLoseChanges": "Afsluiten en alle wijzigingen kwijtraken",
+  "appSaveErrorExitLoseChangesBody": "Je kunt de app afsluiten en alle wijzigingen kwijtraken, of de bestandsinstellingen gebruiken om gegevens te exporteren",
   "appSettingsError": "Fout bij laden app",
   "appSettingsErrorBody": "Er is een fout opgetreden bij het laden van de app-instellingen. Controleer de app-URL of neem contact op met je systeembeheerder.",
   "appNotSupportedError": "Je browser biedt geen ondersteuning voor belangrijke functies in KeeWeb.",

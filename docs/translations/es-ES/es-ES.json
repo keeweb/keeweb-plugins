@@ -1,6 +1,4 @@
 {
-  "appSaveErrorExitLoseChanges": "Salir y perder todos los cambios",
-  "appSaveErrorExitLoseChangesBody": "Puedes salir y perder todos los cambios o ir a las opciones del archivo para exportar los datos",
   "retToApp": "volver a la aplicación",
   "name": "nombre",
   "icon": "icono",
@@ -318,6 +316,8 @@
   "appSaveError": "Error de guardado",
   "appSaveErrorBody": "Fallo al guardar automáticamente el archivo",
   "appSaveErrorBodyMul": "Fallo al guardar automáticamente los archivos:",
+  "appSaveErrorExitLoseChanges": "Salir y perder todos los cambios",
+  "appSaveErrorExitLoseChangesBody": "Puedes salir y perder todos los cambios o ir a las opciones del archivo para exportar los datos",
   "appSettingsError": "Error al cargar la aplicación",
   "appSettingsErrorBody": "Se ha producido un error al cargar los ajustes de la aplicación. Por favor, vuelve a comprobar la URL o contacta con tu administrador.",
   "appNotSupportedError": "Tu navegador no soporta algunas de las características requeridas por esta aplicación.",
