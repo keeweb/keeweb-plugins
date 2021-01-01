@@ -65,14 +65,23 @@ function run() {
         }
         server = http.createServer((req, res) => {
             const origin = req.headers.origin;
+            const userAgent = req.headers['user-agent'] || '';
             const referer = req.headers.referrer || req.headers.referer;
-            if (
-                req.method !== 'POST' ||
-                referer ||
-                (origin &&
-                    !origin.startsWith('chrome-extension://') &&
-                    !origin.startsWith('safari-extension://'))
-            ) {
+            let originIsValid;
+            if (origin) {
+                if (
+                    origin.startsWith('chrome-extension://') ||
+                    origin.startsWith('safari-extension://') ||
+                    // Firefox sends 'null' here, see https://github.com/keeweb/keeweb-plugins/pull/26
+                    (userAgent.includes('Firefox') && origin === 'null')
+                ) {
+                    originIsValid = true;
+                }
+            } else {
+                originIsValid = true;
+            }
+            const isAllowed = req.method === 'POST' && !referer && originIsValid;
+            if (!isAllowed) {
                 if (DebugMode) {
                     logger.debug('Request dropped', req.method, req.url, req.headers);
                 }
