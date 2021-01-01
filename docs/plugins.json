@@ -1,6 +1,6 @@
 {
-  "date": "2020-12-30T10:32:16.364Z",
-  "signature": "lFVMYjuK2pluBoXj+7wuAxrqiY3MYw0xhq9+B+7qEdnYkZ1/sad+DY3Nuw2IBsAEmitIVNddMzEms1NIAyZEaGPvceho75EOisn+LRilsY/QAhUnCvrsazO0dwFaQ2LcxWd4l3eEqm+sFshsj8fvAs2MqONioXiW8aK4iMkxVgkF2PViZuZlM6OYXcFcPAYY3+3/nEg9u0Bw00Aq1lQoAL+vAWNDxJG24A+2OrCERkemW/wdLMZhTF7OeF0H1ezaCC/kJvfZMUTW7pSOmXWLT0+27BdMYr2YWorePdrJyW4J4uZpQmMsUKIrhb6gJPHXqlVt4qNNc0dopBdmUPDrZw==",
+  "date": "2021-01-01T23:06:32.991Z",
+  "signature": "L2jO2jYSSGriPoaPz/dIk94j96t4sZ1guCXu0FnkHtcYKSUsq3NBoxXc/brb8DybtklDhTDcLSVKqfpriFrNexh99a0QN7dPPstgKdI11Cm3R9yic4LQ2EzAzL87QwtoiokfSlXdVbUaEaAFts9zHS98jZ6iE5LU9QRnt1z/nzeYeB39HVSCQSHGk6VqvFwWthyzUgNIXhBcmxo8+FgZmeemoUTe09rfmZbvUQEABzd6EHoUbuQnugNo8OZ9lTnCrK8Wtz0VrYtiSFfSRjendHVMSyArkRee9vPOlCRXYQRCSGDazZwkI6w9zlxbU5dHYIOacKM9M05bgYA2v9CdKA==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -344,7 +344,7 @@
       "url": "https://plugins.keeweb.info/plugins/keewebhttp",
       "official": true,
       "manifest": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "manifestVersion": "0.1.0",
         "versionMin": "1.11.0",
         "name": "keewebhttp",
@@ -357,7 +357,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/plugins/keewebhttp",
         "resources": {
-          "js": "eSZB8/wvbPI20d4w+Uls9+QE6r1qpwPnjCXgukIA5y2WoVd0qXn/QRf6Pu+3AJNwiFQMZRZyAsC9BJRbUC7vLyycHr+MQGdYEANe3idDYSlmObOf9EXhX179+/TQTVq+lMPSnPgg7Y9xhYCq91WjtUK0in1Ozy0x2EoQjSH8IhroBwY499CU1eaFOAB4JBtSJfm52x4mFpmH93Gg1yVzynYOXfqm5fis2yGElqPe1ePfreZdUWYmDlK9E8/sRlx6jxQ/fjvX8CJ30ZH+VwPseOrnfqejKqbQoE60hrtwhaDke2UZaksXlZJn5dKQin7M9T0Ig6PLx5EJOm12mrSEjA=="
+          "js": "LlPkehKQKbE9xZHoatfNHSx4TA4nZlzuu1ul1YVSJXW9FOmpY7FTVlU50Kl1sXBDwNNnj4sRmBpZ/SZbo7ALOx258iFZVUy+c2O2CSsQnxTmHBH0zoG3Pdse+ByxMszj/guH2Xeiq6q9wtjJszP3RwBNcxOxirjd3FFzNA4jS877Llu29MaadApOBZr+MCgHTzuFoNNU5DYnT5qCbxnW9U9FisiT5JIFsGagy+rEg1MMPtUnVdjFp27Fn8TtrrJr+BsVrQS+FjzV5EGHLqC+piBz5ljysl1yJDU3oFBytADDZjXQAgIjk/OvQDOIJ9/peOIm4NY43f6m8qYg9zVFqg=="
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
         "desktop": true
