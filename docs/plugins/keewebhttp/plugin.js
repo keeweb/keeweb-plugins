@@ -36,13 +36,13 @@ function run() {
     let uninstalled;
     let server;
 
-    uninstall = function() {
+    uninstall = function () {
         uninstalled = true;
         removeEventListeners();
         stopServer();
     };
 
-    restart = function() {
+    restart = function () {
         stopServer();
         startServer();
     };
@@ -66,8 +66,12 @@ function run() {
         server = http.createServer((req, res) => {
             const origin = req.headers.origin;
             const referer = req.headers.referrer || req.headers.referer;
-            if (req.method !== 'POST' || referer || origin &&
-                !origin.startsWith('chrome-extension://') && !origin.startsWith('safari-extension://')
+            if (
+                req.method !== 'POST' ||
+                referer ||
+                (origin &&
+                    !origin.startsWith('chrome-extension://') &&
+                    !origin.startsWith('safari-extension://'))
             ) {
                 if (DebugMode) {
                     logger.debug('Request dropped', req.method, req.url, req.headers);
@@ -78,22 +82,20 @@ function run() {
             }
             if (req.method === 'POST') {
                 const body = [];
-                req.on('data', data => body.push(data));
+                req.on('data', (data) => body.push(data));
                 req.on('end', () => {
                     const postData = Buffer.concat(body).toString();
                     if (DebugMode) {
                         logger.debug('< ' + postData);
                     }
-                    new RequestContext(postData)
-                        .handle()
-                        .then(response => {
-                            if (DebugMode) {
-                                logger.debug('> ' + response);
-                            }
-                            res.statusCode = 200;
-                            res.setHeader('Content-Type', 'application/json');
-                            res.end(response);
-                        });
+                    new RequestContext(postData).handle().then((response) => {
+                        if (DebugMode) {
+                            logger.debug('> ' + response);
+                        }
+                        res.statusCode = 200;
+                        res.setHeader('Content-Type', 'application/json');
+                        res.end(response);
+                    });
                 });
             }
         });
@@ -106,7 +108,7 @@ function run() {
             }
             logger.debug(`Server running at http://${hostname}:${port}/`);
         });
-        server.on('connection', conn => {
+        server.on('connection', (conn) => {
             const key = conn.remoteAddress + ':' + conn.remotePort;
             server.conn[key] = conn;
             conn.on('close', () => {
@@ -136,7 +138,7 @@ function run() {
     }
 
     function readAllKeys() {
-        AppModel.instance.files.forEach(file => readKeys(file));
+        AppModel.instance.files.forEach((file) => readKeys(file));
     }
 
     function readKeys(file) {
@@ -162,7 +164,7 @@ function run() {
     }
 
     function writeAddedKeysToAllFiles() {
-        AppModel.instance.files.forEach(file => {
+        AppModel.instance.files.forEach((file) => {
             writeAddedKeys(file);
         });
     }
@@ -207,7 +209,7 @@ function run() {
                 this.req = JSON.parse(this.postData);
                 const response = this.execute() || this.resp;
                 if (response instanceof Promise) {
-                    result = response.catch(e => {
+                    result = response.catch((e) => {
                         return this.makeError(e);
                     });
                 } else {
@@ -216,7 +218,7 @@ function run() {
             } catch (e) {
                 result = Promise.resolve(this.makeError(e));
             }
-            return result.then(res => JSON.stringify(res));
+            return result.then((res) => JSON.stringify(res));
         }
 
         execute() {
@@ -228,9 +230,9 @@ function run() {
                 case 'get-logins':
                     return this.getLogins({});
                 case 'get-logins-count':
-                    return this.getLogins({onlyCount: true});
+                    return this.getLogins({ onlyCount: true });
                 case 'get-all-logins':
-                    return this.getLogins({all: true});
+                    return this.getLogins({ all: true });
                 case 'set-login':
                     return this.setLogin();
                 case 'generate-password':
@@ -241,7 +243,7 @@ function run() {
         }
 
         makeError(e, skipLog) {
-            const requestType = this.req && this.req.RequestType || '';
+            const requestType = (this.req && this.req.RequestType) || '';
             if (!skipLog) {
                 logger.error('handleRequest error', requestType, e);
             }
@@ -284,7 +286,9 @@ function run() {
             } else {
                 data = Buffer.from(value, 'utf8');
             }
-            const encrypted = Buffer.concat([cipher.update(data), cipher.final()]).toString('base64');
+            const encrypted = Buffer.concat([cipher.update(data), cipher.final()]).toString(
+                'base64'
+            );
             data.fill(0);
             return encrypted;
         }
@@ -324,7 +328,10 @@ function run() {
                 const key = Buffer.from(keys[this.req.Id], 'base64');
                 const nonce = crypto.randomBytes(16);
                 const cipher = crypto.createCipheriv('aes-256-cbc', key, nonce);
-                const encrypted = Buffer.concat([cipher.update(nonce.toString('base64'), 'utf8'), cipher.final()]).toString('base64');
+                const encrypted = Buffer.concat([
+                    cipher.update(nonce.toString('base64'), 'utf8'),
+                    cipher.final()
+                ]).toString('base64');
                 resp.Id = this.req.Id;
                 resp.Nonce = nonce.toString('base64');
                 resp.Verifier = encrypted;
@@ -357,7 +364,8 @@ function run() {
                 Alerts.yesno({
                     icon: 'plug',
                     header: 'External Connection',
-                    body: 'Some app is trying to manage passwords in KeeWeb. If you are setting up your plugin, please allow the connection. Otherwise, click No.',
+                    body:
+                        'Some app is trying to manage passwords in KeeWeb. If you are setting up your plugin, please allow the connection. Otherwise, click No.',
                     success: () => {
                         resolve();
                     },
@@ -387,7 +395,7 @@ function run() {
             }
             const url = this.req.Url ? this.decrypt(this.req.Url) : '';
             this.createResponse();
-            const filter = new AutoTypeFilter({url}, AppModel.instance);
+            const filter = new AutoTypeFilter({ url }, AppModel.instance);
             if (config.all) {
                 filter.ignoreWindowInfo = true;
             }
@@ -395,7 +403,7 @@ function run() {
             this.resp.Count = entries.length;
             logger.info(`getLogins(${url}): ${this.resp.Count}`);
             if (!config.onlyCount) {
-                this.resp.Entries = entries.map(entry => {
+                this.resp.Entries = entries.map((entry) => {
                     let customFields = null;
                     for (const field of Object.keys(entry.fields)) {
                         if (!customFields) {
@@ -428,7 +436,7 @@ function run() {
 
             if (uuid) {
                 let result = 'not found';
-                AppModel.instance.files.forEach(file => {
+                AppModel.instance.files.forEach((file) => {
                     const entry = file.getEntry(file.subId(uuid));
                     if (entry) {
                         if (entry.user !== login) {
@@ -444,8 +452,8 @@ function run() {
             } else {
                 logger.info(`setLogin(${url}, ${login}, ${password.length}): inserted`);
                 let group, file;
-                AppModel.instance.files.forEach(f => {
-                    f.forEachGroup(g => {
+                AppModel.instance.files.forEach((f) => {
+                    f.forEachGroup((g) => {
                         if (g.title === CreatePasswordsGroupTitle) {
                             group = g;
                             file = f;
@@ -458,8 +466,10 @@ function run() {
                     group.setName(CreatePasswordsGroupTitle);
                 }
                 const entry = EntryModel.newEntry(group, file);
-                const domain = url.match(/^(?:\w+:\/\/)?(?:(?:www|wwws|secure)\.)?([^\/]+)\/?(?:.*)/);
-                const title = domain && domain[1] || 'Saved Password';
+                const domain = url.match(
+                    /^(?:\w+:\/\/)?(?:(?:www|wwws|secure)\.)?([^\/]+)\/?(?:.*)/
+                );
+                const title = (domain && domain[1]) || 'Saved Password';
                 entry.setField('Title', title);
                 entry.setField('URL', url);
                 entry.setField('UserName', login);
@@ -473,33 +483,38 @@ function run() {
         generatePassword() {
             this.verifyRequest();
             this.createResponse();
-            const preset = GeneratorPresets.all.filter(p => p.default)[0] || GeneratorPresets.defaultPreset;
+            const preset =
+                GeneratorPresets.all.filter((p) => p.default)[0] || GeneratorPresets.defaultPreset;
             const password = PasswordGenerator.generate(preset);
             const bits = Buffer.from(password, 'utf8').byteLength * 8;
             this.resp.Count = 1;
-            this.resp.Entries = [{
-                Login: this.encrypt(bits.toString()),
-                Name: '',
-                Password: this.encrypt(password),
-                StringFields: null,
-                Uuid: ''
-            }];
+            this.resp.Entries = [
+                {
+                    Login: this.encrypt(bits.toString()),
+                    Name: '',
+                    Password: this.encrypt(password),
+                    StringFields: null,
+                    Uuid: ''
+                }
+            ];
         }
     }
 }
 
-module.exports.getSettings = function() {
-    return [{
-        name: 'ServerPort',
-        label: 'Port to listen to (do not change this setting without a special need to do so)',
-        type: 'text',
-        maxlength: 5,
-        placeholder: '19455',
-        value: '19455'
-    }];
+module.exports.getSettings = function () {
+    return [
+        {
+            name: 'ServerPort',
+            label: 'Port to listen to (do not change this setting without a special need to do so)',
+            type: 'text',
+            maxlength: 5,
+            placeholder: '19455',
+            value: '19455'
+        }
+    ];
 };
 
-module.exports.setSettings = function(changes) {
+module.exports.setSettings = function (changes) {
     if (changes.ServerPort) {
         const port = +changes.ServerPort;
         if (port > 1024 && port < 65535) {
@@ -511,7 +526,7 @@ module.exports.setSettings = function(changes) {
     }
 };
 
-module.exports.uninstall = function() {
+module.exports.uninstall = function () {
     if (uninstall) {
         uninstall();
     } else {
