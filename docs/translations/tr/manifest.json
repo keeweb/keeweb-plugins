@@ -1,5 +1,5 @@
 {
-  "version": "1.17.0",
+  "version": "1.18.0",
   "manifestVersion": "0.1.0",
   "name": "language-turkish",
   "description": "Turkish language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=tr",
   "resources": {
-    "loc": "Q4O/WJ/3a5DSbAIN8REBgX6CPV7ke9CoLqIJxL8FDOm8ASVe6Rhsn9DKIAXWMGJuC3GZl7eu8HE6qIcd3MMu285Y+iQ0Nt4HPv1phyiM4LoAUpTAKAqXfsZedRGFNKFKXePSpd3OmK6jy0wjZVCd0hJC/NUF+vyofJn/WqBdZGE0gVZD0cx87EoE/Qp4dbv2yp4LqkDxwuO4WfxZXVW913jnPnTG9jHdLJF1fcU/nI/TQnd6ce3fHdBrXNgVFexB0tpfDpjM8zSMjcRG2ihBGG9C3F2eeVqakCH3vbTHN0S1fJycjzo/PfC86l+mar1xJHv6Uy9iGVbegWgBDMj0ig=="
+    "loc": "FBedthhl/j9ttp10Dp9C11H7L2lofhhXaUqpfELtdFIM5OOkOUFiG2+kdrdUlYdUt86WhTytjLRkJXPWapyQJfY+iqD36kHgoXcI3UcKeK7oo0yHaptmQHdBTxCPX1pJfKM9IOEJFlC6MuC6hbYnzAdr0iFeB7VFcqmd+mJLkUXyIUjdRftARqOkpuFUVH0tJ3tJ+VbCWi1WhDm+Ti8jKY86NDJMvDWHZvgGzoKjO1Fdnk/DZ/u8Ed8Q9nRs1P20bkYSu0VU8RULLd3aeBeX43bSUopKNxdtPyrKSoAFsCSbKe2KVloR8soinSYtFOa1RHiKqSPlGpbbdaLnu0p5zg=="
   },
   "locale": {
     "name": "tr",
