@@ -8,7 +8,7 @@ If you would like to open an issue, please do it in the [KeeWeb repo](https://gi
 
 ## Translations
 
-You can add or edit translations [here](http://keeweb.oneskyapp.com/), they will be imported automatically.
+You can add or edit translations [here](https://keeweb.oneskyapp.com/), they will be imported automatically.
 
 ## Scripts
 
