@@ -355,7 +355,7 @@
   "setGenExtractingUpdate": "Frissítés kibontása...",
   "setGenCheckErr": "Hiba történt az új verzió letöltése során",
   "setGenNeverChecked": "Soha nem keresett még frissítést",
-  "setGenRestartToUpdate": "Indítsa újra az alkalmazást a frissítéshez",
+  "setGenRestartToUpdate": "Indítsa újra a KeeWebet a frissítéshez",
   "setGenDownloadAndRestart": "Frissítés letöltése és újraindítás",
   "setGenAppearance": "Megjelenés",
   "setGenTheme": "Téma",
