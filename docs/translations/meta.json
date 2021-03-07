@@ -26,14 +26,14 @@
   "pl": {
     "name": "Polski",
     "nameEn": "Polish",
-    "count": 678,
-    "version": "1.27.0"
+    "count": 682,
+    "version": "1.28.0"
   },
   "hu": {
     "name": "Magyar",
     "nameEn": "Hungarian",
-    "count": 654,
-    "version": "1.29.0"
+    "count": 670,
+    "version": "1.30.0"
   },
   "da": {
     "name": "Dansk",
@@ -68,8 +68,8 @@
   "nl-NL": {
     "name": "Nederlands",
     "nameEn": "Dutch",
-    "count": 678,
-    "version": "1.32.0"
+    "count": 682,
+    "version": "1.33.0"
   },
   "fr-FR": {
     "name": "Français",
