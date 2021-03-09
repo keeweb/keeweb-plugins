@@ -1,5 +1,5 @@
 {
-  "version": "1.8.0",
+  "version": "1.9.0",
   "manifestVersion": "0.1.0",
   "name": "language-slovak",
   "description": "Slovak language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=sk",
   "resources": {
-    "loc": "d1UjZdTKp9TojiFxsJ0xg5S0RjnChSorKZDVHaB3AFLQ/xcGgjz1vcvaCjw/03tPHPJe+ra1MvF5HooCzsIQHu5etP43gdn07W5ZOw/2RlAfNhrj8JtF4vi8jwmLRpV/hQbD/5QbjIiK5OyIWQLRL9y2yadqI03sgws95wIF2HyfED04NHRcfMWfalPR6rgp9AM9FP2d6zjXby3OFWcPL9EQppRcoNqy6wo9u6sGc/VD8qiZ9kKy487PhX1tNG1QgfVbW3e4hBmUxH0EeQRsLx8LyMySUWlt7GNRKu9TW7tpzJbPlcsGFXLT20vZKvlQ64vvcqRFUsbwIVqn4b53sQ=="
+    "loc": "f1Xrd/YnBhNzPeuvEh55ORd6V90VGRC1p9XuWvQbRARlhL1MmV7HFjuk5EuZd4AR1TEbdZirFYm0sV5MZ6cLKkZbIEqBAyDPmdPuy8m5POssV99sFhTs/tBHtkPQakxxNB2uhhaczttwr+bDYBsQjSyw6vSeIPxYaXA0goOJBzlvQQBRUu+50/Z47QLlQFrQtafxsjw1CFkDwy9C8xWgm1rtxlHdCyEx3a6UJF+ldkhVdq/a7gI2Fp+lOzp9fbbENJGYvWQYScCaIriNEs4XQPRtfGyosqqMtq9SAhw61UkewPHj4PKuOdSC+8NUDbKxKIuQ8+3gmk+IQ77Ot0DZ/w=="
   },
   "locale": {
     "name": "sk",

@@ -44,8 +44,8 @@
   "sk": {
     "name": "Slovenčina",
     "nameEn": "Slovak",
-    "count": 660,
-    "version": "1.8.0"
+    "count": 682,
+    "version": "1.9.0"
   },
   "uk": {
     "name": "Українська",
@@ -69,7 +69,7 @@
     "name": "Nederlands",
     "nameEn": "Dutch",
     "count": 682,
-    "version": "1.33.0"
+    "version": "1.34.0"
   },
   "fr-FR": {
     "name": "Français",
