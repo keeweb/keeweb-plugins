@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0",
+  "version": "1.11.0",
   "manifestVersion": "0.1.0",
   "name": "language-japanese",
   "description": "Japanese language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=ja",
   "resources": {
-    "loc": "M2Xr50J+5I4halm3sMah95db3QDsIxACq1jPD9QLtH5cHtp2WxWcK+qGcQTWmpPa7UCcUvtOvXA1op0m73IHPp50B8zrmuWiGt22IlaIT7kXsNfldWAV9Ze/KAK/LGU04L+Oi8+Vcthmh+yUDwGOtVLfgKSFXVlnCazgG/vCiCLPvOMA21GNYk6CN5XgqwMAWr08zyEBf7xA0zYoisBgix3bUOxeow01AEAg+HaNF80c2NtnZGLPvcQ68NDwcxvK2u+gqtetemavlRDQ9ZC7S7XY9NoYj7E2u/hlPhLWHZ2T5ZtfAvgLBLLTeXQ8WJj0Xr+LnvmWfW1SJH4pfXhUiQ=="
+    "loc": "jTb2FlX92zJHsVyCL1oZRmK4C40iL63UBRBo1bhGMxECadPcrK7ikNxVatDtB2awISUQSkf2Z7+n6DL/+gsGyYhX8QQ/vew19o4I+lLI2ly4ib35jEkAed+BRdos+PnUz8jL8knTh29lAhenOK4XB6XYCzEjHmpyazLBXmW9/Y1MMO3UkzEnSGIeJlxiLumDsUNJa+eGyRqzFY1ShbXcYTD82grBioSDxv9rgWl0w8cJAw3oztOy81RQLwTMhUWP77RjrI/GXhu72vB8dNEiZpydEWCxqN/dJ6XCurIPPx6bXcnUr3/kaLXGrlYdr44wvMQpdrgTKfCT7cLCNvMtRg=="
   },
   "locale": {
     "name": "ja",

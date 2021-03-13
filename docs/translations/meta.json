@@ -14,8 +14,8 @@
   "ja": {
     "name": "日本語",
     "nameEn": "Japanese",
-    "count": 650,
-    "version": "1.10.0"
+    "count": 673,
+    "version": "1.11.0"
   },
   "tr": {
     "name": "Türkçe",
@@ -80,8 +80,8 @@
   "de-DE": {
     "name": "Deutsch",
     "nameEn": "German",
-    "count": 637,
-    "version": "1.23.0"
+    "count": 667,
+    "version": "1.24.0"
   },
   "it-IT": {
     "name": "Italiano",
@@ -92,8 +92,8 @@
   "ru-RU": {
     "name": "Русский",
     "nameEn": "Russian",
-    "count": 632,
-    "version": "1.26.0"
+    "count": 644,
+    "version": "1.27.0"
   },
   "es-ES": {
     "name": "Español",
