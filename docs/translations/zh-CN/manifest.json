@@ -1,5 +1,5 @@
 {
-  "version": "1.18.0",
+  "version": "1.19.0",
   "manifestVersion": "0.1.0",
   "name": "language-chinese-simplified",
   "description": "Chinese Simplified language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=zh-CN",
   "resources": {
-    "loc": "A3pVsSD3dOeINF1m7HI71gnBkbEYKw5anqJtVtkqzT10tY3rkZaQYQMg4juhMxQQQIjgTd4x+gnlm6mNEI8sFG4s5LQSikPXTuoDSVv/Hi9+yoFDqOfricRYdnxG+dOTysnT2eTyehZLCurSkwBsW+kYG236FvYuU2/TkSLpL9uZhywP2/BxbdgqyOX2yfTxlg+09Q6F6o3fZ9y0/LIiT6Sid+rl1WVq7sdk4i8HcbOIEM9hAd5t5i0LQZ7osyYR2t2RJu3+412TS/alFb1JC5nCtNQppsoZMW83nIliOoawDOWSLueqMumElB3XOiSl/nEwYOVseWTwf2FiXW4aLw=="
+    "loc": "W0RbO55BeH0l4nf+0yUS3kF16t16xHfqa1cQSwJPaclq5+BrMZriCcghup+avHwhD+HQ/LJV/Qf/tgiRyI1brmW88GLWJrCiHFgD8w1qf7yXndQjmR3MJRA87Cewq+/G+DfOknOBhZXgKEOXq2SGJjfSwV5+PHVcHWNVxeT4RxA+b8g1CCNhGsSWVH2LfhJF0BauhMiQRcxT87XfrM2ZNvFCabwcQficmlzfNoSLBTUmJa5V5YXh+k+PN9RVGKPyVS9KzsB+V27KglvzIWjDNBtX8I32p1J1yZSp5IL3V08KpxXY8ADjk/2Wz36o04VI5ktEh1I1eDsv/NSImBtNrQ=="
   },
   "locale": {
     "name": "zh-CN",
