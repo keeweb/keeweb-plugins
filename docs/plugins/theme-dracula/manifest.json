@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifestVersion": "0.1.0",
   "name": "theme-dracula",
   "description": "Dracula Theme",
@@ -9,7 +9,7 @@
     "url": "https://www.neffware.com"
   },
   "resources": {
-    "css": "F4GImunAWEmyFBJq0wU+cgPzWtMfO47MPSC4nTSS6gQ1H2ETIPwYn2thlL5A7uM3QS2S6lJ8XDtvWdAGMRZ68RaLW+bMGgXjWMmZwdErqH/nVccGpEK6WoHWB+NYyz054kxX0+WocMc2zdmcvrhXpGFc7xgLHH+raKYNyAo8cS3nl0y75MyqzP7rw7okaU/+5blsxrouPHL4BJJVUJAPg9v+aSH8byK4kg0mqZwNp8abZTT9+7cwJPwJBH6YlNljmFTZkVihzJn++TqIOXy/ohmZuUvxVJo+I5pJ/LWSt/g2lVN5kiYDZm4Ej5G7/r8jmmarWshlJSPJY5KdGRV4zg=="
+    "css": "CszITip1aE42dKjNDSH3hl5dlrIw6NdTjp5W6/q8Gsl5v0yQGhpoQAdJAhESD2Fh2gkaepinCIFh0nnbkfFRnCS69/wk1MdBtxTW4KrJxR2DznGjs0dKndJxAtEiDACaOTsJY+oYu+KibWpy2hjyGLDmmqJbPz9CBdHHQe81sfNhZgsgJw5Kxd6hJ/U8tWJeSL4/Z5iEn8oCDxCit59KmOBmU+9rMYSdAfdSM5a+pooxvpDvDtFOk05fFELEVRX0BoV+1zLpB4hvN2Mjn7JhzYVibV797eweaYFF7SpG7My11Aq9krK4m+8K2l/XxKehmfdxTEXV9Os988iO65aB/Q=="
   },
   "license": "MIT",
   "url": "https://plugins.keeweb.info/plugins/theme-dracula",

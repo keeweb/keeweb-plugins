@@ -1,6 +1,6 @@
 {
-  "date": "2021-03-22T22:04:20.533Z",
-  "signature": "ewQg8o44ITRBpL5US/ayZFSw8p3FDTZdVjyXN2BVQ4B2vRmEq5bJffvmdlPK2qQTGpuKZddEy0pFh/V+MODno7EqXPRbvH0WPUFBtKu6KyW7K3rGVwFpHlpFYmcvdXLPdjZ/YT/JqNmmG8qzi0cdm7fzH7ONoUWkCB6ixmcJj+hb+XEvivoxEAuwVxkOM7srG0CoPAAa0RiV9HOdeoeVFd8LecpL9VyG77a1EeR0K/QpjjdgB1T4aegbsQOuesrBOCv1qVFILsvQnpskoze4H7AQYY1Fgt7pdQL8JWmfu8OUQg3RGll/FZfFOuuq5lrYCPNY+7F2j1Pzq+WGpkgRiQ==",
+  "date": "2021-03-22T22:08:08.830Z",
+  "signature": "cjdETqn9X5PkCBV8IkC38MukjUezQLxbBSjV7c2QfEcxEEsH1+mpUCbvA+QC1qIxNSY78T3hJr5ZWpUBWMKaatPh3QCV8+QFiLo1C9vjvb2gsJfkzzwDafwxRb+jxxyavFawxTruTZ/SV3j0P2Gc7ykBz1kzUEHlP/YYSTYvlj2QIO+3HIyE14ArPC7RrVFKfyNL8xTKVfLk/gQ2HD5iXGVHTNejK3kHkHf50CMXB5xwKjK3ZjKB0P1sk+MuGPRZWQZj8+WE1CW4WuDLm2ZuOnO2u9Yee6zfPWr6N4EOaK1rvXWhYKpZ9Wch0L2B6QHTdIgjA+zEIu1Vf2QASfpFlw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -893,7 +893,7 @@
     {
       "url": "https://plugins.keeweb.info/plugins/theme-dracula",
       "manifest": {
-        "version": "0.0.2",
+        "version": "0.0.3",
         "manifestVersion": "0.1.0",
         "name": "theme-dracula",
         "description": "Dracula Theme",
@@ -903,7 +903,7 @@
           "url": "https://www.neffware.com"
         },
         "resources": {
-          "css": "F4GImunAWEmyFBJq0wU+cgPzWtMfO47MPSC4nTSS6gQ1H2ETIPwYn2thlL5A7uM3QS2S6lJ8XDtvWdAGMRZ68RaLW+bMGgXjWMmZwdErqH/nVccGpEK6WoHWB+NYyz054kxX0+WocMc2zdmcvrhXpGFc7xgLHH+raKYNyAo8cS3nl0y75MyqzP7rw7okaU/+5blsxrouPHL4BJJVUJAPg9v+aSH8byK4kg0mqZwNp8abZTT9+7cwJPwJBH6YlNljmFTZkVihzJn++TqIOXy/ohmZuUvxVJo+I5pJ/LWSt/g2lVN5kiYDZm4Ej5G7/r8jmmarWshlJSPJY5KdGRV4zg=="
+          "css": "CszITip1aE42dKjNDSH3hl5dlrIw6NdTjp5W6/q8Gsl5v0yQGhpoQAdJAhESD2Fh2gkaepinCIFh0nnbkfFRnCS69/wk1MdBtxTW4KrJxR2DznGjs0dKndJxAtEiDACaOTsJY+oYu+KibWpy2hjyGLDmmqJbPz9CBdHHQe81sfNhZgsgJw5Kxd6hJ/U8tWJeSL4/Z5iEn8oCDxCit59KmOBmU+9rMYSdAfdSM5a+pooxvpDvDtFOk05fFELEVRX0BoV+1zLpB4hvN2Mjn7JhzYVibV797eweaYFF7SpG7My11Aq9krK4m+8K2l/XxKehmfdxTEXV9Os988iO65aB/Q=="
         },
         "license": "MIT",
         "url": "https://plugins.keeweb.info/plugins/theme-dracula",

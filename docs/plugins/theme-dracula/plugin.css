@@ -1,23 +1,24 @@
 .th-dracula {
-  --background-color: #22212c;
-  --medium-color: #9580ff;
-  --text-color: #f8f8f2;
-  --action-color: #8AFF80;
-  --selected-item-text-color: #22212c;
-  --error-color:#e7655b;
-  --accent-border-color: #FF80BF;
-  --selected-item-color:#FF80BF;
-  --selected-on-secondary-item-color: #6ad1c0;
-  --text-selection-bg-color: #454158;
+    --background-color: #22212c;
+    --medium-color: #9580ff;
+    --text-color: #f8f8f2;
+    --action-color: #8AFF80;
+    --selected-item-text-color: #22212c;
+    --error-color: #e7655b;
+    --accent-border-color: #FF80BF;
+    --selected-item-color: #FF80BF;
+    --selected-on-secondary-item-color: #6ad1c0;
+    --text-selection-bg-color: #454158;
 }
 
-.th-dracula .menu__item--active.menu__item--hover>.menu__item-body, .menu__item--active>.menu__item-body{
-  --selected-item-text-color: #22212c;
-  color:#22212c;
+.th-dracula .menu__item--active.menu__item--hover > .menu__item-body,
+.th-dracula .menu__item--active > .menu__item-body {
+    --selected-item-text-color: #22212c;
+    color: #22212c;
 }
 
 .th-dracula .list__item-icon {
-	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 }
 
 .th-dracula input[type='text']:active,
@@ -28,13 +29,13 @@
 .th-dracula input:not([type]):focus,
 .th-dracula textarea:active,
 .th-dracula textarea:focus {
-  border: 2px solid rgba(106, 209, 192, 0.8);
-  box-shadow: 0px 0px 3px #22212c;
+    border: 2px solid rgba(106, 209, 192, 0.8);
+    box-shadow: 0px 0px 3px #22212c;
 }
 
 .th-dracula input[type="button"],
 .th-dracula input[type="reset"],
 .th-dracula input[type="submit"],
-.th-dracula button{
-  color: #22212c;
+.th-dracula button {
+    color: #22212c;
 }
