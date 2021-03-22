@@ -1,6 +1,6 @@
 {
-  "date": "2021-03-20T19:12:54.301Z",
-  "signature": "X8S8RiyPxHRlFpOXk3wNTTEDh48EH5vRF5NUV9Dy+px4rDlYlDbHwysJ3nb2ztzZeVZDhFmq+dQPw67tr2pKDRBOAA5ZT+gposPgYnvfrRgtOsTbiB9NWX5NgRNkuSxzFHhMoe1CaN64ScpNraPSn9TS4ynAxOzYp7MArHg3fadu7oylK6FwRcvuVwfWkbNeSIdm1wpJrFKcKFkmSRKmxkfaO+MyA9MObWX1B3FGxOJp+1S0N7R8eeGrgpOl6EeEMTw/I14Kvzm+1i+mTGTwZfLYl67nsj8mOmyrsmkrPtCZldQCS0ywB+FMZHvlbqaidZZHrkYZs4Ngh9sthviGIg==",
+  "date": "2021-03-22T20:07:59.221Z",
+  "signature": "jXANdM+RMrkRwzTEwV4B2Hj5hV3ZZ5jQ2YCerIe/2EXH5dzttc1wJipJEbPe34x7HPW4jIY2ZZjzFngxDH2+QBqOFiBE60x9+pOsnPwqrF62u3INhJ2PiXxxVuy2bj2pd5wIdWgdQAGMzozDu8Z4Zwyf6eYD3biGdJpdOwfO4Y3KChXUwzDbDkBQwpgfzO2H/3BsMHvLcFTsOcGe7PRjzfZCj8p/EY/eUIucQWWL3R52VeLKqpTsKl9rEPYx+52TmZPiSkmAQzg+dmYHWKIiMahGadZ0y/M/r1xrx0avxs17n7R7kpdBFDEoIGKY2x+78iop9GgCjDaoJn0wThVRFA==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -568,7 +568,7 @@
       "url": "https://plugins.keeweb.info/translations/uk",
       "official": true,
       "manifest": {
-        "version": "1.16.0",
+        "version": "1.17.0",
         "manifestVersion": "0.1.0",
         "name": "language-ukrainian",
         "description": "Ukrainian language",
@@ -580,7 +580,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=uk",
         "resources": {
-          "loc": "OO+L5Eiqc7Vk08340hedMQx+HV5SQZ4TzlLaKOJSl+Xs7KIGfW/vGuW8JNRDdSoYqBHTcWXtJ8Z6/Czz6X89l4hKBR3fZqPnJ7YgWIowJ0rhX0hsaVJVRaH/G18K4o52itY/YZFuxa9Qr3lBRUeQLEiRyFP4Ti3q75WHlWbzjc4/9E5VcWQbbxwqWFBlwhzl9tMGJdKP2+efS4pIqU431ozz/s47bpCLxwbLfyEw4j/nKavY7tjJPup2G6uC1Nj0LoO7DTKxErKdUmFb/IlGmoRDZY0s/scAkTax60nQIWOk4NTwcoD1bCNFg90FUTSiHe8TYSz0tM2BdK8klQUahQ=="
+          "loc": "L/HVYUB42umuegmQRvycM5ptzE/WD7arzkxXOvQWkc7oX+gXR/vCJ+UqfYYeV0EA7D6xdQDirOVZ0w1nl7eT84zyPVbmL1kocGYzpAzaS5/0pk2l8YlNxNAlVyFuNzA0SagVq9HS+GGStqhFSCxEdXvKcpTdnR7W+dtbOyEjmuxEfKfesFuJN8dhqjOEyPjyGUL3fJp2T4u+wbka7e17OqJPgIr+mqhdAhJbBBfdVr1yBaiz3jOS3yoWl0GK0gpPBNopvRt/ABl7JIF7PkhepK2ZTRzU18CK+jrh23wc2tr65Zwx3BEIcL2gbuezPXLNr94l6c7xn8iB1WU0F6lZ3w=="
         },
         "locale": {
           "name": "uk",
