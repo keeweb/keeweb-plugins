@@ -1,6 +1,6 @@
 {
-  "date": "2021-03-23T18:29:02.321Z",
-  "signature": "O15aUHN878UUcaYRHdaMDbwCRmH7tT9wkrZ1eFCEuWIHIbgnfFLgwMnO2s1lchxrXBUeBEYAzPuwpuEN10/A30M1vZiNGLrIxeesI9IVnrw+xjnkk+PEuPCvbzlSoltEjHBLmy0hnhpC3fCQaAda8LT+nYCEyB8ls1QYaP+Ikdt+D9P7ajhgdYH5VBeXny5l4CBvZDgJSySKgtBwg8OP2jXnWVza8gvO2KPKc9Uu6Nl6xLIYi89bhLpG07K2dHVrkGELpzpJ/Yg8d3+zBoWQ5D4R+8bvlm0AgQMbWNE6Q1RY+IZcyCPSgt/U4Oc8PCC8vg6lzmoFoArvkual2aWqgA==",
+  "date": "2021-03-23T18:32:03.433Z",
+  "signature": "h7jTl0KMajgQEBBySnV6gU1OFSiEvn/OUewpKge8824f1la4lCk38kD9Fmc/Uj+udXjwEk3SdsiSW8OoZLZJnFVxR+ZHoV9QT8Z0t16uwFgY5UbCLG/MVAQrplUcB4QqkTFXd/Il9wX+ccAMMh9K8Ut/2jEobddDA4k/VOrH3Wc0yXklQd3AJiPBKndQO3RFwT5dRikOgJH9NadMIoF6kFl1nZTIxlZtsd3zNHOP3WHYblEAziI3mwJvzUXe6eVvyeW7Uk9+8xPCOoemXFJpqgYD+f4ORakZb4nziA4T9siG/YNjpW+Wa2doFkmYZQ6GQlCcYEj57IbdlyYD+waCsw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -893,7 +893,7 @@
     {
       "url": "https://plugins.keeweb.info/plugins/theme-dracula",
       "manifest": {
-        "version": "0.0.4",
+        "version": "0.0.5",
         "manifestVersion": "0.1.0",
         "name": "theme-dracula",
         "description": "Dracula Theme",
@@ -907,7 +907,7 @@
         },
         "license": "MIT",
         "url": "https://plugins.keeweb.info/plugins/theme-dracula",
-        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqAMAAs64MZzhMo9fqbKXm7dtzS7AdH7kcN3WI864L+t8cdhoUm06vv1k4Y75d687LQLQQlkr4gNjYSMGr+aQ3s28Z9oRcwRj3PhBE6RTYQw+X5uDIPzkfe2EoLRHeiYMn+gPWvyaqYHhgkO6/MO3z3cjkS/6zMLJlz1Nc3fUz5lygsKdEhCGDeDmFBci7aMUtJlBTV8EuoQww8CLBLLyx8iXfIGTwuWg43r8XL1zOMI3F/TjRXmdt+XBK683CoWSRQBZgYeZLcQeju3I6Vu1qyNIfIcTq6EtWnS/c1heJttE/DY0kA6iVlcYLY7NAiQfG408efOaaW+THSMTG6cfWwIDAQAB",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
         "theme": {
           "name": "dracula",
           "title": "Dracula"

@@ -1,5 +1,5 @@
 {
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifestVersion": "0.1.0",
   "name": "theme-dracula",
   "description": "Dracula Theme",
@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "url": "https://plugins.keeweb.info/plugins/theme-dracula",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqAMAAs64MZzhMo9fqbKXm7dtzS7AdH7kcN3WI864L+t8cdhoUm06vv1k4Y75d687LQLQQlkr4gNjYSMGr+aQ3s28Z9oRcwRj3PhBE6RTYQw+X5uDIPzkfe2EoLRHeiYMn+gPWvyaqYHhgkO6/MO3z3cjkS/6zMLJlz1Nc3fUz5lygsKdEhCGDeDmFBci7aMUtJlBTV8EuoQww8CLBLLyx8iXfIGTwuWg43r8XL1zOMI3F/TjRXmdt+XBK683CoWSRQBZgYeZLcQeju3I6Vu1qyNIfIcTq6EtWnS/c1heJttE/DY0kA6iVlcYLY7NAiQfG408efOaaW+THSMTG6cfWwIDAQAB",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
   "theme": {
     "name": "dracula",
     "title": "Dracula"
