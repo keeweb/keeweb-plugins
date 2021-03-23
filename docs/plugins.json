@@ -1,12 +1,12 @@
 {
-  "date": "2021-03-13T18:45:40.375Z",
-  "signature": "XColx6gwpc7EN3qkDdn22lc6ZBe6OZwojSH18IXwcDwJBF2T5e/OKt6NhFLGH6UoB9cUVj+qxyPUlvN8q5rT9akBoeu/W2kZf/t46JQDT+DGkhtoVTJejGZYIX/oFLrexsHAqSyJD6zuwXVZu7JevlVLr47QuYFV448LF7BYlaFsCw7Wmho1kLxCYwTlTQ15pv/wRn+rsEAQpptHrqoVcnDKcE2MA3fkDLlLBmVtl97cASiZJKIi6mIbZsWzUBRqKeceseEdeM2hfYC2g59LkyRdXDKtmr9Uq3S+nfaiN+kP7Xo+zrFqgRZYGJqvb5rIw3gMXZZ8O5wAxf/SFXoXRw==",
+  "date": "2021-03-22T22:08:08.830Z",
+  "signature": "cjdETqn9X5PkCBV8IkC38MukjUezQLxbBSjV7c2QfEcxEEsH1+mpUCbvA+QC1qIxNSY78T3hJr5ZWpUBWMKaatPh3QCV8+QFiLo1C9vjvb2gsJfkzzwDafwxRb+jxxyavFawxTruTZ/SV3j0P2Gc7ykBz1kzUEHlP/YYSTYvlj2QIO+3HIyE14ArPC7RrVFKfyNL8xTKVfLk/gQ2HD5iXGVHTNejK3kHkHf50CMXB5xwKjK3ZjKB0P1sk+MuGPRZWQZj8+WE1CW4WuDLm2ZuOnO2u9Yee6zfPWr6N4EOaK1rvXWhYKpZ9Wch0L2B6QHTdIgjA+zEIu1Vf2QASfpFlw==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
       "official": true,
       "manifest": {
-        "version": "1.18.0",
+        "version": "1.19.0",
         "manifestVersion": "0.1.0",
         "name": "language-chinese-simplified",
         "description": "Chinese Simplified language",
@@ -18,7 +18,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=zh-CN",
         "resources": {
-          "loc": "A3pVsSD3dOeINF1m7HI71gnBkbEYKw5anqJtVtkqzT10tY3rkZaQYQMg4juhMxQQQIjgTd4x+gnlm6mNEI8sFG4s5LQSikPXTuoDSVv/Hi9+yoFDqOfricRYdnxG+dOTysnT2eTyehZLCurSkwBsW+kYG236FvYuU2/TkSLpL9uZhywP2/BxbdgqyOX2yfTxlg+09Q6F6o3fZ9y0/LIiT6Sid+rl1WVq7sdk4i8HcbOIEM9hAd5t5i0LQZ7osyYR2t2RJu3+412TS/alFb1JC5nCtNQppsoZMW83nIliOoawDOWSLueqMumElB3XOiSl/nEwYOVseWTwf2FiXW4aLw=="
+          "loc": "W0RbO55BeH0l4nf+0yUS3kF16t16xHfqa1cQSwJPaclq5+BrMZriCcghup+avHwhD+HQ/LJV/Qf/tgiRyI1brmW88GLWJrCiHFgD8w1qf7yXndQjmR3MJRA87Cewq+/G+DfOknOBhZXgKEOXq2SGJjfSwV5+PHVcHWNVxeT4RxA+b8g1CCNhGsSWVH2LfhJF0BauhMiQRcxT87XfrM2ZNvFCabwcQficmlzfNoSLBTUmJa5V5YXh+k+PN9RVGKPyVS9KzsB+V27KglvzIWjDNBtX8I32p1J1yZSp5IL3V08KpxXY8ADjk/2Wz36o04VI5ktEh1I1eDsv/NSImBtNrQ=="
         },
         "locale": {
           "name": "zh-CN",
@@ -32,7 +32,7 @@
       "url": "https://plugins.keeweb.info/translations/pt-PT",
       "official": true,
       "manifest": {
-        "version": "1.6.1",
+        "version": "1.8.0",
         "manifestVersion": "0.1.0",
         "name": "language-portuguese",
         "description": "Portuguese language",
@@ -44,7 +44,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=pt-PT",
         "resources": {
-          "loc": "FNZ475R0SdGsY/ZwBsF4P4T3LakUPkym8axox04TY8ducShiMXxlrmgNArNTIo8NHWWhmf7LhsNsXLLTW2jMKdLqEIp9+dOKICpO7onZCKwAtvQcjfOtY6zUqDLCpqYAX0gGGMbVH8aYzWCKBwyL1tLT9e/XUuqDEXhfBawMFAx0qNlQc6Fp6QWNryRvRwOyqhX3h8RnJpN53Cgm6rOw1leNws7I8c/q8F3LjloC8YzCLrHAv0WCs00HcgQgBidZ4Z95VQCreT2OpC2iBjduKo4mTRfQMJg1B8/QmzVV73kEIE/mcbNMeGpCJZSmfyiWP29QXc+upvSmbJOWMxqM1g=="
+          "loc": "KxMVTiyziWhk/4JbUJDkS0IKzYusAf0PTyY6CKr2OerRsaVqzPUjxiKxNBsHdVkuDuP8kGnf1iWoo9k2BDn4esCN8+u7/tJrFgEbIWgyFGEwI4fqXlMBG52AOheorhBGinuAbf15fWtx/UU5GtObe/PeEAqdrmhTBf9xsaRvtpL9rFSqJHgv5KS5zaQ2xWbeOgVSHCxvxqtrz7kiNav7UoQjKCl/d7bZtOexF4C0eg0chehJBRLPEgxncLCKLwBXdzjn/Agvt4eEgvJwwxgpN/SFIt5In/B+RK28sd4hayUWT4kfXzGaGUI8BikzBMyBKf0EWj99gTd2AzDnaRQvEA=="
         },
         "locale": {
           "name": "pt-PT",
@@ -568,7 +568,7 @@
       "url": "https://plugins.keeweb.info/translations/uk",
       "official": true,
       "manifest": {
-        "version": "1.16.0",
+        "version": "1.17.0",
         "manifestVersion": "0.1.0",
         "name": "language-ukrainian",
         "description": "Ukrainian language",
@@ -580,7 +580,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=uk",
         "resources": {
-          "loc": "OO+L5Eiqc7Vk08340hedMQx+HV5SQZ4TzlLaKOJSl+Xs7KIGfW/vGuW8JNRDdSoYqBHTcWXtJ8Z6/Czz6X89l4hKBR3fZqPnJ7YgWIowJ0rhX0hsaVJVRaH/G18K4o52itY/YZFuxa9Qr3lBRUeQLEiRyFP4Ti3q75WHlWbzjc4/9E5VcWQbbxwqWFBlwhzl9tMGJdKP2+efS4pIqU431ozz/s47bpCLxwbLfyEw4j/nKavY7tjJPup2G6uC1Nj0LoO7DTKxErKdUmFb/IlGmoRDZY0s/scAkTax60nQIWOk4NTwcoD1bCNFg90FUTSiHe8TYSz0tM2BdK8klQUahQ=="
+          "loc": "L/HVYUB42umuegmQRvycM5ptzE/WD7arzkxXOvQWkc7oX+gXR/vCJ+UqfYYeV0EA7D6xdQDirOVZ0w1nl7eT84zyPVbmL1kocGYzpAzaS5/0pk2l8YlNxNAlVyFuNzA0SagVq9HS+GGStqhFSCxEdXvKcpTdnR7W+dtbOyEjmuxEfKfesFuJN8dhqjOEyPjyGUL3fJp2T4u+wbka7e17OqJPgIr+mqhdAhJbBBfdVr1yBaiz3jOS3yoWl0GK0gpPBNopvRt/ABl7JIF7PkhepK2ZTRzU18CK+jrh23wc2tr65Zwx3BEIcL2gbuezPXLNr94l6c7xn8iB1WU0F6lZ3w=="
         },
         "locale": {
           "name": "uk",
@@ -771,7 +771,7 @@
       "url": "https://plugins.keeweb.info/translations/ja",
       "official": true,
       "manifest": {
-        "version": "1.11.0",
+        "version": "1.12.0",
         "manifestVersion": "0.1.0",
         "name": "language-japanese",
         "description": "Japanese language",
@@ -783,7 +783,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=ja",
         "resources": {
-          "loc": "jTb2FlX92zJHsVyCL1oZRmK4C40iL63UBRBo1bhGMxECadPcrK7ikNxVatDtB2awISUQSkf2Z7+n6DL/+gsGyYhX8QQ/vew19o4I+lLI2ly4ib35jEkAed+BRdos+PnUz8jL8knTh29lAhenOK4XB6XYCzEjHmpyazLBXmW9/Y1MMO3UkzEnSGIeJlxiLumDsUNJa+eGyRqzFY1ShbXcYTD82grBioSDxv9rgWl0w8cJAw3oztOy81RQLwTMhUWP77RjrI/GXhu72vB8dNEiZpydEWCxqN/dJ6XCurIPPx6bXcnUr3/kaLXGrlYdr44wvMQpdrgTKfCT7cLCNvMtRg=="
+          "loc": "CbZzhVecD90zXPkHC/reNdzMZUG9h6RbUIUnz0PUcxcP227zowIezxmch2CZibD575zA3gnhKfFACAxfEVxTYcJ+7Olbxgi4H/yp8ucF0zJtPD3EjKEsRnigPkbBBeTSkgut0DyjxtPmLG+JPdbjVg+FRMKNBCNFmIeo5V+6maDoc9gy8mlsZ14Md5CCGgLqrxM3+H6t6Pkl76oJh+V9PgAE1wZECtWQoMIz3pXLqNtsTJ7UJXOJ72PMPUG34u0r7cEaTPb1IjV4I1NKMME+yTJxuRKoH/h0YmDLpxBvg25mwRAAmTswUGKIuOS45BK7yR3pCVtTjHUTnlMlk03Ryw=="
         },
         "locale": {
           "name": "ja",
@@ -891,24 +891,27 @@
       }
     },
     {
-      "version": "0.0.1",
-      "manifestVersion": "0.1.0",
-      "name": "theme-dracula",
-      "description": "Dracula Theme",
-      "author": {
-        "name": "Neffarion",
-        "email": "main@neffware.com",
-        "url": "https://www.neffware.com"
-      },
-      "resources": {
-        "css": "Ai86UV2oWk11pbQ3LRbjvHAhDkDFoxQ+bFLQ/jkRU+sWx5VJm4KCezEH5Nb9zWfFCQKAXDDvgm1CR9H9XqKGSFTy/m7OCvwiJpkjCytLbv8l6tUHUgUFYj2bKL3DvnMUY7VvMHq4jzJYSFStY2mf5ReZISFD+kg/QKPA+dWKjd9ETQ/O8sJFQK5S/3mW+w3Oi59cs8Why+eLjcfinsS+mzKB8TyoZ6R0l+R8Hx8RcP6n9Jj9Qs29h7AyYRr+QC4LRGpsapJH3h2jxrAcM3RMqKjbGos/yozNw1FyJYbzHthK890SjXR5zWt7tnoGfxNMNOJRG7gQesXqOoGMu9VGew=="
-      },
-      "license": "MIT",
       "url": "https://plugins.keeweb.info/plugins/theme-dracula",
-      "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqAMAAs64MZzhMo9fqbKXm7dtzS7AdH7kcN3WI864L+t8cdhoUm06vv1k4Y75d687LQLQQlkr4gNjYSMGr+aQ3s28Z9oRcwRj3PhBE6RTYQw+X5uDIPzkfe2EoLRHeiYMn+gPWvyaqYHhgkO6/MO3z3cjkS/6zMLJlz1Nc3fUz5lygsKdEhCGDeDmFBci7aMUtJlBTV8EuoQww8CLBLLyx8iXfIGTwuWg43r8XL1zOMI3F/TjRXmdt+XBK683CoWSRQBZgYeZLcQeju3I6Vu1qyNIfIcTq6EtWnS/c1heJttE/DY0kA6iVlcYLY7NAiQfG408efOaaW+THSMTG6cfWwIDAQAB",
-      "theme": {
-        "name": "dracula",
-        "title": "Dracula"
+      "manifest": {
+        "version": "0.0.3",
+        "manifestVersion": "0.1.0",
+        "name": "theme-dracula",
+        "description": "Dracula Theme",
+        "author": {
+          "name": "Neffarion",
+          "email": "main@neffware.com",
+          "url": "https://www.neffware.com"
+        },
+        "resources": {
+          "css": "CszITip1aE42dKjNDSH3hl5dlrIw6NdTjp5W6/q8Gsl5v0yQGhpoQAdJAhESD2Fh2gkaepinCIFh0nnbkfFRnCS69/wk1MdBtxTW4KrJxR2DznGjs0dKndJxAtEiDACaOTsJY+oYu+KibWpy2hjyGLDmmqJbPz9CBdHHQe81sfNhZgsgJw5Kxd6hJ/U8tWJeSL4/Z5iEn8oCDxCit59KmOBmU+9rMYSdAfdSM5a+pooxvpDvDtFOk05fFELEVRX0BoV+1zLpB4hvN2Mjn7JhzYVibV797eweaYFF7SpG7My11Aq9krK4m+8K2l/XxKehmfdxTEXV9Os988iO65aB/Q=="
+        },
+        "license": "MIT",
+        "url": "https://plugins.keeweb.info/plugins/theme-dracula",
+        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
+        "theme": {
+          "name": "dracula",
+          "title": "Dracula"
+        }
       }
     }
   ]
