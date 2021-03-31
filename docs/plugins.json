@@ -1,6 +1,6 @@
 {
-  "date": "2021-03-23T18:32:03.433Z",
-  "signature": "h7jTl0KMajgQEBBySnV6gU1OFSiEvn/OUewpKge8824f1la4lCk38kD9Fmc/Uj+udXjwEk3SdsiSW8OoZLZJnFVxR+ZHoV9QT8Z0t16uwFgY5UbCLG/MVAQrplUcB4QqkTFXd/Il9wX+ccAMMh9K8Ut/2jEobddDA4k/VOrH3Wc0yXklQd3AJiPBKndQO3RFwT5dRikOgJH9NadMIoF6kFl1nZTIxlZtsd3zNHOP3WHYblEAziI3mwJvzUXe6eVvyeW7Uk9+8xPCOoemXFJpqgYD+f4ORakZb4nziA4T9siG/YNjpW+Wa2doFkmYZQ6GQlCcYEj57IbdlyYD+waCsw==",
+  "date": "2021-03-31T15:46:21.336Z",
+  "signature": "TG+JmFqZ5JHqkGOKFVd/Y6sWcXJ8Zpw/51+t+3BgDEKYvlkGDKRdTrljzljsTgSqw1aHeVjEJ3L0VzC2tgTA5O7qKLitFt0CMNfVZJPXRv37N/u6JTgBJ3pE/C562IS90xc1WDV3A9xIOhIuH829Va5sfYL7T/RXbhIr1Uw2+ZD4uyX/mvOM3QjB1eXGjxysRqRst5itFnFnZWdfouFrWlR2IcURgV6frh5CsY1CvBP0iNeW/KTRqJjqPMP/PxNDkm53NYbmm0iaBue66C5E0bV87fVSVTprB+fdVgFHctLBSgTj7Axat2dhy0/4ZDpj17W14R/eQ4fl+xmMvZSICQ==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -568,7 +568,7 @@
       "url": "https://plugins.keeweb.info/translations/uk",
       "official": true,
       "manifest": {
-        "version": "1.18.0",
+        "version": "1.19.0",
         "manifestVersion": "0.1.0",
         "name": "language-ukrainian",
         "description": "Ukrainian language",
@@ -580,7 +580,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=uk",
         "resources": {
-          "loc": "S2uK4rdbFEt8SHokS87ZwF4FVNkTuFwbFKpqTNhc6ULkOFjTNekHCreAWjUdxtWEPHMvDh3Y1cDsyRU456dEMUiNY8JbdNanggm/7pePuurhmfrYehvz+844EXGjgDy/YdwKtf7f7ImxClPxgfdA65qcCRjBFo4uhhHsacvI9JiBJHi9c2J8ggq6JtYov5fbtaLSHA49TCTbJ6Emx21PEUZg9H0uRcDmWSzrynjw4h6GuWVnwbhh7PjKjMgMm7elNSsl3roWJicR+sUKr9IRksnY8F6cMMEZXGD8TSzz3n88JerHFIVRp37pgfVzHJe7N6VjYTLAAqHNg8dbksVpTA=="
+          "loc": "NfnRPyt8Zr+AN3Ug5Jw6uA8wEBuk3v/hqROAfkuxUm+/QnPpzyin9v0GkJNrXH+p6UhvnQ9sdlywcnMp6XsgZdXyhbVpnGYG1Y1bAoyAOt9D6Ex2dvYL3Eofx9ame6F+HikQuvkgmplDZP/7Fi4S2eXFuQXhPO6yIqb7gNmtk6bj6G+KPcSC+QdFDlRPOOqo+qnI12KMd1rAf2qcu8w38vHvWwEQLLTsMBwjxcNWXjOWJ9Uc7uB3rpCOl8txyavR6LtD0ayesiqM7RgZFT2Btk31aFT99x1SOkmCnyNrHvF7/5hXt7UaaQh7UUnwtR7jf7mUR4js3TpB9uH6QIzY0A=="
         },
         "locale": {
           "name": "uk",
