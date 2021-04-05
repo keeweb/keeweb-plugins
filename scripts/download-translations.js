@@ -16,10 +16,7 @@ const PHRASE_COUNT_THRESHOLD_PERCENT = 75;
 const ts = Math.floor(new Date() / 1000);
 
 const hashStr = ts + keys.secret;
-const hash = crypto
-    .createHash('md5')
-    .update(hashStr)
-    .digest('hex');
+const hash = crypto.createHash('md5').update(hashStr).digest('hex');
 const urlParams = {
     'api_key': keys.public,
     'timestamp': ts,
@@ -36,10 +33,10 @@ const publicKey = fs
     .replace(/\n/g, '');
 const defaultCountries = { 'SE': 'sv' };
 
-module.exports = function() {
-    return new Promise(resolve => {
-        loadLanguages(languages =>
-            loadTranslations(translations => resolve(processData(languages, translations)))
+module.exports = function () {
+    return new Promise((resolve) => {
+        loadLanguages((languages) =>
+            loadTranslations((translations) => resolve(processData(languages, translations)))
         );
     });
 
@@ -52,16 +49,16 @@ module.exports = function() {
             API_URL_LANGUAGES.replace(':project_id', PROJECT_ID) +
             '?' +
             Object.keys(urlParams)
-                .map(param => param + '=' + urlParams[param])
+                .map((param) => param + '=' + urlParams[param])
                 .join('&');
-        https.get(url, res => {
+        https.get(url, (res) => {
             if (res.statusCode !== 200) {
                 console.error(`API error ${res.statusCode}`);
                 return;
             }
             console.log('Response received, reading...');
             const data = [];
-            res.on('data', chunk => data.push(chunk));
+            res.on('data', (chunk) => data.push(chunk));
             res.on('end', () => {
                 console.log('Data received, parsing...');
                 const json = Buffer.concat(data).toString('utf8');
@@ -81,16 +78,16 @@ module.exports = function() {
             API_URL.replace(':project_id', PROJECT_ID) +
             '?' +
             Object.keys(urlParams)
-                .map(param => param + '=' + urlParams[param])
+                .map((param) => param + '=' + urlParams[param])
                 .join('&');
-        https.get(url, res => {
+        https.get(url, (res) => {
             if (res.statusCode !== 200) {
                 console.error(`API error ${res.statusCode}`);
                 return;
             }
             console.log('Response received, reading...');
             const data = [];
-            res.on('data', chunk => data.push(chunk));
+            res.on('data', (chunk) => data.push(chunk));
             res.on('end', () => {
                 console.log('Data received, parsing...');
                 const json = Buffer.concat(data).toString('utf8');
@@ -133,7 +130,7 @@ module.exports = function() {
                 `[${lang}] ${langPhraseCount} / ${totalPhraseCount} (${percentage}%) -> ${action}`
             );
 
-            const langInfo = languages.data.filter(x => x.code === lang)[0];
+            const langInfo = languages.data.filter((x) => x.code === lang)[0];
             const region = (defaultCountries[langInfo.region] || langInfo.region).toLowerCase();
             const langName =
                 langInfo.locale === region
@@ -202,12 +199,23 @@ module.exports = function() {
                         );
                         errors++;
                     }
+                    const misspelledKeeWebRe = /(ke[^e]?web|k[^e]eweb)/gi;
+                    if (misspelledKeeWebRe.test(text)) {
+                        const textHl = text.replace(misspelledKeeWebRe, '\x1b[31m$1\x1b[0m');
+                        console.error(`[${lang}]    \x1b[31mERROR:{}\x1b[0m ${name}: ${textHl}`);
+                        errors++;
+                    }
+                    if (text.match(/keeweb/gi)?.some((m) => m !== 'KeeWeb')) {
+                        const textHl = text.replace(/(keeweb)/gi, '\x1b[31m$1\x1b[0m');
+                        console.error(`[${lang}]    \x1b[31mERROR:{}\x1b[0m ${name}: ${textHl}`);
+                        errors++;
+                    }
                 }
 
                 languageJson = JSON.stringify(languageTranslations, null, 2);
 
                 const data = Buffer.from(languageJson);
-                const signature = await sign(data).catch(e => {
+                const signature = await sign(data).catch((e) => {
                     console.log('Sign error', e);
                     process.exit(1);
                 });
