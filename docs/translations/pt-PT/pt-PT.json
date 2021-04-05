@@ -446,7 +446,6 @@
   "setGenShowAppLogs": "Mostrar ficheiro de logs da aplicação",
   "setGenReloadApp": "Reiniciar a apicação",
   "setGenFieldLabelDblClickAutoType": "Auto-escrita quando duplo clique nas etiquetas dos campos",
-  "setGenUseLegacyAutoType": "Utilize antiga auto-escrita (se tiver problemas)",
   "setGenTouchId": "Tough ID",
   "setGenTouchIdDisabled": "Não utilize Touch ID",
   "setGenTouchIdMemory": "Desbloqueie com Touch ID apenas quando KeeWeb está a correr",

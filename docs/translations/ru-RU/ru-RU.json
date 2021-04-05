@@ -424,7 +424,6 @@
   "setGenTryBetaWarningBody": "Сохраните все файлы и снова нажмите эту кнопку",
   "setGenShowAppLogs": "Журнал приложения",
   "setGenReloadApp": "Перезагрузить приложение",
-  "setGenUseLegacyAutoType": "Используйте устаревший автоматический ввод (в случае возниконовения проблемы)",
   "setGenTouchId": "Touch ID",
   "setGenTouchIdDisabled": "Не использовать Touch ID",
   "setGenTouchIdMemory": "Разблокировка с помощью Touch ID только при запущенном KeeWeb",

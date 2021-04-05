@@ -446,7 +446,6 @@
   "setGenShowAppLogs": "Zobraziť logy",
   "setGenReloadApp": "Reštartovať aplikáciu",
   "setGenFieldLabelDblClickAutoType": "Auto-type dvojitým kliknutím na popis pola",
-  "setGenUseLegacyAutoType": "Použiť pôvodný auto-type (ak máte problémy)",
   "setGenTouchId": "Touch ID",
   "setGenTouchIdDisabled": "Nepoužívať Touch ID",
   "setGenTouchIdMemory": "Odomknúť s Touch ID len keď je KeeWeb spustený",

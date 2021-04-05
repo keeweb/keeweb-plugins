@@ -446,7 +446,6 @@
   "setGenShowAppLogs": "Журнал програми",
   "setGenReloadApp": "Перезапустити програму",
   "setGenFieldLabelDblClickAutoType": "Автовведення при подвійному клацанні на назві полів",
-  "setGenUseLegacyAutoType": "Використовувати попередню версію автовведення (при наявності проблем)",
   "setGenTouchId": "Touch ID",
   "setGenTouchIdDisabled": "Не використовувати Touch ID",
   "setGenTouchIdMemory": "Відмикати з Touch ID лише коли KeeWeb працює",

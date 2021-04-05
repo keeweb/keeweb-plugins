@@ -1,5 +1,5 @@
 {
-  "version": "1.15.0",
+  "version": "1.16.0",
   "manifestVersion": "0.1.0",
   "name": "language-italian",
   "description": "Italian language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=it-IT",
   "resources": {
-    "loc": "PtgOKFVLHY7qoSCD6h9oVufBBO4EwKf9+Z4ii7SlBh2hD5WTjoY3fTYGowDuZl/RPFmVPAbQwp/jKrqa/VDa1OMEaBMYW6NTz1kWfcPLa2rO9UUEdBJnuZZ+uJ1yAnVJCLgJ0Fe6QXqt0ij4gxe0PyhXYEi+EfBu64WErcIHNBg1N6LzY7aj9/aCuSnPbLA0bJCFQQAGx8LRPKBUj6tF8lG4EXbxQyOl4y/1OpXIw0IXe+lQaTTYy3+9Kl3L9J8KfCyHuy/MPSTCsQZpLTBaeh3b4uVyfobr5dCgnawWPCHcTGWQUSkRxVXELaJReK6JMHNRR7EFr+ps6k7RDfLMgw=="
+    "loc": "fVtjBGzAraD4R9QIvpQ0nlbvx/VoCMdb2wt9MDcWv5mavO/P9BA94QnsUlHLPKgC+ezJNHtM5oodlN3Rb9l+l71GngTqedpdvsIZneanB+mNpKGuTidQkpKa1pcCoSi/o2OboIcwKIlyvk3q50IflAZADypljP/nXTu0ITmYm6lKg9HrJNISnY2aeTv8jJGzMPSovDiUpiJJVWCUFfXPmQ2ixwvVfIJSZ6Oq8sk/AdEG3dH+9MuZpmkzM1x8h3xIY0ecrNd9zWPOT4WMGnGslH6lVNPf/YNPPtOCR8cFENi3cBpw13haM+JGU4E/HdWxL6QagaB/rgpgwc3XnazNFg=="
   },
   "locale": {
     "name": "it-IT",

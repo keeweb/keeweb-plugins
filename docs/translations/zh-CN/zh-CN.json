@@ -446,7 +446,6 @@
   "setGenShowAppLogs": "显示应用日志",
   "setGenReloadApp": "重新加载应用",
   "setGenFieldLabelDblClickAutoType": "双击字段标签时自动键入",
-  "setGenUseLegacyAutoType": "使用旧版自动填充(如果使用中出现异常)",
   "setGenTouchId": "Touch ID",
   "setGenTouchIdDisabled": "不使用Touch ID",
   "setGenTouchIdMemory": "仅当KeeWeb正在运行时, 使用Touch ID解锁",
