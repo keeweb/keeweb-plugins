@@ -669,27 +669,6 @@
       }
     },
     {
-      "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
-      "manifest": {
-        "version": "0.1.11",
-        "manifestVersion": "0.1.0",
-        "name": "haveibeenpwned",
-        "description": "Check HaveIBeenPwned password database",
-        "author": {
-          "name": "Olivier LEVILLAIN",
-          "email": "olivier.levillain@free.fr",
-          "url": "https://github.com/leolivier"
-        },
-        "resources": {
-          "js": "LjFZ6E0K4JagS4VQKjsTNynxv/0hmr7gfJkn9hrtyCjXiibiCJ/cAcxlvS5mia/T1X79NoMt/57+6mklr+BwakVZSVCPVpQ1XQWaN3JNpu3OrWQ8wc2dAui9mdPN91wSrSiOks6ypU6xFHArxUk5M63Md2H1nShBiHpi6McTVv/6/QoYQhhTnztoZJA5CZcZXPVdby9aPzJTwoi24okBggI7fIIfMwE1Hocobq8annyuafGm+/pRMMmVHHG34T3T9+3GSTZ8cRr0q3hOgAN88Eovf3xKQ3/21HUvQtcHPT+YgeWZWWZjM2UvfVMzPU6kF8ks/MfZBZFmLGUc/Zlr5Q==",
-          "css": "K8gtQONyUe5AMIEa2ozxHvVC4umblP5r6FOdKgX+288Il3m928SquewF9fIqDeeMONtGEQnFpMG60jgP1edEZvBZdjhT3qJySdTUYf7etmjQInY/4/0K18HenixwhW4C6XQm/+M90voHsiKOcZMSY4/uSCmltnI7qaRr3Ag+2+QQXdpMDNQthRCZhgrh3KtO0hHAcGYURRQ2YEfHcfT5JZrl4kpOhJYTTt3Dy0XNnRQaa30qedVY2rCQtAnE870D+MSUpri4BGAGdxz2Wi3BdWUtBPT6wAdoJQWhsIcuRv0f0LIFbjsw1sI52do2oj/dmfJ1lJ3RnEB/ALHDIvx+ew=="
-        },
-        "url": "https://plugins.keeweb.info/plugins/haveibeenpwned",
-        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
-        "license": "MIT"
-      }
-    },
-    {
       "url": "https://plugins.keeweb.info/translations/tr",
       "official": true,
       "manifest": {
