@@ -1,6 +1,6 @@
 {
-  "date": "2021-05-08T08:54:44.596Z",
-  "signature": "KS+Q2i/t1bSEviqNVO0e8Xp3+NQl12O6b5hBAeFWM3OEJjieH4OIf/WT644YAeJmIyDTpMGXcAQcrUdmpTNPMpuy1y4aFc8vfyAzehVmComAzxUuNmv/XsZ83jZJJ3F9WYag49SzsOPhg4mrfqCWaE1cGRomCv9kQPzThmuFAAFwkeqWF/8mGL96cyz+ZABv2tmQFUu6h1nTP4fYPxVZC+ZXKa6O5mRWvv7AWH6xdlLSejD5i7xaLlVJdYbTs7LHmHOay14+8V0yiAkg7HKSyJBMgpaUKJujevahpjVHB84YaBAp9cR2PjtVefimfSk6KkX2obWudbPU2TIcxeKFbQ==",
+  "date": "2021-05-08T20:38:37.719Z",
+  "signature": "Nisjd1Y//AdjogoVI1D6PKJ+VZsz6s5Mk5JB8Om+Lu9eK2TKDmfLK0XWmEjDQKxnV5ZkSdxcPkOluUnzkuAlS7MDZfWo/CEDvdoUpsOUHZW69Dj/L5TYON+xuhLlop0+t6Me7UaOAcljfZyWL+Uq0CSxkfwQiCK25Ekp0SNg/nL9Q+3965rviBtBw43TIHeWI/bxO5HaZHdLRuNQ2YugwslI/LUUHxcdrKoSABi0M/BIVSzNP/eV1Io+77e5oVsyUmzbEwuEsDdL1bmAQZaJMjdQqIEyVWavz1TAQD7XT3/F4A28D0is1g0Sapdobxy7h2tCXab6V1NtwG27zEAVvA==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -338,29 +338,6 @@
           "flag": "🇸🇪"
         },
         "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB"
-      }
-    },
-    {
-      "url": "https://plugins.keeweb.info/plugins/keewebhttp",
-      "official": true,
-      "manifest": {
-        "version": "1.0.2",
-        "manifestVersion": "0.1.0",
-        "versionMin": "1.11.0",
-        "name": "keewebhttp",
-        "description": "KeeWebHttp allows to use browser extensions with KeeWeb",
-        "author": {
-          "name": "KeeWeb",
-          "email": "antelle.net@gmail.com",
-          "url": "https://keeweb.info"
-        },
-        "license": "MIT",
-        "url": "https://plugins.keeweb.info/plugins/keewebhttp",
-        "resources": {
-          "js": "LlPkehKQKbE9xZHoatfNHSx4TA4nZlzuu1ul1YVSJXW9FOmpY7FTVlU50Kl1sXBDwNNnj4sRmBpZ/SZbo7ALOx258iFZVUy+c2O2CSsQnxTmHBH0zoG3Pdse+ByxMszj/guH2Xeiq6q9wtjJszP3RwBNcxOxirjd3FFzNA4jS877Llu29MaadApOBZr+MCgHTzuFoNNU5DYnT5qCbxnW9U9FisiT5JIFsGagy+rEg1MMPtUnVdjFp27Fn8TtrrJr+BsVrQS+FjzV5EGHLqC+piBz5ljysl1yJDU3oFBytADDZjXQAgIjk/OvQDOIJ9/peOIm4NY43f6m8qYg9zVFqg=="
-        },
-        "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRq2k3TTx0ewTe6wDr6QVeB5diwiIWzsJD+ApfZu1KNPedcAgslAfjpNsYF1if6cYsPMJH70xJ2np6RQBl1VPdwShOuxkD7m0BD5Hw/Aar8Hdp5cvAdOOMdBO+0DbGeUMy+z66s+oUCJmqVp19T6PkkxbhN08rgtT7v+aFvrbqbO/vlsskbJpH2K2io+e1XmRGPnSr9q4KSqfGbTfe5gLwDIOFd66Z4mb5Utb5wWpsy6Gjh06Yf257AccGD3A1bkTNOyeeX0tqciYBePWMk0icP/aZ6hnErfhnUKf3tOgPLppSHiGcaSKekhChZ2xLUs3U64JwrXSmwHj+TzdO3S0QIDAQAB",
-        "desktop": true
       }
     },
     {
