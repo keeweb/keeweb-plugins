@@ -1,6 +1,6 @@
 {
-  "date": "2021-05-08T07:56:03.971Z",
-  "signature": "YzZjz3/61cxBXgJWB4LdxR389a+wGezfppZAJuvlypfjOWcCdlGjz1u00sEhwcU629BBymHm6ADhfv0skDzAdFXfDYB87C8qAdMp152Qhcp58CKzhcWL6GuXlzUG0JUKrKFnyUl9F5Z2MKJjHfh5lEqLl5ewmUCBEBH/sisSmDeg2iCR5RmlxtwGX/HvS8+3DA6g9xQL5hc1cjEjQFUv/Oe1l8PxXCT3vx5tH9vD1WFGB0DIqqRkPu+adUyUGQjk7gkzD4Kmy+/6+DMeASJR2jTwwwcqpKrC7JXvDgdoXhf17tTmpzZKlhN1/9m1cOjvclV1/mHzxGPBTeBOQKEauw==",
+  "date": "2021-05-08T08:54:44.596Z",
+  "signature": "KS+Q2i/t1bSEviqNVO0e8Xp3+NQl12O6b5hBAeFWM3OEJjieH4OIf/WT644YAeJmIyDTpMGXcAQcrUdmpTNPMpuy1y4aFc8vfyAzehVmComAzxUuNmv/XsZ83jZJJ3F9WYag49SzsOPhg4mrfqCWaE1cGRomCv9kQPzThmuFAAFwkeqWF/8mGL96cyz+ZABv2tmQFUu6h1nTP4fYPxVZC+ZXKa6O5mRWvv7AWH6xdlLSejD5i7xaLlVJdYbTs7LHmHOay14+8V0yiAkg7HKSyJBMgpaUKJujevahpjVHB84YaBAp9cR2PjtVefimfSk6KkX2obWudbPU2TIcxeKFbQ==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -162,7 +162,7 @@
       "url": "https://plugins.keeweb.info/translations/nl-NL",
       "official": true,
       "manifest": {
-        "version": "1.38.0",
+        "version": "1.39.0",
         "manifestVersion": "0.1.0",
         "name": "language-dutch",
         "description": "Dutch language",
@@ -174,7 +174,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=nl-NL",
         "resources": {
-          "loc": "eVg2fHStQm4R97CtSSG9MZKc/bZsgMgBQDjRxDQD5MGw+bMvHBCV1tb+iLuttWudu4CWy3bN1pxa4oG+lZAIRj0KaimWYUAE705gwocNpDQfrZeg4PsjixeTrJTsGWJHIcOsi6GNpxaUvHYut3CHR1wFqbgMuAnfT8mEtkDIUhFz+kl6IksxZkC9WV7uuusaBz6aQFrZbfc5ACaDE0D4RmjSKgFAl8EI0BmlPzn8JnT8SncnQbT7eQzGpvR9UtgZpCfzMgRciv3CoYasuABE+TZod17zPxoBqDLjJMseJMrQo+ttz/LfFIVjPyHCaSaUVhtOjTSouGFJf5XSojOmQw=="
+          "loc": "awudWpd+8JokVnKEt1fntrd9NP00KbFJN6K8hPlIJZ696VYdCBi1p/JspSSLXcN3VuvlcJEjcfW7ZaSSmcRdhYOM8Gqoag1T8q4Uz7eRMQljszXTtRPkvobvmrxDfsozurlOWYFuyAKIjyvdMz6Q6ZstwpTCnZhpBmnh76sspuSV25FPynsI3m4o1/ti9UBx9GvsXPFNO6bFXncJcCS3XHkFFBSZ0WHVxLkjqnJbtbtbEcIwnE6EqNfsmnM1FHIkCJQxlZ0PWKkIKeyIBJbsR07LeA4xwM8FBWhn8LbceYjh7W13JYZR1NaXQG28mwWRAyyQdC8k7p4OPAwO86CpyA=="
         },
         "locale": {
           "name": "nl-NL",
