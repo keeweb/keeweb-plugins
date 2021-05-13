@@ -11,4 +11,4 @@ jobs:
       - name: NPM install
         run: npm ci
       - name: Lint
-        run: npm run lint
+        run: npm run eslint
