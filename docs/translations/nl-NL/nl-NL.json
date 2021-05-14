@@ -499,7 +499,7 @@
   "setFileSyncVerb": "Synchronisatie",
   "setFileSaveToXml": "XML",
   "setFileSaveToHtml": "HTML",
-  "setFileLastSync": "Laatste synchronisatie ",
+  "setFileLastSync": "Laatste synchronisatie",
   "setFileLastSyncUnknown": "onbekend",
   "setFileSyncInProgress": "Synchroniseren...",
   "setFileSyncError": "Synchronisatiefout",

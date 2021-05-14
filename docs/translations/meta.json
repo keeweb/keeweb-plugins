@@ -2,8 +2,8 @@
   "zh-CN": {
     "name": "简体中文",
     "nameEn": "Chinese Simplified",
-    "count": 700,
-    "version": "1.21.0"
+    "count": 774,
+    "version": "1.22.0"
   },
   "ja": {
     "name": "日本語",
@@ -44,8 +44,8 @@
   "uk": {
     "name": "Українська",
     "nameEn": "Ukrainian",
-    "count": 712,
-    "version": "1.22.0"
+    "count": 774,
+    "version": "1.23.0"
   },
   "pt-BR": {
     "name": "Português (Brasil)",
@@ -57,7 +57,7 @@
     "name": "Nederlands",
     "nameEn": "Dutch",
     "count": 774,
-    "version": "1.39.0"
+    "version": "1.40.0"
   },
   "fr-FR": {
     "name": "Français",
