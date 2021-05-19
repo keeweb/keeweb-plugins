@@ -1,6 +1,6 @@
 {
-  "date": "2021-05-14T19:45:07.309Z",
-  "signature": "bawVQy4mN5Jx5+ocdFCMV7uCZxOTvngWnI5Mi8ZlB57NpiDoNjj33AAMSp+Ax1d/k2Rd0Cs7vmXzjUd/jT6mj/qLf41FL5jhpM3MwsVhlHSrwlS9i2qoUUhLT2xEZYUt39XLTD1QMuJfn5gtVxJ2XnUqidQbM/DbXP448L3XZaHqHsL7oXN2Tj+t6VfahsvVT+ILsYBAmtuvNDQ6FyvORdZfpAdo6fOndqFJ7Bi245tAmreWIHZHbwrmfxLYBN/bbjA3zIxh1mZ1x9y2kxLWSc+vchqd+dy3uBm5+NZ816yerj8Bhr/yR4HjkZaVzmTaW1E4nVZDnMt4EycJStfJvw==",
+  "date": "2021-05-19T09:17:44.443Z",
+  "signature": "lZW2dRjJ6643P4MXWozb5TgXdug+OARKHmPNz5jsoD1sHT5xqu+cJ4SdbokcxOT15U8JyfrOv8I2svMrdRhUK7u7gRUvYBPZhtBvI7PTXPH48UrMWRecIUyTvG6TSN5455DNvyzTpoTQKif7NaaKlgGyBFbtMef0yj9kZR4lFrc7cY/+m92Tbx9TvDOKtqegJ7V3GiSUky93/2wxncdnP0n/GZktI1e9aplhxDqsgx7yROwKA9BtiwYCyidJhLvIaSavUj/ya5zENIuzJZOCWbJSqh03jsGCiZwMZhejZUKvIPiEky/RjAPeUZq2gIV/WFKdi2Vs532/EPS6IsMoCA==",
   "plugins": [
     {
       "url": "https://plugins.keeweb.info/translations/zh-CN",
@@ -188,7 +188,7 @@
       "url": "https://plugins.keeweb.info/translations/fr-FR",
       "official": true,
       "manifest": {
-        "version": "1.33.0",
+        "version": "1.34.0",
         "manifestVersion": "0.1.0",
         "name": "language-french",
         "description": "French language",
@@ -200,7 +200,7 @@
         "license": "MIT",
         "url": "https://plugins.keeweb.info/translations?lang=fr-FR",
         "resources": {
-          "loc": "KtZaTsBttatu9te/zVzE9xYDGWVsU7Ya1Z4IcoY/2qAAo0Yg/cep7NJ+GgSxridKNyNHQ5C7UqvmxpNU7WM2+DrPEdRS7O9LHbl1yQNpaG/Ny7Z6y78UHnKEUnyGwt1rgwelqOdRiMhO3ZhMxEF00an1KC1ubZM1PIevWsiyfqcorbDYsL1dR6a33Jn06fQqIsOpLtR4jBxJmxKVY9Tfgp6/sm+M7zfOG6q7NATGxgMFn6B+e4NbHlYtKL9oMH3X3OIhE0TKUAKr/Xr1QnTCZtgwkYUyLAFFOW7IbYGwUqGwD/9w1WnLyZggyKeUD1YsDD42LcQ2Fad+tAT9r3tOsg=="
+          "loc": "PqCrC7q3uJNYpvKSTJj1sXEj289kIn6tuoK003ldg01EWHohHk4FfH7B49Igm6cbxYa+hrKOaeud04ZRYVJGu+chJFuqiDuobARRF9uHu9aPhxg2YqK3BL4M2ZemO8JokTI0yeE/ICw9KEl6ccRamAcnER67r+oCucF4jzEBhZsUZE5s/Egnx8EEwQcCe3g3tNo9lrB+sd0MMt2C+mYXVje9BcbX93Nd7+CJAJAgiR2mlDuJZh91sfyhMcyNzD2i/hmFz+ck1gBOau5pSzHlYSX0zH/1FdQYMFhLFPTlt+F+g3Ced9DtFlAFBQw1UiVsNP4KfLfzcmDKfDdJuPi1OQ=="
         },
         "locale": {
           "name": "fr-FR",
