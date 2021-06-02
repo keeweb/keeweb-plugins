@@ -625,7 +625,7 @@
   "setBrowserIntroDesktop": "KeeWeb może wprowadzać hasła przy użyciu automatycznego wpisywania, jednak rozszerzenie przeglądarki może być wygodniejszym sposobem robienia tego. KeeWeb obsługuje dwa rozszerzenia przeglądarki:",
   "setBrowserIntroKeeWebConnect": "oficjalne rozszerzenie KeeWeb, zostało zbudowane z myślą o funkcjach KeeWeb, ale może nie mieć niektórych zaawansowanych możliwości, które mogą być w drugim rozszerzeniu.",
   "setBrowserIntroKeePassXcBrowser": "to rozszerzenie zostało opracowane dla KeePassXC, dostępne na rynku od jakiegoś czasu i jest całkiem solidne. Rozszerzenie nie jest częścią KeeWeb i mogą wystąpić problemy ze zgodnością.",
-  "setBrowserIntroWeb": "Zainstaluj nasze rozszerzenie przeglądarki, aby automatycznie uzupełniać hasła z KeeWeb na różnych stronach. Rozszerzenie przeglądarki połączy się z kartą KeeWeb w przeglądarce, aby pobrać hasła. Kliknij tutaj, aby pobrać rozszerzenie:",
+  "setBrowserIntroWeb": "Zainstaluj nasze rozszerzenie przeglądarki, aby automatycznie wypełniać hasła z KeeWeb na różnych stronach. Rozszerzenie przeglądarki połączy się z kartą KeeWeb w przeglądarce, aby pobrać hasła. Kliknij tutaj, aby pobrać rozszerzenie:",
   "setBrowserNotEnabled": "Integracja przeglądarki nie jest włączona, rozszerzenia nie będą mogły łączyć się z KeeWeb. Użyj poniższych pól wyboru, aby ją włączyć:",
   "setBrowserEnablePerBrowser": "Włącz integrację przeglądarki za pomocą poniższych pól wyboru:",
   "setBrowserFocusIfLocked": "Otwórz KeeWeb, jeśli rozszerzenie przeglądarki próbuje się połączyć, gdy nie ma otwartego pliku",

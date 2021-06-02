@@ -27,7 +27,7 @@
     "name": "Polski",
     "nameEn": "Polish",
     "count": 774,
-    "version": "1.31.0"
+    "version": "1.32.0"
   },
   "hu": {
     "name": "Magyar",
@@ -74,8 +74,8 @@
   "it-IT": {
     "name": "Italiano",
     "nameEn": "Italian",
-    "count": 678,
-    "version": "1.16.0"
+    "count": 686,
+    "version": "1.17.0"
   },
   "ru-RU": {
     "name": "Русский",
