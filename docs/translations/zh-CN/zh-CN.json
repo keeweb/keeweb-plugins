@@ -481,7 +481,7 @@
   "setGenAuditPasswordEntropy": "检查密码长度和随机性",
   "setGenExcludePinsFromAudit": "从不检查短数字PIN码，如123456",
   "setGenCheckPasswordsOnHIBP": "使用 {} 在线服务检查密码",
-  "setGenHelpHIBP": "KeeWeb 可以使用在线服务检查您的密码是否在以往的数据泄露中被暴露。您的密码无法根据联机发送的数据被恢复，但是通过此方式检查的密码数可能会暴露。更多有关使用此服务时您的隐私的信息，请参见{}。如果启用此选项，KeeWeb 将自动检查您的密码。",
+  "setGenHelpHIBP": "KeeWeb 可以使用在线服务检查您的密码是否在以往的数据泄露中被暴露。该检查所发送的数据无法被还原成您的密码，但检查过程中涉及的密码数量可能会被泄漏。更多关于使用该服务所涉及的隐私信息，请参见{}。启用该选项后，KeeWeb 将会自动检查您的密码。",
   "setGenHelpHIBPLink": "此处",
   "setGenAuditPasswordAge": "旧密码",
   "setGenAuditPasswordAgeOff": "不显示有关旧密码的警告",
