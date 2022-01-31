@@ -501,7 +501,7 @@
   "setFileSaveToHtml": "HTML",
   "setFileLastSync": "Остання синхронізація",
   "setFileLastSyncUnknown": "невідомо",
-  "setFileSyncInProgress": "йде синхронізація",
+  "setFileSyncInProgress": "триває синхронізація",
   "setFileSyncError": "помилка синхр-ї",
   "setFilePass": "Головний пароль",
   "setFileConfirmPass": "Підтвердити головний пароль",

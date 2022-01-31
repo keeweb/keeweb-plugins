@@ -1,5 +1,5 @@
 {
-  "version": "1.11.0",
+  "version": "1.12.0",
   "manifestVersion": "0.1.0",
   "name": "language-chinese-traditional",
   "description": "Chinese Traditional language",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://plugins.keeweb.info/translations?lang=zh-TW",
   "resources": {
-    "loc": "ROB2L/hrcjz4nRLItUp5/nxVjaOc+1IuFcIHK65skG+yrM6c6ctAqVwRJdaBVwzoFwVaFs4N3HMFya05U3j6JXnFo0lOVpw6buGHyFZ0EsIyUdqeS/iuoWJuSNWl1JhhuvpCX1dhmClMs9u9ayc2sf4bc0mQYQYwGnc107O7f/UfCtHEdcRZ160W35nserjwjhJqr31ylsEqmjx5keQF5HdNIsibQVd2+IEC0lnssnt2e/1ibenpw5uJ80mci4VVuMz59u6mtWxDaWHyqza7cZiZT47SK8/1YLUNlz/wV+iQ6O0Q9njWCfNePa18OO1CnOxJVnLZX3UoAvAbJSwtaw=="
+    "loc": "ElkgqBkzPMDLHGotC7h5reM4c55NZHT0GERrtKTcDTSWbVx5umS4hgce2qOmxqPClYgsSUX+RMuTOHJKZOePOn6xMGNDuKAOW7shn8Z+MKl2HGl6ArC5yTcom9z6VvjNVRe2cJaN6YPC9Aq9a186Pu9hZU0lUcEeJFoCsxxiX0M5zCFjmBhuRwE7sCqTrqbqgmMQiuw0PUq+/WDcPsj2gHSIikGlx5+2FNrxRIoIy11NecbKTc0AabcXFJRd/yfKoa2OZKiPkADzb3gzV7GpX1LfyG7JyFsM8l7yFuRf60/sXFCksIdEajSSgQw2LQnSP5UDN2R/DP6lZliYKKcFgA=="
   },
   "locale": {
     "name": "zh-TW",

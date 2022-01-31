@@ -538,7 +538,7 @@
   "setFileKdfParams": "Funkcja derywacji klucza",
   "setFileKdfParamsIter": "Iteracje",
   "setFileKdfParamsMem": "Pamięć, KB",
-  "setFileKdfParamsPar": "Pararelizm",
+  "setFileKdfParamsPar": "Równoległość",
   "setFileKeyChangeForce": "Pytaj o zmianę klucza po (dni)",
   "setFileUseKeyFile": "Użyj pliku klucza",
   "setFileUseGenKeyFile": "Użyj wygenerowanego pliku klucza",
