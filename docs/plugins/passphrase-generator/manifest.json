@@ -1,0 +1,17 @@
+{
+  "version": "1.1.0",
+  "manifestVersion": "0.1.0",
+  "name": "passphrase-generator",
+  "description": "Generate secure pass phrases",
+  "author": {
+    "name": "Grant Moyer",
+    "email": "grantmoyer@gmail.com",
+    "url": "https://github.com/GrantMoyer/"
+  },
+  "resources": {
+    "js": "fhcpjyZgZY4fXNu57ABI7NOnWZP1QIjO4OZHIW4L9TR3r7u/8ZBTPZ/iW/QkOZ9p0lAJhsrUboA3AvCn2eh5ZaYcPG0mgJvwuzg9eyfC966fuqJnicSkvAnZocxbIu5oYhadASvjqIUJv6qvuEEL/QiQ6WpDP3U05LlPbZHJw0aKq8aQz518pWF3a7w4WTd0FygWeBohcaMFt6OUsI0jGcGosIaLBQKc3YOq0g8/xu/mL09ctS7h6EFdRkoT4ei22hKs04WF5TrBInUOWlt9gOSC8WU4l3tF/Szu1gaDgAPvbXkTr213ZCFeUkMJglQ1EAPwVvDKwFvTBVZPX11raA=="
+  },
+  "licence": "MIT",
+  "url": "https://github.com/GrantMoyer/keeweb-plugin-passphrase-generator",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzOR25PG6eC40WZQvhia4tln4VEfafbuu+w1PQ88E4cJM6NZqZBxtJjA+0wMPHU+y2WlWMBgiEKanQYjy8JgNJSzUX3LvwzabnSb5EhJwyELvkqTlHupNhZXcQfCNc9awQSJT1wBnookq7r/CAHCPDaAS6EzdDKDOxTNiKYSp+hubln7bJwxgNfkL4WbapV1ZyJqU0Vcjl8btOoZpAWc0KtWqt893sBkuy8orcf8taChvtVWecW4zsBGRLKUG0WRN0t8zDpe+NHzL2JXyA/e44gahqbLuwXucg6zYGzFGxvKQAdNlQ/+tcBQ7nNUo13RahKpGGJVrzzDwVDcdJL0H8wIDAQAB"
+}
