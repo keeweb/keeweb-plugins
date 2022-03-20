@@ -49,12 +49,6 @@ function get_random_index() {
 	return rand;
 };
 
-function zipObject(keys, vals) {
-    return keys.reduce((agg, key, i) => {
-        return Object.assign(agg, {[key]: vals[i]});
-    }, {});
-}
-
 let wordlist;
 function eff_large_wordlist() {
 	if (wordlist !== undefined) return wordlist;
