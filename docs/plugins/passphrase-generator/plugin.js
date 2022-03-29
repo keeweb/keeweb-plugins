@@ -4,39 +4,49 @@
  * @license MIT
  */
 
-const { GeneratorView } = require('views/generator-view');
+const { GeneratorPresets } = require('comp/app/generator-presets')
 const Kdbxweb = require('kdbxweb');
 const { PasswordGenerator } = require('util/generators/password-generator');
 
-let generatorViewGenerate = GeneratorView.prototype.generate;
-GeneratorView.prototype.generate = function() {
-	if (!this.gen || this.gen.title !== 'passphrase') return generatorViewGenerate.apply(this);
-	if (typeof this.gen.length !== 'number' || this.gen.length < 0) {
+let generatorPresetsBuiltIn = Object.getOwnPropertyDescriptor(GeneratorPresets, 'builtIn');
+Object.defineProperty(GeneratorPresets, 'builtInOriginal', generatorPresetsBuiltIn);
+Object.defineProperty(GeneratorPresets, 'builtIn', {
+	get: function() {
+		const presets = this.builtInOriginal;
+		presets.push({
+			name: 'passphrase',
+			title: 'passphrase',
+			type: 'passphrase',
+			builtIn: true,
+			options: [{
+				name: 'dash',
+				title: 'Use dash as word seperator',
+				label: '-',
+				type: 'checkbox'
+			}],
+			dash: true,
+			length: 6
+		})
+		return presets;
+	}
+})
+
+let passwordGeneratorGenerate = PasswordGenerator.generate;
+PasswordGenerator.generate = function(preset) {
+	if (preset.type !== 'passphrase') return passwordGeneratorGenerate(preset);
+	if (typeof preset.length !== 'number' || preset.length < 0) {
 		return '';
 	}
-	this.password = Array
-		.from({length: this.gen.length}, _ => eff_large_wordlist()[get_random_index()])
-		.join(' ');
-	this.showPassword();
-	const isLong = this.password.length > 32;
-	this.resultEl.toggleClass('gen__result--long-pass', isLong);
-}
-
-let generatorViewCreatePresets = GeneratorView.prototype.createPresets;
-GeneratorView.prototype.createPresets = function() {
-	generatorViewCreatePresets.apply(this);
-	this.presets.unshift({
-		name: 'passphrase',
-		title: 'passphrase',
-		builtIn: true,
-		length: 6
-	});
-	this.lengthToPseudoValue(this.presets[0]);
+	const password = Array
+		.from({length: preset.length}, _ => eff_large_wordlist()[get_random_index()])
+		.join(preset.dash ? '-' : ' ');
+	return password;
 }
 
 module.exports.uninstall = function() {
-	GeneratorView.prototype.generate = generatorViewGenerate;
-	GeneratorView.prototype.createPresets = generatorViewCreatePresets;
+	Object.defineProperty(GeneratorPresets, 'builtIn', generatorPresetsBuiltIn);
+	Object.defineProperty(GeneratorPresets, 'builtInOriginal', {});
+	PasswordGenerator.generate = passwordGeneratorGenerate;
 };
 
 function get_random_index() {
