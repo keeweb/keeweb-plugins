@@ -18,13 +18,21 @@ Object.defineProperty(GeneratorPresets, 'builtIn', {
             title: 'passphrase',
             type: 'passphrase',
             builtIn: true,
-            options: [{
-                name: 'dash',
-                title: 'Use dash as word seperator',
-                label: '-',
-                type: 'checkbox'
-            }],
-            dash: true,
+            options: [
+                {
+                    name: 'upper',
+                    title: 'Uppercase words',
+                    sample: 'WORD',
+                    label: 'CAP',
+                    type: 'checkbox'
+                },
+                {
+                    name: 'seperator',
+                    title: 'Word seperator',
+                    type: 'text'
+                }
+            ],
+            seperator: ' ',
             length: 6
         })
         return presets;
@@ -37,9 +45,12 @@ PasswordGenerator.generate = function(preset) {
     if (typeof preset.length !== 'number' || preset.length < 0) {
         return '';
     }
-    const password = Array
+    let password = Array
         .from({length: preset.length}, _ => eff_large_wordlist()[get_random_index()])
-        .join(preset.dash ? '-' : ' ');
+        .join(preset.seperator);
+    if (preset.upper) {
+        password = password.toUpperCase();
+    }
     return password;
 }
 
