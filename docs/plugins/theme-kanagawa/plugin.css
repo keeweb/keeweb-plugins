@@ -1,0 +1,11 @@
+.th-kanagawa-theme {
+  --action-color: #7FB4CA;
+  --background-color: #1F1F28;
+  --error-color: #E82424;
+  --intermediate-background-color: #2A2A37;
+  --light-border-color: #2A2A37;
+  --medium-color: #d8dee9;
+  --secondary-background-color: #54546D;
+  --text-color: #DCD7BA;
+  --text-contrast-action-color: #000000;
+}
