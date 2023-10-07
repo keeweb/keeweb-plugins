@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "manifestVersion": "0.1.0",
+  "name": "keeweb-s3-storage",
+  "description": "S3 storage for KeeWeb",
+  "author": {
+    "name": "Sergey Starostin",
+    "email": "starostin89@gmail.com",
+    "url": "https://github.com/s-starostin/"
+  },
+  "resources": {
+    "js": "DTz5bI/vY7pL17Z7R2BRTj2uPMmNhuBHbZbq8IBMiavhU40j+iG59K7xYhy0ELfMkej9E89T6G3kbF3MllTXsuwRwlwCSgE3fN39C5AIwv0TOaSKgge59tG/r6Y5aITrN5Ri/J9aybhatqKlgbXtucgiHvSWbuPv4wCV/Kb9zteutuFX/ut/AW4V4iV0cd3vCs+x3IuFA982fOUWoCei2kfhltueWznEuF67qeRpaTcwab3bdtHqopjRCTFacJ0h2Hq+uJZVl4vhQpS2zIJnxybOXmtToyR5wGFUAgLmUEG/+PZJNyOczgFIDUtwqV0OF+SVuKSPlxs57ipMCavhPQ=="
+  },
+  "license": "MIT",
+  "url": "https://plugins.keeweb.info/plugins/keeweb-s3-storage",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxelzC5fZIN7LBOGvUYhmK81O+JuCHCWZpwPtMHW710X/QLw7+pWLuGcjdt+tdy61gsyn6n64pOMZtW1bQWJMdSdLbtZSL0PRgprbPXkfXuc0KA0ag4/kN30y870fU4HvcUZx0LVNVIWnYZMlnIbijX5in99tqyC4em2jUfqiRZ4fbXvwPlelEV7jORtXyIWif1A16MfMGx+y2uj8SBe/rkvUQvZ1IA4PDayPqxa7FW0nAOAWT6HktcxlRmgEBTY+aXgzNuj3HxHoYfG5VqWZZM7boLCksXxSxqdoXS10Ryy+93ftpPznKAz8qgeRkvi9Ai5idaAlWujLgM8qv+7F2QIDAQAB"
+}
