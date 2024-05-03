@@ -80,7 +80,7 @@ on:
 env:
   PROJECT_NAME: ${{ github.event.inputs.PROJECT_NAME || 'plugins-keeweb' }}
   DOMAIN: 'plugins.keeweb.info'
-  DIR_BUILD_OUTPUT: ${{ github.event.inputs.DIRECTORY_BUILD_OUTPUT || './' }}
+  DIR_BUILD_OUTPUT: ${{ github.event.inputs.DIRECTORY_BUILD_OUTPUT || 'docs' }}
   DIR_WORKING: ${{ github.event.inputs.DIRECTORY_WORKING || './' }}
   WRANGLER_VERSION: ${{ github.event.inputs.WRANGLER_VERSION || '3' }}
   BRANCH: ${{ github.event.inputs.BRANCH || 'master' }}
@@ -247,7 +247,7 @@ jobs:
           #    apiToken: ${{ secrets.CF_TOKEN }}                                            # Cloudflare API Token at https://dash.cloudflare.com/profile/api-tokens
           #    accountId: ${{ secrets.CF_ACCOUNT_ID }}                                      # Cloudflare account ID available on right side of CF website
           #    workingDirectory: ${{ inputs.DIRECTORY_WORKING || env.DIR_WORKING || './' }} # Working directory
-          #    command: pages deploy ${{ inputs.DIRECTORY_BUILD_OUTPUT || env.DIR_BUILD_OUTPUT || './' }} --project-name=${{ inputs.PROJECT_NAME || env.PROJECT_NAME }} --commit-dirty=true
+          #    command: pages deploy ${{ inputs.DIRECTORY_BUILD_OUTPUT || env.DIR_BUILD_OUTPUT || 'docs' }} --project-name=${{ inputs.PROJECT_NAME || env.PROJECT_NAME }} --commit-dirty=true
 
           # ---------------------------------------------------------------------------------------
           #   Cloudflare Pages Action
@@ -263,7 +263,7 @@ jobs:
               apiToken: ${{ secrets.CF_TOKEN }}                                               # Cloudflare API Token at https://dash.cloudflare.com/profile/api-tokens
               accountId: ${{ secrets.CF_ACCOUNT_ID }}                                         # Cloudflare account ID available on right side of CF website
               projectName: ${{ inputs.PROJECT_NAME || env.PROJECT_NAME }}                     # Project name assigned at creation. view on workers-and-pages section of CF website
-              directory: ${{ inputs.DIRECTORY_BUILD_OUTPUT || env.DIR_BUILD_OUTPUT || './' }} # Output directory for built website
+              directory: ${{ inputs.DIRECTORY_BUILD_OUTPUT || env.DIR_BUILD_OUTPUT || 'docs' }} # Output directory for built website
               gitHubToken: ${{ secrets.SELF_TOKEN_CL }}                                       # Optional: Enable this if you want to have GitHub Deployments triggered
               branch: ${{ inputs.BRANCH || env.BRANCH || 'master' }}                          # Branch website published to; by default this will be the branch which triggered this workflow
               workingDirectory: ${{ inputs.DIRECTORY_WORKING || env.DIR_WORKING || './' }}    # Working directory
