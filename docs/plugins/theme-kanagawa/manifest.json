@@ -1,0 +1,21 @@
+{
+  "version": "0.0.1",
+  "manifestVersion": "0.1.0",
+  "name": "kanagawa-theme",
+  "description": "Kanagawa Theme",
+  "author": {
+    "name": "Huka",
+    "email": "huka.nlkh@gmail.com",
+    "url": "https://github.com/hukacode"
+  },
+  "resources": {
+    "css": "Ahu9MGYKroU9hQc6iMy7Kt1XoSx+4qv4sjfJ/K+pS1FwtcZDhwwoBkN1VlNq3VYyKgz1sMVb3JOvvXqOYzm5QubdpaPRe7HuleZXBCdFEdCt7GmjcUvDJswOdurkHjcJOGSIVp0MyLrZoF+kr95u2TVwXItmWln7rwGi3oXzdMMqYwlY4qEQaf5A74W899cAqTA3+/3xoWFJ0wF6ZiwGtaOPlaomcejziRa+hulQDdNe9xlKEYsUNzU7A05WagFYzuBCvLbRx0nwGFSU7ManX/kN1WIXlC0yMTXmxZssfQLXcVl3GWkiHht1sijjYUsiAI5xsfnogdTeJaHTnhMRBQ=="
+  },
+  "license": "MIT",
+  "url": "https://github.com/hukacode",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzNFe5sHN7/y58ieOkw+srjyQgvZW7mbVNLyUG1uDGdvI7MHS3ZptFYrv8M25bYnApvjhFFisSJDb6LKqmYMkaxIzOuFiSb5FoeCoi/L4FzxI8LMsbOVtxyn+xqJgZs6NhThDyOSG5jpBH7mi+VySi5mEyksdQDJtWNkAw/RAc4WdGBXufMA1L86DxzWuUdq9uKEHZ+ejw58st7YaqT51xRrXZyj6kx4EW8ETJoSwvr+zHbToSHMyRe32Y5DaI9IWIm//IGeZv9r0m8qO5nhJLnk80EP5Flz4jKaZiSc1CvYbCcvOhSY/hL9+VmXoTWBqHR8CExk6z9c4gfLeqgn3KwIDAQAB",
+  "theme": {
+    "name": "kanagawa-theme",
+    "title": "Kanagawa Theme"
+  }
+}
